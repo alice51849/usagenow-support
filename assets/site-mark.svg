@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title description">
+  <title id="title">UsageNow capacity and reset mark</title>
+  <desc id="description">Four rising capacity steps crossed by a reset arc</desc>
+  <defs>
+    <linearGradient id="pearl" x1="24" y1="28" x2="229" y2="224" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FC67AA"/>
+      <stop offset=".34" stop-color="#CE5FE8"/>
+      <stop offset=".68" stop-color="#8980F7"/>
+      <stop offset="1" stop-color="#5A9EFA"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="70" y1="44" x2="180" y2="214" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9FF" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#F2E9FF" stop-opacity=".16"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#6A37B9" flood-opacity=".3"/>
+    </filter>
+  </defs>
+  <rect x="12" y="12" width="232" height="232" rx="62" fill="url(#pearl)"/>
+  <path d="M32 73C74 28 164 21 220 65" fill="none" stroke="#FFF9FF" stroke-opacity=".66" stroke-width="9" stroke-linecap="round"/>
+  <g filter="url(#shadow)">
+    <path d="M50 177h30v31H50zM91 146h30v62H91zM132 113h30v95h-30zM173 78h30v130h-30z" fill="url(#sheen)" stroke="#FFF" stroke-opacity=".78" stroke-width="2.5"/>
+    <path d="M51 113c15-31 48-52 87-52 31 0 59 13 78 35" fill="none" stroke="#FFF" stroke-width="10" stroke-linecap="round"/>
+    <path d="m202 72 17 25-29 5" fill="none" stroke="#FFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="13.5" y="13.5" width="229" height="229" rx="60.5" fill="none" stroke="#FFF" stroke-opacity=".62" stroke-width="3"/>
+</svg>

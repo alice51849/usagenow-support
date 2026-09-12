@@ -1,0 +1,164 @@
+{
+  "contact" : {
+    "body" : "请提供设备型号、操作系统与 App 版本、仅供兼容性识别的供应商名称、连接方式、状态码及大约发生时间。切勿发送访问令牌、密码、Cookie、组织或工作区 slug、完整 URL、请求或响应正文，以及任何请求头。",
+    "button" : "发送邮件给支持团队",
+    "title" : "联系 UsageNow 支持团队"
+  },
+  "footer" : "UsageNow: AI Usage 的官方支持与隐私信息。",
+  "home" : {
+    "section_title" : "UsageNow 如何处理您的数据",
+    "sections" : [
+      {
+        "body" : "当您请求刷新时，App 会使用您设置的连接，从您的设备直接调用所选供应商有正式文档的官方 API。流量不会经过 UsageNow 开发者的中继服务器，也不需要建立 UsageNow 账号。",
+        "id" : "direct_connections",
+        "title" : "直接连接至官方服务"
+      },
+      {
+        "body" : "供应商凭证只会存放在主 App 的 Keychain，并使用 AfterFirstUnlockThisDeviceOnly 保护。凭证不可同步，也绝不会发送至 CloudKit、App Group、Widget 或 Apple Watch。",
+        "id" : "credential_storage",
+        "title" : "凭证只留在这部设备"
+      },
+      {
+        "body" : "只有在您主动打开 iCloud 同步后，经最小化处理的标准化用量摘要、偏好设置与试用锚点，才可能存入您自己的私有 CloudKit 数据库。凭证与供应商原始响应不会同步。",
+        "id" : "cloudkit_optional",
+        "title" : "可选用的 Apple 私有同步"
+      },
+      {
+        "body" : "三天完整使用期只会在第一条实时用量摘要成功存储后开始。之后可通过单次、非消耗型的终身解锁继续使用；StoreKit 会加载真实的本地价格，并由 Apple 处理购买与恢复购买项目。没有订阅制，也没有广告。",
+        "id" : "purchase",
+        "title" : "三天完整体验，之后一次买断"
+      }
+    ],
+    "summary" : "UsageNow 会从您的设备直接连接至您选择的供应商官方 API，说明剩余用量与重置时间；您也可以通过自己的 Apple 账号，以私有方式同步不含机密信息的摘要。",
+    "title" : "不必交出凭证，也能规划 AI 用量"
+  },
+  "language_label" : "语言",
+  "language_name" : "简体中文",
+  "nav" : {
+    "index" : "概览",
+    "privacy" : "隐私",
+    "support" : "支持"
+  },
+  "navigation_label" : "主导航",
+  "privacy" : {
+    "section_title" : "数据流向与控制方式",
+    "sections" : [
+      {
+        "body" : "凭证只会存放在主 App 的本地 Keychain，并使用 AfterFirstUnlockThisDeviceOnly 保护。凭证不可同步、扩展无法访问，也绝不会进入 UserDefaults、CloudKit、App Group、Widget、Apple Watch、导出文件、屏幕截图、分析数据或版本控制。移除连接或删除所有数据时，对应的 Keychain 项目也会删除。",
+        "id" : "credential_storage",
+        "title" : "供应商凭证"
+      },
+      {
+        "body" : "当您请求连接或刷新时，设备会通过 HTTPS，将凭证与最低限度的必要请求字段直接发送至所选供应商有正式文档的官方 API。该供应商会依其自身条款接收并处理请求。UsageNow 不会通过开发者服务器、proxy、tunnel 或 VPN 转送供应商流量。",
+        "id" : "provider_requests",
+        "title" : "直接发送至供应商的 API 请求"
+      },
+      {
+        "body" : "UsageNow 开发者不会自动收到您的 token、供应商账号数据、用量数值、请求、供应商响应、标准化摘要或 CloudKit records。UsageNow 没有由开发者运营的账号系统或用量数据库。",
+        "id" : "developer_boundary",
+        "title" : "开发者会收到什么"
+      },
+      {
+        "body" : "标准化用量摘要、重置时间、预测、数据新鲜度、账号标签、偏好设置与试用状态会存储在本地。只有在您主动请求时才会建立导出文件，并通过 Apple 系统界面发送至您选择的目的地。导出文件不含凭证或供应商原始响应；之后由目的地的隐私条款约束。",
+        "id" : "local_records_exports",
+        "title" : "本地记录与导出"
+      },
+      {
+        "body" : "只有在您打开 iCloud 同步后，经最小化处理的供应商标识符、匿名账号标签、标准化用量数值、重置与预测数据、数据新鲜度、偏好设置，以及最低限度的试用锚点，才可能存入您自己的 Apple 私有 CloudKit 数据库。凭证与供应商原始 payload 绝不会包含在内。CloudKit 由 Apple 运营；UsageNow 不会另建开发者数据库。",
+        "id" : "cloudkit_optional",
+        "title" : "可选用的私有 CloudKit"
+      },
+      {
+        "body" : "App Group 存储空间只会向 Widget 提供不含机密信息的容量摘要。WatchConnectivity 会将不含机密信息的摘要发送至配对的 Apple Watch，供 UsageNow 界面与复杂功能使用。这些 payload 可能包含标准化容量、重置信息、数据新鲜度与显示偏好，但绝不包含凭证、Cookie、request header 或供应商原始响应。",
+        "id" : "app_group_watch",
+        "title" : "App Group、Widget 与 Apple Watch"
+      },
+      {
+        "body" : "StoreKit 会联系 Apple，以加载产品与本地价格，并验证、购买或恢复非消耗型终身解锁。交易由 Apple 处理。UsageNow 只读取经验证的权益信息，不会收到支付卡信息。",
+        "id" : "storekit",
+        "title" : "StoreKit 与购买"
+      },
+      {
+        "body" : "本地诊断可能记录概略事件类型、状态码、时间与非机密的关联标识符。这些数据不会自动上传，也绝不包含 token、密码、Cookie、组织或工作区 slug、完整 URL、request body、response body 或 header。请勿在支持消息中发送上述机密信息。",
+        "id" : "diagnostics",
+        "title" : "不含机密信息的诊断数据"
+      },
+      {
+        "body" : "UsageNow 不含广告 SDK、第三方分析、跨 App 跟踪、设备指纹或开发者营销画像。App 不会收集密码、导入浏览器 Cookie、抓取控制台 HTML、调用私有 endpoint、冒充官方 client、重复使用官方 client token，或规避速率限制。",
+        "id" : "excluded_practices",
+        "title" : "没有广告、分析、跟踪或抓取"
+      },
+      {
+        "body" : "删除所有数据会移除本地 repository、Keychain、App Group、Widget 缓存、Apple Watch payload、私有 CloudKit records，以及试用锚点。UsageNow 只保留一个无法识别个人的 CloudKit 删除代次标记，避免离线设备让已删除内容重新出现。该标记不含供应商、用量、账号、凭证、设备指纹或试用数据。已导出的文件与 Apple 管理的设备备份仍由您控制，必须另外删除。",
+        "id" : "deletion_retention",
+        "title" : "删除数据与保留的删除代次标记"
+      },
+      {
+        "body" : "如果您向支持团队发送邮件，开发者会收到您选择提供的电子邮件地址与信息，并仅用于回复您。本静态网站不设置 Cookie，也不加载广告、分析工具、跟踪 script 或第三方资产。日后使用的托管服务可能依其自身隐私条款处理标准连接信息。",
+        "id" : "support_site",
+        "title" : "支持电子邮件与本网站"
+      },
+      {
+        "body" : "下列名称仅用于识别兼容服务：Anthropic、OpenAI、Google/Gemini、GitHub Copilot、Cursor、xAI/Grok、OpenRouter。UsageNow 独立于上述供应商，未获其背书或赞助，亦与其不存在隶属或合作关系。",
+        "id" : "provider_independence",
+        "title" : "供应商独立性"
+      }
+    ],
+    "summary" : "UsageNow 采用本地优先设计，但仍会按您的请求直接连接至供应商，并可选择使用 Apple 私有同步。本政策逐一说明每条数据路径，不以笼统的隐私标签取代事实。",
+    "title" : "隐私政策",
+    "updated_label" : "最后更新"
+  },
+  "skip_link" : "跳至主要内容",
+  "support" : {
+    "section_title" : "疑难排解与账号安全",
+    "sections" : [
+      {
+        "body" : "依供应商而定，您可以提供 API key 或管理员密钥；若供应商正式支持，也可使用 OAuth 或设备授权流程。每次刷新都会直接连至供应商有正式文档的官方 endpoint。UsageNow 绝不会要求您的密码、导入浏览器 Cookie、抓取控制台 HTML、调用私人 endpoint，或规避速率限制。可用字段会依供应商与账号方案而异。",
+        "id" : "connection_types",
+        "title" : "连接类型"
+      },
+      {
+        "body" : "凭证可能遗失、过期、已撤销，或属于其他服务。请在供应商的官方控制台建立或更新凭证，只授予要求的最低权限，再替换凭证或选择重新登录。切勿以电子邮件发送密钥。",
+        "id" : "http_401",
+        "title" : "401 — 未授权"
+      },
+      {
+        "body" : "供应商已识别凭证，但账号可能缺少必要 scope、账务角色、团队或组织权限，或尚未通过 SSO 批准。请确认目标账号与供应商要求的最低读取权限。部分方案不提供用量数据。",
+        "id" : "http_403",
+        "title" : "403 — 禁止访问"
+      },
+      {
+        "body" : "请确认组织、团队、工作区、用户名或资源标识符完全正确。404 也可能表示供应商未对您的方案或地区开放该用量 endpoint。请按照 App 内当前的官方连接指南操作，切勿改用私有 endpoint。",
+        "id" : "http_404",
+        "title" : "404 — 找不到资源"
+      },
+      {
+        "body" : "UsageNow 会保留最后一条已存储摘要及其时间戳。请恢复连接，稍后再执行有次数限制的刷新。遇到 429 或供应商维护时，请等候官方建议的重试时间；重复请求不会绕过供应商限制。",
+        "id" : "offline_rate_limit",
+        "title" : "离线、数据过期或受到速率限制"
+      },
+      {
+        "body" : "只有在您主动请求时，导出功能才会在这部设备建立文件并打开 Apple 的目的地选择器；文件不含凭证或供应商原始响应。删除所有数据会移除本地 repository、Keychain 凭证、App Group 与 Widget 缓存、Apple Watch payload、私有 CloudKit records，以及试用锚点。系统只会保留一个无法识别个人的 CloudKit 删除代次标记，避免离线设备把已删除内容同步回来。已导出的文件与 Apple 管理的备份必须另外删除。",
+        "id" : "export_delete",
+        "title" : "导出与删除您的数据"
+      },
+      {
+        "body" : "从第一条实时摘要成功存储起，可完整使用三天。之后，在单次、非消耗型的终身买断验证完成前，既有数据仍会以带日期的只读预览显示。StoreKit 会显示当前真实的本地价格。请登录当初购买时使用的 Apple 账号，再选择恢复购买项目。没有订阅或自动续订。",
+        "id" : "purchase_restore",
+        "title" : "终身买断与恢复购买项目"
+      },
+      {
+        "body" : "您可以提供设备型号、操作系统与 App 版本、仅供兼容性识别的供应商名称、连接方式、状态码、大约发生时间，以及界面上显示的非机密诊断事件码（如有）。切勿发送 token、密码、Cookie、slug、完整 URL、request body、response body 或 header。开发者无法替您取回凭证或供应商数据。",
+        "id" : "safe_contact",
+        "title" : "安全地提供支持信息"
+      },
+      {
+        "body" : "下列名称仅用于识别兼容服务：Anthropic、OpenAI、Google/Gemini、GitHub Copilot、Cursor、xAI/Grok、OpenRouter。UsageNow 独立于上述供应商，未获其背书或赞助，亦与其不存在隶属或合作关系。",
+        "id" : "provider_independence",
+        "title" : "独立的兼容性支持"
+      }
+    ],
+    "summary" : "协助排解供应商直接连接、状态码、数据管理，以及单次终身买断相关问题。",
+    "title" : "UsageNow 支持"
+  }
+}

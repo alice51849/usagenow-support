@@ -1,0 +1,164 @@
+{
+  "language_name": "اردو",
+  "language_label": "زبان",
+  "navigation_label": "مرکزی رہنمائی",
+  "skip_link": "مرکزی مواد پر جائیں",
+  "nav": {
+    "index": "جائزہ",
+    "support": "معاونت",
+    "privacy": "رازداری"
+  },
+  "contact": {
+    "title": "UsageNow معاونت سے رابطہ کریں",
+    "body": "آلے کا ماڈل، آپریٹنگ سسٹم اور App ورژن، صرف مطابقت کی شناخت کے لیے فراہم کنندہ کا نام، رابطے کا طریقہ، اسٹیٹس کوڈ اور اندازاً وقت بتائیں۔ access token، پاس ورڈ، cookie، تنظیم یا workspace کا slug، مکمل URL، request یا response body اور header ہرگز نہ بھیجیں۔",
+    "button": "معاونت کو ای میل کریں"
+  },
+  "footer": "UsageNow: AI Usage کے لیے سرکاری معاونت اور رازداری کی معلومات۔",
+  "home": {
+    "title": "اپنی اسناد ہمیں دیے بغیر AI گنجائش کی منصوبہ بندی کریں",
+    "summary": "UsageNow آپ کے آلے سے منتخب فراہم کنندگان کے دستاویزی API سے براہ راست جڑتا ہے، باقی گنجائش اور ری سیٹ کا وقت واضح کرتا ہے اور راز سے پاک اسنیپ شاٹس کو آپ کے Apple اکاؤنٹ کے ذریعے نجی طور پر ہم آہنگ کر سکتا ہے۔",
+    "section_title": "UsageNow آپ کے ڈیٹا کو کیسے سنبھالتا ہے",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "براہ راست سرکاری رابطے",
+        "body": "جب آپ تازہ کاری کہتے ہیں تو App آپ کی فراہم کردہ اسناد کے ساتھ منتخب فراہم کنندہ کے دستاویزی سرکاری API کو اسی آلے سے براہ راست کال کرتا ہے۔ درمیان میں UsageNow ڈویلپر کا server یا UsageNow اکاؤنٹ نہیں ہوتا۔"
+      },
+      {
+        "id": "credential_storage",
+        "title": "اسناد اسی آلے میں رہتی ہیں",
+        "body": "فراہم کنندہ کی اسناد مرکزی App کے Keychain میں AfterFirstUnlockThisDeviceOnly تحفظ کے ساتھ رہتی ہیں۔ یہ ہم آہنگ نہیں ہوتیں اور CloudKit، App Group، Widget یا Apple Watch کو کبھی نہیں بھیجی جاتیں۔"
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "اختیاری نجی Apple ہم آہنگی",
+        "body": "صرف iCloud ہم آہنگی آن کرنے پر کم سے کم کیا گیا معمول کا usage snapshot، ترجیحات اور آزمائشی مدت کا anchor آپ کے نجی CloudKit ڈیٹابیس میں محفوظ ہو سکتا ہے۔ اسناد اور فراہم کنندہ کے خام جوابات شامل نہیں ہوتے۔"
+      },
+      {
+        "id": "purchase",
+        "title": "تین دن، پھر ایک بار تاحیات خریداری",
+        "body": "تین دن کی مکمل رسائی پہلے کامیاب حقیقی usage snapshot کے محفوظ ہونے کے بعد ہی شروع ہوتی ہے۔ پھر ایک non-consumable تاحیات unlock دستیاب ہے؛ StoreKit اصل مقامی قیمت لاتا ہے اور خریداری و Restore کو Apple سنبھالتا ہے۔ کوئی subscription یا اشتہار نہیں۔"
+      }
+    ]
+  },
+  "support": {
+    "title": "UsageNow معاونت",
+    "summary": "براہ راست فراہم کنندہ رابطوں، اسٹیٹس کوڈز، آپ کے ڈیٹا اور ایک بار کی تاحیات خریداری کے لیے مدد۔",
+    "section_title": "مسئلہ حل کرنا اور اکاؤنٹ کی دیکھ بھال",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "رابطے کی اقسام",
+        "body": "فراہم کنندہ آپ کی دی ہوئی API یا admin key، یا سرکاری معاونت کی صورت میں OAuth یا device authorization استعمال کر سکتا ہے۔ ہر تازہ کاری دستاویزی سرکاری endpoint کو براہ راست جاتی ہے۔ UsageNow پاس ورڈ نہیں مانگتا، browser cookie درآمد نہیں کرتا، dashboard HTML scrape نہیں کرتا، private endpoint استعمال نہیں کرتا اور حد نہیں توڑتا۔ دستیاب fields فراہم کنندہ اور account plan پر منحصر ہیں۔"
+      },
+      {
+        "id": "http_401",
+        "title": "401 — غیر مجاز",
+        "body": "سند موجود نہیں، میعاد ختم ہے، منسوخ ہو چکی ہے یا غلط خدمت کی ہے۔ فراہم کنندہ کی سرکاری console میں نئی بنائیں یا تازہ کریں، صرف کم از کم مطلوبہ permission دیں، پھر سند بدلیں یا دوبارہ sign in کریں۔ key ای میل نہ کریں۔"
+      },
+      {
+        "id": "http_403",
+        "title": "403 — ممنوع",
+        "body": "فراہم کنندہ نے سند پہچان لی مگر اکاؤنٹ میں مطلوبہ scope، billing role، team یا organization رسائی یا SSO منظوری نہیں ہو سکتی۔ درست account target اور کم از کم read permission کی تصدیق کریں۔ بعض plans usage data ظاہر نہیں کرتے۔"
+      },
+      {
+        "id": "http_404",
+        "title": "404 — نہیں ملا",
+        "body": "organization، team، workspace، username یا resource identifier بالکل درست درج کریں۔ 404 یہ بھی بتا سکتا ہے کہ آپ کے plan یا علاقے کے لیے یہ usage endpoint دستیاب نہیں۔ App کی موجودہ سرکاری connection guide پر عمل کریں؛ private endpoint مت اپنائیں۔"
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "آف لائن، پرانا ڈیٹا یا رفتار کی حد",
+        "body": "UsageNow آخری محفوظ snapshot کو وقت کے ساتھ دکھاتا ہے۔ دوبارہ جڑیں اور بعد میں محدود تازہ کاری آزمائیں۔ 429 یا maintenance کی صورت میں سرکاری retry مدت کا انتظار کریں؛ بار بار request حد نہیں توڑتی۔"
+      },
+      {
+        "id": "export_delete",
+        "title": "ڈیٹا برآمد یا حذف کریں",
+        "body": "Export صرف آپ کے کہنے پر آلے میں file بناتا اور Apple destination picker کھولتا ہے؛ credentials اور raw responses شامل نہیں۔ Delete all data مقامی repository، Keychain، App Group اور Widget cache، Apple Watch payload، private CloudKit records اور trial anchor مٹا دیتا ہے۔ صرف غیر شناختی CloudKit deletion generation باقی رہتی ہے تاکہ offline آلہ حذف شدہ مواد واپس نہ لائے۔ exported files اور Apple-managed backups الگ حذف کریں۔"
+      },
+      {
+        "id": "purchase_restore",
+        "title": "تاحیات خریداری اور Restore",
+        "body": "مکمل رسائی پہلے محفوظ حقیقی snapshot سے تین دن رہتی ہے۔ پھر ایک non-consumable lifetime purchase کی تصدیق تک سابق معلومات تاریخ کے ساتھ read-only preview میں رہتی ہیں۔ StoreKit موجودہ مقامی قیمت دکھاتا ہے۔ اسی Apple account سے Restore کریں جس نے خریدی تھی۔ subscription یا auto-renewal نہیں۔"
+      },
+      {
+        "id": "safe_contact",
+        "title": "محفوظ معاونتی رپورٹ بھیجیں",
+        "body": "آلے کا ماڈل، system اور App version، صرف compatibility label کے طور پر provider نام، connection method، status code، اندازاً وقت اور دکھائی دے تو non-secret diagnostic event code بھیجیں۔ token، password، cookie، slug، مکمل URL، request body، response body یا header نہ بھیجیں۔ ڈویلپر credentials یا provider data واپس حاصل نہیں کر سکتا۔"
+      },
+      {
+        "id": "provider_independence",
+        "title": "آزاد مطابقت",
+        "body": "یہ نام صرف مطابقت رکھنے والی سروسز کی شناخت کے لیے استعمال ہوتے ہیں: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow ایک آزاد ایپ ہے؛ یہ کمپنیاں اس کی توثیق یا سرپرستی نہیں کرتیں اور اس سے وابستہ نہیں ہیں۔"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "رازداری کی پالیسی",
+    "summary": "UsageNow پہلے مقامی عمل کاری استعمال کرتا ہے، مگر براہ راست فراہم کنندہ رابطے اور اختیاری نجی Apple ہم آہنگی بھی شامل ہیں۔ یہ پالیسی عمومی دعوے کے بجائے ہر ڈیٹا راستہ واضح کرتی ہے۔",
+    "updated_label": "آخری تازہ کاری",
+    "section_title": "ڈیٹا کا بہاؤ اور آپ کا اختیار",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "فراہم کنندہ کی اسناد",
+        "body": "اسناد صرف مرکزی App کے مقامی Keychain میں AfterFirstUnlockThisDeviceOnly کے ساتھ رہتی ہیں۔ یہ sync نہیں ہوتیں، extensions کو نہیں ملتیں اور UserDefaults، CloudKit، App Group، Widget، Apple Watch، exports، screenshots، analytics یا source control میں کبھی داخل نہیں ہوتیں۔ connection یا all data حذف کرنے پر متعلقہ Keychain item بھی مٹتا ہے۔"
+      },
+      {
+        "id": "provider_requests",
+        "title": "فراہم کنندہ API کو براہ راست درخواستیں",
+        "body": "connect یا refresh کہنے پر آلہ سند اور کم از کم ضروری fields کو HTTPS کے ذریعے فراہم کنندہ کے دستاویزی سرکاری API کو براہ راست بھیجتا ہے۔ فراہم کنندہ اپنی شرائط کے تحت عمل کرتا ہے۔ UsageNow traffic کو developer server، proxy، tunnel یا VPN سے نہیں گزارتا۔"
+      },
+      {
+        "id": "developer_boundary",
+        "title": "ڈویلپر کو کیا ملتا ہے",
+        "body": "UsageNow ڈویلپر آپ کا token، provider account data، usage values، request، provider response، normalized snapshots یا CloudKit records خودکار طور پر حاصل نہیں کرتا۔ UsageNow کا developer-operated account system یا usage database نہیں۔"
+      },
+      {
+        "id": "local_records_exports",
+        "title": "مقامی ریکارڈ اور exports",
+        "body": "normalized usage snapshots، reset times، forecasts، freshness، account labels، preferences اور trial state مقامی طور پر محفوظ رہتے ہیں۔ Export صرف آپ کی درخواست پر بنتا اور Apple system interface میں منتخب منزل کو جاتا ہے۔ credentials اور raw responses شامل نہیں؛ پھر منزل کی privacy terms لاگو ہوتی ہیں۔"
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "اختیاری نجی CloudKit",
+        "body": "صرف iCloud sync آن ہونے پر کم کیے گئے provider identifiers، anonymous account labels، normalized usage، reset، forecast، freshness، preferences اور کم از کم trial anchor آپ کے private CloudKit میں محفوظ ہو سکتے ہیں۔ credentials یا raw payload کبھی شامل نہیں۔ CloudKit کو Apple چلاتا ہے؛ UsageNow الگ developer database نہیں بناتا۔"
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group، Widget اور Apple Watch",
+        "body": "App Group، Widget کو صرف secret-free capacity snapshot دیتا ہے۔ WatchConnectivity اسے paired Apple Watch کو بھیجتا ہے۔ normalized capacity، reset، freshness اور display preferences ہو سکتی ہیں؛ credentials، cookie، request header یا raw provider response نہیں۔"
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit اور خریداریاں",
+        "body": "StoreKit product اور localized price لانے اور non-consumable lifetime unlock کی verify، purchase یا Restore کے لیے Apple سے رابطہ کرتا ہے۔ transaction کو Apple سنبھالتا ہے۔ UsageNow verified entitlement پڑھتا ہے اور payment card تفصیل نہیں لیتا۔"
+      },
+      {
+        "id": "diagnostics",
+        "title": "محفوظ diagnostics",
+        "body": "مقامی diagnostics عمومی event type، status code، وقت اور non-secret correlation identifier درج کر سکتی ہے۔ یہ خودکار upload نہیں ہوتی اور token، password، cookie، organization/workspace slug، مکمل URL، request body، response body یا header کبھی شامل نہیں کرتی۔ یہ راز معاونت کو نہ بھیجیں۔"
+      },
+      {
+        "id": "excluded_practices",
+        "title": "اشتہار، analytics، tracking یا scraping نہیں",
+        "body": "UsageNow میں ad SDK، third-party analytics، cross-app tracking، device fingerprint یا developer marketing profile نہیں۔ یہ password جمع نہیں کرتا، browser cookie درآمد نہیں کرتا، dashboard HTML scrape نہیں کرتا، private endpoint استعمال نہیں کرتا، official client کی نقالی نہیں کرتا، ان کے token دوبارہ استعمال نہیں کرتا اور rate limit نہیں توڑتا۔"
+      },
+      {
+        "id": "deletion_retention",
+        "title": "حذف اور محفوظ generation",
+        "body": "Delete all data مقامی repository، Keychain، App Group، Widget cache، Apple Watch payload، private CloudKit records اور trial anchor مٹاتا ہے۔ صرف غیر شناختی CloudKit deletion generation رہتی ہے تاکہ offline آلہ حذف مواد واپس نہ لائے۔ اس میں provider، usage، account، credential، device fingerprint یا trial data نہیں۔ exports اور Apple backups الگ حذف کرنا ہوں گے۔"
+      },
+      {
+        "id": "support_site",
+        "title": "معاونتی ای میل اور یہ ویب سائٹ",
+        "body": "اگر آپ معاونت کو ای میل کریں تو ڈویلپر آپ کا منتخب پتہ اور پیغام صرف جواب دینے کے لیے حاصل کرتا ہے۔ یہ static site cookie نہیں لگاتی اور advertising، analytics، tracking script یا third-party asset نہیں لوڈ کرتی۔ مستقبل کی hosting service اپنی پالیسی کے مطابق عام connection information پر عمل کر سکتی ہے۔"
+      },
+      {
+        "id": "provider_independence",
+        "title": "فراہم کنندگان سے آزادی",
+        "body": "یہ نام صرف مطابقت رکھنے والی سروسز کی شناخت کے لیے استعمال ہوتے ہیں: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow ایک آزاد ایپ ہے؛ یہ کمپنیاں اس کی توثیق یا سرپرستی نہیں کرتیں اور اس سے وابستہ نہیں ہیں۔"
+      }
+    ]
+  }
+}

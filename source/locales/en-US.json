@@ -1,0 +1,164 @@
+{
+  "language_name": "English (United States)",
+  "language_label": "Language",
+  "navigation_label": "Primary navigation",
+  "skip_link": "Skip to main content",
+  "nav": {
+    "index": "Overview",
+    "support": "Support",
+    "privacy": "Privacy"
+  },
+  "contact": {
+    "title": "Contact UsageNow support",
+    "body": "Include your device model, operating system and app version, provider compatibility name, connection method, status code, and approximate time. Never send an access token, password, cookie, organization or workspace slug, full URL, request or response body, or headers.",
+    "button": "Email support"
+  },
+  "footer": "Official support and privacy information for UsageNow: AI Usage.",
+  "home": {
+    "title": "Plan AI capacity without giving us your credentials",
+    "summary": "UsageNow connects from your device to documented provider APIs you choose, explains remaining capacity and reset timing, and can privately sync secret-free snapshots through your Apple account.",
+    "section_title": "How UsageNow handles your data",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "Direct official connections",
+        "body": "When you request a refresh, the app calls the selected provider's documented official API directly from your device using the connection you supplied. There is no UsageNow developer relay or UsageNow account."
+      },
+      {
+        "id": "credential_storage",
+        "title": "Credentials stay on this device",
+        "body": "Provider credentials are held in the main app's Keychain with AfterFirstUnlockThisDeviceOnly protection. They are not synchronizable and are never sent to CloudKit, App Group, Widget, or Apple Watch."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Optional private Apple sync",
+        "body": "Only if you enable iCloud sync, minimized normalized usage snapshots, preferences, and the trial anchor can be stored in your private CloudKit database. Credentials and raw provider responses are excluded."
+      },
+      {
+        "id": "purchase",
+        "title": "Three days, then one lifetime purchase",
+        "body": "The three-day full-access period begins only after the first successful live usage snapshot is saved. A non-consumable lifetime unlock follows; StoreKit loads the real local price and Apple handles purchase and Restore. There is no subscription or advertising."
+      }
+    ]
+  },
+  "support": {
+    "title": "UsageNow Support",
+    "summary": "Help with direct provider connections, status codes, your data, and the one-time lifetime purchase.",
+    "section_title": "Troubleshooting and account care",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "Connection types",
+        "body": "A provider may use an API or admin key supplied by you, or an OAuth or device authorization flow when the provider officially supports it. Every refresh goes directly to documented official provider endpoints. UsageNow never asks for your password, imports browser cookies, scrapes dashboard HTML, calls private endpoints, or bypasses rate limits. Available fields vary by provider and account plan."
+      },
+      {
+        "id": "http_401",
+        "title": "401 — Unauthorized",
+        "body": "The credential is missing, expired, revoked, or belongs to the wrong service. Create or renew it in the provider's official console, grant only the minimum requested permission, then replace the credential or choose Sign In Again. Never email the key."
+      },
+      {
+        "id": "http_403",
+        "title": "403 — Forbidden",
+        "body": "The provider recognized the credential, but the account may lack a required scope, billing role, team or organization access, or SSO approval. Confirm the account target and the provider's minimum read permission. Some plans do not expose usage data."
+      },
+      {
+        "id": "http_404",
+        "title": "404 — Not found",
+        "body": "Check the exact organization, team, workspace, username, or resource identifier. A 404 can also mean the provider does not expose that usage endpoint for your plan or region. Follow the current in-app official connection guide; never substitute a private endpoint."
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "Offline, stale, or rate limited",
+        "body": "UsageNow keeps the last saved snapshot with its timestamp. Reconnect and try a bounded refresh later. For 429 or provider maintenance, wait for the official retry window; repeated requests do not bypass a provider limit."
+      },
+      {
+        "id": "export_delete",
+        "title": "Export and delete your data",
+        "body": "Export creates a file on this device only when you ask and opens an Apple destination picker; credentials and raw provider responses are excluded. Delete all data removes the local repository, Keychain credentials, App Group and Widget cache, Apple Watch payload, private CloudKit records, and trial anchor. A non-identifying CloudKit deletion generation remains only to stop an offline device from restoring deleted content. Delete exported files and Apple-managed backups separately."
+      },
+      {
+        "id": "purchase_restore",
+        "title": "Lifetime purchase and Restore",
+        "body": "Full access lasts three days from the first saved live snapshot. After that, existing saved information remains as a dated read-only preview until a single non-consumable lifetime purchase is verified. StoreKit displays the current local price. Use Restore while signed in to the Apple Account that made the purchase. There is no subscription or automatic renewal."
+      },
+      {
+        "id": "safe_contact",
+        "title": "Send a safe support report",
+        "body": "Send the device model, operating system and app version, provider name used only as a compatibility label, connection method, status code, approximate time, and a non-secret diagnostic event code if shown. Never send a token, password, cookie, slug, full URL, request body, response body, or header. The developer cannot recover credentials or provider data."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Independent compatibility",
+        "body": "These names are used only to identify compatible services: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow is independent and is not endorsed, sponsored, or affiliated with those providers."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "summary": "UsageNow is local-first, but it uses direct provider connections and optional Apple private sync. This policy lists each route instead of relying on a blanket privacy label.",
+    "updated_label": "Last updated",
+    "section_title": "Data flow and control",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "Provider credentials",
+        "body": "Credentials are stored only in the main app's local Keychain using AfterFirstUnlockThisDeviceOnly. They are not synchronizable, are not exposed to extensions, and never enter UserDefaults, CloudKit, App Group, Widget, Apple Watch, exports, screenshots, analytics, or source control. Removing a connection or deleting all data erases the corresponding Keychain item."
+      },
+      {
+        "id": "provider_requests",
+        "title": "Direct provider API requests",
+        "body": "When you ask to connect or refresh, your device sends the credential and minimum required request fields directly to the selected provider's documented official API over HTTPS. That provider receives and processes the request under its own terms. UsageNow does not route provider traffic through a developer server, proxy, tunnel, or VPN."
+      },
+      {
+        "id": "developer_boundary",
+        "title": "What the developer receives",
+        "body": "The UsageNow developer does not automatically receive your token, provider account data, usage values, request, provider response, normalized snapshots, or CloudKit records. UsageNow has no developer-operated account system or usage database."
+      },
+      {
+        "id": "local_records_exports",
+        "title": "Local records and exports",
+        "body": "Normalized usage snapshots, reset times, forecasts, freshness, account labels, preferences, and trial state are stored locally. An export is created only when you request it and goes to a destination you choose through Apple's system interface. Exports exclude credentials and raw provider responses; the destination's privacy terms then apply."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Optional private CloudKit",
+        "body": "Only when you enable iCloud sync, minimized provider identifiers, anonymous account labels, normalized usage values, reset and forecast data, freshness, preferences, and the minimum trial anchor may be stored in your Apple private CloudKit database. Credentials and raw provider payloads are never included. Apple operates CloudKit; UsageNow does not create a separate developer database."
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget, and Apple Watch",
+        "body": "App Group storage gives Widget only a secret-free capacity snapshot. WatchConnectivity sends a secret-free snapshot to the paired Apple Watch for UsageNow views and complications. These payloads may contain normalized capacity, reset, freshness, and display preferences, but never credentials, cookies, request headers, or raw provider responses."
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit and purchases",
+        "body": "StoreKit contacts Apple to load the product and localized price and to verify, purchase, or Restore the non-consumable lifetime unlock. Apple processes the transaction. UsageNow reads verified entitlement information and does not receive payment card details."
+      },
+      {
+        "id": "diagnostics",
+        "title": "Security-safe diagnostics",
+        "body": "Local diagnostics may record a broad event type, status code, time, and non-secret correlation identifier. They are not automatically uploaded and never include a token, password, cookie, organization or workspace slug, full URL, request body, response body, or header. Do not send those secrets in a support message."
+      },
+      {
+        "id": "excluded_practices",
+        "title": "No advertising, analytics, tracking, or scraping",
+        "body": "UsageNow has no advertising SDK, third-party analytics, cross-app tracking, device fingerprint, or developer marketing profile. It does not collect passwords, import browser cookies, scrape dashboard HTML, call private endpoints, impersonate official clients, reuse official client tokens, or bypass rate limits."
+      },
+      {
+        "id": "deletion_retention",
+        "title": "Deletion and the retained generation",
+        "body": "Delete all data removes the local repository, Keychain, App Group, Widget cache, Apple Watch payload, private CloudKit records, and trial anchor. UsageNow retains only a non-identifying CloudKit deletion generation so an offline device cannot resurrect deleted content. It contains no provider, usage, account, credential, device fingerprint, or trial data. Files you exported and Apple-managed device backups remain under your control and must be removed separately."
+      },
+      {
+        "id": "support_site",
+        "title": "Support email and this website",
+        "body": "If you email support, the developer receives the email address and message you choose to send and uses them only to answer you. This static website sets no cookies and loads no advertising, analytics, tracking scripts, or third-party assets. The eventual hosting service may process standard connection information under its own privacy terms."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Provider independence",
+        "body": "These names are used only to identify compatible services: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow is independent and is not endorsed, sponsored, or affiliated with those providers."
+      }
+    ]
+  }
+}

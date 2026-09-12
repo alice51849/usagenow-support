@@ -1,0 +1,164 @@
+{
+  "language_name": "Bahasa Melayu",
+  "language_label": "Bahasa",
+  "navigation_label": "Navigasi utama",
+  "skip_link": "Langkau ke kandungan utama",
+  "nav": {
+    "index": "Gambaran keseluruhan",
+    "support": "Sokongan",
+    "privacy": "Dasar Privasi"
+  },
+  "contact": {
+    "title": "Hubungi sokongan UsageNow",
+    "body": "Sertakan model peranti anda, sistem pengendalian dan versi apl, nama keserasian pembekal, kaedah sambungan, kod status dan anggaran masa. Jangan sekali-kali menghantar token akses, kata laluan, kuki, organisasi atau slug ruang kerja, URL penuh, badan permintaan atau respons atau pengepala.",
+    "button": "Ada soalan atau maklum balas? E-mel kami."
+  },
+  "footer": "Sokongan rasmi dan maklumat privasi untuk UsageNow: AI Usage.",
+  "home": {
+    "title": "Rancang kapasiti AI tanpa memberi kami kelayakan anda",
+    "summary": "UsageNow menyambung daripada peranti anda kepada pembekal berdokumen API yang anda pilih, menerangkan baki kapasiti dan menetapkan semula pemasaan, dan boleh menyegerakkan syot kilat tanpa rahsia secara peribadi melalui akaun Apple anda.",
+    "section_title": "Cara UsageNow mengendalikan data anda",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "Sambungan rasmi langsung",
+        "body": "Apabila anda meminta muat semula, apl memanggil API rasmi pembekal terpilih yang didokumenkan terus daripada peranti anda menggunakan sambungan yang anda bekalkan. Tiada geganti pembangun UsageNow atau akaun UsageNow."
+      },
+      {
+        "id": "credential_storage",
+        "title": "Bukti kelayakan kekal pada peranti ini",
+        "body": "Bukti kelayakan pembekal disimpan dalam Keychain apl utama dengan perlindungan AfterFirstUnlockThisDeviceOnly. Ia tidak boleh disegerakkan dan tidak pernah dihantar ke CloudKit, App Group, Widget atau Apple Watch."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Penyegerakan Apple peribadi pilihan",
+        "body": "Hanya jika anda mendayakan penyegerakan iCloud, syot kilat penggunaan dinormalkan yang diminimumkan, keutamaan dan sauh percubaan boleh disimpan dalam pangkalan data CloudKit peribadi anda. Bukti kelayakan dan respons pembekal mentah dikecualikan."
+      },
+      {
+        "id": "purchase",
+        "title": "Tiga hari, kemudian satu pembelian seumur hidup",
+        "body": "Tempoh akses penuh tiga hari bermula hanya selepas petikan penggunaan langsung pertama yang berjaya disimpan. Buka kunci seumur hidup yang tidak boleh digunakan berikut; StoreKit memuatkan harga tempatan sebenar dan Apple mengendalikan pembelian dan Pemulihan. Tiada langganan atau pengiklanan."
+      }
+    ]
+  },
+  "support": {
+    "title": "Sokongan UsageNow",
+    "summary": "Bantuan dengan sambungan pembekal langsung, kod status, data anda dan pembelian sekali seumur hidup.",
+    "section_title": "Penyelesaian masalah dan penjagaan akaun",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "Jenis sambungan",
+        "body": "Pembekal boleh menggunakan API atau kunci pentadbir yang dibekalkan oleh anda, atau aliran kebenaran OAuth atau peranti apabila pembekal menyokongnya secara rasmi. Setiap muat semula pergi terus ke titik akhir pembekal rasmi yang didokumenkan. UsageNow tidak meminta kata laluan, tidak mengimport kuki pelayar, tidak mengambil HTML papan pemuka, tidak memanggil endpoint peribadi dan tidak memintas had kadar penyedia. Medan yang tersedia berbeza mengikut pembekal dan pelan akaun."
+      },
+      {
+        "id": "http_401",
+        "title": "401 - Tanpa kebenaran",
+        "body": "Bukti kelayakan tiada, tamat tempoh, dibatalkan atau tergolong dalam perkhidmatan yang salah. Cipta atau perbaharuinya dalam konsol rasmi pembekal, berikan hanya kebenaran minimum yang diminta, kemudian gantikan kelayakan atau pilih Log Masuk Semula. Jangan sekali-kali e-mel kunci."
+      },
+      {
+        "id": "http_403",
+        "title": "403 - Dilarang",
+        "body": "Pembekal mengiktiraf kelayakan itu, tetapi akaun itu mungkin kekurangan skop, peranan pengebilan, akses pasukan atau organisasi atau kelulusan SSO yang diperlukan. Sahkan sasaran akaun dan kebenaran baca minimum pembekal. Sesetengah pelan tidak mendedahkan data penggunaan."
+      },
+      {
+        "id": "http_404",
+        "title": "404 - Tidak dijumpai",
+        "body": "Semak organisasi, pasukan, ruang kerja, nama pengguna atau pengecam sumber yang tepat. A 404 juga boleh bermakna pembekal tidak mendedahkan titik akhir penggunaan itu untuk pelan atau wilayah anda. Ikuti panduan sambungan rasmi dalam apl semasa; jangan sekali-kali menggantikan titik akhir peribadi."
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "Luar talian, basi atau kadar terhad",
+        "body": "UsageNow menyimpan syot kilat yang terakhir disimpan dengan cap masanya. Sambung semula dan cuba muat semula terhad kemudian. Untuk penyelenggaraan 429 atau pembekal, tunggu tetingkap percubaan semula rasmi; permintaan berulang tidak memintas had pembekal."
+      },
+      {
+        "id": "export_delete",
+        "title": "Data",
+        "body": "Eksport mencipta fail pada peranti ini hanya apabila anda bertanya dan membuka pemilih destinasi Apple; bukti kelayakan dan respons pembekal mentah dikecualikan. Padam semua data mengalih keluar repositori setempat, bukti kelayakan Keychain, App Group dan cache Widget, muatan Apple Watch, rekod CloudKit peribadi dan sauh percubaan. Penjanaan pemadaman CloudKit yang tidak mengenal pasti kekal hanya untuk menghentikan peranti luar talian daripada memulihkan kandungan yang dipadamkan. Padamkan fail yang dieksport dan sandaran terurus Apple secara berasingan."
+      },
+      {
+        "id": "purchase_restore",
+        "title": "Pulihkan Pembelian",
+        "body": "Akses penuh berlangsung selama tiga hari dari petikan langsung yang disimpan pertama. Selepas itu, maklumat tersimpan sedia ada kekal sebagai pratonton baca sahaja bertarikh sehingga satu pembelian seumur hidup yang tidak boleh digunakan disahkan. StoreKit memaparkan harga tempatan semasa. Gunakan Pulihkan semasa log masuk ke Akaun Apple yang membuat pembelian. Tiada langganan atau pembaharuan automatik."
+      },
+      {
+        "id": "safe_contact",
+        "title": "Hantar laporan sokongan selamat",
+        "body": "Hantar model peranti, sistem pengendalian dan versi apl, nama pembekal yang digunakan hanya sebagai label keserasian, kaedah sambungan, kod status, masa anggaran dan kod acara diagnostik bukan rahsia jika ditunjukkan. Jangan sekali-kali menghantar token, kata laluan, kuki, slug, URL penuh, isi permintaan, isi respons atau pengepala. Pembangun tidak dapat memulihkan bukti kelayakan atau data pembekal."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Keserasian bebas",
+        "body": "Nama ini digunakan hanya untuk mengenal pasti perkhidmatan yang serasi: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow ialah aplikasi bebas; penyedia ini tidak memperakui atau menajanya dan ia tidak bergabung dengan mereka."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Dasar Privasi",
+    "summary": "UsageNow adalah tempatan pertama, tetapi ia menggunakan sambungan pembekal langsung dan penyegerakan peribadi Apple pilihan. Dasar ini menyenaraikan setiap laluan dan bukannya bergantung pada label privasi menyeluruh.",
+    "updated_label": "Kemas kini terakhir",
+    "section_title": "Aliran dan kawalan data",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "Kelayakan penyedia",
+        "body": "Bukti kelayakan disimpan hanya dalam Keychain setempat apl utama menggunakan AfterFirstUnlockThisDeviceOnly. Ia tidak boleh disegerakkan, tidak terdedah kepada sambungan dan tidak sekali-kali memasuki UserDefaults, CloudKit, App Group, Widget, Apple Watch, eksport, tangkapan skrin, analitik atau kawalan sumber. Mengalih keluar sambungan atau memadam semua data memadamkan item Keychain yang sepadan."
+      },
+      {
+        "id": "provider_requests",
+        "title": "Permintaan pembekal langsung API",
+        "body": "Apabila anda meminta untuk menyambung atau memuat semula, peranti anda menghantar kelayakan dan medan permintaan minimum yang diperlukan terus ke API rasmi pembekal yang dipilih melalui HTTPS. Pembekal itu menerima dan memproses permintaan di bawah syaratnya sendiri. UsageNow tidak menghalakan trafik pembekal melalui pelayan pembangun, proksi, terowong atau VPN."
+      },
+      {
+        "id": "developer_boundary",
+        "title": "Perkara yang diterima oleh pemaju",
+        "body": "Pembangun UsageNow tidak menerima token anda, data akaun pembekal, nilai penggunaan, permintaan, respons pembekal, syot kilat biasa atau rekod CloudKit anda secara automatik. UsageNow tidak mempunyai sistem akaun kendalian pembangun atau pangkalan data penggunaan."
+      },
+      {
+        "id": "local_records_exports",
+        "title": "Rekod dan eksport tempatan",
+        "body": "Syot kilat penggunaan biasa, masa tetapan semula, ramalan, kesegaran, label akaun, pilihan dan keadaan percubaan disimpan secara setempat. Eksport dibuat hanya apabila anda memintanya dan pergi ke destinasi yang anda pilih melalui antara muka sistem Apple. Eksport tidak termasuk bukti kelayakan dan respons pembekal mentah; terma privasi destinasi kemudian digunakan."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Penyegerakan",
+        "body": "Hanya apabila anda mendayakan penyegerakan iCloud, pengecam pembekal yang diminimumkan, label akaun tanpa nama, nilai penggunaan yang dinormalkan, tetapan semula dan data ramalan, kesegaran, keutamaan dan sauh percubaan minimum boleh disimpan dalam pangkalan data Apple peribadi CloudKit anda. Bukti kelayakan dan muatan pembekal mentah tidak pernah disertakan. Apple mengendalikan CloudKit; UsageNow tidak mencipta pangkalan data pembangun yang berasingan."
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget dan Apple Watch",
+        "body": "Storan App Group memberikan Widget hanya petikan kapasiti tanpa rahsia. WatchConnectivity menghantar syot kilat tanpa rahsia kepada Apple Watch berpasangan untuk paparan dan komplikasi UsageNow. Muatan ini mungkin mengandungi kapasiti normal, tetapan semula, kesegaran dan keutamaan paparan, tetapi tidak sekali-kali bukti kelayakan, kuki, pengepala permintaan atau respons pembekal mentah."
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit dan pembelian",
+        "body": "StoreKit menghubungi Apple untuk memuatkan produk dan harga setempat dan untuk mengesahkan, membeli atau Memulihkan buka kunci seumur hidup yang tidak boleh digunakan. Apple memproses transaksi. UsageNow membaca maklumat kelayakan yang disahkan dan tidak menerima butiran kad pembayaran."
+      },
+      {
+        "id": "diagnostics",
+        "title": "Diagnostik selamat keselamatan",
+        "body": "Diagnostik tempatan mungkin merekodkan jenis acara yang luas, kod status, masa dan pengecam korelasi bukan rahsia. Ia tidak dimuat naik secara automatik dan tidak sekali-kali menyertakan token, kata laluan, kuki, organisasi atau slug ruang kerja, URL penuh, isi permintaan, badan respons atau pengepala. Jangan hantar rahsia tersebut dalam mesej sokongan."
+      },
+      {
+        "id": "excluded_practices",
+        "title": "Tiada pengiklanan, analitik, penjejakan atau pengikisan",
+        "body": "UsageNow tidak mempunyai SDK iklan, analitik pihak ketiga, penjejakan merentas aplikasi, cap jari peranti atau profil pemasaran pembangun. Aplikasi tidak mengumpul kata laluan, tidak mengimport kuki pelayar, tidak mengambil HTML papan pemuka, tidak memanggil endpoint peribadi, tidak menyamar sebagai client rasmi, tidak menggunakan semula token client rasmi dan tidak memintas had kadar penyedia."
+      },
+      {
+        "id": "deletion_retention",
+        "title": "Pemadaman dan generasi yang dikekalkan",
+        "body": "Padam semua data mengalih keluar repositori tempatan, Keychain, App Group, cache Widget, muatan Apple Watch, rekod CloudKit peribadi dan sauh percubaan. UsageNow hanya mengekalkan penjanaan pemadaman CloudKit yang tidak mengenal pasti supaya peranti luar talian tidak boleh menghidupkan semula kandungan yang dipadamkan. Ia tidak mengandungi pembekal, penggunaan, akaun, bukti kelayakan, cap jari peranti atau data percubaan. Fail yang anda eksport dan sandaran peranti terurus Apple kekal di bawah kawalan anda dan mesti dialih keluar secara berasingan."
+      },
+      {
+        "id": "support_site",
+        "title": "E-mel sokongan dan laman web ini",
+        "body": "Jika anda menghantar e-mel kepada sokongan, pembangun menerima alamat e-mel dan mesej yang anda pilih untuk dihantar dan menggunakannya hanya untuk menjawab anda. Tapak web statik ini tidak menetapkan kuki dan tidak memuatkan pengiklanan, analitik, skrip penjejakan atau aset pihak ketiga. Perkhidmatan pengehosan akhirnya boleh memproses maklumat sambungan standard di bawah syarat privasinya sendiri."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Kemerdekaan pemberi",
+        "body": "Nama ini digunakan hanya untuk mengenal pasti perkhidmatan yang serasi: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow ialah aplikasi bebas; penyedia ini tidak memperakui atau menajanya dan ia tidak bergabung dengan mereka."
+      }
+    ]
+  }
+}

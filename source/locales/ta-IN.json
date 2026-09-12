@@ -1,0 +1,164 @@
+{
+  "language_name": "தமிழ்",
+  "language_label": "மொழி",
+  "navigation_label": "முதன்மை வழிசெலுத்தல்",
+  "skip_link": "முதன்மை உள்ளடக்கத்திற்குச் செல்லவும்",
+  "nav": {
+    "index": "கண்ணோட்டம்",
+    "support": "ஆதரவு",
+    "privacy": "தனியுரிமை"
+  },
+  "contact": {
+    "title": "UsageNow ஆதரவைத் தொடர்புகொள்ளுங்கள்",
+    "body": "சாதன மாடல், இயங்குதளம் மற்றும் App பதிப்பு, இணக்கத்தைக் குறிக்க மட்டும் சேவை வழங்குநரின் பெயர், இணைப்பு முறை, நிலைக் குறியீடு, தோராயமான நேரம் ஆகியவற்றைத் தெரிவிக்கவும். அணுகல் token, கடவுச்சொல், cookie, நிறுவனம் அல்லது பணியிட slug, முழு URL, கோரிக்கை அல்லது பதில் body, header ஆகியவற்றை ஒருபோதும் அனுப்ப வேண்டாம்.",
+    "button": "ஆதரவுக்கு மின்னஞ்சல் அனுப்பவும்"
+  },
+  "footer": "UsageNow: AI Usage-க்கான அதிகாரப்பூர்வ ஆதரவு மற்றும் தனியுரிமைத் தகவல்.",
+  "home": {
+    "title": "உங்கள் அணுகல் சான்றுகளை எங்களிடம் வழங்காமல் AI திறனைத் திட்டமிடுங்கள்",
+    "summary": "நீங்கள் தேர்ந்தெடுக்கும் சேவை வழங்குநர்களின் ஆவணப்படுத்தப்பட்ட API-களை UsageNow உங்கள் சாதனத்திலிருந்து நேரடியாக அணுகி, மீதமுள்ள திறன் மற்றும் மீட்டமைப்பு நேரத்தை விளக்குகிறது; இரகசியமற்ற நிலைப்படங்களை உங்கள் Apple கணக்கு வழியாகத் தனிப்பட்ட முறையில் ஒத்திசைக்கவும் முடியும்.",
+    "section_title": "UsageNow உங்கள் தரவை எவ்வாறு கையாளுகிறது",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "நேரடி அதிகாரப்பூர்வ இணைப்புகள்",
+        "body": "நீங்கள் புதுப்பிக்கக் கோரும்போது, வழங்கிய இணைப்பைப் பயன்படுத்தி தேர்ந்தெடுத்த வழங்குநரின் ஆவணப்படுத்தப்பட்ட அதிகாரப்பூர்வ API-ஐ App உங்கள் சாதனத்திலிருந்தே அழைக்கிறது. UsageNow உருவாக்குநரின் இடைநிலை server அல்லது UsageNow கணக்கு எதுவும் இல்லை."
+      },
+      {
+        "id": "credential_storage",
+        "title": "அணுகல் சான்றுகள் இந்தச் சாதனத்திலேயே இருக்கும்",
+        "body": "சேவை வழங்குநரின் அணுகல் சான்றுகள் முதன்மை App-இன் Keychain-ல் AfterFirstUnlockThisDeviceOnly பாதுகாப்புடன் வைக்கப்படுகின்றன. அவை ஒத்திசைக்கப்படாது; CloudKit, App Group, Widget அல்லது Apple Watch-க்கு ஒருபோதும் அனுப்பப்படாது."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "விருப்பத் தனிப்பட்ட Apple ஒத்திசைவு",
+        "body": "iCloud ஒத்திசைவை நீங்கள் இயக்கினால் மட்டுமே, குறைக்கப்பட்ட இயல்பாக்கப்பட்ட பயன்பாட்டு நிலைப்படங்கள், விருப்பங்கள் மற்றும் சோதனைக் காலக் குறியீடு உங்கள் தனிப்பட்ட CloudKit தரவுத்தளத்தில் சேமிக்கப்படலாம். அணுகல் சான்றுகளும் சேவை வழங்குநரின் மூலப் பதில்களும் சேர்க்கப்படாது."
+      },
+      {
+        "id": "purchase",
+        "title": "மூன்று நாட்கள்; பின்னர் ஒருமுறை வாழ்நாள் வாங்கல்",
+        "body": "முதல் வெற்றிகரமான நேரடி பயன்பாட்டு நிலைப்படம் சேமிக்கப்பட்ட பிறகே மூன்று நாள் முழு அணுகல் தொடங்கும். அதன் பின் ஒரே non-consumable வாழ்நாள் திறப்பு கிடைக்கும்; StoreKit உண்மையான உள்ளூர் விலையை ஏற்றுகிறது, வாங்கலையும் மீட்டெடுப்பையும் Apple கையாளுகிறது. சந்தா அல்லது விளம்பரம் இல்லை."
+      }
+    ]
+  },
+  "support": {
+    "title": "UsageNow ஆதரவு",
+    "summary": "நேரடி சேவை வழங்குநர் இணைப்புகள், நிலைக் குறியீடுகள், உங்கள் தரவு மற்றும் ஒருமுறை வாழ்நாள் வாங்கலுக்கான உதவி.",
+    "section_title": "சிக்கல் தீர்வு மற்றும் கணக்கு பராமரிப்பு",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "இணைப்பு வகைகள்",
+        "body": "நீங்கள் வழங்கும் API அல்லது admin key-ஐ, அல்லது சேவை வழங்குநர் அதிகாரப்பூர்வமாக ஆதரித்தால் OAuth அல்லது சாதன அங்கீகார முறையைப் பயன்படுத்தலாம். ஒவ்வொரு புதுப்பிப்பும் ஆவணப்படுத்தப்பட்ட அதிகாரப்பூர்வ endpoint-களுக்கே நேரடியாகச் செல்கிறது. UsageNow கடவுச்சொல் கேட்காது, browser cookie-களை இறக்குமதி செய்யாது, dashboard HTML-ஐ scrape செய்யாது, private endpoint-களை அழைக்காது, வரம்புகளைத் தாண்டாது. கிடைக்கும் புலங்கள் வழங்குநர் மற்றும் கணக்குத் திட்டத்தைப் பொறுத்தவை."
+      },
+      {
+        "id": "http_401",
+        "title": "401 — அங்கீகாரம் இல்லை",
+        "body": "அணுகல் சான்று இல்லை, காலாவதியானது, திரும்பப்பெறப்பட்டது அல்லது வேறு சேவைக்குரியது. வழங்குநரின் அதிகாரப்பூர்வ console-ல் அதை உருவாக்கவும் அல்லது புதுப்பிக்கவும்; தேவையான குறைந்தபட்ச அனுமதியை மட்டும் வழங்கி, சான்றை மாற்றவும் அல்லது மீண்டும் உள்நுழையவும். key-ஐ மின்னஞ்சலில் அனுப்ப வேண்டாம்."
+      },
+      {
+        "id": "http_403",
+        "title": "403 — அனுமதி மறுக்கப்பட்டது",
+        "body": "வழங்குநர் சான்றை அறிந்தாலும், கணக்கில் தேவையான scope, billing role, team அல்லது organization அணுகல், அல்லது SSO ஒப்புதல் இல்லாமல் இருக்கலாம். சரியான கணக்கையும் குறைந்தபட்ச read அனுமதியையும் சரிபார்க்கவும். சில திட்டங்கள் பயன்பாட்டுத் தரவை வழங்காது."
+      },
+      {
+        "id": "http_404",
+        "title": "404 — கிடைக்கவில்லை",
+        "body": "organization, team, workspace, username அல்லது resource identifier-ஐ அப்படியே சரிபார்க்கவும். உங்கள் திட்டம் அல்லது பிராந்தியத்துக்கு அந்த usage endpoint வழங்கப்படாததையும் 404 குறிக்கலாம். App-இல் உள்ள தற்போதைய அதிகாரப்பூர்வ இணைப்பு வழிகாட்டியைப் பின்பற்றவும்; private endpoint-ஐ மாற்றாகப் பயன்படுத்த வேண்டாம்."
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "இணையமில்லை, பழைய தரவு அல்லது கோரிக்கை வரம்பு",
+        "body": "UsageNow கடைசியாகச் சேமித்த நிலைப்படத்தையும் அதன் நேரத்தையும் வைத்திருக்கும். மீண்டும் இணைத்து, பின்னர் வரம்புடைய புதுப்பிப்பை முயலவும். 429 அல்லது பராமரிப்பு நேரத்தில் அதிகாரப்பூர்வ retry இடைவெளிக்குக் காத்திருக்கவும்; மீண்டும் மீண்டும் கோருவது வரம்பைத் தாண்டாது."
+      },
+      {
+        "id": "export_delete",
+        "title": "தரவை ஏற்றுமதி செய்யவும் அல்லது நீக்கவும்",
+        "body": "நீங்கள் கேட்டால் மட்டுமே export சாதனத்தில் கோப்பை உருவாக்கி Apple destination picker-ஐ திறக்கும்; அணுகல் சான்றுகளும் மூலப் பதில்களும் சேராது. எல்லா தரவையும் நீக்குவது உள்ளூர் repository, Keychain, App Group மற்றும் Widget cache, Apple Watch payload, தனிப்பட்ட CloudKit records மற்றும் trial anchor ஆகியவற்றை அகற்றும். offline சாதனம் நீக்கப்பட்டதை மீண்டும் கொண்டுவராமல் இருக்க அடையாளமற்ற CloudKit deletion generation மட்டும் இருக்கும். ஏற்றுமதி கோப்புகள் மற்றும் Apple நிர்வகிக்கும் backup-களை தனியே நீக்கவும்."
+      },
+      {
+        "id": "purchase_restore",
+        "title": "வாழ்நாள் வாங்கல் மற்றும் மீட்டெடுப்பு",
+        "body": "முதல் சேமிக்கப்பட்ட நேரடி நிலைப்படத்திலிருந்து மூன்று நாட்கள் முழு அணுகல் கிடைக்கும். பின்னர் ஒரு non-consumable வாழ்நாள் வாங்கல் சரிபார்க்கப்படும் வரை பழைய தகவல் தேதியுடன் read-only முன்னோட்டமாக இருக்கும். StoreKit தற்போதைய உள்ளூர் விலையைக் காட்டும். வாங்கிய அதே Apple கணக்கில் Restore பயன்படுத்தவும். சந்தாவோ தானியங்கி புதுப்பிப்போ இல்லை."
+      },
+      {
+        "id": "safe_contact",
+        "title": "பாதுகாப்பான ஆதரவு அறிக்கையை அனுப்புங்கள்",
+        "body": "சாதன மாடல், system மற்றும் App பதிப்பு, இணக்கத்துக்கான பெயராக மட்டும் வழங்குநர், இணைப்பு முறை, நிலைக் குறியீடு, தோராயமான நேரம் மற்றும் காட்டப்பட்டால் இரகசியமற்ற diagnostic event code ஆகியவற்றை அனுப்பலாம். token, கடவுச்சொல், cookie, slug, முழு URL, request body, response body அல்லது header அனுப்ப வேண்டாம். உருவாக்குநரால் அணுகல் சான்றுகளையோ வழங்குநர் தரவையோ மீட்டெடுக்க முடியாது."
+      },
+      {
+        "id": "provider_independence",
+        "title": "சுயாதீன இணக்கத்தன்மை",
+        "body": "இந்தப் பெயர்கள் இணக்கமான சேவைகளை அடையாளம் காண மட்டுமே பயன்படுத்தப்படுகின்றன: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow சுயாதீனமான செயலி; இந்நிறுவனங்கள் இதை அங்கீகரிக்கவோ ஆதரிக்கவோ இல்லை, அவற்றுடன் இதற்குத் தொடர்பும் இல்லை."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "தனியுரிமைக் கொள்கை",
+    "summary": "UsageNow முதலில் உள்ளூர் செயலாக்கத்தையே பயன்படுத்துகிறது; அதே நேரத்தில் நேரடி வழங்குநர் இணைப்புகளும் விருப்பத் தனிப்பட்ட Apple ஒத்திசைவும் உள்ளன. பொதுவான கூற்றுக்கு பதிலாக ஒவ்வொரு தரவுப் பாதையையும் இந்தக் கொள்கை விளக்குகிறது.",
+    "updated_label": "கடைசியாகப் புதுப்பிக்கப்பட்டது",
+    "section_title": "தரவு ஓட்டமும் உங்கள் கட்டுப்பாடும்",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "சேவை வழங்குநர் அணுகல் சான்றுகள்",
+        "body": "அணுகல் சான்றுகள் AfterFirstUnlockThisDeviceOnly உடன் முதன்மை App-இன் உள்ளூர் Keychain-ல் மட்டுமே இருக்கும். அவை ஒத்திசைக்கப்படாது, extension-களுக்கு வழங்கப்படாது; UserDefaults, CloudKit, App Group, Widget, Apple Watch, export, screenshot, analytics அல்லது source control-க்கு ஒருபோதும் செல்லாது. இணைப்பை அல்லது எல்லா தரவையும் நீக்குவது தொடர்புடைய Keychain item-ஐ அழிக்கும்."
+      },
+      {
+        "id": "provider_requests",
+        "title": "வழங்குநர் API-க்கு நேரடி கோரிக்கைகள்",
+        "body": "நீங்கள் இணைக்க அல்லது புதுப்பிக்கக் கோரும்போது, சாதனம் அணுகல் சான்றையும் மிகக் குறைந்த தேவையான புலங்களையும் HTTPS வழியாக வழங்குநரின் ஆவணப்படுத்தப்பட்ட அதிகாரப்பூர்வ API-க்கு நேரடியாக அனுப்புகிறது. வழங்குநர் தன் விதிகளின்படி செயலாக்குகிறார். UsageNow developer server, proxy, tunnel அல்லது VPN வழியாக போக்குவரத்தை மாற்றாது."
+      },
+      {
+        "id": "developer_boundary",
+        "title": "உருவாக்குநர் பெறுவது",
+        "body": "UsageNow உருவாக்குநர் உங்கள் token, வழங்குநர் account data, usage values, request, provider response, normalized snapshots அல்லது CloudKit records ஆகியவற்றை தானாகப் பெறுவதில்லை. உருவாக்குநர் நடத்தும் account system அல்லது usage database UsageNow-க்கு இல்லை."
+      },
+      {
+        "id": "local_records_exports",
+        "title": "உள்ளூர் பதிவுகளும் ஏற்றுமதியும்",
+        "body": "இயல்பாக்கப்பட்ட usage snapshots, reset நேரங்கள், forecast, freshness, account labels, preferences மற்றும் trial state உள்ளூரில் சேமிக்கப்படுகின்றன. நீங்கள் கேட்டால் மட்டுமே export உருவாகி, Apple system interface-ல் தேர்ந்தெடுக்கும் இடத்துக்குச் செல்கிறது. credentials மற்றும் raw responses சேராது; அதன் பின் அந்த இடத்தின் தனியுரிமை விதிகள் பொருந்தும்."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "விருப்பத் தனிப்பட்ட CloudKit",
+        "body": "iCloud ஒத்திசைவு இயக்கப்பட்டால் மட்டுமே குறைக்கப்பட்ட provider identifiers, anonymous account labels, normalized usage, reset, forecast, freshness, preferences மற்றும் குறைந்தபட்ச trial anchor உங்கள் தனிப்பட்ட CloudKit-ல் இருக்கலாம். credentials அல்லது raw payload ஒருபோதும் சேராது. CloudKit-ஐ Apple இயக்குகிறது; UsageNow தனி developer database உருவாக்காது."
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget மற்றும் Apple Watch",
+        "body": "App Group, Widget-க்கு இரகசியமற்ற capacity snapshot மட்டும் தருகிறது. WatchConnectivity அதை இணைக்கப்பட்ட Apple Watch-க்கு அனுப்புகிறது. normalized capacity, reset, freshness மற்றும் display preferences இருக்கலாம்; credentials, cookie, request header அல்லது raw provider response இருக்காது."
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit மற்றும் வாங்கல்கள்",
+        "body": "product மற்றும் localized price-ஐ ஏற்றவும், non-consumable lifetime unlock-ஐ verify, purchase அல்லது Restore செய்யவும் StoreKit Apple-ஐ தொடர்புகொள்கிறது. transaction-ஐ Apple செயலாக்குகிறது. UsageNow verified entitlement-ஐ மட்டும் படிக்கும்; payment card விவரம் பெறாது."
+      },
+      {
+        "id": "diagnostics",
+        "title": "பாதுகாப்பான diagnostics",
+        "body": "உள்ளூர் diagnostics பொதுவான event type, status code, time மற்றும் இரகசியமற்ற correlation identifier-ஐ பதிவு செய்யலாம். இது தானாக upload ஆகாது; token, password, cookie, organization அல்லது workspace slug, முழு URL, request body, response body அல்லது header ஒருபோதும் இருக்காது. இவற்றை ஆதரவுக்கு அனுப்ப வேண்டாம்."
+      },
+      {
+        "id": "excluded_practices",
+        "title": "விளம்பரம், analytics, tracking அல்லது scraping இல்லை",
+        "body": "UsageNow-ல் ad SDK, third-party analytics, cross-app tracking, device fingerprint அல்லது developer marketing profile இல்லை. password சேகரிக்காது, browser cookie இறக்குமதி செய்யாது, dashboard HTML scrape செய்யாது, private endpoint பயன்படுத்தாது, official client போல நடிக்காது, அவற்றின் token-ஐ மீண்டும் பயன்படுத்தாது, rate limit-ஐ தாண்டாது."
+      },
+      {
+        "id": "deletion_retention",
+        "title": "நீக்கலும் வைத்திருக்கும் தலைமுறையும்",
+        "body": "எல்லா தரவையும் நீக்குவது local repository, Keychain, App Group, Widget cache, Apple Watch payload, private CloudKit records மற்றும் trial anchor ஆகியவற்றை அழிக்கும். offline சாதனம் நீக்கிய உள்ளடக்கத்தை உயிர்ப்பிக்காமல் இருக்க அடையாளமற்ற CloudKit deletion generation மட்டும் மீதமிருக்கும். அதில் provider, usage, account, credential, device fingerprint அல்லது trial data எதுவும் இல்லை. export மற்றும் Apple backup-களை தனியே நீக்க வேண்டும்."
+      },
+      {
+        "id": "support_site",
+        "title": "ஆதரவு மின்னஞ்சலும் இந்த வலைத்தளமும்",
+        "body": "நீங்கள் ஆதரவுக்கு மின்னஞ்சல் அனுப்பினால், நீங்கள் தேர்ந்தெடுத்த முகவரியும் செய்தியும் உருவாக்குநருக்கு கிடைக்கும்; பதிலளிக்க மட்டுமே அவை பயன்படுத்தப்படும். இந்த static site cookie அமைக்காது; advertising, analytics, tracking script அல்லது third-party asset ஏற்றாது. பின்னர் தேர்ந்தெடுக்கப்படும் hosting service தன் விதிகளின்படி வழக்கமான connection information-ஐ செயலாக்கலாம்."
+      },
+      {
+        "id": "provider_independence",
+        "title": "வழங்குநர்களிலிருந்து சுயாதீனம்",
+        "body": "இந்தப் பெயர்கள் இணக்கமான சேவைகளை அடையாளம் காண மட்டுமே பயன்படுத்தப்படுகின்றன: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow சுயாதீனமான செயலி; இந்நிறுவனங்கள் இதை அங்கீகரிக்கவோ ஆதரிக்கவோ இல்லை, அவற்றுடன் இதற்குத் தொடர்பும் இல்லை."
+      }
+    ]
+  }
+}

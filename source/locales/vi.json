@@ -1,0 +1,164 @@
+{
+  "language_name": "Tiếng Việt",
+  "language_label": "Ngôn ngữ",
+  "navigation_label": "Điều hướng chính",
+  "skip_link": "Chuyển đến nội dung chính",
+  "nav": {
+    "index": "Tổng quan",
+    "support": "Hỗ trợ",
+    "privacy": "Quyền riêng tư"
+  },
+  "contact": {
+    "title": "Liên hệ hỗ trợ UsageNow",
+    "body": "Hãy ghi rõ mẫu thiết bị, phiên bản hệ điều hành và ứng dụng, tên nhà cung cấp chỉ để nhận diện khả năng tương thích, cách kết nối, mã trạng thái và thời điểm gần đúng. Tuyệt đối không gửi token truy cập, mật khẩu, cookie, slug của tổ chức hoặc không gian làm việc, URL đầy đủ, body của yêu cầu hay phản hồi hoặc header.",
+    "button": "Gửi email hỗ trợ"
+  },
+  "footer": "Thông tin hỗ trợ và quyền riêng tư chính thức cho UsageNow: AI Usage.",
+  "home": {
+    "title": "Lập kế hoạch dung lượng AI mà không giao thông tin xác thực cho chúng tôi",
+    "summary": "UsageNow kết nối từ thiết bị của bạn đến API có tài liệu của nhà cung cấp bạn chọn, giải thích dung lượng còn lại và thời điểm đặt lại, đồng thời có thể đồng bộ riêng tư ảnh chụp không chứa bí mật qua tài khoản Apple.",
+    "section_title": "Cách UsageNow xử lý dữ liệu của bạn",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "Kết nối chính thức trực tiếp",
+        "body": "Khi bạn yêu cầu làm mới, ứng dụng gọi API chính thức có tài liệu của nhà cung cấp đã chọn trực tiếp từ thiết bị bằng kết nối bạn cung cấp. Không có máy chủ chuyển tiếp của nhà phát triển hay tài khoản UsageNow."
+      },
+      {
+        "id": "credential_storage",
+        "title": "Thông tin xác thực ở lại thiết bị",
+        "body": "Ứng dụng chính lưu thông tin xác thực của nhà cung cấp trong Keychain với cơ chế AfterFirstUnlockThisDeviceOnly. Chúng không thể đồng bộ và không bao giờ được gửi đến CloudKit, App Group, Widget hay Apple Watch."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Đồng bộ Apple riêng tư tùy chọn",
+        "body": "Chỉ khi bạn bật đồng bộ iCloud, ảnh chụp mức sử dụng đã chuẩn hóa và tối giản, tùy chọn và mốc dùng thử mới có thể được lưu trong cơ sở dữ liệu CloudKit riêng tư. Thông tin xác thực và phản hồi thô của nhà cung cấp không được đưa vào."
+      },
+      {
+        "id": "purchase",
+        "title": "Ba ngày, sau đó một lần mua trọn đời",
+        "body": "Ba ngày truy cập đầy đủ chỉ bắt đầu sau khi lưu ảnh chụp mức sử dụng thực đầu tiên thành công. Sau đó có một giao dịch không tiêu hao để mở khóa trọn đời; StoreKit tải giá địa phương thật và Apple xử lý mua cũng như khôi phục. Không có thuê bao hay quảng cáo."
+      }
+    ]
+  },
+  "support": {
+    "title": "Hỗ trợ UsageNow",
+    "summary": "Trợ giúp về kết nối trực tiếp với nhà cung cấp, mã trạng thái, dữ liệu của bạn và giao dịch mua trọn đời một lần.",
+    "section_title": "Khắc phục sự cố và quản lý tài khoản",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "Loại kết nối",
+        "body": "Nhà cung cấp có thể dùng khóa API hoặc khóa quản trị do bạn nhập, hoặc luồng OAuth hay ủy quyền thiết bị nếu được hỗ trợ chính thức. Mỗi lần làm mới đi thẳng đến endpoint chính thức có tài liệu. UsageNow không hỏi mật khẩu, nhập cookie trình duyệt, cào HTML bảng điều khiển, gọi endpoint riêng tư hay vượt giới hạn. Trường dữ liệu tùy nhà cung cấp và gói tài khoản."
+      },
+      {
+        "id": "http_401",
+        "title": "401 — Chưa được ủy quyền",
+        "body": "Thông tin xác thực bị thiếu, hết hạn, đã thu hồi hoặc thuộc dịch vụ khác. Hãy tạo hoặc gia hạn trong bảng điều khiển chính thức, chỉ cấp quyền tối thiểu rồi thay thế thông tin hoặc đăng nhập lại. Không gửi khóa qua email."
+      },
+      {
+        "id": "http_403",
+        "title": "403 — Bị cấm",
+        "body": "Nhà cung cấp nhận ra thông tin xác thực nhưng tài khoản có thể thiếu scope, vai trò thanh toán, quyền vào nhóm hoặc tổ chức hay phê duyệt SSO. Hãy xác nhận đúng tài khoản và quyền đọc tối thiểu. Một số gói không cung cấp dữ liệu sử dụng."
+      },
+      {
+        "id": "http_404",
+        "title": "404 — Không tìm thấy",
+        "body": "Kiểm tra chính xác mã tổ chức, nhóm, không gian làm việc, tên người dùng hoặc tài nguyên. 404 cũng có thể nghĩa là endpoint sử dụng không được cung cấp cho gói hoặc khu vực của bạn. Làm theo hướng dẫn kết nối chính thức hiện tại trong ứng dụng; không thay bằng endpoint riêng tư."
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "Ngoại tuyến, dữ liệu cũ hoặc bị giới hạn tốc độ",
+        "body": "UsageNow giữ ảnh chụp đã lưu gần nhất cùng thời gian. Hãy kết nối lại và thử một lần làm mới có giới hạn sau. Với 429 hoặc bảo trì, chờ khoảng thử lại chính thức; gửi lặp không vượt được giới hạn."
+      },
+      {
+        "id": "export_delete",
+        "title": "Xuất và xóa dữ liệu",
+        "body": "Xuất chỉ tạo tệp trên thiết bị khi bạn yêu cầu và mở bộ chọn đích của Apple; không có thông tin xác thực hay phản hồi thô. Xóa mọi dữ liệu sẽ xóa kho cục bộ, Keychain, bộ nhớ đệm App Group và Widget, payload Apple Watch, bản ghi CloudKit riêng tư và mốc dùng thử. Chỉ một thế hệ xóa CloudKit không nhận dạng được giữ lại để thiết bị ngoại tuyến không khôi phục nội dung đã xóa. Hãy xóa riêng tệp đã xuất và bản sao lưu do Apple quản lý."
+      },
+      {
+        "id": "purchase_restore",
+        "title": "Mua trọn đời và khôi phục",
+        "body": "Truy cập đầy đủ kéo dài ba ngày từ ảnh chụp thực đầu tiên đã lưu. Sau đó dữ liệu hiện có vẫn là bản xem trước chỉ đọc có ngày cho đến khi xác minh giao dịch không tiêu hao trọn đời. StoreKit hiển thị giá địa phương hiện tại. Dùng Khôi phục với cùng tài khoản Apple đã mua. Không có thuê bao hoặc tự gia hạn."
+      },
+      {
+        "id": "safe_contact",
+        "title": "Gửi báo cáo hỗ trợ an toàn",
+        "body": "Gửi mẫu thiết bị, phiên bản hệ thống và ứng dụng, tên nhà cung cấp chỉ làm nhãn tương thích, cách kết nối, mã trạng thái, thời điểm gần đúng và mã sự kiện chẩn đoán không bí mật nếu có. Không gửi token, mật khẩu, cookie, slug, URL đầy đủ, request body, response body hoặc header. Nhà phát triển không thể khôi phục thông tin xác thực hay dữ liệu nhà cung cấp."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Khả năng tương thích độc lập",
+        "body": "Các tên này chỉ được dùng để nhận diện những dịch vụ tương thích: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow là ứng dụng độc lập; các nhà cung cấp này không xác nhận, tài trợ hay liên kết với ứng dụng."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Chính sách quyền riêng tư",
+    "summary": "UsageNow ưu tiên xử lý cục bộ nhưng có kết nối trực tiếp với nhà cung cấp và đồng bộ Apple riêng tư tùy chọn. Chính sách này mô tả từng đường đi của dữ liệu thay vì đưa ra tuyên bố chung.",
+    "updated_label": "Cập nhật lần cuối",
+    "section_title": "Luồng dữ liệu và quyền kiểm soát",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "Thông tin xác thực nhà cung cấp",
+        "body": "Thông tin xác thực chỉ nằm trong Keychain cục bộ của ứng dụng chính với AfterFirstUnlockThisDeviceOnly. Chúng không đồng bộ, không được cấp cho phần mở rộng và không bao giờ vào UserDefaults, CloudKit, App Group, Widget, Apple Watch, bản xuất, ảnh chụp màn hình, phân tích hay mã nguồn. Gỡ kết nối hoặc xóa mọi dữ liệu sẽ xóa mục Keychain tương ứng."
+      },
+      {
+        "id": "provider_requests",
+        "title": "Yêu cầu trực tiếp đến API nhà cung cấp",
+        "body": "Khi bạn kết nối hoặc làm mới, thiết bị gửi thông tin xác thực và trường tối thiểu trực tiếp đến API chính thức có tài liệu của nhà cung cấp qua HTTPS. Nhà cung cấp xử lý theo điều khoản riêng. UsageNow không chuyển lưu lượng qua máy chủ nhà phát triển, proxy, đường hầm hay VPN."
+      },
+      {
+        "id": "developer_boundary",
+        "title": "Dữ liệu nhà phát triển nhận được",
+        "body": "Nhà phát triển UsageNow không tự động nhận token, dữ liệu tài khoản nhà cung cấp, giá trị sử dụng, yêu cầu, phản hồi nhà cung cấp, ảnh chụp chuẩn hóa hay bản ghi CloudKit. UsageNow không có hệ thống tài khoản hay cơ sở dữ liệu sử dụng do nhà phát triển vận hành."
+      },
+      {
+        "id": "local_records_exports",
+        "title": "Bản ghi cục bộ và bản xuất",
+        "body": "Ảnh chụp sử dụng chuẩn hóa, thời điểm đặt lại, dự báo, độ mới, nhãn tài khoản, tùy chọn và trạng thái dùng thử được lưu cục bộ. Bản xuất chỉ được tạo khi bạn yêu cầu và đến đích bạn chọn trong giao diện Apple. Nó không chứa thông tin xác thực hay phản hồi thô; sau đó áp dụng chính sách của đích."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "CloudKit riêng tư tùy chọn",
+        "body": "Chỉ khi bật iCloud, mã nhà cung cấp tối giản, nhãn tài khoản ẩn danh, giá trị chuẩn hóa, đặt lại, dự báo, độ mới, tùy chọn và mốc dùng thử tối thiểu mới có thể ở trong CloudKit riêng tư của bạn. Không bao giờ có thông tin xác thực hay payload thô. Apple vận hành CloudKit; UsageNow không tạo cơ sở dữ liệu nhà phát triển riêng."
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget và Apple Watch",
+        "body": "App Group chỉ cấp cho Widget ảnh chụp dung lượng không chứa bí mật. WatchConnectivity gửi ảnh này đến Apple Watch đã ghép đôi. Ảnh có thể chứa dung lượng chuẩn hóa, đặt lại, độ mới và tùy chọn hiển thị, nhưng không có thông tin xác thực, cookie, header yêu cầu hay phản hồi thô."
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit và giao dịch mua",
+        "body": "StoreKit liên hệ Apple để tải sản phẩm và giá địa phương, xác minh, mua hoặc khôi phục mở khóa trọn đời không tiêu hao. Apple xử lý giao dịch. UsageNow đọc quyền đã xác minh và không nhận chi tiết thẻ thanh toán."
+      },
+      {
+        "id": "diagnostics",
+        "title": "Chẩn đoán an toàn",
+        "body": "Chẩn đoán cục bộ có thể ghi loại sự kiện chung, mã trạng thái, thời gian và mã tương quan không bí mật. Nó không tự động tải lên và không bao giờ chứa token, mật khẩu, cookie, slug tổ chức hoặc không gian làm việc, URL đầy đủ, request body, response body hay header. Đừng gửi các bí mật đó cho hỗ trợ."
+      },
+      {
+        "id": "excluded_practices",
+        "title": "Không quảng cáo, phân tích, theo dõi hay scraping",
+        "body": "UsageNow không có SDK quảng cáo, phân tích bên thứ ba, theo dõi chéo ứng dụng, dấu vân tay thiết bị hay hồ sơ tiếp thị của nhà phát triển. Ứng dụng không thu mật khẩu, nhập cookie, cào HTML bảng điều khiển, dùng endpoint riêng tư, giả mạo ứng dụng chính thức, tái dùng token của họ hay vượt giới hạn."
+      },
+      {
+        "id": "deletion_retention",
+        "title": "Xóa và thế hệ được giữ lại",
+        "body": "Xóa mọi dữ liệu sẽ xóa kho cục bộ, Keychain, App Group, bộ nhớ đệm Widget, payload Apple Watch, bản ghi CloudKit riêng tư và mốc dùng thử. Chỉ thế hệ xóa CloudKit không nhận dạng được còn lại để thiết bị ngoại tuyến không khôi phục dữ liệu đã xóa. Nó không chứa nhà cung cấp, mức sử dụng, tài khoản, thông tin xác thực, dấu vân tay thiết bị hay dữ liệu dùng thử. Bản xuất và sao lưu Apple phải xóa riêng."
+      },
+      {
+        "id": "support_site",
+        "title": "Email hỗ trợ và trang web này",
+        "body": "Nếu gửi email hỗ trợ, nhà phát triển nhận địa chỉ và nội dung bạn chọn và chỉ dùng để trả lời. Trang web tĩnh này không đặt cookie và không tải quảng cáo, phân tích, script theo dõi hay tài nguyên bên thứ ba. Dịch vụ lưu trữ sau này có thể xử lý thông tin kết nối tiêu chuẩn theo chính sách riêng."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Độc lập với nhà cung cấp",
+        "body": "Các tên này chỉ được dùng để nhận diện những dịch vụ tương thích: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow là ứng dụng độc lập; các nhà cung cấp này không xác nhận, tài trợ hay liên kết với ứng dụng."
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "language_name": "Slovenščina",
+  "language_label": "Jezik",
+  "navigation_label": "Glavna navigacija",
+  "skip_link": "Preskoči na glavno vsebino",
+  "nav": {
+    "index": "Pregled",
+    "support": "Podpora",
+    "privacy": "Zasebnost"
+  },
+  "contact": {
+    "title": "Obrnite se na podporo UsageNow",
+    "body": "Navedite model naprave, različico operacijskega sistema in aplikacije, ime ponudnika samo kot oznako združljivosti, način povezave, kodo stanja in približen čas. Nikoli ne pošiljajte žetona za dostop, gesla, piškotka, sluga organizacije ali delovnega prostora, celotnega URL-ja, telesa zahteve ali odgovora oziroma glav.",
+    "button": "Pišite podpori"
+  },
+  "footer": "Uradne informacije o podpori in zasebnosti za UsageNow: AI Usage.",
+  "home": {
+    "title": "Načrtujte zmogljivost AI, ne da bi nam predali poverilnice",
+    "summary": "UsageNow se iz vaše naprave poveže z dokumentiranimi API-ji izbranih ponudnikov, pojasni preostalo zmogljivost in čas ponastavitve ter lahko prek vašega računa Apple zasebno sinhronizira posnetke brez skrivnosti.",
+    "section_title": "Kako UsageNow ravna z vašimi podatki",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "Neposredne uradne povezave",
+        "body": "Ko zahtevate osvežitev, aplikacija iz vaše naprave neposredno pokliče dokumentirani uradni API izbranega ponudnika z vašo povezavo. Ni posredniškega strežnika razvijalca in ni računa UsageNow."
+      },
+      {
+        "id": "credential_storage",
+        "title": "Poverilnice ostanejo v tej napravi",
+        "body": "Poverilnice ponudnikov hrani glavna aplikacija v Keychain z zaščito AfterFirstUnlockThisDeviceOnly. Ni jih mogoče sinhronizirati in se nikoli ne pošljejo v CloudKit, App Group, Widget ali Apple Watch."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Izbirna zasebna sinhronizacija Apple",
+        "body": "Samo če omogočite sinhronizacijo iCloud, se lahko zmanjšani normalizirani posnetki uporabe, nastavitve in sidro preizkusa shranijo v vašo zasebno zbirko CloudKit. Poverilnice in neobdelani odgovori ponudnikov niso vključeni."
+      },
+      {
+        "id": "purchase",
+        "title": "Trije dnevi, nato en doživljenjski nakup",
+        "body": "Tridnevni polni dostop se začne šele, ko je shranjen prvi uspešen posnetek dejanske uporabe. Nato je na voljo en nepotrošni doživljenjski nakup; StoreKit naloži pravo lokalno ceno, Apple pa obdela nakup in obnovitev. Brez naročnine ali oglasov."
+      }
+    ]
+  },
+  "support": {
+    "title": "Podpora UsageNow",
+    "summary": "Pomoč pri neposrednih povezavah ponudnikov, kodah stanja, vaših podatkih in enkratnem doživljenjskem nakupu.",
+    "section_title": "Odpravljanje težav in skrb za račun",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "Vrste povezav",
+        "body": "Ponudnik lahko uporablja API ali skrbniški ključ, ki ga vnesete, oziroma OAuth ali odobritev naprave, kadar jo uradno podpira. Vsaka osvežitev gre neposredno na dokumentirane uradne končne točke. UsageNow nikoli ne zahteva gesla, ne uvaža piškotkov brskalnika, ne zajema HTML nadzorne plošče, ne uporablja zasebnih končnih točk in ne obide omejitev. Razpoložljiva polja so odvisna od ponudnika in paketa."
+      },
+      {
+        "id": "http_401",
+        "title": "401 — Neodobreno",
+        "body": "Poverilnica manjka, je potekla, preklicana ali pripada napačni storitvi. Ustvarite ali obnovite jo v uradni konzoli ponudnika, dodelite le najmanjša zahtevana dovoljenja in jo nato zamenjajte ali se znova prijavite. Ključa nikoli ne pošiljajte po e-pošti."
+      },
+      {
+        "id": "http_403",
+        "title": "403 — Prepovedano",
+        "body": "Ponudnik je poverilnico prepoznal, vendar računu morda manjka zahtevani obseg, obračunska vloga, dostop do ekipe ali organizacije oziroma odobritev SSO. Preverite ciljni račun in najmanjše dovoljenje za branje. Nekateri paketi podatkov o uporabi ne razkrivajo."
+      },
+      {
+        "id": "http_404",
+        "title": "404 — Ni najdeno",
+        "body": "Preverite točen identifikator organizacije, ekipe, delovnega prostora, uporabniškega imena ali vira. Koda 404 lahko pomeni tudi, da ponudnik te končne točke ne omogoča za vaš paket ali regijo. Uporabite trenutni uradni vodnik v aplikaciji in je ne nadomeščajte z zasebno končno točko."
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "Brez povezave, zastarelo ali omejeno",
+        "body": "UsageNow ohrani zadnji shranjeni posnetek s časovnim žigom. Znova vzpostavite povezavo in pozneje poskusite omejeno osvežitev. Pri kodi 429 ali vzdrževanju počakajte na uradni čas ponovitve; ponavljajoče zahteve omejitve ne obidejo."
+      },
+      {
+        "id": "export_delete",
+        "title": "Izvoz in brisanje podatkov",
+        "body": "Izvoz ustvari datoteko v napravi samo na vašo zahtevo in odpre Applov izbirnik cilja; poverilnice in neobdelani odgovori niso vključeni. Brisanje vseh podatkov odstrani lokalno zbirko, Keychain, predpomnilnik App Group in Widget, vsebino Apple Watch, zasebne zapise CloudKit ter sidro preizkusa. Ostane le neidentifikacijska generacija brisanja CloudKit, ki prepreči, da bi naprava brez povezave obnovila izbrisano vsebino. Izvožene datoteke in Applove varnostne kopije izbrišite posebej."
+      },
+      {
+        "id": "purchase_restore",
+        "title": "Doživljenjski nakup in obnovitev",
+        "body": "Polni dostop traja tri dni od prvega shranjenega posnetka dejanske uporabe. Nato shranjeni podatki ostanejo kot datiran predogled samo za branje, dokler ni potrjen en nepotrošni doživljenjski nakup. StoreKit prikaže trenutno lokalno ceno. Obnovitev uporabite z istim računom Apple. Ni naročnine ali samodejnega podaljšanja."
+      },
+      {
+        "id": "safe_contact",
+        "title": "Pošljite varno poročilo podpori",
+        "body": "Pošljite model naprave, različico sistema in aplikacije, ime ponudnika le kot oznako združljivosti, način povezave, kodo stanja, približen čas in morebitno neskrivno kodo diagnostičnega dogodka. Nikoli ne pošljite token, gesla, piškotka, slug, celotnega URL, request body, response body ali header. Razvijalec ne more obnoviti poverilnic ali podatkov ponudnika."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Neodvisna združljivost",
+        "body": "Ta imena se uporabljajo samo za prepoznavanje združljivih storitev: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow je neodvisna aplikacija; ti ponudniki je ne podpirajo ali sponzorirajo in z njimi ni povezana."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Pravilnik o zasebnosti",
+    "summary": "UsageNow najprej obdeluje lokalno, uporablja pa neposredne povezave ponudnikov in izbirno zasebno sinhronizacijo Apple. Ta pravilnik opiše vsako podatkovno pot namesto splošne oznake.",
+    "updated_label": "Nazadnje posodobljeno",
+    "section_title": "Tok podatkov in vaš nadzor",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "Poverilnice ponudnikov",
+        "body": "Poverilnice so samo v lokalnem Keychain glavne aplikacije z zaščito AfterFirstUnlockThisDeviceOnly. Ne sinhronizirajo se, razširitve jih ne morejo uporabljati in nikoli ne vstopijo v UserDefaults, CloudKit, App Group, Widget, Apple Watch, izvoze, posnetke zaslona, analitiko ali izvorno kodo. Odstranitev povezave ali vseh podatkov izbriše ustrezni element Keychain."
+      },
+      {
+        "id": "provider_requests",
+        "title": "Neposredne zahteve API ponudnika",
+        "body": "Ko zahtevate povezavo ali osvežitev, naprava po HTTPS pošlje poverilnico in najmanjša potrebna polja neposredno dokumentiranemu uradnemu API-ju ponudnika. Ponudnik jih obdela po svojih pravilih. UsageNow prometa ne usmerja prek strežnika razvijalca, proxyja, tunela ali VPN."
+      },
+      {
+        "id": "developer_boundary",
+        "title": "Kaj prejme razvijalec",
+        "body": "Razvijalec UsageNow samodejno ne prejme vašega token, podatkov računa ponudnika, vrednosti uporabe, zahteve, odgovora ponudnika, normaliziranih posnetkov ali zapisov CloudKit. UsageNow nima razvijalčevega sistema računov ali zbirke uporabe."
+      },
+      {
+        "id": "local_records_exports",
+        "title": "Lokalni zapisi in izvozi",
+        "body": "Normalizirani posnetki uporabe, časi ponastavitev, napovedi, svežina, oznake računov, nastavitve in stanje preizkusa so shranjeni lokalno. Izvoz nastane le na vašo zahtevo in gre na cilj, ki ga izberete v Applovem sistemskem vmesniku. Ne vsebuje poverilnic ali neobdelanih odgovorov; nato veljajo pravila izbranega cilja."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Izbirni zasebni CloudKit",
+        "body": "Le pri omogočeni sinhronizaciji iCloud se lahko zmanjšani identifikatorji ponudnika, anonimne oznake računov, normalizirane vrednosti, ponastavitve, napovedi, svežina, nastavitve in najmanjše sidro preizkusa shranijo v vašo zasebno zbirko CloudKit. Poverilnice in neobdelani payloadi niso nikoli vključeni. CloudKit upravlja Apple; UsageNow ne ustvari ločene zbirke razvijalca."
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget in Apple Watch",
+        "body": "App Group daje Widget samo posnetek zmogljivosti brez skrivnosti. WatchConnectivity tak posnetek pošlje seznanjeni Apple Watch. Vsebuje lahko normalizirano zmogljivost, ponastavitev, svežino in nastavitve prikaza, nikoli pa poverilnic, piškotkov, glav zahtev ali neobdelanih odgovorov."
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit in nakupi",
+        "body": "StoreKit stopi v stik z Apple za izdelek in lokalno ceno ter za preverjanje, nakup ali obnovitev nepotrošnega doživljenjskega odklepa. Transakcijo obdela Apple. UsageNow prebere potrjeno upravičenost in ne prejme podatkov plačilne kartice."
+      },
+      {
+        "id": "diagnostics",
+        "title": "Varnostna diagnostika",
+        "body": "Lokalna diagnostika lahko zabeleži splošno vrsto dogodka, kodo stanja, čas in neskrivni korelacijski identifikator. Ne naloži se samodejno in nikoli ne vsebuje token, gesla, piškotka, slug organizacije ali delovnega prostora, celotnega URL, request body, response body ali header. Teh skrivnosti ne pošiljajte podpori."
+      },
+      {
+        "id": "excluded_practices",
+        "title": "Brez oglasov, analitike, sledenja ali zajemanja",
+        "body": "UsageNow nima oglasnega SDK-ja, analitike tretjih oseb, sledenja med aplikacijami, prstnega odtisa naprave ali razvijalčevega tržnega profila. Ne zbira gesel, ne uvaža piškotkov, ne zajema HTML nadzorne plošče, ne uporablja zasebnih končnih točk, ne posnema uradnih odjemalcev, ne uporablja njihovih žetonov in ne obide omejitev."
+      },
+      {
+        "id": "deletion_retention",
+        "title": "Brisanje in ohranjena generacija",
+        "body": "Brisanje vseh podatkov odstrani lokalno zbirko, Keychain, App Group, predpomnilnik Widget, vsebino Apple Watch, zasebne zapise CloudKit in sidro preizkusa. Ostane le neidentifikacijska generacija brisanja CloudKit, da naprava brez povezave ne oživi izbrisane vsebine. Ne vsebuje ponudnika, uporabe, računa, poverilnice, prstnega odtisa naprave ali podatkov preizkusa. Izvoze in Applove varnostne kopije odstranite posebej."
+      },
+      {
+        "id": "support_site",
+        "title": "E-pošta podpore in to spletno mesto",
+        "body": "Če pišete podpori, razvijalec prejme naslov in sporočilo, ki ju izberete, ter ju uporabi samo za odgovor. To statično mesto ne nastavlja piškotkov in ne nalaga oglasov, analitike, sledilnih skriptov ali sredstev tretjih oseb. Prihodnji gostitelj lahko po svojih pravilih obdela običajne podatke o povezavi."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Neodvisnost ponudnikov",
+        "body": "Ta imena se uporabljajo samo za prepoznavanje združljivih storitev: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow je neodvisna aplikacija; ti ponudniki je ne podpirajo ali sponzorirajo in z njimi ni povezana."
+      }
+    ]
+  }
+}

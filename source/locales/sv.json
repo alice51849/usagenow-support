@@ -1,0 +1,164 @@
+{
+  "language_name": "Svenska",
+  "language_label": "Språk",
+  "navigation_label": "Huvudnavigering",
+  "skip_link": "Hoppa till huvudinnehållet",
+  "nav": {
+    "index": "Översikt",
+    "support": "Support",
+    "privacy": "Integritet"
+  },
+  "contact": {
+    "title": "Kontakta UsageNow-supporten",
+    "body": "Ange enhetsmodell, version av operativsystem och app, leverantörens namn enbart som kompatibilitetsbeteckning, anslutningsmetod, statuskod och ungefärlig tid. Skicka aldrig åtkomsttoken, lösenord, cookie, slug för organisation eller arbetsyta, fullständig URL, begärans- eller svarstext eller headers.",
+    "button": "Mejla supporten"
+  },
+  "footer": "Officiell support- och integritetsinformation för UsageNow: AI Usage.",
+  "home": {
+    "title": "Planera AI-kapacitet utan att lämna dina inloggningsuppgifter till oss",
+    "summary": "UsageNow ansluter från din enhet till dokumenterade API:er hos de leverantörer du väljer, förklarar återstående kapacitet och återställningar och kan synkronisera hemlighetsfria ögonblicksbilder privat via ditt Apple-konto.",
+    "section_title": "Så hanterar UsageNow dina uppgifter",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "Direkta officiella anslutningar",
+        "body": "När du begär en uppdatering anropar appen den valda leverantörens dokumenterade officiella API direkt från din enhet med anslutningen du angav. Det finns ingen mellanliggande utvecklarserver och inget UsageNow-konto."
+      },
+      {
+        "id": "credential_storage",
+        "title": "Uppgifterna stannar på enheten",
+        "body": "Leverantörsuppgifter lagras av huvudappen i Keychain med skyddet AfterFirstUnlockThisDeviceOnly. De kan inte synkroniseras och skickas aldrig till CloudKit, App Group, Widget eller Apple Watch."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Valfri privat Apple-synkronisering",
+        "body": "Endast om du aktiverar iCloud-synkronisering kan minimerade normaliserade användningsbilder, inställningar och provperiodens ankare sparas i din privata CloudKit-databas. Inloggningsuppgifter och råa leverantörssvar ingår inte."
+      },
+      {
+        "id": "purchase",
+        "title": "Tre dagar, sedan ett livstidsköp",
+        "body": "Tre dagars full åtkomst börjar först när den första lyckade ögonblicksbilden av verklig användning har sparats. Därefter finns ett icke-förbrukningsbart livstidsköp; StoreKit läser in det faktiska lokala priset och Apple hanterar köp och återställning. Ingen prenumeration eller reklam."
+      }
+    ]
+  },
+  "support": {
+    "title": "UsageNow-support",
+    "summary": "Hjälp med direkta leverantörsanslutningar, statuskoder, dina data och det engångsbetalda livstidsköpet.",
+    "section_title": "Felsökning och kontohantering",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "Anslutningstyper",
+        "body": "En leverantör kan använda en API- eller administratörsnyckel som du anger, eller OAuth- eller enhetsauktorisering när det stöds officiellt. Varje uppdatering går direkt till dokumenterade officiella slutpunkter. UsageNow ber aldrig om ditt lösenord, importerar webbläsarcookies, skrapar HTML från kontrollpaneler, använder privata slutpunkter eller kringgår gränser. Tillgängliga fält beror på leverantör och abonnemang."
+      },
+      {
+        "id": "http_401",
+        "title": "401 — Obehörig",
+        "body": "Uppgiften saknas, har gått ut, återkallats eller hör till fel tjänst. Skapa eller förnya den i leverantörens officiella konsol, ge endast minsta nödvändiga behörighet och ersätt den eller logga in igen. Mejla aldrig nyckeln."
+      },
+      {
+        "id": "http_403",
+        "title": "403 — Förbjuden",
+        "body": "Leverantören kände igen uppgiften, men kontot kan sakna scope, faktureringsroll, åtkomst till team eller organisation eller SSO-godkännande. Kontrollera kontomålet och minsta läsbehörighet. Vissa abonnemang exponerar inte användningsdata."
+      },
+      {
+        "id": "http_404",
+        "title": "404 — Hittades inte",
+        "body": "Kontrollera exakt identifierare för organisation, team, arbetsyta, användarnamn eller resurs. En 404 kan också betyda att leverantören inte erbjuder slutpunkten för ditt abonnemang eller din region. Följ den aktuella officiella guiden i appen och ersätt den aldrig med en privat slutpunkt."
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "Offline, inaktuellt eller hastighetsbegränsat",
+        "body": "UsageNow behåller den senast sparade ögonblicksbilden med tidsstämpel. Anslut igen och prova en begränsad uppdatering senare. Vid 429 eller underhåll ska du vänta på det officiella omförsöksintervallet; upprepade anrop kringgår inte gränsen."
+      },
+      {
+        "id": "export_delete",
+        "title": "Exportera och radera dina data",
+        "body": "Export skapar endast på din begäran en fil på enheten och öppnar Apples destinationsväljare; inloggningsuppgifter och råa svar ingår inte. Radera alla data tar bort lokalt arkiv, Keychain, cache för App Group och Widget, innehåll på Apple Watch, privata CloudKit-poster och provperiodens ankare. Endast en icke-identifierande raderingsgeneration i CloudKit finns kvar för att hindra en offlineenhet från att återställa raderat innehåll. Radera exporter och Apple-hanterade säkerhetskopior separat."
+      },
+      {
+        "id": "purchase_restore",
+        "title": "Livstidsköp och återställning",
+        "body": "Full åtkomst gäller i tre dagar från den första sparade verkliga ögonblicksbilden. Därefter finns sparad information kvar som en daterad skrivskyddad förhandsvisning tills ett icke-förbrukningsbart livstidsköp verifierats. StoreKit visar aktuellt lokalt pris. Återställ med samma Apple-konto som gjorde köpet. Ingen prenumeration eller automatisk förnyelse."
+      },
+      {
+        "id": "safe_contact",
+        "title": "Skicka en säker supportrapport",
+        "body": "Skicka enhetsmodell, system- och appversion, leverantörsnamn enbart som kompatibilitetsbeteckning, anslutningsmetod, statuskod, ungefärlig tid och eventuell icke-hemlig diagnostikkod. Skicka aldrig token, lösenord, cookie, slug, fullständig URL, request body, response body eller header. Utvecklaren kan inte återställa uppgifter eller leverantörsdata."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Oberoende kompatibilitet",
+        "body": "Namnen används endast för att identifiera kompatibla tjänster: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow är en fristående app. Leverantörerna varken rekommenderar eller sponsrar den, och den är inte knuten till dem."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Integritetspolicy",
+    "summary": "UsageNow behandlar i första hand lokalt men använder direkta leverantörsanslutningar och valfri privat Apple-synkronisering. Policyn beskriver varje dataflöde i stället för ett allmänt påstående.",
+    "updated_label": "Senast uppdaterad",
+    "section_title": "Dataflöde och din kontroll",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "Leverantörsuppgifter",
+        "body": "Uppgifterna finns endast i huvudappens lokala Keychain med AfterFirstUnlockThisDeviceOnly. De synkroniseras inte, tillägg får inte åtkomst och de hamnar aldrig i UserDefaults, CloudKit, App Group, Widget, Apple Watch, exporter, skärmbilder, analys eller källkod. När en anslutning eller alla data raderas tas motsvarande Keychain-post bort."
+      },
+      {
+        "id": "provider_requests",
+        "title": "Direkta API-anrop till leverantören",
+        "body": "När du ansluter eller uppdaterar skickar enheten uppgiften och minsta nödvändiga fält direkt till leverantörens dokumenterade officiella API via HTTPS. Leverantören behandlar begäran enligt sina villkor. UsageNow leder inte trafiken genom utvecklarserver, proxy, tunnel eller VPN."
+      },
+      {
+        "id": "developer_boundary",
+        "title": "Vad utvecklaren får",
+        "body": "UsageNow-utvecklaren får inte automatiskt din token, leverantörskontodata, användningsvärden, begäran, leverantörssvar, normaliserade bilder eller CloudKit-poster. UsageNow har inget utvecklardrivet kontosystem eller användningsregister."
+      },
+      {
+        "id": "local_records_exports",
+        "title": "Lokala poster och exporter",
+        "body": "Normaliserade användningsbilder, återställningstider, prognoser, aktualitet, kontoetiketter, inställningar och provstatus lagras lokalt. En export skapas endast när du begär den och går till målet du väljer i Apples systemgränssnitt. Den utesluter uppgifter och råa svar; därefter gäller målets integritetsvillkor."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Valfri privat CloudKit",
+        "body": "Endast när iCloud-synk är aktiverad kan minimerade leverantörs-ID:n, anonyma kontoetiketter, normaliserade värden, återställning, prognos, aktualitet, inställningar och minsta provankare sparas i din privata CloudKit-databas. Uppgifter och råa payloads ingår aldrig. Apple driver CloudKit; UsageNow skapar ingen separat utvecklardatabas."
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget och Apple Watch",
+        "body": "App Group ger Widget endast en hemlighetsfri kapacitetsbild. WatchConnectivity skickar en hemlighetsfri bild till parkopplad Apple Watch. Den kan innehålla normaliserad kapacitet, återställning, aktualitet och visningsinställningar men aldrig uppgifter, cookies, begäranheaders eller råa svar."
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit och köp",
+        "body": "StoreKit kontaktar Apple för att läsa in produkt och lokalt pris samt verifiera, köpa eller återställa livstidsupplåsningen. Apple behandlar transaktionen. UsageNow läser verifierad behörighet och får inga betalkortsuppgifter."
+      },
+      {
+        "id": "diagnostics",
+        "title": "Säker diagnostik",
+        "body": "Lokal diagnostik kan registrera en bred händelsetyp, statuskod, tid och ett icke-hemligt korrelations-ID. Den laddas inte upp automatiskt och innehåller aldrig token, lösenord, cookie, slug för organisation eller arbetsyta, fullständig URL, request body, response body eller header. Skicka inte dessa hemligheter till supporten."
+      },
+      {
+        "id": "excluded_practices",
+        "title": "Ingen reklam, analys, spårning eller skrapning",
+        "body": "UsageNow har inget reklam-SDK, tredjepartsanalys, spårning mellan appar, enhetsfingeravtryck eller utvecklarprofil för marknadsföring. Det samlar inte lösenord, importerar inte cookies, skrapar inte kontrollpanelens HTML, använder inte privata slutpunkter, utger sig inte för officiella klienter, återanvänder inte deras token och kringgår inte gränser."
+      },
+      {
+        "id": "deletion_retention",
+        "title": "Radering och sparad generation",
+        "body": "Radera alla data tar bort lokalt arkiv, Keychain, App Group, Widget-cache, Apple Watch-innehåll, privata CloudKit-poster och provankaret. Endast en icke-identifierande raderingsgeneration i CloudKit sparas så att en offlineenhet inte återupplivar raderat innehåll. Den innehåller ingen leverantör, användning, konto, uppgift, enhetsidentifierare eller provdata. Exporter och Apple-hanterade säkerhetskopior tas bort separat."
+      },
+      {
+        "id": "support_site",
+        "title": "Supportmejl och webbplatsen",
+        "body": "Om du mejlar supporten får utvecklaren adressen och meddelandet du väljer att skicka och använder dem endast för att svara. Den statiska webbplatsen sätter inga cookies och laddar ingen reklam, analys, spårningsskript eller tredjepartsresurser. Den framtida värden kan behandla vanlig anslutningsinformation enligt sina villkor."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Oberoende från leverantörer",
+        "body": "Namnen används endast för att identifiera kompatibla tjänster: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow är en fristående app. Leverantörerna varken rekommenderar eller sponsrar den, och den är inte knuten till dem."
+      }
+    ]
+  }
+}

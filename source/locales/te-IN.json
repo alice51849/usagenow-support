@@ -1,0 +1,164 @@
+{
+  "language_name": "తెలుగు",
+  "language_label": "భాష",
+  "navigation_label": "ప్రధాన నావిగేషన్",
+  "skip_link": "ప్రధాన విషయానికి వెళ్లండి",
+  "nav": {
+    "index": "అవలోకనం",
+    "support": "సహాయం",
+    "privacy": "గోప్యత"
+  },
+  "contact": {
+    "title": "UsageNow సహాయాన్ని సంప్రదించండి",
+    "body": "పరికరం మోడల్, ఆపరేటింగ్ సిస్టమ్ మరియు App వెర్షన్, అనుకూలత గుర్తింపుకోసం మాత్రమే సేవాదారు పేరు, కనెక్షన్ విధానం, స్థితి కోడ్, సుమారు సమయం తెలియజేయండి. access token, password, cookie, organization లేదా workspace slug, పూర్తి URL, request లేదా response body, header ఎప్పుడూ పంపవద్దు.",
+    "button": "సహాయానికి ఇమెయిల్ పంపండి"
+  },
+  "footer": "UsageNow: AI Usage కోసం అధికారిక సహాయం మరియు గోప్యత సమాచారం.",
+  "home": {
+    "title": "మీ యాక్సెస్ ఆధారాలను మాకు ఇవ్వకుండా AI సామర్థ్యాన్ని ప్లాన్ చేయండి",
+    "summary": "మీరు ఎంచుకున్న సేవాదారుల డాక్యుమెంట్ చేసిన APIలకు UsageNow మీ పరికరం నుంచే కనెక్ట్ అయి, మిగిలిన సామర్థ్యం మరియు రీసెట్ సమయాన్ని వివరిస్తుంది; రహస్యాలు లేని స్నాప్‌షాట్‌లను మీ Apple ఖాతా ద్వారా ప్రైవేట్‌గా సమకాలీకరించగలదు.",
+    "section_title": "UsageNow మీ డేటాను ఎలా నిర్వహిస్తుంది",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "నేరుగా అధికారిక కనెక్షన్లు",
+        "body": "మీరు రిఫ్రెష్ కోరినప్పుడు, మీరు ఇచ్చిన కనెక్షన్‌తో ఎంచుకున్న సేవాదారి డాక్యుమెంట్ చేసిన అధికారిక APIని App మీ పరికరం నుంచే నేరుగా పిలుస్తుంది. మధ్యలో UsageNow డెవలపర్ server లేదా UsageNow ఖాతా ఉండదు."
+      },
+      {
+        "id": "credential_storage",
+        "title": "ఆధారాలు ఈ పరికరంలోనే ఉంటాయి",
+        "body": "సేవాదారి యాక్సెస్ ఆధారాలను ప్రధాన App, AfterFirstUnlockThisDeviceOnly రక్షణతో Keychainలో ఉంచుతుంది. అవి సమకాలీకరించబడవు; CloudKit, App Group, Widget లేదా Apple Watchకు ఎప్పుడూ పంపబడవు."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "ఐచ్చిక ప్రైవేట్ Apple సమకాలీకరణ",
+        "body": "మీరు iCloud సమకాలీకరణను ఆన్ చేసినప్పుడు మాత్రమే తగ్గించిన సాధారణీకృత వినియోగ స్నాప్‌షాట్‌లు, అభిరుచులు మరియు ట్రయల్ యాంకర్ మీ ప్రైవేట్ CloudKit డేటాబేస్‌లో నిల్వ కావచ్చు. యాక్సెస్ ఆధారాలు మరియు సేవాదారి raw responses చేర్చబడవు."
+      },
+      {
+        "id": "purchase",
+        "title": "మూడు రోజులు, తరువాత ఒకే జీవితకాల కొనుగోలు",
+        "body": "మొదటి విజయవంతమైన ప్రత్యక్ష వినియోగ స్నాప్‌షాట్ సేవ్ అయిన తరువాతే మూడు రోజుల పూర్తి యాక్సెస్ మొదలవుతుంది. తరువాత ఒక non-consumable lifetime unlock ఉంటుంది; StoreKit నిజమైన స్థానిక ధరను లోడ్ చేస్తుంది, కొనుగోలు మరియు Restoreను Apple నిర్వహిస్తుంది. subscription లేదా ప్రకటనలు లేవు."
+      }
+    ]
+  },
+  "support": {
+    "title": "UsageNow సహాయం",
+    "summary": "నేరుగా సేవాదారి కనెక్షన్లు, స్థితి కోడ్‌లు, మీ డేటా మరియు ఒకసారి చేసే జీవితకాల కొనుగోలు గురించి సహాయం.",
+    "section_title": "సమస్య పరిష్కారం మరియు ఖాతా సంరక్షణ",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "కనెక్షన్ రకాలు",
+        "body": "మీరు ఇచ్చే API లేదా admin keyను, లేక సేవాదారు అధికారికంగా మద్దతిస్తే OAuth లేదా device authorization flowను ఉపయోగించవచ్చు. ప్రతి రిఫ్రెష్ డాక్యుమెంట్ చేసిన అధికారిక endpointలకు నేరుగా వెళ్తుంది. UsageNow password అడగదు, browser cookieలను import చేయదు, dashboard HTMLను scrape చేయదు, private endpointలను పిలవదు, rate limitను దాటదు. లభ్యమయ్యే fields సేవాదారు మరియు account planపై ఆధారపడతాయి."
+      },
+      {
+        "id": "http_401",
+        "title": "401 — అధికారం లేదు",
+        "body": "ఆధారం లేదు, గడువు ముగిసింది, రద్దైంది లేదా తప్పు సేవకు చెందినది. సేవాదారి అధికారిక consoleలో కొత్తదాన్ని సృష్టించండి లేదా renew చేయండి, అవసరమైన కనిష్ఠ permission మాత్రమే ఇవ్వండి, తరువాత ఆధారాన్ని మార్చండి లేదా మళ్లీ sign in చేయండి. keyను ఇమెయిల్ చేయవద్దు."
+      },
+      {
+        "id": "http_403",
+        "title": "403 — నిషేధించబడింది",
+        "body": "సేవాదారు ఆధారాన్ని గుర్తించినా, ఖాతాలో అవసరమైన scope, billing role, team లేదా organization access, లేదా SSO approval లేకపోవచ్చు. సరైన account target మరియు కనిష్ఠ read permissionను తనిఖీ చేయండి. కొన్ని plans వినియోగ డేటాను ఇవ్వవు."
+      },
+      {
+        "id": "http_404",
+        "title": "404 — కనబడలేదు",
+        "body": "organization, team, workspace, username లేదా resource identifierను ఖచ్చితంగా తనిఖీ చేయండి. మీ plan లేదా ప్రాంతానికి ఆ usage endpointను సేవాదారు ఇవ్వకపోయినా 404 వస్తుంది. Appలోని తాజా అధికారిక connection guideను అనుసరించండి; private endpointను ప్రత్యామ్నాయంగా వాడవద్దు."
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "ఆఫ్‌లైన్, పాత డేటా లేదా rate limit",
+        "body": "UsageNow చివరిగా సేవ్ చేసిన స్నాప్‌షాట్‌ను సమయంతో ఉంచుతుంది. మళ్లీ కనెక్ట్ అయి, తరువాత పరిమిత రిఫ్రెష్ ప్రయత్నించండి. 429 లేదా maintenance సమయంలో అధికారిక retry window వరకు వేచి ఉండండి; పదే పదే requests పంపడం limitను దాటదు."
+      },
+      {
+        "id": "export_delete",
+        "title": "డేటాను ఎగుమతి చేయండి లేదా తొలగించండి",
+        "body": "మీరు కోరినప్పుడు మాత్రమే export పరికరంలో file సృష్టించి Apple destination pickerను తెరుస్తుంది; credentials మరియు raw responses ఉండవు. Delete all data స్థానిక repository, Keychain, App Group మరియు Widget cache, Apple Watch payload, private CloudKit records, trial anchorను తొలగిస్తుంది. offline పరికరం తొలగించిన డేటాను తిరిగి తీసుకురాకుండా గుర్తింపులేని CloudKit deletion generation మాత్రమే మిగులుతుంది. exported files మరియు Apple-managed backupsను విడిగా తొలగించండి."
+      },
+      {
+        "id": "purchase_restore",
+        "title": "జీవితకాల కొనుగోలు మరియు Restore",
+        "body": "మొదటి సేవ్ చేసిన live snapshot నుంచి మూడు రోజులు పూర్తి యాక్సెస్ ఉంటుంది. తరువాత ఒక non-consumable lifetime purchase verify అయ్యే వరకు పాత సమాచారం తేదీతో read-only previewగా ఉంటుంది. StoreKit ప్రస్తుత స్థానిక ధరను చూపుతుంది. కొనుగోలు చేసిన అదే Apple accountతో Restore ఉపయోగించండి. subscription లేదా auto-renewal లేదు."
+      },
+      {
+        "id": "safe_contact",
+        "title": "సురక్షిత సహాయ నివేదిక పంపండి",
+        "body": "పరికరం మోడల్, system మరియు App version, compatibility labelగా మాత్రమే provider పేరు, connection method, status code, సుమారు సమయం, కనిపిస్తే non-secret diagnostic event code పంపండి. token, password, cookie, slug, పూర్తి URL, request body, response body లేదా header పంపవద్దు. డెవలపర్ credentials లేదా provider dataను తిరిగి పొందలేడు."
+      },
+      {
+        "id": "provider_independence",
+        "title": "స్వతంత్ర అనుకూలత",
+        "body": "ఈ పేర్లు అనుకూల సేవలను గుర్తించడానికి మాత్రమే ఉపయోగించబడతాయి: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow స్వతంత్ర యాప్; ఈ సంస్థలు దీనిని ఆమోదించవు, ప్రాయోజితం చేయవు లేదా దీనితో అనుబంధం కలిగి ఉండవు."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "గోప్యతా విధానం",
+    "summary": "UsageNow ముందుగా స్థానిక ప్రాసెసింగ్‌ను ఉపయోగిస్తుంది; అలాగే నేరుగా సేవాదారి కనెక్షన్లు మరియు ఐచ్చిక ప్రైవేట్ Apple sync ఉన్నాయి. సాధారణ ప్రకటనకు బదులుగా ప్రతి డేటా మార్గాన్ని ఈ విధానం వివరిస్తుంది.",
+    "updated_label": "చివరిగా నవీకరించిన తేదీ",
+    "section_title": "డేటా ప్రవాహం మరియు మీ నియంత్రణ",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "సేవాదారి యాక్సెస్ ఆధారాలు",
+        "body": "ఆధారాలు AfterFirstUnlockThisDeviceOnlyతో ప్రధాన App స్థానిక Keychainలో మాత్రమే ఉంటాయి. అవి sync కావు, extensionsకు అందవు; UserDefaults, CloudKit, App Group, Widget, Apple Watch, exports, screenshots, analytics లేదా source controlకు ఎప్పుడూ వెళ్లవు. connection లేదా all dataను తొలగిస్తే సంబంధిత Keychain item కూడా తొలగుతుంది."
+      },
+      {
+        "id": "provider_requests",
+        "title": "సేవాదారి APIకి నేరుగా requests",
+        "body": "మీరు connect లేదా refresh కోరినప్పుడు, పరికరం credential మరియు అవసరమైన కనిష్ఠ fieldsను HTTPS ద్వారా సేవాదారి డాక్యుమెంట్ చేసిన అధికారిక APIకి నేరుగా పంపుతుంది. సేవాదారు తన terms ప్రకారం ప్రాసెస్ చేస్తాడు. UsageNow developer server, proxy, tunnel లేదా VPN ద్వారా trafficను మళ్లించదు."
+      },
+      {
+        "id": "developer_boundary",
+        "title": "డెవలపర్‌కు అందేది",
+        "body": "UsageNow డెవలపర్ మీ token, provider account data, usage values, request, provider response, normalized snapshots లేదా CloudKit recordsను స్వయంచాలకంగా పొందడు. UsageNowకు developer-operated account system లేదా usage database లేదు."
+      },
+      {
+        "id": "local_records_exports",
+        "title": "స్థానిక records మరియు exports",
+        "body": "normalized usage snapshots, reset times, forecasts, freshness, account labels, preferences మరియు trial state స్థానికంగా నిల్వ ఉంటాయి. మీరు కోరినప్పుడు మాత్రమే export తయారై Apple system interfaceలో ఎంచుకున్న destinationకు వెళ్తుంది. credentials మరియు raw responses ఉండవు; తరువాత destination privacy rules వర్తిస్తాయి."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "ఐచ్చిక private CloudKit",
+        "body": "iCloud sync ఆన్ చేసినప్పుడు మాత్రమే తగ్గించిన provider identifiers, anonymous account labels, normalized usage values, reset, forecast, freshness, preferences మరియు కనిష్ఠ trial anchor మీ private CloudKitలో నిల్వ కావచ్చు. credentials లేదా raw payloadలు ఎప్పుడూ ఉండవు. CloudKitను Apple నడుపుతుంది; UsageNow వేరే developer database సృష్టించదు."
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget మరియు Apple Watch",
+        "body": "App Group, Widgetకు secret-free capacity snapshot మాత్రమే ఇస్తుంది. WatchConnectivity దాన్ని paired Apple Watchకు పంపుతుంది. normalized capacity, reset, freshness, display preferences ఉండవచ్చు; credentials, cookie, request header లేదా raw provider response ఉండవు."
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit మరియు కొనుగోళ్లు",
+        "body": "product మరియు localized priceను load చేయడానికి, non-consumable lifetime unlockను verify, purchase లేదా Restore చేయడానికి StoreKit Appleను సంప్రదిస్తుంది. transactionను Apple ప్రాసెస్ చేస్తుంది. UsageNow verified entitlementను చదువుతుంది; payment card వివరాలు అందవు."
+      },
+      {
+        "id": "diagnostics",
+        "title": "సురక్షిత diagnostics",
+        "body": "స్థానిక diagnostics సాధారణ event type, status code, time మరియు non-secret correlation identifierను నమోదు చేయవచ్చు. ఇది ఆటోమేటిక్‌గా upload కాదు; token, password, cookie, organization లేదా workspace slug, పూర్తి URL, request body, response body లేదా header ఉండవు. ఈ secretsను supportకు పంపవద్దు."
+      },
+      {
+        "id": "excluded_practices",
+        "title": "ప్రకటనలు, analytics, tracking లేదా scraping లేవు",
+        "body": "UsageNowలో ad SDK, third-party analytics, cross-app tracking, device fingerprint లేదా developer marketing profile లేవు. password సేకరించదు, browser cookie import చేయదు, dashboard HTML scrape చేయదు, private endpoint వాడదు, official clientగా నటించదు, వారి tokenను reuse చేయదు, rate limitను దాటదు."
+      },
+      {
+        "id": "deletion_retention",
+        "title": "తొలగింపు మరియు మిగిలే generation",
+        "body": "Delete all data స్థానిక repository, Keychain, App Group, Widget cache, Apple Watch payload, private CloudKit records మరియు trial anchorను తొలగిస్తుంది. offline పరికరం తొలగించిన contentను తిరిగి తీసుకురాకుండా గుర్తింపులేని CloudKit deletion generation మాత్రమే ఉంటుంది. అందులో provider, usage, account, credential, device fingerprint లేదా trial data ఉండవు. exports మరియు Apple backupsను విడిగా తొలగించాలి."
+      },
+      {
+        "id": "support_site",
+        "title": "సహాయ ఇమెయిల్ మరియు ఈ వెబ్‌సైట్",
+        "body": "మీరు supportకు ఇమెయిల్ చేస్తే, మీరు ఎంచుకున్న address మరియు message డెవలపర్‌కు అందుతాయి; reply ఇవ్వడానికి మాత్రమే వాడతారు. ఈ static site cookieలను set చేయదు; advertising, analytics, tracking script లేదా third-party assetలను load చేయదు. భవిష్యత్తు hosting service తన policy ప్రకారం సాధారణ connection informationను process చేయవచ్చు."
+      },
+      {
+        "id": "provider_independence",
+        "title": "సేవాదారుల నుంచి స్వతంత్రత",
+        "body": "ఈ పేర్లు అనుకూల సేవలను గుర్తించడానికి మాత్రమే ఉపయోగించబడతాయి: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow స్వతంత్ర యాప్; ఈ సంస్థలు దీనిని ఆమోదించవు, ప్రాయోజితం చేయవు లేదా దీనితో అనుబంధం కలిగి ఉండవు."
+      }
+    ]
+  }
+}

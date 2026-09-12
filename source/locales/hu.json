@@ -1,0 +1,164 @@
+{
+  "language_name": "Magyar",
+  "language_label": "Nyelv",
+  "navigation_label": "Elsődleges navigáció",
+  "skip_link": "Ugrás a fő tartalomhoz",
+  "nav": {
+    "index": "Áttekintés",
+    "support": "Támogatás",
+    "privacy": "Adatvédelmi szabályzat"
+  },
+  "contact": {
+    "title": "Lépjen kapcsolatba a UsageNow ügyfélszolgálatával",
+    "body": "Adja meg az eszköz modelljét, az operációs rendszer és az alkalmazás verzióját, a szolgáltató kompatibilitási nevét, a csatlakozási módot, az állapotkódot és a hozzávetőleges időt. Soha ne küldjön hozzáférési tokent, jelszót, cookie-t, szervezeti vagy munkaterület-slugot, teljes URL-t, kérés vagy válasz törzsét vagy fejlécet.",
+    "button": "Kérdésed vagy észrevételed van? Írj nekünk."
+  },
+  "footer": "A UsageNow: AI Usage hivatalos támogatási és adatvédelmi információi.",
+  "home": {
+    "title": "Tervezze meg a mesterséges intelligencia kapacitását anélkül, hogy megadná a hitelesítő adatait",
+    "summary": "A UsageNow csatlakozik az eszközről az Ön által kiválasztott dokumentált API szolgáltatóhoz, elmagyarázza a fennmaradó kapacitást és a visszaállítási időzítést, valamint titkosan szinkronizálhatja a titkosított pillanatfelvételeket a Apple fiókon keresztül.",
+    "section_title": "Hogyan kezeli a UsageNow az Ön adatait",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "Közvetlen hivatalos kapcsolatok",
+        "body": "Amikor frissítést kér, az alkalmazás közvetlenül az Ön készülékéről hívja a kiválasztott szolgáltató dokumentált hivatalos API-jét az Ön által biztosított kapcsolaton keresztül. Nincs UsageNow fejlesztői relé vagy UsageNow fiók."
+      },
+      {
+        "id": "credential_storage",
+        "title": "A hitelesítési adatok ezen az eszközön maradnak",
+        "body": "A szolgáltató hitelesítő adatait a főalkalmazás Keychain AfterFirstUnlockThisDeviceOnly védelemmel ellátott eszköze tárolja. Nem szinkronizálhatók, és soha nem küldik el a CloudKit, App Group, Widget vagy Apple Watch címekre."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Opcionális privát Apple szinkronizálás",
+        "body": "Csak ha engedélyezi az iCloud szinkronizálást, a minimalizált normalizált használati pillanatképek, beállítások és a próbahorgony csak akkor tárolható a privát CloudKit adatbázisban. A hitelesítő adatok és a nyers szolgáltatói válaszok kizárva."
+      },
+      {
+        "id": "purchase",
+        "title": "Három nap, aztán egy életre szóló vásárlás",
+        "body": "A háromnapos teljes hozzáférési időszak csak az első sikeres élő használati pillanatkép mentése után kezdődik. Egy nem fogyóeszköz élettartamra szóló feloldás következik; A StoreKit a valós helyi árat tölti be, a Apple pedig a vásárlást és a visszaállítást kezeli. Nincs előfizetés vagy reklám."
+      }
+    ]
+  },
+  "support": {
+    "title": "UsageNow támogatás",
+    "summary": "Segítség a közvetlen szolgáltatói kapcsolatokhoz, állapotkódokhoz, adataihoz és az egyszeri, élettartamra szóló vásárláshoz.",
+    "section_title": "Hibaelhárítás és fiókkezelés",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "Csatlakozás típusai",
+        "body": "A szolgáltató használhatja az Ön által biztosított API vagy rendszergazdai kulcsot, vagy OAuth vagy eszköz engedélyezési folyamatot, ha a szolgáltató hivatalosan támogatja azt. Minden frissítés közvetlenül a dokumentált hivatalos szolgáltatói végpontokhoz megy. A UsageNow nem kér jelszavakat, nem importál böngésző-cookie-kat, nem olvassa ki automatizáltan az irányítópult HTML-kódját, nem hív meg privát végpontokat, és nem kerüli meg a szolgáltató sebességkorlátait. A rendelkezésre álló mezők szolgáltatónként és számlacsomagonként eltérőek."
+      },
+      {
+        "id": "http_401",
+        "title": "401 – Jogosulatlan",
+        "body": "A hitelesítő adat hiányzik, lejárt, visszavonták, vagy nem a megfelelő szolgáltatáshoz tartozik. Hozza létre vagy újítsa meg a szolgáltató hivatalos konzolján, csak a minimálisan kért engedélyt adja meg, majd cserélje ki a hitelesítő adatot, vagy válassza a Bejelentkezés újra lehetőséget. Soha ne küldje el e-mailben a kulcsot."
+      },
+      {
+        "id": "http_403",
+        "title": "403 – Tilos",
+        "body": "A szolgáltató felismerte a hitelesítési adatokat, de előfordulhat, hogy a fiók nem rendelkezik a szükséges hatókörrel, számlázási szerepkörrel, csapat- vagy szervezeti hozzáféréssel vagy SSO jóváhagyással. Erősítse meg a fiókcélt és a szolgáltató minimális olvasási engedélyét. Egyes tervek nem tesznek közzé használati adatokat."
+      },
+      {
+        "id": "http_404",
+        "title": "404 – Nem található",
+        "body": "Ellenőrizze a pontos szervezetet, csapatot, munkaterületet, felhasználónevet vagy erőforrás-azonosítót. A 404 azt is jelentheti, hogy a szolgáltató nem teszi közzé ezt a használati végpontot az Ön tervéhez vagy régiójához. Kövesse az alkalmazáson belüli hivatalos csatlakozási útmutatót; soha ne helyettesítsen privát végponttal."
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "Offline, elavult vagy korlátozott",
+        "body": "A UsageNow megőrzi az utolsó mentett pillanatfelvételt az időbélyeggel. Csatlakozzon újra, és próbáljon meg egy korlátozott frissítést később. 429-es vagy szolgáltatói karbantartás esetén várja meg a hivatalos újrapróbálkozási időszakot; az ismételt kérések nem lépik át a szolgáltatói korlátot."
+      },
+      {
+        "id": "export_delete",
+        "title": "Adatok",
+        "body": "Az Exportálás csak akkor hoz létre fájlt ezen az eszközön, ha rákérdez, és megnyit egy Apple célpontválasztót; a hitelesítő adatok és a nyers szolgáltatói válaszok kizárva. Az összes adat törlése eltávolítja a helyi adattárat, a Keychain hitelesítő adatokat, a App Group és Widget gyorsítótárat, a Apple Watch hasznos terhet, a privát CloudKit rekordokat és a próbahorgonyokat. A nem azonosítható CloudKit törlés létrehozása csak azért marad, hogy megakadályozza az offline eszközt a törölt tartalom visszaállításában. Az exportált fájlokat és a Apple által kezelt biztonsági másolatokat külön törölje."
+      },
+      {
+        "id": "purchase_restore",
+        "title": "Vásárlás visszaállítása",
+        "body": "A teljes hozzáférés az első mentett élő pillanatképtől számított három napig tart. Ezt követően a meglévő mentett információk dátumozott, csak olvasható előnézetként maradnak meg, amíg egyetlen, nem fogyóeszköz élettartamra szóló vásárlást ellenőriznek. A StoreKit az aktuális helyi árat jeleníti meg. Használja a Visszaállítás funkciót, amikor bejelentkezett a vásárlást végző Apple fiókba. Nincs előfizetés vagy automatikus megújítás."
+      },
+      {
+        "id": "safe_contact",
+        "title": "Biztonságos támogatási jelentés küldése",
+        "body": "Küldje el az eszköz modelljét, az operációs rendszert és az alkalmazás verzióját, a csak kompatibilitási címkeként használt szolgáltató nevét, a csatlakozási módot, az állapotkódot, a hozzávetőleges időt és a nem titkos diagnosztikai eseménykódot, ha megjelenik. Soha ne küldjön tokent, jelszót, cookie-t, slug-ot, teljes URL-t, kérés törzsét, választörzsét vagy fejlécet. A fejlesztő nem tudja visszaállítani a hitelesítő adatokat vagy a szolgáltatói adatokat."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Független kompatibilitás",
+        "body": "A nevek kizárólag a kompatibilis szolgáltatások azonosítására szolgálnak: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. A UsageNow független alkalmazás; ezek a szolgáltatók nem hagyták jóvá és nem támogatják, továbbá nem áll velük kapcsolatban."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Adatvédelmi szabályzat",
+    "summary": "A UsageNow elsősorban helyi, de közvetlen szolgáltatói kapcsolatokat és opcionális Apple privát szinkronizálást használ. Ez a szabályzat minden útvonalat felsorol, ahelyett, hogy egy általános adatvédelmi címkére hagyatkozna.",
+    "updated_label": "Utoljára frissítve",
+    "section_title": "Adatáramlás és ellenőrzés",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "Szolgáltatói hitelesítő adatok",
+        "body": "A hitelesítési adatok csak a főalkalmazás helyi Keychain-jében tárolódnak a AfterFirstUnlockThisDeviceOnly használatával. Nem szinkronizálhatók, nincsenek kitéve a kiterjesztéseknek, és soha nem írnak be UserDefaults, CloudKit, App Group, Widget, Apple Watch, exportálást, képernyőképeket, elemzéseket vagy forrásvezérlést. A kapcsolat megszüntetése vagy az összes adat törlése törli a megfelelő Keychain elemet."
+      },
+      {
+        "id": "provider_requests",
+        "title": "Közvetlen szolgáltatói API kérések",
+        "body": "Amikor a csatlakozást vagy a frissítést kéri, az eszköz közvetlenül elküldi a hitelesítő adatokat és a minimálisan szükséges kérelmet a kiválasztott szolgáltató dokumentált hivatalos API részére HTTPS-n keresztül. Ez a szolgáltató saját feltételei szerint fogadja és dolgozza fel a kérelmet. A UsageNow nem irányítja a szolgáltatói forgalmat fejlesztői kiszolgálón, proxyn, alagúton vagy VPN-n keresztül."
+      },
+      {
+        "id": "developer_boundary",
+        "title": "Amit a fejlesztő kap",
+        "body": "A UsageNow fejlesztő nem kapja meg automatikusan a tokent, a szolgáltatói fiók adatait, a használati értékeket, a kérést, a szolgáltatói választ, a normalizált pillanatképeket vagy a CloudKit rekordokat. A UsageNow nem rendelkezik fejlesztő által működtetett fiókrendszerrel vagy használati adatbázissal."
+      },
+      {
+        "id": "local_records_exports",
+        "title": "Helyi nyilvántartások és export",
+        "body": "A normalizált használati pillanatképek, a visszaállítási idők, az előrejelzések, a frissesség, a fiókcímkék, a beállítások és a próbaállapot helyben tárolódnak. Az exportálás csak akkor jön létre, ha kéri, és a Apple rendszerfelületén keresztül kiválasztott célhelyre kerül. Az exportálás nem tartalmazza a hitelesítő adatokat és a nyers szolgáltatói válaszokat; akkor a célállomás adatvédelmi feltételei érvényesek."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Szinkronizálás",
+        "body": "Csak ha engedélyezi az iCloud-szinkronizálást, a minimálisra csökkentett szolgáltatói azonosítók, a névtelen fiókcímkék, a normalizált használati értékek, a visszaállítási és előrejelzési adatok, a frissesség, a beállítások és a minimális próbahorgony tárolhatók a Apple privát CloudKit adatbázisában. A hitelesítő adatok és a nyers szolgáltatói hasznos adatok soha nem szerepelnek benne. A Apple a következőt üzemelteti: CloudKit; A UsageNow nem hoz létre külön fejlesztői adatbázist."
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget és Apple Watch",
+        "body": "A App Group tárhely a Widget számára csak titokmentes kapacitás-pillanatképet biztosít. A WatchConnectivity titokmentes pillanatfelvételt küld a párosított Apple Watch készülékre a UsageNow nézetekhez és komplikációkhoz. Ezek a hasznos adatok tartalmazhatnak normalizált kapacitást, alaphelyzetbe állítást, frissességi és megjelenítési beállításokat, de soha nem tartalmazhatnak hitelesítő adatokat, cookie-kat, kérésfejléceket vagy nyers szolgáltatói válaszokat."
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit és vásárlások",
+        "body": "A StoreKit kapcsolatba lép a Apple-vel a termék és a lokalizált ár betöltéséhez, valamint a nem fogyóeszköz élettartamra szóló feloldásának ellenőrzéséhez, vásárlásához vagy visszaállításához. A Apple feldolgozza a tranzakciót. A UsageNow beolvassa az ellenőrzött jogosultságra vonatkozó információkat, és nem kapja meg a fizetési kártya adatait."
+      },
+      {
+        "id": "diagnostics",
+        "title": "Biztonságos diagnosztika",
+        "body": "A helyi diagnosztika széles körű eseménytípust, állapotkódot, időt és nem titkos korrelációs azonosítót rögzíthet. Nem töltődnek fel automatikusan, és soha nem tartalmaznak jogkivonatot, jelszót, cookie-t, szervezeti vagy munkaterületi elemet, teljes URL-t, kérés törzsét, választörzsét vagy fejlécet. Ne küldje el ezeket a titkokat támogatási üzenetben."
+      },
+      {
+        "id": "excluded_practices",
+        "title": "Nincs reklám, elemzés, nyomon követés vagy kaparás",
+        "body": "A UsageNow nem tartalmaz hirdetési SDK-t, harmadik féltől származó elemzést, alkalmazások közötti követést, eszköz-ujjlenyomatot vagy fejlesztői marketingprofilt. Nem gyűjt jelszavakat, nem importál böngésző-cookie-kat, nem olvassa ki automatizáltan az irányítópult HTML-kódját, nem hív meg privát végpontokat, nem adja ki magát hivatalos kliensnek, nem használja újra annak tokenjeit, és nem kerüli meg a szolgáltató sebességkorlátait."
+      },
+      {
+        "id": "deletion_retention",
+        "title": "A törlés és a megtartott generáció",
+        "body": "Az összes adat törlése eltávolítja a helyi adattárat, a Keychain, App Group, Widget gyorsítótárat, a Apple Watch hasznos adatot, a privát CloudKit rekordokat és a próbahorgonyot. A UsageNow csak egy nem azonosítható CloudKit törlésgenerációt őriz meg, így az offline eszköz nem tudja újraéleszteni a törölt tartalmat. Nem tartalmaz szolgáltatóra, használati, fiókra, hitelesítő adatra, eszköz ujjlenyomatára vagy próbaverzióra vonatkozó adatokat. Az exportált fájlok és a Apple által felügyelt eszközök biztonsági másolatai az Ön ellenőrzése alatt maradnak, és külön kell eltávolítani őket."
+      },
+      {
+        "id": "support_site",
+        "title": "Támogatási e-mail és ez a webhely",
+        "body": "Ha e-mailt küld a támogatásnak, a fejlesztő megkapja az Ön által elküldött e-mail címet és üzenetet, és csak arra használja őket, hogy válaszoljon Önnek. Ez a statikus webhely nem állít be cookie-kat, és nem tölt be hirdetéseket, elemzéseket, nyomkövetési szkripteket vagy harmadik féltől származó eszközöket. Az esetleges tárhelyszolgáltatás a szabványos csatlakozási információkat saját adatvédelmi feltételei szerint dolgozhatja fel."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Szolgáltató függetlensége",
+        "body": "A nevek kizárólag a kompatibilis szolgáltatások azonosítására szolgálnak: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. A UsageNow független alkalmazás; ezek a szolgáltatók nem hagyták jóvá és nem támogatják, továbbá nem áll velük kapcsolatban."
+      }
+    ]
+  }
+}

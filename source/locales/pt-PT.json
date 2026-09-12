@@ -1,0 +1,164 @@
+{
+  "language_name": "Português (Portugal)",
+  "language_label": "Idioma",
+  "navigation_label": "Navegação principal",
+  "skip_link": "Saltar para o conteúdo principal",
+  "nav": {
+    "index": "Visão geral",
+    "support": "Apoio",
+    "privacy": "Privacidade"
+  },
+  "contact": {
+    "title": "Contactar o apoio do UsageNow",
+    "body": "Indique o modelo do dispositivo, as versões do sistema operativo e da aplicação, o nome do fornecedor apenas como referência de compatibilidade, o método de ligação, o código de estado e a hora aproximada. Nunca envie um token de acesso, palavra-passe, cookie, slug da organização ou do espaço de trabalho, URL completo, corpo do pedido ou da resposta, nem cabeçalhos.",
+    "button": "Contactar por e-mail"
+  },
+  "footer": "Informações oficiais de apoio e privacidade do UsageNow: AI Usage.",
+  "home": {
+    "title": "Planeie a capacidade de IA sem nos entregar as suas credenciais",
+    "summary": "O UsageNow liga-se, a partir do seu dispositivo, às API documentadas dos fornecedores que escolher, explica a capacidade restante e a data de reposição e pode sincronizar de forma privada, através da sua conta Apple, instantâneos sem dados secretos.",
+    "section_title": "Como o UsageNow trata os seus dados",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "Ligações oficiais diretas",
+        "body": "Quando pede uma atualização, a aplicação contacta diretamente, a partir do seu dispositivo, a API oficial documentada do fornecedor selecionado através da ligação que configurou. Não existe qualquer servidor intermédio do programador nem uma conta UsageNow."
+      },
+      {
+        "id": "credential_storage",
+        "title": "As credenciais permanecem neste dispositivo",
+        "body": "As credenciais do fornecedor ficam no Keychain da aplicação principal com a proteção AfterFirstUnlockThisDeviceOnly. Não são sincronizáveis e nunca são enviadas para o CloudKit, App Group, Widget ou Apple Watch."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Sincronização privada Apple opcional",
+        "body": "Só se ativar a sincronização do iCloud é que os instantâneos mínimos de utilização normalizada, as preferências e o marcador do período experimental podem ser guardados na sua base de dados privada do CloudKit. As credenciais e as respostas não processadas do fornecedor ficam excluídas."
+      },
+      {
+        "id": "purchase",
+        "title": "Três dias e depois uma compra vitalícia",
+        "body": "O período de acesso integral de três dias só começa depois de ser guardado o primeiro instantâneo real de utilização. Segue-se um desbloqueio vitalício não consumível; o StoreKit apresenta o preço local verdadeiro e a Apple trata da compra e de Restaurar. Não existe subscrição nem publicidade."
+      }
+    ]
+  },
+  "support": {
+    "title": "Apoio do UsageNow",
+    "summary": "Ajuda para ligações diretas aos fornecedores, códigos de estado, gestão dos seus dados e compra vitalícia única.",
+    "section_title": "Resolução de problemas e gestão da conta",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "Tipos de ligação",
+        "body": "Um fornecedor pode usar uma chave API ou de administrador fornecida por si, ou um fluxo OAuth ou de autorização do dispositivo quando tiver suporte oficial. Cada atualização segue diretamente para os endpoints oficiais documentados do fornecedor. O UsageNow nunca pede a sua palavra-passe, importa cookies do navegador, extrai dados de painéis HTML, chama endpoints privados nem contorna limites de pedidos. Os campos disponíveis variam consoante o fornecedor e o plano da conta."
+      },
+      {
+        "id": "http_401",
+        "title": "401 — Não autorizado",
+        "body": "A credencial está em falta, expirou, foi revogada ou pertence ao serviço errado. Crie-a ou renove-a na consola oficial do fornecedor, conceda apenas a permissão mínima pedida e depois substitua a credencial ou escolha Iniciar sessão novamente. Nunca envie a chave por e-mail."
+      },
+      {
+        "id": "http_403",
+        "title": "403 — Proibido",
+        "body": "O fornecedor reconheceu a credencial, mas a conta pode não ter o âmbito, a função de faturação, o acesso à equipa ou organização, ou a aprovação SSO necessários. Confirme a conta de destino e a permissão mínima de leitura exigida pelo fornecedor. Alguns planos não disponibilizam dados de utilização."
+      },
+      {
+        "id": "http_404",
+        "title": "404 — Não encontrado",
+        "body": "Confirme a organização, equipa, área de trabalho, nome de utilizador ou identificador exato do recurso. Um erro 404 também pode significar que o fornecedor não disponibiliza esse endpoint de utilização no seu plano ou região. Siga o guia oficial de ligação apresentado na aplicação; nunca substitua o endpoint por um endpoint privado."
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "Sem ligação, dados desatualizados ou limite atingido",
+        "body": "O UsageNow conserva o último instantâneo guardado com a respetiva data e hora. Restabeleça a ligação e tente mais tarde uma atualização limitada. Perante um erro 429 ou manutenção do fornecedor, aguarde o intervalo oficial de repetição; pedidos sucessivos não contornam os limites do fornecedor."
+      },
+      {
+        "id": "export_delete",
+        "title": "Exportar e eliminar os seus dados",
+        "body": "A exportação só cria um ficheiro neste dispositivo quando a pedir e abre o seletor de destino da Apple; as credenciais e as respostas não processadas do fornecedor ficam excluídas. Eliminar todos os dados remove o repositório local, as credenciais do Keychain, a cache do App Group e do Widget, os dados enviados para o Apple Watch, os registos privados do CloudKit e o marcador do período experimental. Permanece apenas uma geração de eliminação do CloudKit não identificável, para impedir que um dispositivo sem ligação restaure conteúdo eliminado. Elimine separadamente os ficheiros exportados e as cópias de segurança geridas pela Apple."
+      },
+      {
+        "id": "purchase_restore",
+        "title": "Compra vitalícia e Restaurar",
+        "body": "O acesso integral dura três dias a contar do primeiro instantâneo real guardado. Depois, as informações já guardadas continuam disponíveis como pré-visualização datada e só de leitura até ser confirmada uma única compra vitalícia não consumível. O StoreKit apresenta o preço local atual. Use Restaurar com sessão iniciada na Conta Apple que efetuou a compra. Não existe subscrição nem renovação automática."
+      },
+      {
+        "id": "safe_contact",
+        "title": "Enviar um pedido de apoio seguro",
+        "body": "Indique o modelo do dispositivo, as versões do sistema operativo e da aplicação, o nome do fornecedor apenas como referência de compatibilidade, o método de ligação, o código de estado, a hora aproximada e, se aparecer, um código de diagnóstico sem dados secretos. Nunca envie um token, palavra-passe, cookie, slug, URL completo, corpo do pedido, corpo da resposta ou cabeçalho. O programador não consegue recuperar credenciais nem dados do fornecedor."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Compatibilidade independente",
+        "body": "Estes nomes são utilizados apenas para identificar serviços compatíveis: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. A aplicação UsageNow é independente: estes fornecedores não a aprovam nem patrocinam e não está afiliada aos mesmos."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "summary": "O UsageNow dá prioridade ao armazenamento local, mas usa ligações diretas aos fornecedores e, opcionalmente, sincronização privada da Apple. Esta política descreve cada percurso dos dados em vez de recorrer a uma declaração genérica.",
+    "updated_label": "Última atualização",
+    "section_title": "Fluxo e controlo dos dados",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "Credenciais dos fornecedores",
+        "body": "As credenciais são guardadas apenas no Keychain local da aplicação principal com a proteção AfterFirstUnlockThisDeviceOnly. Não são sincronizáveis, não ficam acessíveis às extensões e nunca entram em UserDefaults, CloudKit, App Group, Widget, Apple Watch, exportações, capturas de ecrã, análise de utilização ou controlo de código-fonte. Remover uma ligação ou eliminar todos os dados apaga o item correspondente do Keychain."
+      },
+      {
+        "id": "provider_requests",
+        "title": "Pedidos diretos às API dos fornecedores",
+        "body": "Quando pede uma ligação ou atualização, o dispositivo envia a credencial e apenas os campos mínimos necessários diretamente para a API oficial documentada do fornecedor selecionado através de HTTPS. O fornecedor recebe e trata o pedido segundo os próprios termos. O UsageNow não encaminha o tráfego do fornecedor através de um servidor do programador, proxy, túnel ou VPN."
+      },
+      {
+        "id": "developer_boundary",
+        "title": "O que o programador recebe",
+        "body": "O programador do UsageNow não recebe automaticamente o seu token, dados da conta do fornecedor, valores de utilização, pedido, resposta do fornecedor, instantâneos normalizados ou registos do CloudKit. O UsageNow não tem um sistema de contas nem uma base de dados de utilização operados pelo programador."
+      },
+      {
+        "id": "local_records_exports",
+        "title": "Registos locais e exportações",
+        "body": "Os instantâneos de utilização normalizada, datas de reposição, previsões, atualização dos dados, identificadores de conta, preferências e estado do período experimental são guardados localmente. Uma exportação só é criada quando a pede e segue para um destino escolhido por si através da interface de sistema da Apple. As exportações excluem credenciais e respostas não processadas do fornecedor; passam depois a aplicar-se os termos de privacidade do destino."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "CloudKit privado opcional",
+        "body": "Só quando ativa a sincronização do iCloud é que identificadores mínimos dos fornecedores, identificadores anónimos das contas, valores de utilização normalizada, dados de reposição e previsão, atualização dos dados, preferências e o marcador mínimo do período experimental podem ser guardados na sua base de dados privada Apple do CloudKit. Nunca são incluídas credenciais nem respostas não processadas dos fornecedores. A Apple opera o CloudKit; o UsageNow não cria uma base de dados separada do programador."
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget e Apple Watch",
+        "body": "O armazenamento do App Group fornece ao Widget apenas um instantâneo de capacidade sem dados secretos. O WatchConnectivity envia um instantâneo sem dados secretos para o Apple Watch emparelhado, destinado às vistas e complicações do UsageNow. Estes dados podem incluir capacidade normalizada, reposição, atualização e preferências de apresentação, mas nunca credenciais, cookies, cabeçalhos de pedidos ou respostas não processadas dos fornecedores."
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit e compras",
+        "body": "O StoreKit contacta a Apple para obter o produto e o preço localizado e para verificar, comprar ou Restaurar o desbloqueio vitalício não consumível. A Apple processa a transação. O UsageNow lê informações verificadas sobre o direito de acesso e não recebe os dados do cartão de pagamento."
+      },
+      {
+        "id": "diagnostics",
+        "title": "Diagnósticos sem dados secretos",
+        "body": "Os diagnósticos locais podem registar uma categoria geral de evento, um código de estado, a hora e um identificador de correlação sem dados secretos. Não são carregados automaticamente e nunca incluem token, palavra-passe, cookie, slug da organização ou do espaço de trabalho, URL completo, corpo do pedido, corpo da resposta ou cabeçalho. Não envie estes segredos numa mensagem de apoio."
+      },
+      {
+        "id": "excluded_practices",
+        "title": "Sem publicidade, análise, rastreio ou recolha por scraping",
+        "body": "O UsageNow não inclui SDK de publicidade, análise de terceiros, rastreio entre aplicações, impressão digital do dispositivo nem perfis de marketing do programador. Não recolhe palavras-passe, não importa cookies do navegador, não extrai dados de painéis HTML, não chama endpoints privados, não se faz passar por clientes oficiais, não reutiliza tokens de clientes oficiais e não contorna limites de pedidos."
+      },
+      {
+        "id": "deletion_retention",
+        "title": "Eliminação e geração conservada",
+        "body": "Eliminar todos os dados remove o repositório local, Keychain, App Group, cache do Widget, dados enviados para o Apple Watch, registos privados do CloudKit e marcador do período experimental. O UsageNow conserva apenas uma geração de eliminação do CloudKit não identificável, para que um dispositivo sem ligação não consiga restaurar conteúdo eliminado. Essa geração não contém dados de fornecedor, utilização, conta, credencial, impressão digital do dispositivo ou período experimental. Os ficheiros exportados e as cópias de segurança do dispositivo geridas pela Apple permanecem sob o seu controlo e têm de ser removidos separadamente."
+      },
+      {
+        "id": "support_site",
+        "title": "E-mail de apoio e este site",
+        "body": "Se enviar um e-mail ao apoio, o programador recebe o endereço e a mensagem que decidir enviar e utiliza-os apenas para lhe responder. Este site estático não define cookies e não carrega publicidade, análise, scripts de rastreio ou recursos de terceiros. O futuro serviço de alojamento poderá tratar informações de ligação normais segundo os próprios termos de privacidade."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Independência dos fornecedores",
+        "body": "Estes nomes são utilizados apenas para identificar serviços compatíveis: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. A aplicação UsageNow é independente: estes fornecedores não a aprovam nem patrocinam e não está afiliada aos mesmos."
+      }
+    ]
+  }
+}

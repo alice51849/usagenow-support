@@ -1,0 +1,164 @@
+{
+  "language_name": "Català",
+  "language_label": "Idioma",
+  "navigation_label": "Navegació primària",
+  "skip_link": "Saltar al contingut principal",
+  "nav": {
+    "index": "Visió general",
+    "support": "Assistència",
+    "privacy": "Política de privadesa"
+  },
+  "contact": {
+    "title": "Contacteu amb l'assistència de UsageNow",
+    "body": "Inclou el model del dispositiu, el sistema operatiu i la versió de l'aplicació, el nom de compatibilitat del proveïdor, el mètode de connexió, el codi d'estat i el temps aproximat. No envieu mai cap testimoni d'accés, contrasenya, galeta, organització o espai de treball, URL complet, cos de sol·licitud o resposta o capçaleres.",
+    "button": "Tens preguntes o comentaris? Escriu-nos."
+  },
+  "footer": "Suport oficial i informació de privadesa per a UsageNow: AI Usage.",
+  "home": {
+    "title": "Planifiqueu la capacitat d'IA sense donar-nos les vostres credencials",
+    "summary": "UsageNow es connecta des del vostre dispositiu als proveïdors documentats API que trieu, explica la capacitat restant i el temps de restabliment, i pot sincronitzar de manera privada instantànies sense secrets mitjançant el vostre compte Apple.",
+    "section_title": "Com UsageNow gestiona les vostres dades",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "Connexions oficials directes",
+        "body": "Quan sol·liciteu una actualització, l'aplicació truca al API oficial documentat del proveïdor seleccionat directament des del vostre dispositiu mitjançant la connexió que heu proporcionat. No hi ha cap relé de desenvolupador UsageNow ni compte UsageNow."
+      },
+      {
+        "id": "credential_storage",
+        "title": "Les credencials es mantenen en aquest dispositiu",
+        "body": "Les credencials del proveïdor es mantenen a la Keychain de l'aplicació principal amb protecció AfterFirstUnlockThisDeviceOnly. No es poden sincronitzar i mai s'envien a CloudKit, App Group, Widget o Apple Watch."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Sincronització privada opcional Apple",
+        "body": "Només si activeu la sincronització d'iCloud, les instantànies d'ús normalitzat minimitzat, les preferències i l'àncora de prova es poden emmagatzemar a la vostra base de dades privada CloudKit. S'exclouen les credencials i les respostes del proveïdor en brut."
+      },
+      {
+        "id": "purchase",
+        "title": "Tres dies, després una compra per a tota la vida",
+        "body": "El període d'accés complet de tres dies només comença després de desar la primera instantània d'ús en directe amb èxit. Segueix un desbloqueig de per vida no consumible; StoreKit carrega el preu local real i Apple s'encarrega de la compra i la restauració. No hi ha subscripció ni publicitat."
+      }
+    ]
+  },
+  "support": {
+    "title": "Suport UsageNow",
+    "summary": "Ajuda amb les connexions directes del proveïdor, els codis d'estat, les vostres dades i la compra única per a tota la vida.",
+    "section_title": "Resolució de problemes i cura del compte",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "Tipus de connexió",
+        "body": "Un proveïdor pot utilitzar una API o una clau d'administració subministrada per vostè, o un OAuth o un flux d'autorització del dispositiu quan el proveïdor ho admet oficialment. Cada actualització va directament als punts finals del proveïdor oficial documentats. UsageNow no demana contrasenyes, no importa galetes del navegador, no extreu l’HTML del tauler, no crida endpoints privats ni eludeix els límits de peticions del proveïdor. Els camps disponibles varien segons el proveïdor i el pla de compte."
+      },
+      {
+        "id": "http_401",
+        "title": "401 — No autoritzat",
+        "body": "Falta la credencial, ha caducat, s'ha revocat o pertany al servei incorrecte. Creeu-lo o renovau-lo a la consola oficial del proveïdor, concediu només el permís mínim sol·licitat i, a continuació, substituïu la credencial o trieu Iniciar sessió de nou. Mai per correu electrònic la clau."
+      },
+      {
+        "id": "http_403",
+        "title": "403 — Prohibit",
+        "body": "El proveïdor ha reconegut la credencial, però és possible que el compte no tingui un abast, una funció de facturació, un accés a l'equip o a l'organització o l'aprovació de SSO. Confirmeu l'objectiu del compte i el permís de lectura mínim del proveïdor. Alguns plans no exposen dades d'ús."
+      },
+      {
+        "id": "http_404",
+        "title": "404 — No trobat",
+        "body": "Comproveu l'organització, l'equip, l'espai de treball, el nom d'usuari o l'identificador del recurs exactes. Un 404 també pot significar que el proveïdor no exposa aquest punt final d'ús per al vostre pla o regió. Seguiu la guia de connexió oficial de l'aplicació actual; mai substituïu un punt final privat."
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "Fora de línia, obsolet o de tarifa limitada",
+        "body": "UsageNow conserva la darrera instantània desada amb la seva marca de temps. Torna a connectar i prova una actualització limitada més tard. Per al manteniment del 429 o del proveïdor, espereu la finestra oficial de reintent; les sol·licituds repetides no superen el límit del proveïdor."
+      },
+      {
+        "id": "export_delete",
+        "title": "Dades",
+        "body": "Exportació crea un fitxer en aquest dispositiu només quan demaneu i obre un selector de destinació Apple; s'exclouen les credencials i les respostes del proveïdor en brut. Suprimir totes les dades elimina el dipòsit local, les credencials Keychain, la memòria cau App Group i Widget, la càrrega útil Apple Watch, els registres privats de CloudKit i l'àncora de prova. Una generació d'eliminació de CloudKit no identificativa només roman per impedir que un dispositiu fora de línia restauri el contingut suprimit. Suprimeix els fitxers exportats i les còpies de seguretat gestionades per Apple per separat."
+      },
+      {
+        "id": "purchase_restore",
+        "title": "Restaura la compra",
+        "body": "L'accés complet dura tres dies a partir de la primera instantània en directe desada. Després d'això, la informació desada existent es manté com a previsualització de només lectura datada fins que es verifiqui una única compra de tota la vida no consumible. StoreKit mostra el preu local actual. Utilitzeu Restaura mentre heu iniciat la sessió al compte Apple que va fer la compra. No hi ha subscripció ni renovació automàtica."
+      },
+      {
+        "id": "safe_contact",
+        "title": "Envieu un informe de suport segur",
+        "body": "Envieu el model del dispositiu, el sistema operatiu i la versió de l'aplicació, el nom del proveïdor utilitzat només com a etiqueta de compatibilitat, el mètode de connexió, el codi d'estat, l'hora aproximada i un codi d'esdeveniment de diagnòstic no secret si es mostra. No envieu mai cap testimoni, contrasenya, galeta, slug, URL complet, cos de sol·licitud, cos de resposta o capçalera. El desenvolupador no pot recuperar les credencials ni les dades del proveïdor."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Compatibilitat independent",
+        "body": "Aquests noms només s'utilitzen per identificar serveis compatibles: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow és independent; aquests proveïdors no l'avalen ni el patrocinen i no hi està afiliat."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Política de privadesa",
+    "summary": "UsageNow és local en primer lloc, però utilitza connexions directes de proveïdor i sincronització privada opcional Apple. Aquesta política enumera cada ruta en lloc de confiar en una etiqueta de privadesa general.",
+    "updated_label": "Última actualització",
+    "section_title": "Flux i control de dades",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "Credencials del proveïdor",
+        "body": "Les credencials només s'emmagatzemen a la Keychain local de l'aplicació principal mitjançant AfterFirstUnlockThisDeviceOnly. No es poden sincronitzar, no estan exposats a extensions i no entren mai a UserDefaults, CloudKit, App Group, Widget, Apple Watch, exportacions, captures de pantalla, anàlisis o control de font. Si elimineu una connexió o suprimiu totes les dades, s'esborra l'element Keychain corresponent."
+      },
+      {
+        "id": "provider_requests",
+        "title": "Sol·licituds directes del proveïdor API",
+        "body": "Quan demaneu connectar-vos o actualitzar, el vostre dispositiu envia la credencial i els camps de sol·licitud mínim obligatori directament al API oficial documentat del proveïdor seleccionat mitjançant HTTPS. Aquest proveïdor rep i processa la sol·licitud sota els seus propis termes. UsageNow no encamina el trànsit del proveïdor a través d'un servidor de desenvolupador, servidor intermediari, túnel o VPN."
+      },
+      {
+        "id": "developer_boundary",
+        "title": "El que rep el desenvolupador",
+        "body": "El desenvolupador UsageNow no rep automàticament el vostre testimoni, les dades del compte del proveïdor, els valors d'ús, la sol·licitud, la resposta del proveïdor, les instantànies normalitzades o els registres CloudKit. UsageNow no té cap sistema de comptes operat pel desenvolupador ni base de dades d'ús."
+      },
+      {
+        "id": "local_records_exports",
+        "title": "Registres locals i exportacions",
+        "body": "Les instantànies d'ús normalitzades, els temps de restabliment, les previsions, la actualització, les etiquetes del compte, les preferències i l'estat de prova s'emmagatzemen localment. Una exportació només es crea quan la sol·liciteu i va a una destinació que trieu mitjançant la interfície del sistema de Apple. Les exportacions exclouen les credencials i les respostes del proveïdor en brut; llavors s'apliquen les condicions de privadesa de la destinació."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Sincronització",
+        "body": "Només quan activeu la sincronització d'iCloud, els identificadors de proveïdor minimitzats, les etiquetes de compte anònimes, els valors d'ús normalitzats, les dades de restabliment i previsió, la actualització, les preferències i l'àncora de prova mínima es poden emmagatzemar a la vostra base de dades privada CloudKit Apple. Les credencials i les càrregues útils del proveïdor no s'inclouen mai. Apple opera CloudKit; UsageNow no crea una base de dades de desenvolupadors independent."
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget i Apple Watch",
+        "body": "L'emmagatzematge App Group ofereix a Widget només una instantània de capacitat sense secrets. WatchConnectivity envia una instantània sense secrets a la Apple Watch emparellada per a visualitzacions i complicacions de UsageNow. Aquestes càrregues útils poden contenir capacitat normalitzada, restabliment, actualització i preferències de visualització, però mai credencials, galetes, capçaleres de sol·licituds o respostes del proveïdor en brut."
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit i compres",
+        "body": "StoreKit contacta amb Apple per carregar el producte i el preu localitzat i per verificar, comprar o restaurar el desbloqueig de per vida no consumible. Apple processa la transacció. UsageNow llegeix la informació de dret verificada i no rep els detalls de la targeta de pagament."
+      },
+      {
+        "id": "diagnostics",
+        "title": "Diagnòstic segur per a la seguretat",
+        "body": "Els diagnòstics locals poden registrar un tipus d'esdeveniment ampli, un codi d'estat, una hora i un identificador de correlació no secret. No es pengen automàticament i mai inclouen cap testimoni, contrasenya, galeta, organització o espai de treball, URL complet, cos de la sol·licitud, cos de la resposta o capçalera. No envieu aquests secrets en un missatge d'assistència."
+      },
+      {
+        "id": "excluded_practices",
+        "title": "No hi ha publicitat, anàlisi, seguiment o raspat",
+        "body": "UsageNow no inclou cap SDK publicitari, analítica de tercers, seguiment entre aplicacions, empremta del dispositiu ni perfil de màrqueting del desenvolupador. No recopila contrasenyes, no importa galetes del navegador, no extreu l’HTML dels taulers, no crida endpoints privats, no suplanta clients oficials, no reutilitza els seus tokens ni eludeix els límits de peticions del proveïdor."
+      },
+      {
+        "id": "deletion_retention",
+        "title": "La supressió i la generació retinguda",
+        "body": "Suprimir totes les dades elimina el dipòsit local, Keychain, App Group, Widget memòria cau, càrrega útil Apple Watch, registres privats CloudKit i ancoratge de prova. UsageNow només conserva una generació d'eliminació CloudKit no identificativa, de manera que un dispositiu fora de línia no pot ressuscitar el contingut suprimit. No conté dades de proveïdor, ús, compte, credencial, empremta digital del dispositiu ni dades de prova. Els fitxers que heu exportat i les còpies de seguretat de dispositius gestionades per Apple romanen sota el vostre control i s'han d'eliminar per separat."
+      },
+      {
+        "id": "support_site",
+        "title": "Correu electrònic de suport i aquest lloc web",
+        "body": "Si envieu un correu electrònic d'assistència, el desenvolupador rep l'adreça de correu electrònic i el missatge que trieu enviar i els fa servir només per respondre-vos. Aquest lloc web estàtic no estableix galetes i no carrega cap publicitat, anàlisi, scripts de seguiment ni actius de tercers. L'eventual servei d'allotjament pot processar informació de connexió estàndard sota els seus propis termes de privadesa."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Independència del proveïdor",
+        "body": "Aquests noms només s'utilitzen per identificar serveis compatibles: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow és independent; aquests proveïdors no l'avalen ni el patrocinen i no hi està afiliat."
+      }
+    ]
+  }
+}

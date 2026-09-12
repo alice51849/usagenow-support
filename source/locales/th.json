@@ -1,0 +1,164 @@
+{
+  "language_name": "ไทย",
+  "language_label": "ภาษา",
+  "navigation_label": "การนำทางหลัก",
+  "skip_link": "ข้ามไปยังเนื้อหาหลัก",
+  "nav": {
+    "index": "ภาพรวม",
+    "support": "บริการช่วยเหลือ",
+    "privacy": "ความเป็นส่วนตัว"
+  },
+  "contact": {
+    "title": "ติดต่อบริการช่วยเหลือ UsageNow",
+    "body": "โปรดระบุรุ่นอุปกรณ์ เวอร์ชันระบบปฏิบัติการและ App ชื่อผู้ให้บริการเพื่อระบุความเข้ากันได้เท่านั้น วิธีเชื่อมต่อ รหัสสถานะ และเวลาโดยประมาณ ห้ามส่ง access token รหัสผ่าน cookie, slug ขององค์กรหรือพื้นที่ทำงาน, URL เต็ม, request หรือ response body และ header",
+    "button": "ส่งอีเมลถึงบริการช่วยเหลือ"
+  },
+  "footer": "ข้อมูลบริการช่วยเหลือและความเป็นส่วนตัวอย่างเป็นทางการสำหรับ UsageNow: AI Usage",
+  "home": {
+    "title": "วางแผนความจุ AI โดยไม่ต้องมอบข้อมูลรับรองให้เรา",
+    "summary": "UsageNow เชื่อมต่อจากอุปกรณ์ของคุณไปยัง API ที่มีเอกสารของผู้ให้บริการที่คุณเลือก อธิบายความจุคงเหลือและเวลาการรีเซ็ต และเลือกซิงค์สแนปช็อตที่ไม่มีข้อมูลลับแบบส่วนตัวผ่านบัญชี Apple ได้",
+    "section_title": "UsageNow จัดการข้อมูลของคุณอย่างไร",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "การเชื่อมต่ออย่างเป็นทางการโดยตรง",
+        "body": "เมื่อคุณขอรีเฟรช App จะเรียก API อย่างเป็นทางการที่มีเอกสารของผู้ให้บริการที่เลือกจากอุปกรณ์ของคุณโดยตรงด้วยการเชื่อมต่อที่คุณให้ไว้ ไม่มีเซิร์ฟเวอร์ตัวกลางของนักพัฒนาหรือบัญชี UsageNow"
+      },
+      {
+        "id": "credential_storage",
+        "title": "ข้อมูลรับรองอยู่ในอุปกรณ์นี้",
+        "body": "App หลักเก็บข้อมูลรับรองผู้ให้บริการไว้ใน Keychain ด้วยการป้องกัน AfterFirstUnlockThisDeviceOnly ข้อมูลนี้ซิงค์ไม่ได้และไม่ถูกส่งไปยัง CloudKit, App Group, Widget หรือ Apple Watch"
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "การซิงค์ส่วนตัวของ Apple แบบเลือกได้",
+        "body": "เฉพาะเมื่อคุณเปิด iCloud เท่านั้น สแนปช็อตการใช้งานที่ปรับมาตรฐานและลดข้อมูลแล้ว การตั้งค่า และจุดยึดช่วงทดลองจึงอาจเก็บในฐาน CloudKit ส่วนตัวของคุณ ข้อมูลรับรองและคำตอบดิบของผู้ให้บริการไม่รวมอยู่ด้วย"
+      },
+      {
+        "id": "purchase",
+        "title": "สามวัน แล้วซื้อแบบตลอดชีพครั้งเดียว",
+        "body": "สิทธิ์เต็มสามวันเริ่มหลังบันทึกสแนปช็อตการใช้งานจริงครั้งแรกสำเร็จเท่านั้น จากนั้นมีการซื้อปลดล็อกตลอดชีพแบบ non-consumable หนึ่งครั้ง; StoreKit โหลดราคาท้องถิ่นจริงและ Apple จัดการการซื้อกับ Restore ไม่มีสมาชิกแบบรายงวดหรือโฆษณา"
+      }
+    ]
+  },
+  "support": {
+    "title": "บริการช่วยเหลือ UsageNow",
+    "summary": "ความช่วยเหลือเรื่องการเชื่อมต่อผู้ให้บริการโดยตรง รหัสสถานะ ข้อมูลของคุณ และการซื้อแบบตลอดชีพครั้งเดียว",
+    "section_title": "การแก้ปัญหาและดูแลบัญชี",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "ประเภทการเชื่อมต่อ",
+        "body": "ผู้ให้บริการอาจใช้ API key หรือ admin key ที่คุณป้อน หรือใช้ OAuth หรือการอนุญาตอุปกรณ์เมื่อรองรับอย่างเป็นทางการ ทุกการรีเฟรชไปยัง endpoint อย่างเป็นทางการที่มีเอกสารโดยตรง UsageNow ไม่ขอรหัสผ่าน ไม่นำเข้า cookie จากเบราว์เซอร์ ไม่ scrape HTML ของแดชบอร์ด ไม่เรียก private endpoint และไม่ข้ามขีดจำกัด ฟิลด์ที่มีขึ้นอยู่กับผู้ให้บริการและแผนบัญชี"
+      },
+      {
+        "id": "http_401",
+        "title": "401 — ไม่ได้รับอนุญาต",
+        "body": "ข้อมูลรับรองหายไป หมดอายุ ถูกเพิกถอน หรือเป็นของบริการอื่น ให้สร้างหรือต่ออายุในคอนโซลทางการของผู้ให้บริการ ให้สิทธิ์ขั้นต่ำที่จำเป็น แล้วเปลี่ยนข้อมูลรับรองหรือลงชื่อเข้าใช้อีกครั้ง ห้ามส่ง key ทางอีเมล"
+      },
+      {
+        "id": "http_403",
+        "title": "403 — ถูกห้าม",
+        "body": "ผู้ให้บริการรู้จักข้อมูลรับรอง แต่บัญชีอาจไม่มี scope, บทบาทด้านการเรียกเก็บเงิน, สิทธิ์ทีม/องค์กร หรือการอนุมัติ SSO ตรวจสอบบัญชีเป้าหมายและสิทธิ์อ่านขั้นต่ำ บางแผนไม่เปิดข้อมูลการใช้งาน"
+      },
+      {
+        "id": "http_404",
+        "title": "404 — ไม่พบ",
+        "body": "ตรวจสอบตัวระบุองค์กร ทีม พื้นที่ทำงาน ชื่อผู้ใช้ หรือทรัพยากรให้ตรง 404 อาจหมายถึงผู้ให้บริการไม่เปิด usage endpoint นี้สำหรับแผนหรือภูมิภาคของคุณ ให้ทำตามคู่มือการเชื่อมต่ออย่างเป็นทางการล่าสุดใน App และอย่าใช้ private endpoint แทน"
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "ออฟไลน์ ข้อมูลเก่า หรือถูกจำกัดอัตรา",
+        "body": "UsageNow เก็บสแนปช็อตล่าสุดพร้อมเวลาไว้ เชื่อมต่อใหม่แล้วลองรีเฟรชแบบจำกัดภายหลัง สำหรับ 429 หรือการบำรุงรักษา ให้รอช่วง retry ทางการ การส่งซ้ำไม่ข้ามขีดจำกัด"
+      },
+      {
+        "id": "export_delete",
+        "title": "ส่งออกหรือลบข้อมูล",
+        "body": "การส่งออกสร้างไฟล์บนอุปกรณ์เมื่อคุณสั่งเท่านั้นและเปิดตัวเลือกปลายทางของ Apple โดยไม่รวมข้อมูลรับรองหรือคำตอบดิบ การลบข้อมูลทั้งหมดจะลบ local repository, Keychain, แคช App Group และ Widget, payload Apple Watch, private CloudKit records และ trial anchor เหลือเพียง CloudKit deletion generation ที่ไม่ระบุตัวตนเพื่อป้องกันอุปกรณ์ออฟไลน์นำข้อมูลกลับมา ลบไฟล์ที่ส่งออกและข้อมูลสำรองที่ Apple จัดการแยกต่างหาก"
+      },
+      {
+        "id": "purchase_restore",
+        "title": "ซื้อแบบตลอดชีพและ Restore",
+        "body": "สิทธิ์เต็มมีสามวันนับจากสแนปช็อตจริงครั้งแรกที่บันทึก หลังจากนั้นข้อมูลเดิมยังเป็นตัวอย่างอ่านอย่างเดียวพร้อมวันที่จนกว่าจะยืนยันการซื้อแบบ non-consumable ตลอดชีพ StoreKit แสดงราคาท้องถิ่นปัจจุบัน ใช้ Restore ด้วยบัญชี Apple ที่ซื้อ ไม่มีสมาชิกแบบรายงวดหรือต่ออายุอัตโนมัติ"
+      },
+      {
+        "id": "safe_contact",
+        "title": "ส่งรายงานที่ปลอดภัย",
+        "body": "ส่งรุ่นอุปกรณ์ เวอร์ชันระบบและ App ชื่อผู้ให้บริการเพื่อระบุความเข้ากันได้ วิธีเชื่อมต่อ รหัสสถานะ เวลาโดยประมาณ และรหัสเหตุการณ์วินิจฉัยที่ไม่ลับถ้ามี ห้ามส่ง token, รหัสผ่าน, cookie, slug, URL เต็ม, request body, response body หรือ header นักพัฒนาไม่สามารถกู้ข้อมูลรับรองหรือข้อมูลผู้ให้บริการได้"
+      },
+      {
+        "id": "provider_independence",
+        "title": "ความเข้ากันได้อย่างอิสระ",
+        "body": "ชื่อเหล่านี้ใช้เพื่อระบุบริการที่ใช้งานร่วมกันได้เท่านั้น: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow เป็นแอปอิสระ บริษัทเหล่านี้ไม่ได้รับรองหรือสนับสนุนแอป และไม่มีความเกี่ยวข้องกัน"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "นโยบายความเป็นส่วนตัว",
+    "summary": "UsageNow ให้ความสำคัญกับการประมวลผลในเครื่อง แต่มีการเชื่อมต่อผู้ให้บริการโดยตรงและการซิงค์ส่วนตัวของ Apple แบบเลือกได้ นโยบายนี้แจกแจงเส้นทางข้อมูลแต่ละส่วนแทนคำกล่าวแบบกว้าง",
+    "updated_label": "อัปเดตล่าสุด",
+    "section_title": "การไหลของข้อมูลและการควบคุมของคุณ",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "ข้อมูลรับรองผู้ให้บริการ",
+        "body": "ข้อมูลรับรองอยู่เฉพาะใน Keychain ของ App หลักด้วย AfterFirstUnlockThisDeviceOnly ไม่ซิงค์ ไม่เปิดให้ extension และไม่เข้า UserDefaults, CloudKit, App Group, Widget, Apple Watch, ไฟล์ส่งออก, ภาพหน้าจอ, analytics หรือ source control การลบการเชื่อมต่อหรือข้อมูลทั้งหมดจะลบรายการ Keychain ที่เกี่ยวข้อง"
+      },
+      {
+        "id": "provider_requests",
+        "title": "คำขอไปยัง API ผู้ให้บริการโดยตรง",
+        "body": "เมื่อคุณขอเชื่อมต่อหรือรีเฟรช อุปกรณ์จะส่งข้อมูลรับรองและฟิลด์ขั้นต่ำตรงไปยัง API อย่างเป็นทางการที่มีเอกสารของผู้ให้บริการผ่าน HTTPS ผู้ให้บริการประมวลผลตามข้อกำหนดของตน UsageNow ไม่ส่งผ่านเซิร์ฟเวอร์นักพัฒนา proxy, tunnel หรือ VPN"
+      },
+      {
+        "id": "developer_boundary",
+        "title": "สิ่งที่นักพัฒนาได้รับ",
+        "body": "นักพัฒนา UsageNow ไม่ได้รับ token, ข้อมูลบัญชีผู้ให้บริการ, ค่าการใช้งาน, request, provider response, normalized snapshots หรือ CloudKit records โดยอัตโนมัติ UsageNow ไม่มีระบบบัญชีหรือฐานข้อมูลการใช้งานที่นักพัฒนาดำเนินการ"
+      },
+      {
+        "id": "local_records_exports",
+        "title": "ข้อมูลในเครื่องและการส่งออก",
+        "body": "normalized usage snapshots, เวลา reset, forecast, freshness, ป้ายบัญชี, preferences และ trial state เก็บในเครื่อง การส่งออกเกิดเมื่อคุณขอเท่านั้นและไปยังปลายทางที่เลือกผ่านหน้าต่างระบบ Apple ไม่รวม credentials หรือ raw responses จากนั้นใช้นโยบายของปลายทาง"
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "CloudKit ส่วนตัวแบบเลือกได้",
+        "body": "เมื่อเปิด iCloud เท่านั้น จึงอาจเก็บ provider identifiers ที่ลดข้อมูล, anonymous account labels, normalized usage, reset, forecast, freshness, preferences และ trial anchor ขั้นต่ำใน CloudKit ส่วนตัวของคุณ ไม่รวม credentials หรือ raw payload Apple ดำเนินงาน CloudKit; UsageNow ไม่สร้างฐานข้อมูลนักพัฒนาแยก"
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget และ Apple Watch",
+        "body": "App Group ให้ Widget เฉพาะ capacity snapshot ที่ไม่มีข้อมูลลับ WatchConnectivity ส่งสแนปช็อตนี้ไป Apple Watch ที่จับคู่ อาจมี normalized capacity, reset, freshness และ display preferences แต่ไม่มี credentials, cookie, request header หรือ raw provider response"
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit และการซื้อ",
+        "body": "StoreKit ติดต่อ Apple เพื่อโหลด product และ localized price และเพื่อ verify, purchase หรือ Restore การปลดล็อกตลอดชีพแบบ non-consumable Apple ประมวลผลธุรกรรม UsageNow อ่าน verified entitlement และไม่ได้รับข้อมูลบัตรชำระเงิน"
+      },
+      {
+        "id": "diagnostics",
+        "title": "การวินิจฉัยที่ปลอดภัย",
+        "body": "diagnostics ในเครื่องอาจบันทึกประเภทเหตุการณ์ทั่วไป รหัสสถานะ เวลา และ correlation identifier ที่ไม่ลับ ไม่อัปโหลดอัตโนมัติและไม่เคยมี token, password, cookie, organization/workspace slug, URL เต็ม, request body, response body หรือ header อย่าส่งข้อมูลลับเหล่านี้ให้บริการช่วยเหลือ"
+      },
+      {
+        "id": "excluded_practices",
+        "title": "ไม่มีโฆษณา analytics, tracking หรือ scraping",
+        "body": "UsageNow ไม่มี ad SDK, third-party analytics, cross-app tracking, device fingerprint หรือ developer marketing profile ไม่เก็บ password, ไม่นำเข้า browser cookie, ไม่ scrape dashboard HTML, ไม่ใช้ private endpoint, ไม่ปลอมตัวเป็น official client, ไม่ใช้ token ของ client ซ้ำ และไม่ข้าม rate limit"
+      },
+      {
+        "id": "deletion_retention",
+        "title": "การลบและ generation ที่คงไว้",
+        "body": "การลบข้อมูลทั้งหมดจะลบ local repository, Keychain, App Group, Widget cache, Apple Watch payload, private CloudKit records และ trial anchor เหลือเพียง CloudKit deletion generation ที่ไม่ระบุตัวตนเพื่อให้อุปกรณ์ออฟไลน์กู้ข้อมูลที่ลบไม่ได้ ไม่มี provider, usage, account, credential, device fingerprint หรือ trial data ไฟล์ export และ Apple backup ต้องลบแยก"
+      },
+      {
+        "id": "support_site",
+        "title": "อีเมลบริการช่วยเหลือและเว็บไซต์นี้",
+        "body": "หากคุณส่งอีเมล นักพัฒนาจะได้รับที่อยู่และข้อความที่คุณเลือกและใช้เพื่อตอบเท่านั้น เว็บไซต์แบบ static นี้ไม่ตั้ง cookie และไม่โหลด advertising, analytics, tracking script หรือ third-party asset บริการ hosting ในอนาคตอาจประมวลผลข้อมูลการเชื่อมต่อมาตรฐานตามนโยบายของตน"
+      },
+      {
+        "id": "provider_independence",
+        "title": "เป็นอิสระจากผู้ให้บริการ",
+        "body": "ชื่อเหล่านี้ใช้เพื่อระบุบริการที่ใช้งานร่วมกันได้เท่านั้น: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow เป็นแอปอิสระ บริษัทเหล่านี้ไม่ได้รับรองหรือสนับสนุนแอป และไม่มีความเกี่ยวข้องกัน"
+      }
+    ]
+  }
+}

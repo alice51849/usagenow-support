@@ -1,0 +1,164 @@
+{
+  "language_name": "ଓଡ଼ିଆ",
+  "language_label": "ଭାଷା",
+  "navigation_label": "ମୁଖ୍ୟ ନେଭିଗେସନ୍",
+  "skip_link": "ମୁଖ୍ୟ ବିଷୟବସ୍ତୁକୁ ଯାଆନ୍ତୁ",
+  "nav": {
+    "index": "ସାରାଂଶ",
+    "support": "ସହାୟତା",
+    "privacy": "ଗୋପନୀୟତା"
+  },
+  "contact": {
+    "title": "UsageNow ସହାୟତା ସହ ଯୋଗାଯୋଗ କରନ୍ତୁ",
+    "body": "ଆପଣଙ୍କ ଡିଭାଇସ୍ ମଡେଲ୍, ଅପରେଟିଂ ସିଷ୍ଟମ୍ ଓ ଆପ୍ ସଂସ୍କରଣ, କେବଳ ସୁସଙ୍ଗତତା ପାଇଁ ସେବା ପ୍ରଦାନକାରୀଙ୍କ ନାମ, ସଂଯୋଗ ପ୍ରକାର, ସ୍ଥିତି କୋଡ୍ ଓ ଆନୁମାନିକ ସମୟ ଲେଖନ୍ତୁ। ଆକ୍ସେସ୍ ଟୋକେନ୍, ପାସୱାର୍ଡ, କୁକି, ସଂସ୍ଥା କିମ୍ବା workspace slug, ସମ୍ପୂର୍ଣ୍ଣ URL, request/response body କିମ୍ବା header କେବେ ପଠାନ୍ତୁ ନାହିଁ।",
+    "button": "ସହାୟତାକୁ ଇମେଲ୍ କରନ୍ତୁ"
+  },
+  "footer": "UsageNow: AI Usage ପାଇଁ ଅଧିକୃତ ସହାୟତା ଓ ଗୋପନୀୟତା ସୂଚନା।",
+  "home": {
+    "title": "ଆପଣଙ୍କ ପ୍ରମାଣପତ୍ର ଆମକୁ ନ ଦେଇ AI କ୍ଷମତା ଯୋଜନା କରନ୍ତୁ",
+    "summary": "UsageNow ଆପଣଙ୍କ ଡିଭାଇସ୍‌ରୁ ଆପଣ ବାଛିଥିବା ସେବା ପ୍ରଦାନକାରୀଙ୍କ ଲିପିବଦ୍ଧ API ସହ ସିଧାସଳଖ ଯୋଗାଯୋଗ କରେ, ବାକି କ୍ଷମତା ଓ ପୁନଃସେଟ୍ ସମୟ ବୁଝାଏ ଏବଂ ଆପଣଙ୍କ Apple ଖାତା ମାଧ୍ୟମରେ ଗୁପ୍ତ ତଥ୍ୟବିହୀନ snapshot କୁ ବ୍ୟକ୍ତିଗତ ଭାବେ sync କରିପାରେ।",
+    "section_title": "UsageNow ଆପଣଙ୍କ ତଥ୍ୟ କିପରି ପରିଚାଳନା କରେ",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "ସିଧାସଳଖ ଅଧିକୃତ ସଂଯୋଗ",
+        "body": "ଆପଣ refresh ଚାହିଲେ, ଆପ୍‌ଟି ଆପଣ ଦେଇଥିବା ସଂଯୋଗ ବ୍ୟବହାର କରି ଆପଣଙ୍କ ଡିଭାଇସ୍‌ରୁ ବାଛିଥିବା ପ୍ରଦାନକାରୀଙ୍କ ଲିପିବଦ୍ଧ ଅଧିକୃତ API କୁ ସିଧାସଳଖ call କରେ। UsageNow ବିକାଶକାରୀଙ୍କ କୌଣସି relay କିମ୍ବା UsageNow ଖାତା ନାହିଁ।"
+      },
+      {
+        "id": "credential_storage",
+        "title": "ପ୍ରମାଣପତ୍ର ଏହି ଡିଭାଇସ୍‌ରେ ରହେ",
+        "body": "ସେବା ପ୍ରଦାନକାରୀଙ୍କ ପ୍ରମାଣପତ୍ର ମୁଖ୍ୟ ଆପ୍‌ର Keychain ରେ AfterFirstUnlockThisDeviceOnly ସୁରକ୍ଷା ସହ ରଖାଯାଏ। ସେଗୁଡ଼ିକ sync ହୁଏ ନାହିଁ ଏବଂ CloudKit, App Group, Widget କିମ୍ବା Apple Watch କୁ କେବେ ପଠାଯାଏ ନାହିଁ।"
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "ଇଚ୍ଛାଧୀନ ବ୍ୟକ୍ତିଗତ Apple sync",
+        "body": "ଆପଣ iCloud sync ଚାଲୁ କଲେ ମାତ୍ର, ସବୁଠାରୁ କମ୍ normalized usage snapshot, ପସନ୍ଦ ଓ trial anchor ଆପଣଙ୍କ ବ୍ୟକ୍ତିଗତ CloudKit database ରେ ରଖାଯାଇପାରେ। ପ୍ରମାଣପତ୍ର ଓ ପ୍ରଦାନକାରୀଙ୍କ raw response ଏଥିରେ ରହେ ନାହିଁ।"
+      },
+      {
+        "id": "purchase",
+        "title": "ତିନି ଦିନ, ତାପରେ ଏକ ଆଜୀବନ କ୍ରୟ",
+        "body": "ପ୍ରଥମ ସଫଳ live usage snapshot ସଞ୍ଚୟ ହେଲେ ମାତ୍ର ତିନି ଦିନର ପୂର୍ଣ୍ଣ access ଆରମ୍ଭ ହୁଏ। ତାପରେ ଏକ non-consumable ଆଜୀବନ unlock ରହିଛି; StoreKit ସତ୍ୟ ସ୍ଥାନୀୟ ମୂଲ୍ୟ ଦେଖାଏ ଏବଂ Apple କ୍ରୟ ଓ Restore ପରିଚାଳନା କରେ। କୌଣସି subscription କିମ୍ବା ବିଜ୍ଞାପନ ନାହିଁ।"
+      }
+    ]
+  },
+  "support": {
+    "title": "UsageNow ସହାୟତା",
+    "summary": "ସିଧାସଳଖ ସେବା ପ୍ରଦାନକାରୀ ସଂଯୋଗ, status code, ଆପଣଙ୍କ ତଥ୍ୟ ଓ ଏକକାଳୀନ ଆଜୀବନ କ୍ରୟ ସମ୍ବନ୍ଧୀୟ ସହାୟତା।",
+    "section_title": "ସମସ୍ୟା ସମାଧାନ ଓ ଖାତା ସୁରକ୍ଷା",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "ସଂଯୋଗର ପ୍ରକାର",
+        "body": "ପ୍ରଦାନକାରୀ ଆପଣ ଦେଇଥିବା API କିମ୍ବା admin key ବ୍ୟବହାର କରିପାରନ୍ତି; ଅଧିକୃତ ଭାବେ ସମର୍ଥିତ ହେଲେ OAuth କିମ୍ବା device authorization flow ମଧ୍ୟ ବ୍ୟବହାର ହୋଇପାରେ। ପ୍ରତ୍ୟେକ refresh ସିଧାସଳଖ ଲିପିବଦ୍ଧ ଅଧିକୃତ endpoint କୁ ଯାଏ। UsageNow କେବେ ପାସୱାର୍ଡ ଚାହେଁ ନାହିଁ, browser cookie ଆମଦାନୀ କରେ ନାହିଁ, dashboard HTML scrape କରେ ନାହିଁ, private endpoint call କରେ ନାହିଁ କିମ୍ବା rate limit ଏଡ଼ାଏ ନାହିଁ। ଉପଲବ୍ଧ field ପ୍ରଦାନକାରୀ ଓ account plan ଅନୁସାରେ ଭିନ୍ନ ହୁଏ।"
+      },
+      {
+        "id": "http_401",
+        "title": "401 — ଅନଧିକୃତ",
+        "body": "ପ୍ରମାଣପତ୍ର ନାହିଁ, ମିଆଦ ସମାପ୍ତ, ବାତିଲ୍ ହୋଇଛି କିମ୍ବା ଭୁଲ୍ ସେବା ପାଇଁ ତିଆରି। ପ୍ରଦାନକାରୀଙ୍କ ଅଧିକୃତ console ରେ ଏହାକୁ ତିଆରି କିମ୍ବା ନବୀକରଣ କରନ୍ତୁ, କେବଳ ଆବଶ୍ୟକ ସବୁଠାରୁ କମ୍ permission ଦିଅନ୍ତୁ, ତାପରେ ପ୍ରମାଣପତ୍ର ବଦଳାନ୍ତୁ କିମ୍ବା ପୁଣି sign in କରନ୍ତୁ। key କେବେ ଇମେଲ୍ କରନ୍ତୁ ନାହିଁ।"
+      },
+      {
+        "id": "http_403",
+        "title": "403 — ନିଷିଦ୍ଧ",
+        "body": "ପ୍ରଦାନକାରୀ ପ୍ରମାଣପତ୍ରକୁ ଚିହ୍ନିଛନ୍ତି, କିନ୍ତୁ ଖାତାରେ ଆବଶ୍ୟକ scope, billing role, team କିମ୍ବା organization access, ଅଥବା SSO approval ନଥାଇପାରେ। ସଠିକ୍ ଖାତା ଓ ପ୍ରଦାନକାରୀଙ୍କ ସବୁଠାରୁ କମ୍ read permission ଯାଞ୍ଚ କରନ୍ତୁ। କିଛି plan usage data ଦେଖାଏ ନାହିଁ।"
+      },
+      {
+        "id": "http_404",
+        "title": "404 — ମିଳିଲା ନାହିଁ",
+        "body": "ସଠିକ୍ organization, team, workspace, username କିମ୍ବା resource identifier ଯାଞ୍ଚ କରନ୍ତୁ। 404 ର ଅର୍ଥ ଆପଣଙ୍କ plan କିମ୍ବା region ପାଇଁ ପ୍ରଦାନକାରୀ ସେହି usage endpoint ଦେଉନାହାନ୍ତି ବୋଲି ମଧ୍ୟ ହୋଇପାରେ। ଆପ୍‌ର ବର୍ତ୍ତମାନ ଅଧିକୃତ connection guide ଅନୁସରଣ କରନ୍ତୁ; private endpoint ବ୍ୟବହାର କରନ୍ତୁ ନାହିଁ।"
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "Offline, ପୁରୁଣା ତଥ୍ୟ କିମ୍ବା rate limit",
+        "body": "UsageNow ଶେଷ ସଞ୍ଚିତ snapshot କୁ timestamp ସହ ରଖେ। ପୁଣି ସଂଯୋଗ କରି ପରେ ସୀମିତ refresh ଚେଷ୍ଟା କରନ୍ତୁ। 429 କିମ୍ବା ପ୍ରଦାନକାରୀଙ୍କ maintenance ସମୟରେ ଅଧିକୃତ retry window ପର୍ଯ୍ୟନ୍ତ ଅପେକ୍ଷା କରନ୍ତୁ; ବାରମ୍ବାର request ପଠାଇ rate limit ଏଡ଼ାଇହେବ ନାହିଁ।"
+      },
+      {
+        "id": "export_delete",
+        "title": "ଆପଣଙ୍କ ତଥ୍ୟ export ଓ ବିଲୋପ କରନ୍ତୁ",
+        "body": "ଆପଣ ଚାହିଲେ ମାତ୍ର export ଏହି ଡିଭାଇସ୍‌ରେ ଏକ file ତିଆରି କରେ ଓ Apple destination picker ଖୋଲେ; ପ୍ରମାଣପତ୍ର ଓ raw provider response ଏଥିରେ ରହେ ନାହିଁ। ସମସ୍ତ ତଥ୍ୟ ବିଲୋପ କଲେ local repository, Keychain ପ୍ରମାଣପତ୍ର, App Group ଓ Widget cache, Apple Watch payload, private CloudKit record ଏବଂ trial anchor ବିଲୋପ ହୁଏ। Offline ଡିଭାଇସ୍ ଯେପରି ବିଲୋପ ହୋଇଥିବା ତଥ୍ୟ ଫେରାଇ ନ ଆଣେ, ସେଥିପାଇଁ କେବଳ ଏକ non-identifying CloudKit deletion generation ରହିଥାଏ। Export ହୋଇଥିବା file ଓ Apple-managed backup ଅଲଗାଭାବେ ବିଲୋପ କରନ୍ତୁ।"
+      },
+      {
+        "id": "purchase_restore",
+        "title": "ଆଜୀବନ କ୍ରୟ ଓ Restore",
+        "body": "ପ୍ରଥମ ସଞ୍ଚିତ live snapshot ଠାରୁ ପୂର୍ଣ୍ଣ access ତିନି ଦିନ ରହେ। ତାପରେ ଏକମାତ୍ର non-consumable ଆଜୀବନ କ୍ରୟ verify ହେବା ପର୍ଯ୍ୟନ୍ତ ପୂର୍ବରୁ ସଞ୍ଚିତ ତଥ୍ୟ ତାରିଖ ସହ read-only preview ଭାବେ ରହେ। StoreKit ବର୍ତ୍ତମାନର ସ୍ଥାନୀୟ ମୂଲ୍ୟ ଦେଖାଏ। କ୍ରୟ କରିଥିବା Apple Account ରେ sign in କରି Restore ବ୍ୟବହାର କରନ୍ତୁ। Subscription କିମ୍ବା automatic renewal ନାହିଁ।"
+      },
+      {
+        "id": "safe_contact",
+        "title": "ସୁରକ୍ଷିତ ସହାୟତା ରିପୋର୍ଟ ପଠାନ୍ତୁ",
+        "body": "ଡିଭାଇସ୍ ମଡେଲ୍, ଅପରେଟିଂ ସିଷ୍ଟମ୍ ଓ ଆପ୍ ସଂସ୍କରଣ, କେବଳ ସୁସଙ୍ଗତତା ପାଇଁ ପ୍ରଦାନକାରୀଙ୍କ ନାମ, ସଂଯୋଗ ପ୍ରକାର, status code, ଆନୁମାନିକ ସମୟ ଓ ଦେଖାଯାଇଥିଲେ non-secret diagnostic event code ପଠାନ୍ତୁ। token, password, cookie, slug, ସମ୍ପୂର୍ଣ୍ଣ URL, request body, response body କିମ୍ବା header କେବେ ପଠାନ୍ତୁ ନାହିଁ। ବିକାଶକାରୀ ପ୍ରମାଣପତ୍ର କିମ୍ବା ପ୍ରଦାନକାରୀଙ୍କ ତଥ୍ୟ ଫେରାଇ ପାରିବେ ନାହିଁ।"
+      },
+      {
+        "id": "provider_independence",
+        "title": "ସ୍ୱାଧୀନ ସୁସଙ୍ଗତତା",
+        "body": "ଏହି ନାମଗୁଡ଼ିକ କେବଳ ସୁସଙ୍ଗତ ସେବା ଚିହ୍ନଟ କରିବା ପାଇଁ ବ୍ୟବହୃତ ହୁଏ: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow ଏକ ସ୍ୱାଧୀନ ଆପ୍; ଏହି ପ୍ରଦାନକାରୀମାନେ ଏହାକୁ ଅନୁମୋଦନ କିମ୍ବା ପ୍ରାୟୋଜନ କରନ୍ତି ନାହିଁ ଏବଂ ଏହା ସେମାନଙ୍କ ସହ ଅନୁବନ୍ଧିତ ନୁହେଁ।"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "ଗୋପନୀୟତା ନୀତି",
+    "summary": "UsageNow ପ୍ରଥମେ ସ୍ଥାନୀୟ ତଥ୍ୟ ବ୍ୟବହାର କରେ, କିନ୍ତୁ ସିଧାସଳଖ ପ୍ରଦାନକାରୀ ସଂଯୋଗ ଓ ଇଚ୍ଛାଧୀନ ବ୍ୟକ୍ତିଗତ Apple sync ମଧ୍ୟ ବ୍ୟବହାର କରେ। ସାଧାରଣ privacy label ବଦଳରେ ଏହି ନୀତି ପ୍ରତ୍ୟେକ data route ସ୍ପଷ୍ଟ କରେ।",
+    "updated_label": "ଶେଷ ଅଦ୍ୟତନ",
+    "section_title": "ତଥ୍ୟ ପ୍ରବାହ ଓ ନିୟନ୍ତ୍ରଣ",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "ସେବା ପ୍ରଦାନକାରୀଙ୍କ ପ୍ରମାଣପତ୍ର",
+        "body": "ପ୍ରମାଣପତ୍ର କେବଳ ମୁଖ୍ୟ ଆପ୍‌ର ସ୍ଥାନୀୟ Keychain ରେ AfterFirstUnlockThisDeviceOnly ବ୍ୟବହାର କରି ରଖାଯାଏ। ସେଗୁଡ଼ିକ sync ହୁଏ ନାହିଁ, extension ଦ୍ୱାରା ପଢ଼ାଯାଏ ନାହିଁ ଏବଂ UserDefaults, CloudKit, App Group, Widget, Apple Watch, export, screenshot, analytics କିମ୍ବା source control ରେ କେବେ ଯାଏ ନାହିଁ। ସଂଯୋଗ ହଟାଇଲେ କିମ୍ବା ସମସ୍ତ ତଥ୍ୟ ବିଲୋପ କଲେ ସମ୍ବନ୍ଧିତ Keychain item ବିଲୋପ ହୁଏ।"
+      },
+      {
+        "id": "provider_requests",
+        "title": "ସିଧାସଳଖ ପ୍ରଦାନକାରୀ API request",
+        "body": "ଆପଣ connect କିମ୍ବା refresh ଚାହିଲେ, ଆପଣଙ୍କ ଡିଭାଇସ୍ HTTPS ମାଧ୍ୟମରେ ପ୍ରମାଣପତ୍ର ଓ ସବୁଠାରୁ କମ୍ ଆବଶ୍ୟକ request field କୁ ବାଛିଥିବା ପ୍ରଦାନକାରୀଙ୍କ ଲିପିବଦ୍ଧ ଅଧିକୃତ API କୁ ସିଧାସଳଖ ପଠାଏ। ସେହି ପ୍ରଦାନକାରୀ ନିଜ ନିୟମ ଅନୁସାରେ request ଗ୍ରହଣ ଓ process କରନ୍ତି। UsageNow ପ୍ରଦାନକାରୀ traffic କୁ ବିକାଶକାରୀ server, proxy, tunnel କିମ୍ବା VPN ମାଧ୍ୟମରେ ପଠାଏ ନାହିଁ।"
+      },
+      {
+        "id": "developer_boundary",
+        "title": "ବିକାଶକାରୀ କଣ ପାଆନ୍ତି",
+        "body": "UsageNow ବିକାଶକାରୀ ସ୍ୱୟଂଚାଳିତ ଭାବେ ଆପଣଙ୍କ token, ପ୍ରଦାନକାରୀ account data, usage value, request, provider response, normalized snapshot କିମ୍ବା CloudKit record ପାଆନ୍ତି ନାହିଁ। UsageNow ର ବିକାଶକାରୀ-ପରିଚାଳିତ account system କିମ୍ବା usage database ନାହିଁ।"
+      },
+      {
+        "id": "local_records_exports",
+        "title": "ସ୍ଥାନୀୟ record ଓ export",
+        "body": "Normalized usage snapshot, reset time, forecast, freshness, account label, preference ଓ trial state ସ୍ଥାନୀୟ ଭାବେ ରଖାଯାଏ। ଆପଣ ଚାହିଲେ ମାତ୍ର export ତିଆରି ହୁଏ ଏବଂ Apple system interface ମାଧ୍ୟମରେ ଆପଣ ବାଛିଥିବା destination କୁ ଯାଏ। Export ରେ ପ୍ରମାଣପତ୍ର ଓ raw provider response ରହେ ନାହିଁ; ତାପରେ destination ର privacy terms ଲାଗୁ ହୁଏ।"
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "ଇଚ୍ଛାଧୀନ private CloudKit",
+        "body": "ଆପଣ iCloud sync ଚାଲୁ କଲେ ମାତ୍ର, ସବୁଠାରୁ କମ୍ provider identifier, anonymous account label, normalized usage value, reset ଓ forecast data, freshness, preference ଏବଂ ସବୁଠାରୁ କମ୍ trial anchor ଆପଣଙ୍କ Apple private CloudKit database ରେ ରଖାଯାଇପାରେ। ପ୍ରମାଣପତ୍ର ଓ raw provider payload କେବେ ସାମିଲ୍ ହୁଏ ନାହିଁ। CloudKit କୁ Apple ପରିଚାଳନା କରେ; UsageNow ଅଲଗା ବିକାଶକାରୀ database ତିଆରି କରେ ନାହିଁ।"
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget ଓ Apple Watch",
+        "body": "App Group storage Widget କୁ କେବଳ ଗୁପ୍ତ ତଥ୍ୟବିହୀନ capacity snapshot ଦିଏ। WatchConnectivity, UsageNow view ଓ complication ପାଇଁ pair ହୋଇଥିବା Apple Watch କୁ ଗୁପ୍ତ ତଥ୍ୟବିହୀନ snapshot ପଠାଏ। ଏହି payload ରେ normalized capacity, reset, freshness ଓ display preference ରହିପାରେ, କିନ୍ତୁ ପ୍ରମାଣପତ୍ର, cookie, request header କିମ୍ବା raw provider response କେବେ ରହେ ନାହିଁ।"
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit ଓ କ୍ରୟ",
+        "body": "StoreKit product ଓ ସ୍ଥାନୀୟ ମୂଲ୍ୟ load କରିବା ଏବଂ non-consumable ଆଜୀବନ unlock verify, କ୍ରୟ କିମ୍ବା Restore କରିବା ପାଇଁ Apple ସହ ଯୋଗାଯୋଗ କରେ। Apple transaction process କରେ। UsageNow verified entitlement information ପଢ଼େ ଏବଂ payment card detail ପାଏ ନାହିଁ।"
+      },
+      {
+        "id": "diagnostics",
+        "title": "ଗୁପ୍ତ ତଥ୍ୟବିହୀନ diagnostic",
+        "body": "ସ୍ଥାନୀୟ diagnostic ରେ ସାଧାରଣ event type, status code, ସମୟ ଓ non-secret correlation identifier ରହିପାରେ। ସେଗୁଡ଼ିକ ସ୍ୱୟଂଚାଳିତ upload ହୁଏ ନାହିଁ ଏବଂ token, password, cookie, organization କିମ୍ବା workspace slug, ସମ୍ପୂର୍ଣ୍ଣ URL, request body, response body କିମ୍ବା header କେବେ ସାମିଲ୍ ହୁଏ ନାହିଁ। ଏହି secret ଗୁଡ଼ିକୁ ସହାୟତା ସନ୍ଦେଶରେ ପଠାନ୍ତୁ ନାହିଁ।"
+      },
+      {
+        "id": "excluded_practices",
+        "title": "ବିଜ୍ଞାପନ, analytics, tracking କିମ୍ବା scraping ନାହିଁ",
+        "body": "UsageNow ରେ advertising SDK, third-party analytics, cross-app tracking, device fingerprint କିମ୍ବା ବିକାଶକାରୀ marketing profile ନାହିଁ। ଏହା password ସଂଗ୍ରହ କରେ ନାହିଁ, browser cookie ଆମଦାନୀ କରେ ନାହିଁ, dashboard HTML scrape କରେ ନାହିଁ, private endpoint call କରେ ନାହିଁ, official client ଭାବେ ପରିଚୟ ଦିଏ ନାହିଁ, official client token ପୁନଃବ୍ୟବହାର କରେ ନାହିଁ କିମ୍ବା rate limit ଏଡ଼ାଏ ନାହିଁ।"
+      },
+      {
+        "id": "deletion_retention",
+        "title": "ବିଲୋପ ଓ ରଖାଯାଇଥିବା generation",
+        "body": "ସମସ୍ତ ତଥ୍ୟ ବିଲୋପ କଲେ local repository, Keychain, App Group, Widget cache, Apple Watch payload, private CloudKit record ଓ trial anchor ବିଲୋପ ହୁଏ। Offline ଡିଭାଇସ୍ ଯେପରି ବିଲୋପ ହୋଇଥିବା ବିଷୟବସ୍ତୁ ଫେରାଇ ନ ଆଣେ, ସେଥିପାଇଁ UsageNow କେବଳ ଏକ non-identifying CloudKit deletion generation ରଖେ। ଏଥିରେ provider, usage, account, credential, device fingerprint କିମ୍ବା trial data ରହେ ନାହିଁ। ଆପଣ export କରିଥିବା file ଓ Apple-managed device backup ଆପଣଙ୍କ ନିୟନ୍ତ୍ରଣରେ ରହେ ଏବଂ ଅଲଗାଭାବେ ବିଲୋପ କରିବାକୁ ପଡ଼ିବ।"
+      },
+      {
+        "id": "support_site",
+        "title": "ସହାୟତା ଇମେଲ୍ ଓ ଏହି website",
+        "body": "ଆପଣ ସହାୟତାକୁ ଇମେଲ୍ କଲେ, ବିକାଶକାରୀ ଆପଣ ପଠାଇବାକୁ ବାଛିଥିବା email address ଓ message ପାଆନ୍ତି ଏବଂ କେବଳ ଉତ୍ତର ଦେବା ପାଇଁ ବ୍ୟବହାର କରନ୍ତି। ଏହି static website କୌଣସି cookie set କରେ ନାହିଁ ଏବଂ advertising, analytics, tracking script କିମ୍ବା third-party asset load କରେ ନାହିଁ। ଭବିଷ୍ୟତ hosting service ନିଜ privacy terms ଅନୁସାରେ ସାଧାରଣ connection information process କରିପାରେ।"
+      },
+      {
+        "id": "provider_independence",
+        "title": "ପ୍ରଦାନକାରୀଙ୍କୁ ନିରପେକ୍ଷତା",
+        "body": "ଏହି ନାମଗୁଡ଼ିକ କେବଳ ସୁସଙ୍ଗତ ସେବା ଚିହ୍ନଟ କରିବା ପାଇଁ ବ୍ୟବହୃତ ହୁଏ: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow ଏକ ସ୍ୱାଧୀନ ଆପ୍; ଏହି ପ୍ରଦାନକାରୀମାନେ ଏହାକୁ ଅନୁମୋଦନ କିମ୍ବା ପ୍ରାୟୋଜନ କରନ୍ତି ନାହିଁ ଏବଂ ଏହା ସେମାନଙ୍କ ସହ ଅନୁବନ୍ଧିତ ନୁହେଁ।"
+      }
+    ]
+  }
+}

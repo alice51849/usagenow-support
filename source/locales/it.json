@@ -1,0 +1,164 @@
+{
+  "language_name": "Italiano",
+  "language_label": "Lingua",
+  "navigation_label": "Navigazione primaria",
+  "skip_link": "Passa al contenuto principale",
+  "nav": {
+    "index": "Panoramica",
+    "support": "Supporto",
+    "privacy": "Informativa sulla privacy"
+  },
+  "contact": {
+    "title": "Contatta l'assistenza UsageNow",
+    "body": "Includi il modello del tuo dispositivo, il sistema operativo e la versione dell'app, il nome di compatibilità del provider, il metodo di connessione, il codice di stato e l'ora approssimativa. Non inviare mai token di accesso, password, cookie, slug dell'organizzazione o dell'area di lavoro, URL completo, corpo della richiesta o della risposta o intestazioni.",
+    "button": "Domande o commenti? Scrivici."
+  },
+  "footer": "Supporto ufficiale e informazioni sulla privacy per UsageNow: AI Usage.",
+  "home": {
+    "title": "Pianifica la capacità dell'intelligenza artificiale senza fornirci le tue credenziali",
+    "summary": "UsageNow si connette dal tuo dispositivo al provider documentato API che scegli, spiega la capacità rimanente e i tempi di ripristino e può sincronizzare privatamente istantanee senza segreti tramite il tuo account Apple.",
+    "section_title": "Come UsageNow gestisce i tuoi dati",
+    "sections": [
+      {
+        "id": "direct_connections",
+        "title": "Collegamenti ufficiali diretti",
+        "body": "Quando richiedi un aggiornamento, l'app chiama il API ufficiale documentato del provider selezionato direttamente dal tuo dispositivo utilizzando la connessione che hai fornito. Non esiste un relè sviluppatore UsageNow o un account UsageNow."
+      },
+      {
+        "id": "credential_storage",
+        "title": "Le credenziali rimangono su questo dispositivo",
+        "body": "Le credenziali del fornitore sono conservate nel Keychain dell'app principale con la protezione AfterFirstUnlockThisDeviceOnly. Non sono sincronizzabili e non vengono mai inviati a CloudKit, App Group, Widget o Apple Watch."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Sincronizzazione privata opzionale Apple",
+        "body": "Solo se abiliti la sincronizzazione iCloud, le istantanee di utilizzo normalizzato ridotte al minimo, le preferenze e l'ancora di prova possono essere archiviate nel tuo database privato CloudKit. Sono escluse le credenziali e le risposte non elaborate del fornitore."
+      },
+      {
+        "id": "purchase",
+        "title": "Tre giorni, poi un acquisto a vita",
+        "body": "Il periodo di accesso completo di tre giorni inizia solo dopo il salvataggio della prima istantanea di utilizzo live riuscita. Segue uno sblocco a vita non consumabile; StoreKit carica il prezzo locale reale e Apple gestisce l'acquisto e il ripristino. Non c'è abbonamento o pubblicità."
+      }
+    ]
+  },
+  "support": {
+    "title": "Supporto UsageNow",
+    "summary": "Aiuto con connessioni dirette ai fornitori, codici di stato, dati e acquisto una tantum a vita.",
+    "section_title": "Risoluzione dei problemi e cura dell'account",
+    "sections": [
+      {
+        "id": "connection_types",
+        "title": "Tipi di connessione",
+        "body": "Un provider può utilizzare una API o una chiave amministratore fornita dall'utente oppure un OAuth o un flusso di autorizzazione del dispositivo quando il provider lo supporta ufficialmente. Ogni aggiornamento arriva direttamente agli endpoint ufficiali documentati del fornitore. UsageNow non richiede password, non importa i cookie del browser, non estrae l’HTML delle dashboard, non chiama endpoint privati e non aggira i limiti di richieste del provider. I campi disponibili variano in base al fornitore e al piano account."
+      },
+      {
+        "id": "http_401",
+        "title": "401 — Non autorizzato",
+        "body": "La credenziale è mancante, scaduta, revocata o appartiene al servizio sbagliato. Crealo o rinnovalo nella console ufficiale del provider, concedi solo l'autorizzazione minima richiesta, quindi sostituisci la credenziale o scegli Accedi di nuovo. Non inviare mai la chiave tramite e-mail."
+      },
+      {
+        "id": "http_403",
+        "title": "403 — Proibito",
+        "body": "Il fornitore ha riconosciuto le credenziali, ma l'account potrebbe non avere l'ambito richiesto, il ruolo di fatturazione, l'accesso al team o all'organizzazione o l'approvazione SSO. Conferma la destinazione dell'account e l'autorizzazione di lettura minima del provider. Alcuni piani non espongono i dati di utilizzo."
+      },
+      {
+        "id": "http_404",
+        "title": "404 — Non trovato",
+        "body": "Controlla l'organizzazione, il team, l'area di lavoro, il nome utente o l'identificatore esatto della risorsa. Un 404 può anche significare che il provider non espone l'endpoint di utilizzo per il tuo piano o la tua regione. Segui l'attuale guida di connessione ufficiale in-app; non sostituire mai un endpoint privato."
+      },
+      {
+        "id": "offline_rate_limit",
+        "title": "Offline, obsoleto o con velocità limitata",
+        "body": "UsageNow conserva l'ultima istantanea salvata con il suo timestamp. Riconnettiti e prova un aggiornamento limitato in un secondo momento. Per la manutenzione 429 o del provider, attendere la finestra ufficiale di nuovo tentativo; le richieste ripetute non superano il limite del provider."
+      },
+      {
+        "id": "export_delete",
+        "title": "Dati",
+        "body": "L'esportazione crea un file su questo dispositivo solo quando lo chiedi e apre un selettore di destinazione Apple; sono escluse le credenziali e le risposte non elaborate del fornitore. Elimina tutti i dati rimuove il repository locale, le credenziali Keychain, la cache App Group e Widget, il payload Apple Watch, i record CloudKit privati ​​e l'ancoraggio di prova. Una generazione di eliminazione CloudKit non identificativa rimane solo per impedire a un dispositivo offline di ripristinare il contenuto eliminato. Elimina separatamente i file esportati e i backup gestiti da Apple."
+      },
+      {
+        "id": "purchase_restore",
+        "title": "Ripristina acquisto",
+        "body": "L'accesso completo dura tre giorni dalla prima istantanea live salvata. Successivamente, le informazioni salvate esistenti rimangono come anteprima di sola lettura datata fino alla verifica di un singolo acquisto a vita non consumabile. StoreKit visualizza il prezzo locale corrente. Utilizza Ripristino dopo aver effettuato l'accesso all'account Apple che ha effettuato l'acquisto. Non è previsto alcun abbonamento né rinnovo automatico."
+      },
+      {
+        "id": "safe_contact",
+        "title": "Invia un rapporto di supporto sicuro",
+        "body": "Invia il modello del dispositivo, il sistema operativo e la versione dell'app, il nome del provider utilizzato solo come etichetta di compatibilità, il metodo di connessione, il codice di stato, l'ora approssimativa e un codice evento diagnostico non segreto, se mostrato. Non inviare mai token, password, cookie, slug, URL completo, corpo della richiesta, corpo della risposta o intestazione. Lo sviluppatore non può recuperare credenziali o dati del provider."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Compatibilità indipendente",
+        "body": "Questi nomi sono usati solo per identificare i servizi compatibili: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow è indipendente: questi fornitori non la approvano né la sponsorizzano e non è affiliata a loro."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Informativa sulla privacy",
+    "summary": "UsageNow è locale prima, ma utilizza connessioni dirette al provider e sincronizzazione privata Apple opzionale. Questa politica elenca ogni percorso invece di fare affidamento su un'etichetta di privacy generale.",
+    "updated_label": "Ultimo aggiornamento",
+    "section_title": "Flusso e controllo dei dati",
+    "sections": [
+      {
+        "id": "credential_storage",
+        "title": "Credenziali del provider",
+        "body": "Le credenziali vengono archiviate solo nel Keychain locale dell'app principale utilizzando AfterFirstUnlockThisDeviceOnly. Non sono sincronizzabili, non sono esposti a estensioni e non inseriscono mai UserDefaults, CloudKit, App Group, Widget, Apple Watch, esportazioni, screenshot, analisi o controllo del codice sorgente. La rimozione di una connessione o l'eliminazione di tutti i dati cancella la voce Keychain corrispondente."
+      },
+      {
+        "id": "provider_requests",
+        "title": "Richieste API del provider diretto",
+        "body": "Quando chiedi di connetterti o aggiornare, il tuo dispositivo invia i campi delle credenziali e della richiesta minima richiesta direttamente al API ufficiale documentato del fornitore selezionato su HTTPS. Tale fornitore riceve ed elabora la richiesta secondo i propri termini. UsageNow non instrada il traffico del provider attraverso un server dello sviluppatore, proxy, tunnel o VPN."
+      },
+      {
+        "id": "developer_boundary",
+        "title": "Ciò che riceve lo sviluppatore",
+        "body": "Lo sviluppatore UsageNow non riceve automaticamente il token, i dati dell'account del fornitore, i valori di utilizzo, la richiesta, la risposta del fornitore, gli snapshot normalizzati o i record CloudKit. UsageNow non dispone di un sistema di account o di un database di utilizzo gestito dallo sviluppatore."
+      },
+      {
+        "id": "local_records_exports",
+        "title": "Documenti locali ed esportazioni",
+        "body": "Le istantanee di utilizzo normalizzate, i tempi di ripristino, le previsioni, l'aggiornamento, le etichette degli account, le preferenze e lo stato di prova vengono archiviati localmente. Un'esportazione viene creata solo quando la richiedi e va verso una destinazione scelta tramite l'interfaccia di sistema di Apple. Le esportazioni escludono credenziali e risposte grezze dei fornitori; si applicano quindi i termini sulla privacy della destinazione."
+      },
+      {
+        "id": "cloudkit_optional",
+        "title": "Sincronizzazione",
+        "body": "Solo quando abiliti la sincronizzazione iCloud, gli identificatori del provider ridotti al minimo, le etichette degli account anonimi, i valori di utilizzo normalizzati, i dati di ripristino e previsione, l'aggiornamento, le preferenze e l'ancoraggio di prova minimo possono essere archiviati nel tuo database CloudKit privato Apple. Le credenziali e i payload grezzi del provider non vengono mai inclusi. Apple aziona CloudKit; UsageNow non crea un database per sviluppatori separato."
+      },
+      {
+        "id": "app_group_watch",
+        "title": "App Group, Widget e Apple Watch",
+        "body": "Lo storage App Group fornisce a Widget solo uno snapshot della capacità senza segreti. WatchConnectivity invia un'istantanea senza segreti allo Apple Watch abbinato per visualizzazioni e complicazioni UsageNow. Questi payload possono contenere capacità normalizzata, reimpostazione, aggiornamento e preferenze di visualizzazione, ma mai credenziali, cookie, intestazioni di richiesta o risposte non elaborate del fornitore."
+      },
+      {
+        "id": "storekit",
+        "title": "StoreKit e acquisti",
+        "body": "StoreKit contatta Apple per caricare il prodotto e il prezzo localizzato e per verificare, acquistare o ripristinare lo sblocco a vita dei materiali non consumabili. Apple elabora la transazione. UsageNow legge le informazioni sui diritti verificati e non riceve i dettagli della carta di pagamento."
+      },
+      {
+        "id": "diagnostics",
+        "title": "Diagnostica sicura",
+        "body": "La diagnostica locale può registrare un tipo di evento generale, un codice di stato, un'ora e un identificatore di correlazione non segreto. Non vengono caricati automaticamente e non includono mai token, password, cookie, slug dell'organizzazione o dell'area di lavoro, URL completo, corpo della richiesta, corpo della risposta o intestazione. Non inviare questi segreti in un messaggio di supporto."
+      },
+      {
+        "id": "excluded_practices",
+        "title": "Nessuna pubblicità, analisi, tracciamento o scraping",
+        "body": "UsageNow non include SDK pubblicitari, analisi di terze parti, tracciamento tra app, impronte digitali del dispositivo o profili di marketing dello sviluppatore. Non raccoglie password, non importa i cookie del browser, non estrae l’HTML delle dashboard, non chiama endpoint privati, non si spaccia per client ufficiali, non ne riutilizza i token e non aggira i limiti di richieste del provider."
+      },
+      {
+        "id": "deletion_retention",
+        "title": "Cancellazione e generazione conservata",
+        "body": "Elimina tutti i dati rimuove il repository locale, Keychain, App Group, cache Widget, payload Apple Watch, record privati CloudKit e ancoraggio di prova. UsageNow conserva solo una generazione di eliminazione CloudKit non identificativa, quindi un dispositivo offline non può resuscitare il contenuto eliminato. Non contiene dati relativi a provider, utilizzo, account, credenziali, impronte digitali del dispositivo o dati di prova. I file esportati e i backup del dispositivo gestito da Apple rimangono sotto il tuo controllo e devono essere rimossi separatamente."
+      },
+      {
+        "id": "support_site",
+        "title": "Supporta la posta elettronica e questo sito Web",
+        "body": "Se invii un'e-mail al supporto, lo sviluppatore riceve l'indirizzo e-mail e il messaggio che scegli di inviare e li utilizza solo per risponderti. Questo sito Web statico non imposta cookie e non carica pubblicità, analisi, script di tracciamento o risorse di terze parti. L'eventuale servizio di hosting può elaborare le informazioni di connessione standard secondo i propri termini sulla privacy."
+      },
+      {
+        "id": "provider_independence",
+        "title": "Indipendenza del fornitore",
+        "body": "Questi nomi sono usati solo per identificare i servizi compatibili: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow è indipendente: questi fornitori non la approvano né la sponsorizzano e non è affiliata a loro."
+      }
+    ]
+  }
+}
