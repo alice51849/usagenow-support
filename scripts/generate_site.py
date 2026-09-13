@@ -340,8 +340,11 @@ def contact_markup(item: dict[str, Any]) -> str:
         f'  <h2 id="contact-heading">{esc(contact["title"])}</h2>\n'
         f'  <p>{esc(contact["body"])}</p>\n'
         '  <address class="contact-actions">\n'
-        f'    <a class="mail-button" href="mailto:{EMAIL}" '
-        f'aria-label="{esc(contact["button"])} {EMAIL}"><span>{EMAIL}</span></a>\n'
+        # The canonical host runs Cloudflare Email Obfuscation, which rewrites
+        # bare addresses and mailto links; email_off markers keep them intact.
+        f'    <!--email_off--><a class="mail-button" href="mailto:{EMAIL}" '
+        f'aria-label="{esc(contact["button"])} {EMAIL}"><span>{EMAIL}</span></a>'
+        "<!--/email_off-->\n"
         "  </address>\n"
         "</section>"
     )

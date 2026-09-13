@@ -39,6 +39,8 @@ PLACEHOLDER_RE = re.compile(
     r"\b(?:TODO|TBD|FIXME)\b|(?i:lorem ipsum)|\?\?\?|\{\{|ZXQ(?:TERM|SEG)"
 )
 EMAIL_RE = re.compile(r"[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}")
+# The canonical Cloudflare host obfuscates addresses outside these markers.
+EMAIL_SHIELD_RE = re.compile(r"<!--email_off-->.*?<!--/email_off-->", re.S)
 PRICE_RE = re.compile(
     r"(?:US\$|AU\$|CA\$|NZ\$|HK\$|NT\$|[$€£¥₹₩₽])\s*\d|"
     r"\d[\d.,]*\s*(?:USD|EUR|GBP|AUD|CAD)"
@@ -567,6 +569,10 @@ def check_page(
         or EMAIL not in parser.mail_links[0].get("aria-label", "")
     ):
         errors.append(f"{relative}: accessible support email action is not exact")
+    if text.count("<!--email_off-->") != text.count("<!--/email_off-->") or EMAIL_RE.search(
+        EMAIL_SHIELD_RE.sub("", text)
+    ):
+        errors.append(f"{relative}: public email is not shielded by email_off markers")
     if FORBIDDEN_PUBLIC_EMAIL in text:
         errors.append(f"{relative}: forbidden public email")
     if PLACEHOLDER_RE.search(text):

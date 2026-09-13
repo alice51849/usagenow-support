@@ -31,12 +31,23 @@ Apple locale. Every page has a self-canonical URL, exact-50 `hreflang`
 alternatives plus `x-default`, localized metadata, semantic landmarks, and an
 exact-50 language selector.
 
-## Deployment handoff
+## Deployment
 
-This staging repository intentionally has no remote and has not been deployed.
-Before deployment, replace only `canonical_base_url` in `source/site.json`
-(currently the reserved `.invalid` staging URL), regenerate, and rerun both
-checks. Relative navigation and assets do not depend on the eventual host path.
+- GitHub repository `alice51849/usagenow-support` (public), served by GitHub
+  Pages from the root of `main`.
+- Origin: `https://alice51849.github.io/usagenow-support/`. This is the host
+  registered in App Store Connect as the support and privacy policy URL.
+- Canonical host: `https://open.cait518.cc/usagenow-support/`, a Cloudflare
+  tunnel mirror of the origin that serves the same bytes. Every `canonical`,
+  `og:url`, `hreflang`, sitemap, and robots URL uses this host through
+  `canonical_base_url` in `source/site.json`.
+- The canonical host applies Cloudflare Email Obfuscation, so the generator
+  wraps the public support email in `<!--email_off-->` markers to keep the
+  visible address and the `mailto:` link intact; the validator fails if any
+  address falls outside those markers.
+
+To move hosts, replace only `canonical_base_url`, regenerate, and rerun both
+checks. Relative navigation and assets do not depend on the host path.
 
 ## Privacy boundary represented by this site
 
