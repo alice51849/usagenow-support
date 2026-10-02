@@ -1,164 +1,59 @@
 {
-  "language_name": "Slovenčina",
-  "language_label": "Jazyk",
-  "navigation_label": "Hlavná navigácia",
-  "skip_link": "Preskočiť na hlavný obsah",
-  "nav": {
-    "index": "Prehľad",
-    "support": "Podpora",
-    "privacy": "Súkromie"
-  },
-  "contact": {
-    "title": "Kontaktovať podporu UsageNow",
-    "body": "Uveďte model zariadenia, verziu operačného systému a aplikácie, názov poskytovateľa iba na označenie kompatibility, spôsob pripojenia, stavový kód a približný čas. Nikdy neposielajte prístupový token, heslo, cookie, slug organizácie alebo pracovného priestoru, úplnú URL, telo požiadavky či odpovede ani hlavičky.",
-    "button": "Napísať podpore"
-  },
-  "footer": "Oficiálne informácie o podpore a súkromí pre UsageNow: AI Usage.",
-  "home": {
-    "title": "Plánujte kapacitu AI bez odovzdania svojich prístupových údajov",
-    "summary": "UsageNow sa z vášho zariadenia pripája k zdokumentovaným API poskytovateľov, ktoré si vyberiete, vysvetľuje zostávajúcu kapacitu a časy obnovenia a cez váš účet Apple môže súkromne synchronizovať snímky bez tajných údajov.",
-    "section_title": "Ako UsageNow pracuje s vašimi údajmi",
-    "sections": [
-      {
-        "id": "direct_connections",
-        "title": "Priame oficiálne pripojenia",
-        "body": "Keď požiadate o obnovenie, aplikácia zavolá zdokumentované oficiálne API vybraného poskytovateľa priamo z vášho zariadenia pomocou vami zadaného pripojenia. Neexistuje sprostredkujúci server vývojára ani účet UsageNow."
-      },
-      {
-        "id": "credential_storage",
-        "title": "Prístupové údaje zostávajú v zariadení",
-        "body": "Prístupové údaje poskytovateľov uchováva hlavná aplikácia v Keychain s ochranou AfterFirstUnlockThisDeviceOnly. Nedajú sa synchronizovať a nikdy sa neposielajú do CloudKit, App Group, Widget ani Apple Watch."
-      },
-      {
-        "id": "cloudkit_optional",
-        "title": "Voliteľná súkromná synchronizácia Apple",
-        "body": "Iba ak zapnete synchronizáciu cez iCloud, môžu sa minimalizované normalizované snímky používania, nastavenia a kotva skúšobného obdobia uložiť do vašej súkromnej databázy CloudKit. Prístupové údaje a nespracované odpovede poskytovateľov sa nezahŕňajú."
-      },
-      {
-        "id": "purchase",
-        "title": "Tri dni a potom jeden doživotný nákup",
-        "body": "Trojdňový plný prístup začne až po uložení prvej úspešnej živej snímky používania. Potom je k dispozícii jeden nespotrebný doživotný nákup; StoreKit načíta skutočnú miestnu cenu a Apple spracuje nákup aj obnovenie. Bez predplatného a reklám."
-      }
-    ]
-  },
-  "support": {
-    "title": "Podpora UsageNow",
-    "summary": "Pomoc s priamymi pripojeniami poskytovateľov, stavovými kódmi, vašimi údajmi a jednorazovým doživotným nákupom.",
-    "section_title": "Riešenie problémov a starostlivosť o účet",
-    "sections": [
-      {
-        "id": "connection_types",
-        "title": "Typy pripojenia",
-        "body": "Poskytovateľ môže používať vami zadaný API alebo administrátorský kľúč, prípadne OAuth či autorizáciu zariadenia, ak ju oficiálne podporuje. Každé obnovenie smeruje priamo na zdokumentované oficiálne endpointy. UsageNow nikdy nežiada heslo, neimportuje cookies prehliadača, neprezerá HTML ovládacieho panela, nepoužíva súkromné endpointy ani neobchádza limity. Dostupné polia závisia od poskytovateľa a plánu účtu."
-      },
-      {
-        "id": "http_401",
-        "title": "401 — Neautorizované",
-        "body": "Prístupový údaj chýba, vypršal, bol odvolaný alebo patrí inej službe. Vytvorte alebo obnovte ho v oficiálnej konzole poskytovateľa, povoľte iba minimálne potrebné oprávnenie a potom údaj nahraďte alebo sa prihláste znova. Kľúč nikdy neposielajte e-mailom."
-      },
-      {
-        "id": "http_403",
-        "title": "403 — Zakázané",
-        "body": "Poskytovateľ údaj rozpoznal, ale účtu môže chýbať potrebný scope, fakturačná rola, prístup k tímu či organizácii alebo schválenie SSO. Skontrolujte cieľový účet a minimálne oprávnenie na čítanie. Niektoré plány údaje o používaní nesprístupňujú."
-      },
-      {
-        "id": "http_404",
-        "title": "404 — Nenájdené",
-        "body": "Skontrolujte presný identifikátor organizácie, tímu, pracovného priestoru, používateľského mena alebo zdroja. Kód 404 môže znamenať aj to, že poskytovateľ daný endpoint pre váš plán alebo región neposkytuje. Riaďte sa aktuálnym oficiálnym návodom v aplikácii a nepoužívajte súkromný endpoint."
-      },
-      {
-        "id": "offline_rate_limit",
-        "title": "Offline, zastarané údaje alebo obmedzenie požiadaviek",
-        "body": "UsageNow ponechá poslednú uloženú snímku s časovou pečiatkou. Znova sa pripojte a neskôr skúste obmedzený počet obnovení. Pri kóde 429 alebo údržbe počkajte na oficiálny interval opakovania; opakované požiadavky limit neobídu."
-      },
-      {
-        "id": "export_delete",
-        "title": "Export a odstránenie údajov",
-        "body": "Export vytvorí súbor v zariadení iba na vašu žiadosť a otvorí výber cieľa Apple; prístupové údaje a nespracované odpovede sa nezahrnú. Odstránenie všetkých údajov vymaže miestne úložisko, Keychain, App Group a Widget cache, payload pre Apple Watch, súkromné záznamy CloudKit aj kotvu skúšobného obdobia. Zostane iba neidentifikujúca generácia odstránenia CloudKit, ktorá zabráni obnoveniu údajov offline zariadením. Exportované súbory a zálohy spravované Apple odstráňte samostatne."
-      },
-      {
-        "id": "purchase_restore",
-        "title": "Doživotný nákup a obnovenie",
-        "body": "Plný prístup trvá tri dni od prvej uloženej živej snímky. Potom zostanú uložené informácie ako datovaný náhľad iba na čítanie, kým sa neoverí jeden nespotrebný doživotný nákup. StoreKit zobrazí aktuálnu miestnu cenu. Obnovenie použite s tým istým účtom Apple. Nejde o predplatné ani automatické obnovovanie."
-      },
-      {
-        "id": "safe_contact",
-        "title": "Bezpečná správa pre podporu",
-        "body": "Pošlite model zariadenia, verziu systému a aplikácie, názov poskytovateľa len ako označenie kompatibility, spôsob pripojenia, stavový kód, približný čas a prípadný netajný kód diagnostickej udalosti. Nikdy neposielajte token, heslo, cookie, slug, úplnú URL, telo požiadavky, telo odpovede ani hlavičku. Vývojár nevie obnoviť vaše prístupové údaje ani údaje poskytovateľa."
-      },
-      {
-        "id": "provider_independence",
-        "title": "Nezávislá kompatibilita",
-        "body": "Tieto názvy sa používajú iba na identifikáciu kompatibilných služieb: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow je nezávislá aplikácia; títo poskytovatelia ju neschvaľujú ani nesponzorujú a nie je s nimi prepojená."
-      }
-    ]
-  },
-  "privacy": {
-    "title": "Zásady ochrany súkromia",
-    "summary": "UsageNow uprednostňuje miestne spracovanie, no používa priame pripojenia k poskytovateľom a voliteľnú súkromnú synchronizáciu Apple. Tieto zásady opisujú každú dátovú cestu namiesto všeobecného tvrdenia.",
-    "updated_label": "Posledná aktualizácia",
-    "section_title": "Tok údajov a vaša kontrola",
-    "sections": [
-      {
-        "id": "credential_storage",
-        "title": "Prístupové údaje poskytovateľov",
-        "body": "Prístupové údaje sú iba v miestnom Keychain hlavnej aplikácie s ochranou AfterFirstUnlockThisDeviceOnly. Nesynchronizujú sa, rozšírenia k nim nemajú prístup a nikdy sa nedostanú do UserDefaults, CloudKit, App Group, Widget, Apple Watch, exportov, snímok obrazovky, analytiky ani zdrojového kódu. Odstránenie pripojenia alebo všetkých údajov vymaže príslušnú položku Keychain."
-      },
-      {
-        "id": "provider_requests",
-        "title": "Priame požiadavky na API poskytovateľa",
-        "body": "Keď požiadate o pripojenie alebo obnovenie, zariadenie odošle prístupový údaj a minimálne potrebné polia priamo na zdokumentované oficiálne API poskytovateľa cez HTTPS. Poskytovateľ ich spracuje podľa vlastných podmienok. UsageNow nepoužíva server vývojára, proxy, tunel ani VPN."
-      },
-      {
-        "id": "developer_boundary",
-        "title": "Čo dostáva vývojár",
-        "body": "Vývojár UsageNow automaticky nedostáva váš token, údaje účtu poskytovateľa, hodnoty používania, požiadavku, odpoveď poskytovateľa, normalizované snímky ani záznamy CloudKit. UsageNow nemá vývojársky systém účtov ani databázu používania."
-      },
-      {
-        "id": "local_records_exports",
-        "title": "Miestne záznamy a exporty",
-        "body": "Normalizované snímky používania, časy resetov, prognózy, čerstvosť, označenia účtov, nastavenia a stav skúšobného obdobia sa uchovávajú lokálne. Export vznikne iba na vašu žiadosť a smeruje do cieľa, ktorý vyberiete cez systémové rozhranie Apple. Neobsahuje prístupové údaje ani nespracované odpovede; potom platia podmienky zvoleného cieľa."
-      },
-      {
-        "id": "cloudkit_optional",
-        "title": "Voliteľný súkromný CloudKit",
-        "body": "Iba pri zapnutej synchronizácii iCloud sa môžu minimalizované identifikátory poskytovateľa, anonymné označenia účtov, normalizované hodnoty, reset, prognóza, čerstvosť, nastavenia a minimálna kotva skúšobného obdobia uložiť do vašej súkromnej databázy CloudKit. Prístupové údaje a nespracované payloady sa nikdy nezahŕňajú. CloudKit prevádzkuje Apple; UsageNow nevytvára samostatnú databázu vývojára."
-      },
-      {
-        "id": "app_group_watch",
-        "title": "App Group, Widget a Apple Watch",
-        "body": "App Group poskytuje Widget iba snímku kapacity bez tajných údajov. WatchConnectivity posiela takúto snímku spárovaným Apple Watch. Môže obsahovať normalizovanú kapacitu, reset, čerstvosť a nastavenia zobrazenia, nikdy však prístupové údaje, cookies, hlavičky požiadaviek ani nespracované odpovede."
-      },
-      {
-        "id": "storekit",
-        "title": "StoreKit a nákupy",
-        "body": "StoreKit kontaktuje Apple, aby načítal produkt a miestnu cenu a overil, kúpil alebo obnovil nespotrebný doživotný prístup. Transakciu spracúva Apple. UsageNow číta overené oprávnenie a nedostáva údaje platobnej karty."
-      },
-      {
-        "id": "diagnostics",
-        "title": "Bezpečná diagnostika",
-        "body": "Miestna diagnostika môže zaznamenať všeobecný typ udalosti, stavový kód, čas a netajný korelačný identifikátor. Automaticky sa nenahráva a nikdy neobsahuje token, heslo, cookie, slug organizácie alebo pracovného priestoru, úplnú URL, telo požiadavky, telo odpovede ani hlavičku. Tieto tajné údaje neposielajte podpore."
-      },
-      {
-        "id": "excluded_practices",
-        "title": "Bez reklám, analytiky, sledovania a scrapingu",
-        "body": "UsageNow nemá reklamné SDK, analytiku tretích strán, sledovanie medzi aplikáciami, odtlačok zariadenia ani marketingový profil vývojára. Nezbiera heslá, neimportuje cookies, nespracúva HTML ovládacieho panela, nepoužíva súkromné endpointy, nenapodobňuje oficiálnych klientov, opätovne nepoužíva ich tokeny a neobchádza limity."
-      },
-      {
-        "id": "deletion_retention",
-        "title": "Odstránenie a zachovaná generácia",
-        "body": "Odstránenie všetkých údajov vymaže miestne úložisko, Keychain, App Group, Widget cache, payload Apple Watch, súkromné záznamy CloudKit a kotvu skúšobného obdobia. Zostane iba neidentifikujúca generácia odstránenia CloudKit, aby offline zariadenie neobnovilo vymazaný obsah. Neobsahuje poskytovateľa, používanie, účet, prístupový údaj, odtlačok zariadenia ani údaje skúšobného obdobia. Exporty a zálohy Apple odstráňte samostatne."
-      },
-      {
-        "id": "support_site",
-        "title": "E-mail podpory a táto webová stránka",
-        "body": "Ak napíšete podpore, vývojár dostane adresu a správu, ktoré odošlete, a použije ich iba na odpoveď. Táto statická stránka nenastavuje cookies a nenačítava reklamy, analytiku, sledovacie skripty ani aktíva tretích strán. Budúci hosting môže podľa vlastných zásad spracovať bežné údaje o pripojení."
-      },
-      {
-        "id": "provider_independence",
-        "title": "Nezávislosť od poskytovateľov",
-        "body": "Tieto názvy sa používajú iba na identifikáciu kompatibilných služieb: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow je nezávislá aplikácia; títo poskytovatelia ju neschvaľujú ani nesponzorujú a nie je s nimi prepojená."
-      }
-    ]
-  }
+ "language_name": "Slovenčina",
+ "language_label": "Jazyk",
+ "navigation_label": "Hlavná navigácia",
+ "skip_link": "Preskočiť na hlavný obsah",
+ "nav": {"index": "Prehľad", "support": "Podpora", "privacy": "Súkromie"},
+ "contact": {
+  "title": "Kontaktujte podporu UsageNow",
+  "body": "Uveďte model zariadenia, verziu iOS, verziu aplikácie, ku ktorej službe účet patrí, čo ste ťukli a približne kedy sa to stalo. Nikdy neposielajte heslo, prihlasovací kód, prístupový token ani snímku obrazovky, na ktorej je niečo z toho vidieť.",
+  "button": "Napísať podpore"
+ },
+ "footer": "Oficiálne informácie o podpore a ochrane súkromia pre UsageNow: AI Usage Tracker.",
+ "home": {
+  "title": "Na prvý pohľad uvidíte, koľko zostáva z každého AI plánu",
+  "summary": "UsageNow ukazuje, koľko ste vyčerpali z každého AI predplatného a kedy presne sa limit obnoví – v aplikácii, vo Widget miniaplikáciách na ploche aj na Apple Watch. S každou službou komunikuje priamo z vášho zariadenia; žiadny server UsageNow neexistuje.",
+  "section_title": "Ako UsageNow funguje",
+  "sections": [
+   {"id": "direct_connections", "title": "Priamo z vášho zariadenia", "body": "Účet pridáte cez vlastnú prihlasovaciu stránku danej služby. Keď sa aplikácia alebo jej Widget obnoví, váš iPhone alebo iPad si vyžiada údaje o využití priamo z API služby cez HTTPS. Nič neprechádza cez server UsageNow, pretože žiadny neexistuje."},
+   {"id": "credential_storage", "title": "Prihlásenia zostávajú v Keychain", "body": "Prihlasovacie tokeny sa ukladajú iba do Keychain tohto zariadenia s ochranou AfterFirstUnlockThisDeviceOnly. Zdieľajú sa len s Widget miniaplikáciou UsageNow na ploche, aby sa mohla obnovovať sama, a nesynchronizujú sa do iCloud ani sa neposielajú do Apple Watch."},
+   {"id": "widget_watch", "title": "Widget a Apple Watch", "body": "Widget a Apple Watch zobrazujú najnovšie percentá využitia a časy obnovenia. Spárované Apple Watch dostávajú iba tento prehľad, nikdy nie prihlasovací token."},
+   {"id": "purchase", "title": "24-hodinová skúšobná verzia zadarmo, potom jeden nákup", "body": "Všetky funkcie sú zadarmo 24 hodín po ťuknutí na Vyskúšať 24 hodín zadarmo. UsageNow Pro je jednorazový nákup cez StoreKit s cenou zobrazenou v miestnej mene. Nejde o predplatné a nie sú tu žiadne reklamy."}
+  ]
+ },
+ "support": {
+  "title": "Podpora UsageNow",
+  "summary": "Pomoc s pridávaním účtov, obnovovaním využitia, Widget miniaplikáciami, Apple Watch, skúšobnou verziou zadarmo a UsageNow Pro.",
+  "section_title": "Otázky a riešenie problémov",
+  "sections": [
+   {"id": "getting_started", "title": "Pridanie účtu alebo vyskúšanie ukážkových údajov", "body": "Ťuknite na kartu služby alebo na tlačidlo plus a prihláste sa na vlastnej stránke služby v zabezpečenom webovom okne od Apple; GitHub zobrazí krátky kód zariadenia, ktorý zadáte. Pre každú službu môžete pridať viacero účtov. Ak sa chcete najprv len poobzerať, ťuknite na prvej obrazovke na Náhľad s ukážkovými údajmi."},
+   {"id": "sign_in_again", "title": "Pri účte sa zobrazuje Prihláste sa znova", "body": "Služba ukončila reláciu, napríklad po zmene hesla, odhlásení na jej webe alebo po dlhom čase bez používania. Ťuknite na tejto karte na Prihláste sa znova. UsageNow vaše heslo nikdy nevidí ani neukladá."},
+   {"id": "widget_refresh", "title": "Čísla vo Widget vyzerajú staré", "body": "Widget na ploche sa obnovuje sám približne každých 20 minút, keď to iOS dovolí, a tlačidlo obnovenia vo Widget si nové čísla vyžiada okamžite. Režim nízkej spotreby alebo slabé pripojenie môžu aktualizácie oneskoriť. Otvorenie aplikácie vždy obnoví všetky účty."},
+   {"id": "offline_rate_limit", "title": "Bez pripojenia alebo preťažená služba", "body": "Ak nie ste pripojení alebo služba odpovie 429 Too Many Requests, UsageNow ponechá posledné čísla aj s časom a skúsi to neskôr znova. Opakované ťukanie limity služby neobíde."},
+   {"id": "sort_language", "title": "Zoradenie účtov a zmena jazyka", "body": "Ak máte dva alebo viac účtov, tlačidlom zoradenia ich usporiadate podľa služby, najbližšieho obnovenia, najväčšieho využitia, najmenšieho využitia, názvu alebo vlastného poradia. V Nastaveniach si môžete vybrať ktorýkoľvek z 50 jazykov alebo nechať jazyk systému; Widget a Apple Watch sa prispôsobia."},
+   {"id": "sign_out_delete", "title": "Odhlásenie a odstránenie údajov", "body": "Otvorte ponuku účtu a vyberte Odhlásiť sa – tokeny účtu sa vymažú z Keychain a jeho čísla z aplikácie, Widget miniaplikácie aj z Apple Watch. Ak chcete odstrániť všetko, odhláste sa z každého účtu a potom aplikáciu vymažte. Prístup môžete zrušiť aj v nastaveniach účtu každej služby."},
+   {"id": "purchase_restore", "title": "Skúšobná verzia zadarmo, UsageNow Pro a obnovenie", "body": "24-hodinová skúšobná verzia zadarmo sa spustí až po ťuknutí a dá sa použiť raz na jeden Apple Account. Po jej skončení zostanú aplikácia aj widgety zamknuté, kým si nekúpite UsageNow Pro – jednorazový nákup cez StoreKit, ktorý nie je predplatným. V Nastaveniach použite Obnoviť nákupy na ktoromkoľvek zariadení prihlásenom do toho istého Apple Account."},
+   {"id": "safe_contact", "title": "Čo uviesť v správe", "body": "Uveďte model zariadenia, verziu iOS, verziu aplikácie, názov služby, čo ste ťukli a približný čas. Neposielajte heslo, prihlasovací kód, token ani celú prihlasovaciu URL adresu. Vývojár vaše účty nevidí a nemôže ich obnoviť."},
+   {"id": "provider_independence", "title": "Nezávislá aplikácia", "body": "UsageNow je nezávislá aplikácia. Claude a Anthropic, ChatGPT, Codex a OpenAI, GitHub Copilot, GitHub a Microsoft, ako aj Gemini a Google sa uvádzajú len preto, aby bolo jasné, ktoré účty aplikácia dokáže čítať; UsageNow s nimi nie je prepojená a nie je nimi sponzorovaná ani schválená."}
+  ]
+ },
+ "privacy": {
+  "title": "Zásady ochrany súkromia",
+  "summary": "UsageNow nemá server, vlastný účet, reklamy ani analytiku. Tieto zásady presne vysvetľujú, kam putujú vaše prihlásenia a čísla o využití.",
+  "updated_label": "Posledná aktualizácia",
+  "section_title": "Vaše údaje, cesta po ceste",
+  "sections": [
+   {"id": "credential_storage", "title": "Prihlasovacie tokeny", "body": "Tokeny každej služby sa ukladajú iba do Keychain tohto zariadenia s ochranou AfterFirstUnlockThisDeviceOnly a nedajú sa synchronizovať. Čítať ich môže len aplikácia UsageNow a jej vlastná Widget miniaplikácia na ploche. Nikdy sa nezapisujú do iCloud, neposielajú do Apple Watch ani vývojárovi."},
+   {"id": "provider_requests", "title": "Požiadavky na jednotlivé služby", "body": "Pri prihlásení a obnovení využitia sa vaše zariadenie pripája priamo na vlastnú prihlasovaciu stránku a API danej služby cez HTTPS. Služba požiadavku prijíma podľa svojich vlastných zásad ochrany súkromia. UsageNow nepoužíva proxy, VPN, tunel ani server vývojára; počas prihlasovania aplikácia krátko načúva na miestnej adrese iba v tomto zariadení, aby prijala odpoveď na prihlásenie."},
+   {"id": "developer_boundary", "title": "Čo dostáva vývojár", "body": "Automaticky nič. Vývojár nedostáva vaše tokeny, e-mail účtu, plán, čísla o využití ani časy obnovenia a neexistuje žiadny účet ani databáza UsageNow."},
+   {"id": "local_records", "title": "Uložené vo vašom zariadení", "body": "Aplikácia uchováva najnovší prehľad využitia (označenie účtu, názov plánu, percentá využitia, časy obnovenia a čas posledného obnovenia), vaše poradie zoradenia, voľbu jazyka, čas skončenia skúšobnej verzie a krátky miestny záznam ťuknutí na tlačidlá vo Widget na účely riešenia problémov. Tieto údaje zostávajú v zariadení."},
+   {"id": "app_group_watch", "title": "Widget a Apple Watch", "body": "Aplikácia a Widget zdieľajú prehľad cez App Group v tomto zariadení. WatchConnectivity posiela ten istý prehľad do spárovaných Apple Watch, aby ho ich aplikácia a komplikácie mohli zobraziť; tokeny sa neposielajú."},
+   {"id": "storekit", "title": "Nákupy", "body": "StoreKit kontaktuje Apple, aby zobrazil miestnu cenu, spustil skúšobnú verziu zadarmo, kúpil UsageNow Pro a obnovil nákupy. Platbu spracúva Apple; vývojár vaše platobné údaje nedostáva."},
+   {"id": "excluded_practices", "title": "Bez reklám, analytiky a sledovania", "body": "UsageNow neobsahuje reklamy, analytiku tretích strán, službu na hlásenie pádov ani sledovanie naprieč aplikáciami či webmi. Nepredáva údaje, nevytvára profily a nežiada vaše heslo."},
+   {"id": "deletion", "title": "Vymazanie údajov", "body": "Odhlásením z účtu sa jeho tokeny vymažú z Keychain a jeho čísla sa odstránia z aplikácie, Widget miniaplikácie aj z Apple Watch. Odhlásením zo všetkých účtov a vymazaním aplikácie odstránite všetko ostatné. Prístup UsageNow môžete zrušiť aj v nastaveniach účtu každej služby."},
+   {"id": "support_site", "title": "E-mail podpory a táto webová stránka", "body": "Ak napíšete podpore, vývojár dostane iba adresu a správu, ktoré sa rozhodnete poslať, a použije ich len na odpoveď. Táto stránka nenastavuje cookies a nenačítava reklamné, analytické ani sledovacie skripty; hostí ju GitHub Pages, ktorá môže spracúvať bežné údaje o pripojení podľa svojich vlastných podmienok."},
+   {"id": "provider_independence", "title": "Nezávislá aplikácia", "body": "UsageNow je nezávislá aplikácia. Claude a Anthropic, ChatGPT, Codex a OpenAI, GitHub Copilot, GitHub a Microsoft, ako aj Gemini a Google sa uvádzajú len preto, aby bolo jasné, ktoré účty aplikácia dokáže čítať; UsageNow s nimi nie je prepojená a nie je nimi sponzorovaná ani schválená."},
+   {"id": "policy_changes", "title": "Zmeny a otázky", "body": "Ak sa tieto zásady zmenia, nová verzia sa zverejní tu s novým dátumom. UsageNow nie je určená deťom. Otázky týkajúce sa súkromia môžete poslať na e-mail podpory uvedený nižšie."}
+  ]
+ }
 }

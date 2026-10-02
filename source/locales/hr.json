@@ -1,164 +1,59 @@
 {
-  "language_name": "Hrvatski",
-  "language_label": "Jezik",
-  "navigation_label": "Primarna navigacija",
-  "skip_link": "Prijeđi na glavni sadržaj",
-  "nav": {
-    "index": "Pregled",
-    "support": "Podrška",
-    "privacy": "Pravila privatnosti"
-  },
-  "contact": {
-    "title": "Obratite se podršci za UsageNow",
-    "body": "Uključite model svog uređaja, operativni sustav i verziju aplikacije, naziv kompatibilnosti pružatelja usluga, način povezivanja, statusni kod i približno vrijeme. Nikada nemojte slati pristupni token, lozinku, kolačić, slug organizacije ili radnog prostora, puni URL, tijelo zahtjeva ili odgovora ili zaglavlja.",
-    "button": "Imate pitanje ili prijedlog? Pišite nam."
-  },
-  "footer": "Službena podrška i informacije o privatnosti za UsageNow: AI Usage.",
-  "home": {
-    "title": "Planirajte AI kapacitet bez davanja svojih vjerodajnica",
-    "summary": "UsageNow povezuje se s vašeg uređaja na dokumentirane pružatelje APIs koje odaberete, objašnjava preostali kapacitet i vrijeme resetiranja i može privatno sinkronizirati snimke bez tajnosti putem vašeg Apple računa.",
-    "section_title": "Kako UsageNow postupa s vašim podacima",
-    "sections": [
-      {
-        "id": "direct_connections",
-        "title": "Izravne službene veze",
-        "body": "Kada zatražite osvježenje, aplikacija poziva dokumentirani službeni API odabranog pružatelja izravno s vašeg uređaja koristeći vezu koju ste naveli. Ne postoji UsageNow razvojni relej ili UsageNow račun."
-      },
-      {
-        "id": "credential_storage",
-        "title": "Vjerodajnice ostaju na ovom uređaju",
-        "body": "Vjerodajnice davatelja čuvaju se u Keychain glavne aplikacije sa AfterFirstUnlockThisDeviceOnly zaštitom. Ne mogu se sinkronizirati i nikada se ne šalju na CloudKit, App Group, Widget ili Apple Watch."
-      },
-      {
-        "id": "cloudkit_optional",
-        "title": "Izborna privatna sinkronizacija Apple",
-        "body": "Samo ako omogućite iCloud sinkronizaciju, minimizirane normalizirane snimke korištenja, postavke i probno sidro mogu se pohraniti u vašu privatnu CloudKit bazu podataka. Isključeni su vjerodajnice i neobrađeni odgovori pružatelja usluga."
-      },
-      {
-        "id": "purchase",
-        "title": "Tri dana, a zatim jedna doživotna kupnja",
-        "body": "Trodnevno razdoblje punog pristupa počinje tek nakon što se spremi prva uspješna snimka korištenja uživo. Slijedi nepotrošno doživotno otključavanje; StoreKit učitava stvarnu lokalnu cijenu, a Apple upravlja kupnjom i vraćanjem. Nema pretplate niti oglašavanja."
-      }
-    ]
-  },
-  "support": {
-    "title": "UsageNow Podrška",
-    "summary": "Pomoć s izravnim vezama pružatelja usluga, statusnim kodovima, vašim podacima i jednokratnom doživotnom kupnjom.",
-    "section_title": "Rješavanje problema i briga o računu",
-    "sections": [
-      {
-        "id": "connection_types",
-        "title": "Vrste veza",
-        "body": "Davatelj može koristiti API ili administratorski ključ koji ste vi dostavili, ili OAuth ili tok autorizacije uređaja kada to pružatelj službeno podržava. Svako osvježenje ide izravno na dokumentirane krajnje točke službenog pružatelja usluga. UsageNow ne traži lozinke, ne uvozi kolačiće preglednika, ne dohvaća HTML nadzorne ploče, ne poziva privatne krajnje točke i ne zaobilazi ograničenja učestalosti zahtjeva pružatelja. Dostupna polja razlikuju se ovisno o pružatelju usluge i planu računa."
-      },
-      {
-        "id": "http_401",
-        "title": "401 — Neovlašteno",
-        "body": "Vjerodajnica nedostaje, istekla je, opozvana ili pripada pogrešnoj usluzi. Stvorite je ili obnovite na službenoj konzoli pružatelja usluga, dodijelite samo minimalno traženo dopuštenje, a zatim zamijenite vjerodajnicu ili odaberite Ponovno se prijavi. Nikad ne šaljite ključ e-poštom."
-      },
-      {
-        "id": "http_403",
-        "title": "403 — Zabranjeno",
-        "body": "Pružatelj je prepoznao vjerodajnicu, ali računu možda nedostaje potreban opseg, uloga u naplati, pristup tima ili organizacije ili SSO odobrenje. Potvrdite cilj računa i davateljevo minimalno dopuštenje za čitanje. Neki planovi ne izlažu podatke o korištenju."
-      },
-      {
-        "id": "http_404",
-        "title": "404 — Nije pronađeno",
-        "body": "Provjerite točnu organizaciju, tim, radni prostor, korisničko ime ili identifikator resursa. 404 također može značiti da pružatelj ne izlaže tu krajnju točku upotrebe za vaš plan ili regiju. Slijedite trenutačni službeni vodič za povezivanje unutar aplikacije; nikada nemojte zamijeniti privatnu krajnju točku."
-      },
-      {
-        "id": "offline_rate_limit",
-        "title": "Izvan mreže, zastario ili je brzina ograničena",
-        "body": "UsageNow čuva posljednju spremljenu snimku s vremenskom oznakom. Ponovno se povežite i pokušajte ograničeno osvježiti kasnije. Za 429 ili održavanje pružatelja, pričekajte službeni prozor za ponovni pokušaj; ponovljeni zahtjevi ne zaobilaze ograničenje pružatelja usluga."
-      },
-      {
-        "id": "export_delete",
-        "title": "Podaci",
-        "body": "Izvoz stvara datoteku na ovom uređaju samo kada to zatražite i otvara Apple birač odredišta; vjerodajnice i neobrađeni odgovori pružatelja su isključeni. Brisanje svih podataka uklanja lokalno spremište, Keychain vjerodajnice, App Group i Widget predmemoriju, Apple Watch korisni teret, privatne CloudKit zapise i probno sidro. Generiranje brisanja bez identifikacije CloudKit ostaje samo za zaustavljanje izvanmrežnog uređaja u vraćanju izbrisanog sadržaja. Odvojeno izbrišite izvezene datoteke i sigurnosne kopije kojima upravlja Apple."
-      },
-      {
-        "id": "purchase_restore",
-        "title": "Obnovi kupnju",
-        "body": "Potpuni pristup traje tri dana od prve spremljene snimke uživo. Nakon toga, postojeće spremljene informacije ostaju kao datirani pregled samo za čitanje dok se ne potvrdi pojedinačna doživotna kupnja nepotrošnog materijala. StoreKit prikazuje trenutnu lokalnu cijenu. Koristite Vraćanje dok ste prijavljeni na Apple Račun koji je kupio. Nema pretplate niti automatske obnove."
-      },
-      {
-        "id": "safe_contact",
-        "title": "Pošalji izvješće o sigurnoj podršci",
-        "body": "Pošaljite model uređaja, operativni sustav i verziju aplikacije, naziv davatelja koji se koristi samo kao oznaka kompatibilnosti, način povezivanja, statusni kod, približno vrijeme i šifru dijagnostičkog događaja koja nije tajna ako je prikazana. Nikada nemojte slati token, lozinku, kolačić, slug, cijeli URL, tijelo zahtjeva, tijelo odgovora ili zaglavlje. Programer ne može oporaviti vjerodajnice ili podatke davatelja usluga."
-      },
-      {
-        "id": "provider_independence",
-        "title": "Neovisna kompatibilnost",
-        "body": "Ti se nazivi upotrebljavaju samo za prepoznavanje kompatibilnih usluga: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow je neovisna aplikacija; ti je pružatelji ne podržavaju ni sponzoriraju i nije povezana s njima."
-      }
-    ]
-  },
-  "privacy": {
-    "title": "Pravila privatnosti",
-    "summary": "UsageNow je prvo lokalni, ali koristi izravne veze pružatelja usluga i izbornu privatnu sinkronizaciju Apple. Ovo pravilo navodi svaku rutu umjesto oslanjanja na opću oznaku privatnosti.",
-    "updated_label": "Zadnje ažuriranje",
-    "section_title": "Protok i kontrola podataka",
-    "sections": [
-      {
-        "id": "credential_storage",
-        "title": "Vjerodajnice pružatelja",
-        "body": "Vjerodajnice se pohranjuju samo u lokalnom Keychain glavne aplikacije koristeći AfterFirstUnlockThisDeviceOnly. Ne mogu se sinkronizirati, nisu izloženi ekstenzijama i nikada ne ulaze u UserDefaults, CloudKit, App Group, Widget, Apple Watch, izvoze, snimke zaslona, ​​analitiku ili kontrolu izvora. Uklanjanje veze ili brisanje svih podataka briše odgovarajuću Keychain stavku."
-      },
-      {
-        "id": "provider_requests",
-        "title": "Zahtjevi izravnog pružatelja API",
-        "body": "Kada zatražite povezivanje ili osvježavanje, vaš uređaj šalje vjerodajnice i polja minimalnog zahtjeva izravno dokumentiranom službenom API odabranog pružatelja usluga preko HTTPS. Taj pružatelj prima i obrađuje zahtjev prema vlastitim uvjetima. UsageNow ne usmjerava promet pružatelja usluga kroz razvojni poslužitelj, proxy, tunel ili VPN."
-      },
-      {
-        "id": "developer_boundary",
-        "title": "Što razvojni programer prima",
-        "body": "Programer UsageNow ne prima automatski vaš token, podatke o računu pružatelja, vrijednosti upotrebe, zahtjev, odgovor pružatelja, normalizirane snimke ili CloudKit zapise. UsageNow nema sustav računa kojim upravlja razvojni programer niti bazu podataka o upotrebi."
-      },
-      {
-        "id": "local_records_exports",
-        "title": "Lokalna evidencija i izvoz",
-        "body": "Normalizirane snimke upotrebe, vremena resetiranja, predviđanja, svježina, oznake računa, postavke i probno stanje pohranjuju se lokalno. Izvoz se kreira samo kada ga zatražite i ide na odredište koje odaberete putem sučelja sustava Apple. Izvozi isključuju vjerodajnice i neobrađene odgovore pružatelja; tada se primjenjuju uvjeti privatnosti odredišta."
-      },
-      {
-        "id": "cloudkit_optional",
-        "title": "Sinkronizacija",
-        "body": "Samo kada omogućite iCloud sinkronizaciju, minimizirani identifikatori pružatelja usluga, anonimne oznake računa, normalizirane vrijednosti upotrebe, podaci o resetiranju i predviđanju, svježina, postavke i minimalno probno sidro mogu se pohraniti u vašu Apple privatnu CloudKit bazu podataka. Vjerodajnice i neobrađeni podaci pružatelja nikada nisu uključeni. Apple upravlja CloudKit; UsageNow ne stvara zasebnu bazu podataka za programere."
-      },
-      {
-        "id": "app_group_watch",
-        "title": "App Group, Widget i Apple Watch",
-        "body": "App Group pohrana daje Widget samo snimak kapaciteta bez tajnosti. WatchConnectivity šalje tajnu snimku uparenom Apple Watch za UsageNow poglede i komplikacije. Ovi učinci mogu sadržavati normalizirani kapacitet, resetiranje, svježinu i postavke prikaza, ali nikada vjerodajnice, kolačiće, zaglavlja zahtjeva ili neobrađene odgovore pružatelja."
-      },
-      {
-        "id": "storekit",
-        "title": "StoreKit i kupnje",
-        "body": "StoreKit kontaktira Apple za učitavanje proizvoda i lokalizirane cijene te za provjeru, kupnju ili vraćanje doživotnog otključavanja nepotrošnog materijala. Apple obrađuje transakciju. UsageNow čita provjerene podatke o ovlaštenju i ne prima podatke o platnoj kartici."
-      },
-      {
-        "id": "diagnostics",
-        "title": "Sigurnosno sigurna dijagnostika",
-        "body": "Lokalna dijagnostika može zabilježiti široku vrstu događaja, statusni kod, vrijeme i netajni identifikator korelacije. Ne učitavaju se automatski i nikada ne uključuju token, lozinku, kolačić, organizaciju ili slug radnog prostora, cijeli URL, tijelo zahtjeva, tijelo odgovora ili zaglavlje. Ne šaljite te tajne u poruci podrške."
-      },
-      {
-        "id": "excluded_practices",
-        "title": "Nema oglašavanja, analitike, praćenja ili kopiranja",
-        "body": "UsageNow nema oglašivački SDK, analitiku trećih strana, praćenje između aplikacija, otisak uređaja ni marketinški profil razvojnog programera. Ne prikuplja lozinke, ne uvozi kolačiće preglednika, ne dohvaća HTML nadzorne ploče, ne poziva privatne krajnje točke, ne predstavlja se kao službeni klijent, ne koristi ponovno njegove tokene i ne zaobilazi ograničenja učestalosti zahtjeva."
-      },
-      {
-        "id": "deletion_retention",
-        "title": "Brisanje i zadržana generacija",
-        "body": "Brisanje svih podataka uklanja lokalno spremište, Keychain, App Group, Widget predmemoriju, Apple Watch korisni teret, privatne CloudKit zapise i probno sidro. UsageNow zadržava samo neidentificirajuću generaciju brisanja CloudKit tako da izvanmrežni uređaj ne može oživjeti izbrisani sadržaj. Ne sadrži podatke o pružatelju usluga, korištenju, računu, vjerodajnicama, otiscima prstiju uređaja ili probnim podacima. Datoteke koje ste izvezli i sigurnosne kopije uređaja kojima upravlja Apple ostaju pod vašom kontrolom i moraju se zasebno ukloniti."
-      },
-      {
-        "id": "support_site",
-        "title": "E-pošta podrške i ovo web mjesto",
-        "body": "Ako pošaljete podršku e-poštom, razvojni programer prima adresu e-pošte i poruku koju odaberete poslati i koristi ih samo da vam odgovori. Ova statična web stranica ne postavlja kolačiće i ne učitava oglašavanje, analitiku, skripte za praćenje ili sredstva treće strane. Eventualna usluga hostinga može obrađivati ​​standardne informacije o povezivanju prema vlastitim uvjetima privatnosti."
-      },
-      {
-        "id": "provider_independence",
-        "title": "Neovisnost pružatelja usluga",
-        "body": "Ti se nazivi upotrebljavaju samo za prepoznavanje kompatibilnih usluga: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow je neovisna aplikacija; ti je pružatelji ne podržavaju ni sponzoriraju i nije povezana s njima."
-      }
-    ]
-  }
+ "language_name": "Hrvatski",
+ "language_label": "Jezik",
+ "navigation_label": "Primarna navigacija",
+ "skip_link": "Prijeđi na glavni sadržaj",
+ "nav": {"index": "Pregled", "support": "Podrška", "privacy": "Privatnost"},
+ "contact": {
+  "title": "Obratite se podršci za UsageNow",
+  "body": "Navedite model uređaja, verziju sustava iOS, verziju aplikacije, kojoj usluzi račun pripada, što ste dodirnuli i otprilike kada se to dogodilo. Nikada nemojte slati lozinku, kod za prijavu, pristupni token ili snimku zaslona na kojoj se nešto od toga vidi.",
+  "button": "Pošaljite e-poruku podršci"
+ },
+ "footer": "Službene informacije o podršci i privatnosti za UsageNow: AI Usage Tracker.",
+ "home": {
+  "title": "Na prvi pogled vidite koliko vam je ostalo od svakog AI plana",
+  "summary": "UsageNow prikazuje koliko ste iskoristili od svake AI pretplate i točno kada se ograničenje obnavlja – u aplikaciji, u widgetima na početnom zaslonu i na Apple Watchu. S uređaja se izravno povezuje sa svakom uslugom; UsageNow nema vlastiti poslužitelj.",
+  "section_title": "Kako UsageNow radi",
+  "sections": [
+   {"id": "direct_connections", "title": "Izravno s vašeg uređaja", "body": "Račun dodajete putem stranice za prijavu same usluge. Kada se aplikacija ili njezin widget osvježi, vaš iPhone ili iPad izravno traži podatke o potrošnji od API-ja usluge putem HTTPS-a. Ništa ne prolazi kroz poslužitelj tvrtke UsageNow jer on uopće ne postoji."},
+   {"id": "credential_storage", "title": "Prijave ostaju u Keychainu", "body": "Tokeni za prijavu pohranjuju se isključivo u Keychain ovog uređaja uz zaštitu AfterFirstUnlockThisDeviceOnly. Dijele se samo s Widget proširenjem aplikacije UsageNow na početnom zaslonu kako bi se moglo samo osvježavati, a ne sinkroniziraju se putem iClouda niti se šalju na Apple Watch."},
+   {"id": "widget_watch", "title": "Widgeti i Apple Watch", "body": "Widget i Apple Watch prikazuju najnovije postotke potrošnje i vremena obnove. Upareni Apple Watch prima samo taj sažetak, nikada token za prijavu."},
+   {"id": "purchase", "title": "Besplatna proba od 24 sata, zatim jedna kupnja", "body": "Sve su značajke besplatne 24 sata nakon što dodirnete „Isprobaj besplatno 24 sata”. UsageNow Pro jednokratna je kupnja putem StoreKita, a cijena se prikazuje u vašoj lokalnoj valuti. Nema pretplate ni oglasa."}
+  ]
+ },
+ "support": {
+  "title": "Podrška za UsageNow",
+  "summary": "Pomoć pri dodavanju računa, osvježavanju potrošnje, widgetima, Apple Watchu, besplatnoj probi i UsageNow Pro.",
+  "section_title": "Pitanja i rješavanje problema",
+  "sections": [
+   {"id": "getting_started", "title": "Dodajte račun ili isprobajte primjer podataka", "body": "Dodirnite karticu usluge ili gumb plus i prijavite se na vlastitoj stranici te usluge u Appleovu sigurnom web-prozoru; GitHub prikazuje kratki kod uređaja koji treba unijeti. Za svaku uslugu možete dodati više računa. Ako najprije želite razgledati, na prvom zaslonu dodirnite „Pregled s primjerom podataka”."},
+   {"id": "sign_in_again", "title": "Na računu piše „Ponovna prijava”", "body": "Usluga je prekinula sesiju, primjerice nakon promjene lozinke, odjave na njezinoj web-stranici ili dugog razdoblja nekorištenja. Dodirnite „Ponovna prijava” na toj kartici. UsageNow nikada ne vidi i ne pohranjuje vašu lozinku."},
+   {"id": "widget_refresh", "title": "Brojke u widgetu izgledaju zastarjelo", "body": "Widget na početnom zaslonu sam se osvježava otprilike svakih 20 minuta kada to iOS dopusti, a gumb za osvježavanje na Widgetu odmah traži nove brojke. Način rada s niskom potrošnjom ili slaba veza mogu odgoditi ažuriranja. Otvaranje aplikacije uvijek osvježava sve račune."},
+   {"id": "offline_rate_limit", "title": "Nema veze ili je usluga preopterećena", "body": "Ako nema veze ili usluga odgovori s 429 Too Many Requests, UsageNow zadržava posljednje brojke s vremenom dohvaćanja i pokušava ponovno kasnije. Ponovljeni dodiri ne zaobilaze ograničenja usluge."},
+   {"id": "sort_language", "title": "Poredajte račune i promijenite jezik", "body": "Kada imate dva ili više računa, gumbom „Poredaj račune” poredajte ih prema usluzi, najskorijoj obnovi, najvećoj ili najmanjoj potrošnji, nazivu ili vlastitom redoslijedu. U „Postavkama” možete odabrati bilo koji od 50 jezika ili pratiti jezik sustava; Widget i Apple Watch slijede taj izbor."},
+   {"id": "sign_out_delete", "title": "Odjava i uklanjanje podataka", "body": "U izborniku računa odaberite „Odjava” kako biste izbrisali tokene tog računa iz Keychaina te njegove brojke iz aplikacije, Widgeta i Apple Watcha. Za uklanjanje svega odjavite se sa svakog računa, a zatim izbrišite aplikaciju. Pristup možete opozvati i u postavkama računa svake usluge."},
+   {"id": "purchase_restore", "title": "Besplatna proba, UsageNow Pro i vraćanje kupnji", "body": "Besplatna proba od 24 sata počinje tek kada je dodirnete i može se iskoristiti jednom po Apple Accountu. Nakon isteka aplikacija i widgeti ostaju zaključani dok ne kupite UsageNow Pro – jednokratnu kupnju putem StoreKita koja nije pretplata. Otvorite „Postavke” i odaberite „Vrati kupnje” na bilo kojem uređaju prijavljenom istim Apple Accountom."},
+   {"id": "safe_contact", "title": "Što navesti kada nam pišete", "body": "Pošaljite model uređaja, verziju sustava iOS, verziju aplikacije, naziv usluge, što ste dodirnuli i približno vrijeme. Nemojte slati lozinku, kod za prijavu, token ni cijeli URL za prijavu. Razvojni programer ne može vidjeti vaše račune i ne može ih vratiti."},
+   {"id": "provider_independence", "title": "Neovisna aplikacija", "body": "UsageNow je neovisna aplikacija. Claude i Anthropic, ChatGPT, Codex i OpenAI, GitHub Copilot, GitHub i Microsoft te Gemini i Google navedeni su samo kako bi se pokazalo koje račune aplikacija može čitati; UsageNow nije povezan s njima, niti ga oni sponzoriraju ili podržavaju."}
+  ]
+ },
+ "privacy": {
+  "title": "Pravila privatnosti",
+  "summary": "UsageNow nema poslužitelj, vlastiti korisnički račun, oglase ni analitiku. Ova pravila točno objašnjavaju kamo odlaze vaše prijave i brojke o potrošnji.",
+  "updated_label": "Zadnje ažuriranje",
+  "section_title": "Vaši podaci, put po put",
+  "sections": [
+   {"id": "credential_storage", "title": "Tokeni za prijavu", "body": "Tokeni svake usluge pohranjuju se isključivo u Keychain ovog uređaja uz zaštitu AfterFirstUnlockThisDeviceOnly i ne mogu se sinkronizirati. Može ih čitati samo aplikacija UsageNow i njezin vlastiti Widget na početnom zaslonu. Nikada se ne zapisuju u iCloud, ne šalju na Apple Watch niti razvojnom programeru."},
+   {"id": "provider_requests", "title": "Zahtjevi prema pojedinoj usluzi", "body": "Za prijavu i osvježavanje potrošnje vaš se uređaj izravno povezuje sa stranicom za prijavu i API-jem te usluge putem HTTPS-a. Usluga prima zahtjev u skladu sa svojim pravilima privatnosti. UsageNow ne koristi proxy, VPN, tunel ni poslužitelj razvojnog programera; tijekom prijave aplikacija nakratko osluškuje lokalnu adresu na ovom uređaju samo kako bi primila odgovor na prijavu."},
+   {"id": "developer_boundary", "title": "Što prima razvojni programer", "body": "Ništa automatski. Razvojni programer ne prima vaše tokene, e-adresu računa, plan, brojke o potrošnji ni vremena obnove, a ne postoji ni UsageNow račun ni baza podataka."},
+   {"id": "local_records", "title": "Pohranjeno na vašem uređaju", "body": "Aplikacija čuva najnoviji sažetak potrošnje (oznaku računa, naziv plana, postotke potrošnje, vremena obnove i vrijeme zadnjeg osvježavanja), vaš redoslijed sortiranja, odabrani jezik, vrijeme isteka probe i kratki lokalni zapisnik dodira gumba na Widgetu radi rješavanja problema. Sve to ostaje na uređaju."},
+   {"id": "app_group_watch", "title": "Widget i Apple Watch", "body": "Aplikacija i Widget dijele sažetak putem App Group na ovom uređaju. WatchConnectivity šalje isti sažetak na upareni Apple Watch kako bi ga njegova aplikacija i komplikacije mogle prikazati; tokeni se ne uključuju."},
+   {"id": "storekit", "title": "Kupnje", "body": "StoreKit se povezuje s Appleom kako bi prikazao lokalnu cijenu, pokrenuo besplatnu probu, omogućio kupnju UsageNow Pro i vraćanje kupnji. Plaćanje obrađuje Apple; razvojni programer ne prima vaše podatke o plaćanju."},
+   {"id": "excluded_practices", "title": "Bez oglasa, analitike i praćenja", "body": "UsageNow ne sadrži oglase, analitiku trećih strana, uslugu za izvješća o rušenju ni praćenje među aplikacijama ili web-stranicama. Ne prodaje podatke, ne izrađuje profile i ne traži vašu lozinku."},
+   {"id": "deletion", "title": "Brisanje vaših podataka", "body": "Odjavom s računa brišu se njegovi tokeni iz Keychaina i njegove brojke iz aplikacije, Widgeta i Apple Watcha. Odjavom sa svih računa i brisanjem aplikacije uklanja se sve ostalo. Pristup aplikaciji UsageNow možete opozvati i u postavkama računa svake usluge."},
+   {"id": "support_site", "title": "E-pošta podrške i ova web-stranica", "body": "Ako pišete podršci, razvojni programer prima samo adresu i poruku koje odlučite poslati i koristi ih isključivo za odgovor. Ova web-stranica ne postavlja kolačiće i ne učitava skripte za oglase, analitiku ni praćenje; hostira je GitHub Pages, koji prema vlastitim uvjetima može obrađivati uobičajene podatke o vezi."},
+   {"id": "provider_independence", "title": "Neovisna aplikacija", "body": "UsageNow je neovisna aplikacija. Claude i Anthropic, ChatGPT, Codex i OpenAI, GitHub Copilot, GitHub i Microsoft te Gemini i Google navedeni su samo kako bi se pokazalo koje račune aplikacija može čitati; UsageNow nije povezan s njima, niti ga oni sponzoriraju ili podržavaju."},
+   {"id": "policy_changes", "title": "Izmjene i pitanja", "body": "Ako se ova pravila promijene, nova će verzija biti objavljena ovdje s novim datumom. UsageNow nije namijenjen djeci. Pitanja o privatnosti možete poslati na e-adresu podrške u nastavku."}
+  ]
+ }
 }

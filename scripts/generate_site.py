@@ -25,16 +25,16 @@ SECTION_IDS = {
     "home": (
         "direct_connections",
         "credential_storage",
-        "cloudkit_optional",
+        "widget_watch",
         "purchase",
     ),
     "support": (
-        "connection_types",
-        "http_401",
-        "http_403",
-        "http_404",
+        "getting_started",
+        "sign_in_again",
+        "widget_refresh",
         "offline_rate_limit",
-        "export_delete",
+        "sort_language",
+        "sign_out_delete",
         "purchase_restore",
         "safe_contact",
         "provider_independence",
@@ -43,15 +43,14 @@ SECTION_IDS = {
         "credential_storage",
         "provider_requests",
         "developer_boundary",
-        "local_records_exports",
-        "cloudkit_optional",
+        "local_records",
         "app_group_watch",
         "storekit",
-        "diagnostics",
         "excluded_practices",
-        "deletion_retention",
+        "deletion",
         "support_site",
         "provider_independence",
+        "policy_changes",
     ),
 }
 RTL = {"ar-SA", "he", "ur-PK"}
@@ -178,7 +177,7 @@ def load_site() -> dict[str, Any]:
         raise SystemExit("canonical_base_url must be an absolute trailing-slash HTTPS URL")
     if site["email"] != "hourstag.app@gmail.com":
         raise SystemExit("public contact email is not the authorized address")
-    if site["brand"] != "UsageNow: AI Usage" or site["short_brand"] != "UsageNow":
+    if site["brand"] != "UsageNow: AI Usage Tracker" or site["short_brand"] != "UsageNow":
         raise SystemExit("site brand does not match the UsageNow product contract")
     try:
         datetime.date.fromisoformat(site["updated"])

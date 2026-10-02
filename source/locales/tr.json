@@ -1,164 +1,59 @@
 {
-  "language_name": "Türkçe",
-  "language_label": "Dil",
-  "navigation_label": "Ana gezinme",
-  "skip_link": "Ana içeriğe geç",
-  "nav": {
-    "index": "Genel bakış",
-    "support": "Destek",
-    "privacy": "Gizlilik"
-  },
-  "contact": {
-    "title": "UsageNow desteğine ulaşın",
-    "body": "Cihaz modelini, işletim sistemi ve uygulama sürümünü, yalnızca uyumluluk tanımı olarak sağlayıcı adını, bağlantı yöntemini, durum kodunu ve yaklaşık saati belirtin. Erişim token, parola, cookie, kuruluş ya da çalışma alanı slug, tam URL, istek veya yanıt body ve header bilgilerini asla göndermeyin.",
-    "button": "Desteğe e-posta gönder"
-  },
-  "footer": "UsageNow: AI Usage için resmî destek ve gizlilik bilgileri.",
-  "home": {
-    "title": "Kimlik bilgilerinizi bize vermeden AI kapasitesini planlayın",
-    "summary": "UsageNow, cihazınızdan seçtiğiniz sağlayıcıların belgelenmiş API'lerine bağlanır, kalan kapasiteyi ve sıfırlama zamanını açıklar ve sır içermeyen anlık görüntüleri Apple hesabınız üzerinden özel olarak eşzamanlayabilir.",
-    "section_title": "UsageNow verilerinizi nasıl işler",
-    "sections": [
-      {
-        "id": "direct_connections",
-        "title": "Doğrudan resmî bağlantılar",
-        "body": "Yenileme istediğinizde uygulama, verdiğiniz bağlantıyla seçilen sağlayıcının belgelenmiş resmî API'sini doğrudan cihazınızdan çağırır. Arada UsageNow geliştirici sunucusu ya da UsageNow hesabı yoktur."
-      },
-      {
-        "id": "credential_storage",
-        "title": "Kimlik bilgileri bu cihazda kalır",
-        "body": "Sağlayıcı kimlik bilgileri ana uygulamanın Keychain alanında AfterFirstUnlockThisDeviceOnly korumasıyla tutulur. Eşzamanlanamaz ve CloudKit, App Group, Widget veya Apple Watch'a asla gönderilmez."
-      },
-      {
-        "id": "cloudkit_optional",
-        "title": "İsteğe bağlı özel Apple eşzamanlama",
-        "body": "Yalnızca iCloud eşzamanlamasını açarsanız küçültülmüş normalleştirilmiş kullanım görüntüleri, tercihler ve deneme çapası özel CloudKit veritabanınıza kaydedilebilir. Kimlik bilgileri ve ham sağlayıcı yanıtları dahil edilmez."
-      },
-      {
-        "id": "purchase",
-        "title": "Üç gün, ardından tek seferlik ömür boyu satın alma",
-        "body": "Üç günlük tam erişim, ilk başarılı canlı kullanım görüntüsü kaydedildikten sonra başlar. Ardından tüketilmeyen ömür boyu kilit açma sunulur; StoreKit gerçek yerel fiyatı yükler, satın alma ve geri yüklemeyi Apple yönetir. Abonelik ve reklam yoktur."
-      }
-    ]
-  },
-  "support": {
-    "title": "UsageNow Desteği",
-    "summary": "Doğrudan sağlayıcı bağlantıları, durum kodları, verileriniz ve tek seferlik ömür boyu satın alma için yardım.",
-    "section_title": "Sorun giderme ve hesap bakımı",
-    "sections": [
-      {
-        "id": "connection_types",
-        "title": "Bağlantı türleri",
-        "body": "Sağlayıcı, sizin verdiğiniz bir API veya yönetici anahtarını ya da resmen destekliyorsa OAuth veya cihaz yetkilendirmesini kullanabilir. Her yenileme doğrudan belgelenmiş resmî endpoint'lere gider. UsageNow parola istemez, tarayıcı cookie'lerini içe aktarmaz, panel HTML'ini kazımaz, özel endpoint kullanmaz veya limitleri aşmaz. Alanlar sağlayıcıya ve hesap planına göre değişir."
-      },
-      {
-        "id": "http_401",
-        "title": "401 — Yetkisiz",
-        "body": "Kimlik bilgisi eksik, süresi dolmuş, iptal edilmiş veya yanlış hizmete aittir. Sağlayıcının resmî konsolunda oluşturun ya da yenileyin, yalnızca gereken en düşük izni verin ve bilgiyi değiştirin veya yeniden giriş yapın. Anahtarı e-postayla göndermeyin."
-      },
-      {
-        "id": "http_403",
-        "title": "403 — Yasak",
-        "body": "Sağlayıcı kimlik bilgisini tanıdı ancak hesapta gerekli scope, faturalama rolü, ekip veya kuruluş erişimi ya da SSO onayı olmayabilir. Hedef hesabı ve en düşük okuma iznini doğrulayın. Bazı planlar kullanım verisi sunmaz."
-      },
-      {
-        "id": "http_404",
-        "title": "404 — Bulunamadı",
-        "body": "Kuruluş, ekip, çalışma alanı, kullanıcı adı veya kaynak tanımlayıcısını aynen kontrol edin. 404, sağlayıcının planınız ya da bölgeniz için bu kullanım endpoint'ini sunmadığı anlamına da gelebilir. Uygulamadaki güncel resmî bağlantı rehberini izleyin; özel endpoint kullanmayın."
-      },
-      {
-        "id": "offline_rate_limit",
-        "title": "Çevrimdışı, eski veya hız sınırlı",
-        "body": "UsageNow son kayıtlı görüntüyü zaman damgasıyla korur. Yeniden bağlanın ve daha sonra sınırlı yenileme deneyin. 429 veya bakım durumunda resmî yeniden deneme süresini bekleyin; tekrarlanan istekler sağlayıcı limitini aşmaz."
-      },
-      {
-        "id": "export_delete",
-        "title": "Verilerinizi dışa aktarın veya silin",
-        "body": "Dışa aktarma yalnızca istediğinizde cihazda dosya oluşturur ve Apple hedef seçicisini açar; kimlik bilgileri ve ham yanıtlar dahil değildir. Tüm verileri silmek yerel depoyu, Keychain'i, App Group ve Widget önbelleğini, Apple Watch payload'unu, özel CloudKit kayıtlarını ve deneme çapasını kaldırır. Çevrimdışı cihazın silinen içeriği geri getirmesini önlemek için yalnızca kimliksiz bir CloudKit silme nesli kalır. Dışa aktarılan dosyaları ve Apple yedeklerini ayrıca silin."
-      },
-      {
-        "id": "purchase_restore",
-        "title": "Ömür boyu satın alma ve geri yükleme",
-        "body": "Tam erişim ilk kayıtlı canlı görüntüden itibaren üç gün sürer. Sonrasında mevcut bilgiler, tüketilmeyen tek bir ömür boyu satın alma doğrulanana dek tarihli salt okunur önizleme olarak kalır. StoreKit güncel yerel fiyatı gösterir. Satın alan Apple hesabıyla Geri Yükle'yi kullanın. Abonelik veya otomatik yenileme yoktur."
-      },
-      {
-        "id": "safe_contact",
-        "title": "Güvenli destek raporu gönderin",
-        "body": "Cihaz modeli, sistem ve uygulama sürümü, yalnızca uyumluluk etiketi olarak sağlayıcı adı, bağlantı yöntemi, durum kodu, yaklaşık saat ve varsa gizli olmayan tanı kodunu gönderin. token, parola, cookie, slug, tam URL, request body, response body veya header göndermeyin. Geliştirici kimlik bilgilerini ya da sağlayıcı verisini kurtaramaz."
-      },
-      {
-        "id": "provider_independence",
-        "title": "Bağımsız uyumluluk",
-        "body": "Bu adlar yalnızca uyumlu hizmetleri tanımlamak için kullanılır: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow bağımsız bir uygulamadır; bu sağlayıcılar uygulamayı onaylamaz veya desteklemez ve uygulamanın onlarla bağlantısı yoktur."
-      }
-    ]
-  },
-  "privacy": {
-    "title": "Gizlilik Politikası",
-    "summary": "UsageNow önce yerel işlemeyi kullanır; ayrıca doğrudan sağlayıcı bağlantıları ve isteğe bağlı özel Apple eşzamanlama içerir. Bu politika genel bir iddia yerine her veri yolunu açıklar.",
-    "updated_label": "Son güncelleme",
-    "section_title": "Veri akışı ve denetiminiz",
-    "sections": [
-      {
-        "id": "credential_storage",
-        "title": "Sağlayıcı kimlik bilgileri",
-        "body": "Bilgiler yalnızca ana uygulamanın yerel Keychain alanında AfterFirstUnlockThisDeviceOnly ile tutulur. Eşzamanlanmaz, uzantılara açılmaz ve UserDefaults, CloudKit, App Group, Widget, Apple Watch, dışa aktarımlar, ekran görüntüleri, analiz veya kaynak koda girmez. Bağlantıyı ya da tüm verileri silmek ilgili Keychain öğesini kaldırır."
-      },
-      {
-        "id": "provider_requests",
-        "title": "Doğrudan sağlayıcı API istekleri",
-        "body": "Bağlanma veya yenileme istediğinizde cihazınız kimlik bilgisini ve gereken en az alanı HTTPS üzerinden doğrudan sağlayıcının belgelenmiş resmî API'sine gönderir. Sağlayıcı kendi koşullarına göre işler. UsageNow trafiği geliştirici sunucusu, proxy, tünel veya VPN üzerinden yönlendirmez."
-      },
-      {
-        "id": "developer_boundary",
-        "title": "Geliştiricinin aldığı veriler",
-        "body": "UsageNow geliştiricisi token, sağlayıcı hesap verisi, kullanım değerleri, istek, sağlayıcı yanıtı, normalleştirilmiş görüntüler veya CloudKit kayıtlarını otomatik olarak almaz. UsageNow'ın geliştirici tarafından işletilen hesap sistemi ya da kullanım veritabanı yoktur."
-      },
-      {
-        "id": "local_records_exports",
-        "title": "Yerel kayıtlar ve dışa aktarımlar",
-        "body": "Normalleştirilmiş kullanım görüntüleri, sıfırlama zamanları, tahminler, güncellik, hesap etiketleri, tercihler ve deneme durumu yerel tutulur. Dışa aktarma yalnızca siz istediğinizde oluşturulur ve Apple sistem arayüzünde seçtiğiniz hedefe gider. Kimlik bilgileri ve ham yanıtlar hariçtir; sonra hedefin kuralları geçerlidir."
-      },
-      {
-        "id": "cloudkit_optional",
-        "title": "İsteğe bağlı özel CloudKit",
-        "body": "Yalnızca iCloud eşzamanlama açıksa küçültülmüş sağlayıcı tanımları, anonim hesap etiketleri, normalleştirilmiş değerler, sıfırlama, tahmin, güncellik, tercihler ve asgari deneme çapası özel CloudKit veritabanınızda tutulabilir. Kimlik bilgileri ve ham payload'lar asla eklenmez. CloudKit'i Apple işletir; UsageNow ayrı bir geliştirici veritabanı kurmaz."
-      },
-      {
-        "id": "app_group_watch",
-        "title": "App Group, Widget ve Apple Watch",
-        "body": "App Group, Widget'a yalnızca sır içermeyen kapasite görüntüsü verir. WatchConnectivity bunu eşlenen Apple Watch'a gönderir. Normalleştirilmiş kapasite, sıfırlama, güncellik ve görünüm tercihleri bulunabilir; kimlik bilgileri, cookie, istek header'ları veya ham yanıtlar bulunmaz."
-      },
-      {
-        "id": "storekit",
-        "title": "StoreKit ve satın almalar",
-        "body": "StoreKit ürün ve yerel fiyatı yüklemek, tüketilmeyen ömür boyu kilidi doğrulamak, satın almak veya geri yüklemek için Apple ile iletişim kurar. İşlemi Apple yapar. UsageNow doğrulanmış hakkı okur ve kart bilgisi almaz."
-      },
-      {
-        "id": "diagnostics",
-        "title": "Güvenli tanılama",
-        "body": "Yerel tanı geniş bir olay türünü, durum kodunu, zamanı ve gizli olmayan ilişkilendirme kimliğini kaydedebilir. Otomatik yüklenmez ve token, parola, cookie, kuruluş ya da çalışma alanı slug, tam URL, request body, response body veya header içermez. Bunları desteğe göndermeyin."
-      },
-      {
-        "id": "excluded_practices",
-        "title": "Reklam, analiz, izleme veya scraping yok",
-        "body": "UsageNow'da reklam SDK'sı, üçüncü taraf analiz, uygulamalar arası izleme, cihaz parmak izi veya geliştirici pazarlama profili yoktur. Parola toplamaz, cookie içe aktarmaz, panel HTML'ini kazımaz, özel endpoint kullanmaz, resmî istemcileri taklit etmez, token'larını yeniden kullanmaz ve limitleri aşmaz."
-      },
-      {
-        "id": "deletion_retention",
-        "title": "Silme ve korunan nesil",
-        "body": "Tüm verileri silmek yerel depoyu, Keychain'i, App Group'u, Widget önbelleğini, Apple Watch payload'unu, özel CloudKit kayıtlarını ve deneme çapasını kaldırır. Çevrimdışı cihazın silinen içeriği canlandırmasını önlemek için yalnızca kimliksiz CloudKit silme nesli kalır. Sağlayıcı, kullanım, hesap, kimlik bilgisi, cihaz parmak izi veya deneme verisi içermez. Dışa aktarımlar ve Apple yedekleri ayrı silinir."
-      },
-      {
-        "id": "support_site",
-        "title": "Destek e-postası ve bu site",
-        "body": "Desteğe yazarsanız geliştirici seçtiğiniz adres ve mesajı alır ve yalnızca yanıt için kullanır. Bu statik site cookie ayarlamaz; reklam, analiz, izleme script'i veya üçüncü taraf varlığı yüklemez. Gelecekteki barındırma hizmeti standart bağlantı bilgisini kendi koşullarına göre işleyebilir."
-      },
-      {
-        "id": "provider_independence",
-        "title": "Sağlayıcılardan bağımsızlık",
-        "body": "Bu adlar yalnızca uyumlu hizmetleri tanımlamak için kullanılır: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow bağımsız bir uygulamadır; bu sağlayıcılar uygulamayı onaylamaz veya desteklemez ve uygulamanın onlarla bağlantısı yoktur."
-      }
-    ]
-  }
+ "language_name": "Türkçe",
+ "language_label": "Dil",
+ "navigation_label": "Ana gezinme",
+ "skip_link": "Ana içeriğe geç",
+ "nav": {"index": "Genel bakış", "support": "Destek", "privacy": "Gizlilik"},
+ "contact": {
+  "title": "UsageNow desteğiyle iletişime geçin",
+  "body": "Bize cihaz modelinizi, iOS sürümünüzü, uygulama sürümünü, hesabın hangi hizmete ait olduğunu, neye dokunduğunuzu ve sorunun yaklaşık ne zaman yaşandığını bildirin. Parola, giriş kodu, erişim token'ı ya da bunlardan birini gösteren bir ekran görüntüsünü asla göndermeyin.",
+  "button": "Desteğe e-posta gönderin"
+ },
+ "footer": "UsageNow: AI Usage Tracker için resmi destek ve gizlilik bilgileri.",
+ "home": {
+  "title": "Her yapay zekâ planından ne kaldığını tek bakışta görün",
+  "summary": "UsageNow, her yapay zekâ aboneliğinizin ne kadarını kullandığınızı ve tam olarak ne zaman sıfırlanacağını uygulamada, Ana Ekran widget'larında ve Apple Watch'ta gösterir. Cihazınızdan her hizmetle doğrudan iletişim kurar; bir UsageNow sunucusu yoktur.",
+  "section_title": "UsageNow nasıl çalışır",
+  "sections": [
+   {"id": "direct_connections", "title": "Doğrudan cihazınızdan", "body": "Hesabı, ilgili hizmetin kendi giriş sayfası üzerinden eklersiniz. Uygulama ya da widget'ı yenilendiğinde iPhone veya iPad'iniz kullanım bilgisini HTTPS üzerinden doğrudan hizmetin API'sinden ister. Hiçbir şey bir UsageNow sunucusundan geçmez, çünkü böyle bir sunucu yoktur."},
+   {"id": "credential_storage", "title": "Girişler Keychain'de kalır", "body": "Giriş token'ları yalnızca bu cihazın Keychain'inde AfterFirstUnlockThisDeviceOnly korumasıyla saklanır. Kendi kendine yenilenebilmesi için yalnızca UsageNow Ana Ekran Widget'ı ile paylaşılır; iCloud ile eşzamanlanmaz ve Apple Watch'a gönderilmez."},
+   {"id": "widget_watch", "title": "Widget'lar ve Apple Watch", "body": "Widget ve Apple Watch en güncel kullanım yüzdelerini ve sıfırlanma zamanlarını gösterir. Eşlenmiş Apple Watch yalnızca bu anlık görüntüyü alır, giriş token'ını asla almaz."},
+   {"id": "purchase", "title": "24 saatlik ücretsiz deneme, ardından tek seferlik satın alma", "body": "24 Saatlik Ücretsiz Denemeyi Başlat'a dokunduktan sonra tüm özellikler 24 saat boyunca ücretsizdir. UsageNow Pro, StoreKit üzerinden yapılan tek seferlik bir satın almadır ve fiyatı yerel para biriminizde gösterilir. Abonelik ve reklam yoktur."}
+  ]
+ },
+ "support": {
+  "title": "UsageNow Destek",
+  "summary": "Hesap ekleme, kullanımı yenileme, widget'lar, Apple Watch, ücretsiz deneme ve UsageNow Pro hakkında yardım.",
+  "section_title": "Sorular ve sorun giderme",
+  "sections": [
+   {"id": "getting_started", "title": "Hesap ekleyin veya örnek verileri deneyin", "body": "Bir hizmet kartına ya da artı düğmesine dokunun ve Apple'ın güvenli web sayfasında o hizmetin kendi sayfasından giriş yapın; GitHub, girmeniz gereken kısa bir cihaz kodu gösterir. Her hizmet için birden fazla hesap ekleyebilirsiniz. Önce göz atmak isterseniz ilk ekranda Örnek verilerle önizle'ye dokunun."},
+   {"id": "sign_in_again", "title": "Bir hesapta Yeniden giriş yap görünüyor", "body": "Hizmet oturumu sonlandırmıştır; örneğin parola değişikliğinden, web sitesinde çıkış yapıldıktan ya da uzun süre kullanılmadıktan sonra. O karttaki Yeniden giriş yap'a dokunun. UsageNow parolanızı asla görmez ve saklamaz."},
+   {"id": "widget_refresh", "title": "Widget'taki rakamlar eski görünüyor", "body": "Ana Ekran Widget'ı, iOS izin verdiğinde yaklaşık 20 dakikada bir kendini yeniler; Widget'taki yenileme düğmesi ise hemen yeni rakamlar ister. Düşük Güç Modu veya zayıf bağlantı güncellemeleri geciktirebilir. Uygulamayı açmak her zaman tüm hesapları yeniler."},
+   {"id": "offline_rate_limit", "title": "Bağlantı yok veya hizmet yoğun", "body": "Bağlantı yoksa ya da bir hizmet 429 Too Many Requests yanıtı verirse UsageNow son rakamları zamanlarıyla birlikte saklar ve daha sonra yeniden dener. Tekrar tekrar dokunmak bir hizmetin sınırlarını aşmaz."},
+   {"id": "sort_language", "title": "Hesapları sıralayın ve dili değiştirin", "body": "İki veya daha fazla hesabınız varsa sıralama düğmesiyle hesapları hizmete, en yakın sıfırlanmaya, en çok kullanılana, en az kullanılana, ada ya da kendi sıranıza göre düzenleyebilirsiniz. Ayarlar'da 50 dilden birini seçebilir veya sistem dilini kullanabilirsiniz; Widget ve Apple Watch da aynı dili kullanır."},
+   {"id": "sign_out_delete", "title": "Çıkış yapın ve verileri kaldırın", "body": "Hesap menüsünü açıp Çıkış yap'ı seçerek o hesabın token'larını Keychain'den, rakamlarını da uygulamadan, Widget'tan ve Apple Watch'tan silin. Her şeyi kaldırmak için her hesaptan çıkış yapın ve ardından uygulamayı silin. Erişimi her hizmetin kendi hesap ayarlarından da iptal edebilirsiniz."},
+   {"id": "purchase_restore", "title": "Ücretsiz deneme, UsageNow Pro ve geri yükleme", "body": "24 saatlik ücretsiz deneme yalnızca siz dokunduğunuzda başlar ve her Apple Account için bir kez kullanılabilir. Sona erdikten sonra, abonelik değil tek seferlik bir StoreKit satın alması olan UsageNow Pro'yu alana kadar uygulama ve widget'lar kilitli kalır. Aynı Apple Account ile giriş yapılmış herhangi bir cihazda Ayarlar > Satın Alımları Geri Yükle'yi kullanın."},
+   {"id": "safe_contact", "title": "Yazarken nelere yer vermelisiniz", "body": "Cihaz modelinizi, iOS sürümünüzü, uygulama sürümünü, hizmetin adını, neye dokunduğunuzu ve yaklaşık zamanı gönderin. Parola, giriş kodu, token ya da tam giriş URL'si göndermeyin. Geliştirici hesaplarınızı göremez ve kurtaramaz."},
+   {"id": "provider_independence", "title": "Bağımsız uygulama", "body": "UsageNow bağımsız bir uygulamadır. Claude ve Anthropic, ChatGPT, Codex ve OpenAI, GitHub Copilot, GitHub ve Microsoft ile Gemini ve Google yalnızca uygulamanın hangi hesapları okuyabildiğini göstermek için anılmaktadır; UsageNow bu kuruluşlarla bağlantılı değildir ve onlar tarafından desteklenmez veya onaylanmaz."}
+  ]
+ },
+ "privacy": {
+  "title": "Gizlilik Politikası",
+  "summary": "UsageNow'ın sunucusu, kendine ait bir hesap sistemi, reklamı ve analitiği yoktur. Bu politika, giriş bilgilerinizin ve kullanım rakamlarınızın tam olarak nereye gittiğini açıklar.",
+  "updated_label": "Son güncelleme",
+  "section_title": "Verileriniz, yol yol",
+  "sections": [
+   {"id": "credential_storage", "title": "Giriş token'ları", "body": "Her hizmetten gelen token'lar yalnızca bu cihazın Keychain'inde AfterFirstUnlockThisDeviceOnly korumasıyla saklanır ve eşzamanlanamaz. Bunları yalnızca UsageNow uygulaması ve kendi Ana Ekran Widget'ı okuyabilir. iCloud'a asla yazılmaz, Apple Watch'a veya geliştiriciye gönderilmez."},
+   {"id": "provider_requests", "title": "Her hizmete yapılan istekler", "body": "Giriş yapmak ve kullanımı yenilemek için cihazınız, ilgili hizmetin kendi giriş sayfasına ve API'sine HTTPS üzerinden doğrudan bağlanır. Hizmet, isteği kendi gizlilik politikası kapsamında alır. UsageNow proxy, VPN, tünel veya geliştirici sunucusu kullanmaz; giriş sırasında uygulama, yalnızca giriş yanıtını almak için bu cihazdaki yerel bir adreste kısa süreliğine dinleme yapar."},
+   {"id": "developer_boundary", "title": "Geliştiricinin aldıkları", "body": "Otomatik olarak hiçbir şey. Geliştirici token'larınızı, hesap e-postanızı, planınızı, kullanım rakamlarınızı veya sıfırlanma zamanlarınızı almaz; ayrıca bir UsageNow hesabı ya da veritabanı yoktur."},
+   {"id": "local_records", "title": "Cihazınızda saklananlar", "body": "Uygulama en son kullanım anlık görüntüsünü (hesap etiketi, plan adı, kullanım yüzdeleri, sıfırlanma zamanları ve son yenileme zamanı), sıralama düzeninizi, dil seçiminizi, deneme bitiş zamanını ve sorun giderme için Widget düğmesi dokunuşlarının kısa bir yerel kaydını saklar. Bunlar cihazda kalır."},
+   {"id": "app_group_watch", "title": "Widget ve Apple Watch", "body": "Uygulama ve Widget, anlık görüntüyü bu cihazdaki bir App Group aracılığıyla paylaşır. WatchConnectivity, aynı anlık görüntüyü eşlenmiş Apple Watch'unuza gönderir; böylece saatteki uygulama ve komplikasyonlar bunu gösterebilir. Token'lar dahil değildir."},
+   {"id": "storekit", "title": "Satın almalar", "body": "StoreKit; yerel fiyatı göstermek, ücretsiz denemeyi başlatmak, UsageNow Pro'yu satın almak ve Satın Alımları Geri Yükle işlemi için Apple ile iletişim kurar. Ödemeyi Apple işler; geliştirici ödeme bilgilerinizi almaz."},
+   {"id": "excluded_practices", "title": "Reklam, analitik veya izleme yok", "body": "UsageNow'da reklam, üçüncü taraf analitiği, çökme raporlama hizmeti ya da uygulamalar veya web siteleri arasında izleme yoktur. Veri satmaz, profil oluşturmaz ve parolanızı istemez."},
+   {"id": "deletion", "title": "Verilerinizi silme", "body": "Bir hesaptan çıkış yapmak, o hesabın token'larını Keychain'den siler ve rakamlarını uygulamadan, Widget'tan ve Apple Watch'tan kaldırır. Tüm hesaplardan çıkış yapıp uygulamayı silmek geri kalanını da kaldırır. UsageNow'ın erişimini her hizmetin hesap ayarlarından da iptal edebilirsiniz."},
+   {"id": "support_site", "title": "Destek e-postası ve bu web sitesi", "body": "Desteğe e-posta gönderirseniz geliştirici yalnızca göndermeyi seçtiğiniz adresi ve mesajı alır ve bunları yalnızca size yanıt vermek için kullanır. Bu web sitesi çerez yerleştirmez ve reklam, analitik veya izleme komut dosyası yüklemez; sitenin barındırıcısı GitHub Pages'tir ve standart bağlantı verilerini kendi koşulları çerçevesinde işleyebilir."},
+   {"id": "provider_independence", "title": "Bağımsız uygulama", "body": "UsageNow bağımsız bir uygulamadır. Claude ve Anthropic, ChatGPT, Codex ve OpenAI, GitHub Copilot, GitHub ve Microsoft ile Gemini ve Google yalnızca uygulamanın hangi hesapları okuyabildiğini göstermek için anılmaktadır; UsageNow bu kuruluşlarla bağlantılı değildir ve onlar tarafından desteklenmez veya onaylanmaz."},
+   {"id": "policy_changes", "title": "Değişiklikler ve sorular", "body": "Bu politika değişirse yeni sürüm, yeni bir tarihle burada yayımlanır. UsageNow çocuklara yönelik değildir. Gizlilikle ilgili sorularınızı aşağıdaki destek e-posta adresine gönderebilirsiniz."}
+  ]
+ }
 }

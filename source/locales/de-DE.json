@@ -1,164 +1,59 @@
 {
-  "language_name": "Deutsch",
-  "language_label": "Sprache",
-  "navigation_label": "Primäre Navigation",
-  "skip_link": "Zum Hauptinhalt springen",
-  "nav": {
-    "index": "Übersicht",
-    "support": "Support",
-    "privacy": "Datenschutzrichtlinie"
-  },
-  "contact": {
-    "title": "Wenden Sie sich an den UsageNow-Support",
-    "body": "Geben Sie Ihr Gerätemodell, Betriebssystem und App-Version, den Kompatibilitätsnamen des Anbieters, die Verbindungsmethode, den Statuscode und die ungefähre Zeit an. Senden Sie niemals ein Zugriffstoken, ein Passwort, ein Cookie, einen Organisations- oder Arbeitsbereichs-Slug, einen vollständigen URL, einen Anforderungs- oder Antworttext oder Header.",
-    "button": "Fragen oder Feedback? Schreib uns."
-  },
-  "footer": "Offizielle Support- und Datenschutzinformationen für UsageNow: AI Usage.",
-  "home": {
-    "title": "Planen Sie die KI-Kapazität, ohne uns Ihre Anmeldeinformationen mitzuteilen",
-    "summary": "UsageNow stellt von Ihrem Gerät aus eine Verbindung zu den von Ihnen ausgewählten dokumentierten Anbietern API her, erläutert die verbleibende Kapazität und den Reset-Zeitpunkt und kann geheimnisfreie Snapshots privat über Ihr Apple-Konto synchronisieren.",
-    "section_title": "Wie UsageNow mit Ihren Daten umgeht",
-    "sections": [
-      {
-        "id": "direct_connections",
-        "title": "Direkte offizielle Verbindungen",
-        "body": "Wenn Sie eine Aktualisierung anfordern, ruft die App über die von Ihnen angegebene Verbindung direkt von Ihrem Gerät aus den dokumentierten offiziellen API des ausgewählten Anbieters auf. Es gibt kein UsageNow-Entwickler-Relay oder UsageNow-Konto."
-      },
-      {
-        "id": "credential_storage",
-        "title": "Anmeldeinformationen bleiben auf diesem Gerät",
-        "body": "Anbieteranmeldeinformationen werden im Keychain der Haupt-App mit AfterFirstUnlockThisDeviceOnly-Schutz gespeichert. Sie sind nicht synchronisierbar und werden niemals an CloudKit, App Group, Widget oder Apple Watch gesendet."
-      },
-      {
-        "id": "cloudkit_optional",
-        "title": "Optionale private Apple-Synchronisierung",
-        "body": "Nur wenn Sie die iCloud-Synchronisierung aktivieren, können minimierte, normalisierte Nutzungs-Snapshots, Einstellungen und der Testanker in Ihrer privaten CloudKit-Datenbank gespeichert werden. Anmeldeinformationen und Rohantworten des Anbieters sind ausgeschlossen."
-      },
-      {
-        "id": "purchase",
-        "title": "Drei Tage, dann ein lebenslanger Kauf",
-        "body": "Der dreitägige Vollzugriffszeitraum beginnt erst, nachdem der erste erfolgreiche Live-Nutzungs-Snapshot gespeichert wurde. Es folgt eine lebenslange Freischaltung von Nicht-Verbrauchsgütern; StoreKit lädt den echten lokalen Preis und Apple übernimmt den Kauf und die Wiederherstellung. Es gibt kein Abonnement oder Werbung."
-      }
-    ]
-  },
-  "support": {
-    "title": "UsageNow-Unterstützung",
-    "summary": "Hilfe bei direkten Anbieterverbindungen, Statuscodes, Ihren Daten und dem einmaligen lebenslangen Kauf.",
-    "section_title": "Fehlerbehebung und Kontopflege",
-    "sections": [
-      {
-        "id": "connection_types",
-        "title": "Verbindungstypen",
-        "body": "Ein Anbieter kann einen von Ihnen bereitgestellten API- oder Admin-Schlüssel oder einen OAuth- oder Geräteautorisierungsablauf verwenden, wenn der Anbieter dies offiziell unterstützt. Jede Aktualisierung erfolgt direkt an dokumentierte offizielle Anbieterendpunkte. UsageNow fragt nicht nach Passwörtern, importiert keine Browser-Cookies, liest Dashboard-HTML nicht automatisiert aus, ruft keine privaten Endpunkte auf und umgeht keine Ratenbegrenzungen des Anbieters. Die verfügbaren Felder variieren je nach Anbieter und Kontoplan."
-      },
-      {
-        "id": "http_401",
-        "title": "401 – Nicht autorisiert",
-        "body": "Der Berechtigungsnachweis fehlt, ist abgelaufen, widerrufen oder gehört zum falschen Dienst. Erstellen oder erneuern Sie es in der offiziellen Konsole des Anbieters, erteilen Sie nur die erforderliche Mindestberechtigung, ersetzen Sie dann die Anmeldeinformationen oder wählen Sie „Erneut anmelden“. Senden Sie den Schlüssel niemals per E-Mail."
-      },
-      {
-        "id": "http_403",
-        "title": "403 – Verboten",
-        "body": "Der Anbieter hat die Anmeldeinformationen erkannt, dem Konto fehlen jedoch möglicherweise ein erforderlicher Bereich, eine Abrechnungsrolle, ein Team- oder Organisationszugriff oder eine SSO-Genehmigung. Bestätigen Sie das Kontoziel und die Mindestleseberechtigung des Anbieters. Einige Pläne legen keine Nutzungsdaten offen."
-      },
-      {
-        "id": "http_404",
-        "title": "404 – Nicht gefunden",
-        "body": "Überprüfen Sie die genaue Organisation, das Team, den Arbeitsbereich, den Benutzernamen oder die Ressourcenkennung. Ein 404 kann auch bedeuten, dass der Anbieter diesen Nutzungsendpunkt für Ihren Plan oder Ihre Region nicht offenlegt. Befolgen Sie die aktuelle offizielle Verbindungsanleitung in der App. Ersetzen Sie niemals einen privaten Endpunkt."
-      },
-      {
-        "id": "offline_rate_limit",
-        "title": "Offline, veraltet oder Rate begrenzt",
-        "body": "UsageNow behält den zuletzt gespeicherten Snapshot mit seinem Zeitstempel. Stellen Sie die Verbindung erneut her und versuchen Sie es später mit einer begrenzten Aktualisierung. Warten Sie bei 429- oder Provider-Wartung auf das offizielle Wiederholungsfenster. Wiederholte Anfragen umgehen kein Anbieterlimit."
-      },
-      {
-        "id": "export_delete",
-        "title": "Daten",
-        "body": "Beim Exportieren wird auf diesem Gerät nur dann eine Datei erstellt, wenn Sie dazu aufgefordert werden, und eine Apple-Zielauswahl wird geöffnet. Anmeldeinformationen und rohe Anbieterantworten sind ausgeschlossen. Alle Daten löschen entfernt das lokale Repository, die Keychain-Anmeldeinformationen, den App Group- und Widget-Cache, die Apple Watch-Nutzlast, private CloudKit-Datensätze und den Testanker. Eine nicht identifizierende Löschgenerierung CloudKit dient lediglich dazu, ein Offline-Gerät daran zu hindern, gelöschte Inhalte wiederherzustellen. Löschen Sie exportierte Dateien und von Apple verwaltete Sicherungen separat."
-      },
-      {
-        "id": "purchase_restore",
-        "title": "Kauf wiederherstellen",
-        "body": "Der Vollzugriff dauert drei Tage ab dem ersten gespeicherten Live-Schnappschuss. Danach bleiben die vorhandenen gespeicherten Informationen als datierte schreibgeschützte Vorschau erhalten, bis ein einziger lebenslanger Kauf eines nicht verbrauchbaren Produkts verifiziert wird. StoreKit zeigt den aktuellen lokalen Preis an. Verwenden Sie „Wiederherstellen“, während Sie bei dem Apple-Konto angemeldet sind, mit dem Sie den Kauf getätigt haben. Es gibt kein Abonnement oder eine automatische Verlängerung."
-      },
-      {
-        "id": "safe_contact",
-        "title": "Senden Sie einen sicheren Supportbericht",
-        "body": "Senden Sie das Gerätemodell, das Betriebssystem und die App-Version, den Anbieternamen, der nur als Kompatibilitätskennzeichnung verwendet wird, die Verbindungsmethode, den Statuscode, die ungefähre Zeit und einen nicht geheimen Diagnoseereigniscode, falls angezeigt. Senden Sie niemals ein Token, ein Passwort, ein Cookie, einen Slug, einen vollständigen URL, einen Anforderungstext, einen Antworttext oder einen Header. Der Entwickler kann keine Anmeldeinformationen oder Anbieterdaten wiederherstellen."
-      },
-      {
-        "id": "provider_independence",
-        "title": "Unabhängige Kompatibilität",
-        "body": "Diese Namen dienen ausschließlich zur Kennzeichnung kompatibler Dienste: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow ist unabhängig. Diese Anbieter empfehlen oder sponsern die App nicht, und es besteht keine Verbindung zu ihnen."
-      }
-    ]
-  },
-  "privacy": {
-    "title": "Datenschutzrichtlinie",
-    "summary": "UsageNow ist lokal, verwendet aber direkte Anbieterverbindungen und optionale private Apple-Synchronisierung. Diese Richtlinie listet jede Route auf, anstatt sich auf eine pauschale Datenschutzkennzeichnung zu verlassen.",
-    "updated_label": "Zuletzt aktualisiert",
-    "section_title": "Datenfluss und Kontrolle",
-    "sections": [
-      {
-        "id": "credential_storage",
-        "title": "Anbieter-Zugangsdaten",
-        "body": "Anmeldeinformationen werden nur im lokalen Keychain der Haupt-App unter Verwendung von AfterFirstUnlockThisDeviceOnly gespeichert. Sie sind nicht synchronisierbar, unterliegen keinen Erweiterungen und geben niemals UserDefaults, CloudKit, App Group, Widget, Apple Watch, Exporte, Screenshots, Analysen oder Quellcodeverwaltung ein. Durch das Entfernen einer Verbindung oder das Löschen aller Daten wird das entsprechende Keychain-Element gelöscht."
-      },
-      {
-        "id": "provider_requests",
-        "title": "Direkte Anfragen des Anbieters API",
-        "body": "Wenn Sie eine Verbindung oder Aktualisierung anfordern, sendet Ihr Gerät die Anmeldeinformationen und die mindestens erforderlichen Anforderungsfelder über HTTPS direkt an den dokumentierten offiziellen API des ausgewählten Anbieters. Dieser Anbieter empfängt und bearbeitet die Anfrage zu seinen eigenen Bedingungen. UsageNow leitet den Anbieterverkehr nicht über einen Entwicklerserver, Proxy, Tunnel oder VPN weiter."
-      },
-      {
-        "id": "developer_boundary",
-        "title": "Was der Entwickler erhält",
-        "body": "Der UsageNow-Entwickler erhält Ihr Token, Ihre Anbieterkontodaten, Nutzungswerte, Anfragen, Anbieterantworten, normalisierten Snapshots oder CloudKit-Datensätze nicht automatisch. UsageNow verfügt über kein vom Entwickler betriebenes Kontosystem oder Nutzungsdatenbank."
-      },
-      {
-        "id": "local_records_exports",
-        "title": "Lokale Aufzeichnungen und Exporte",
-        "body": "Normalisierte Nutzungsmomentaufnahmen, Zurücksetzungszeiten, Prognosen, Aktualität, Kontobezeichnungen, Präferenzen und Teststatus werden lokal gespeichert. Ein Export wird nur erstellt, wenn Sie ihn anfordern, und geht an ein Ziel, das Sie über die Systemschnittstelle von Apple auswählen. Exporte schließen Anmeldeinformationen und rohe Anbieterantworten aus. Es gelten dann die Datenschutzbestimmungen des Reiseziels."
-      },
-      {
-        "id": "cloudkit_optional",
-        "title": "Synchronisierung",
-        "body": "Nur wenn Sie die iCloud-Synchronisierung aktivieren, können minimierte Anbieterkennungen, anonyme Kontobezeichnungen, normalisierte Nutzungswerte, Rücksetz- und Prognosedaten, Aktualität, Einstellungen und der minimale Testanker in Ihrer privaten CloudKit-Datenbank gespeichert werden. Anmeldeinformationen und Rohdaten des Anbieters sind niemals enthalten. Apple betreibt CloudKit; UsageNow erstellt keine separate Entwicklerdatenbank."
-      },
-      {
-        "id": "app_group_watch",
-        "title": "App Group, Widget und Apple Watch",
-        "body": "Der App Group-Speicher bietet mit Widget nur einen geheimnisfreien Kapazitäts-Snapshot. WatchConnectivity sendet einen geheimnisfreien Snapshot an den gepaarten Apple Watch für UsageNow-Ansichten und Komplikationen. Diese Nutzlasten können normalisierte Kapazitäts-, Zurücksetzungs-, Aktualitäts- und Anzeigeeinstellungen enthalten, jedoch niemals Anmeldeinformationen, Cookies, Anforderungsheader oder rohe Anbieterantworten."
-      },
-      {
-        "id": "storekit",
-        "title": "StoreKit und Einkäufe",
-        "body": "StoreKit kontaktiert Apple, um das Produkt und den lokalisierten Preis zu laden und die lebenslange Entsperrung für Nicht-Verbrauchsmaterialien zu überprüfen, zu kaufen oder wiederherzustellen. Apple verarbeitet die Transaktion. UsageNow liest verifizierte Berechtigungsinformationen und empfängt keine Zahlungskartendetails."
-      },
-      {
-        "id": "diagnostics",
-        "title": "Sicherheitssichere Diagnose",
-        "body": "Die lokale Diagnose kann einen breiten Ereignistyp, einen Statuscode, eine Zeit und eine nicht geheime Korrelationskennung aufzeichnen. Sie werden nicht automatisch hochgeladen und enthalten niemals ein Token, ein Passwort, ein Cookie, einen Organisations- oder Arbeitsbereichs-Slug, einen vollständigen URL, einen Anforderungstext, einen Antworttext oder einen Header. Senden Sie diese Geheimnisse nicht in einer Support-Nachricht."
-      },
-      {
-        "id": "excluded_practices",
-        "title": "Keine Werbung, Analyse, Tracking oder Scraping",
-        "body": "UsageNow enthält weder ein Werbe-SDK noch Drittanbieter-Analysen, App-übergreifendes Tracking, Geräte-Fingerprinting oder ein Marketingprofil des Entwicklers. Die App sammelt keine Passwörter, importiert keine Browser-Cookies, liest Dashboard-HTML nicht automatisiert aus, ruft keine privaten Endpunkte auf, gibt sich nicht als offizieller Client aus, verwendet dessen Tokens nicht erneut und umgeht keine Ratenbegrenzungen des Anbieters."
-      },
-      {
-        "id": "deletion_retention",
-        "title": "Löschung und beibehaltene Generierung",
-        "body": "Alle Daten löschen entfernt das lokale Repository, Keychain, App Group, Widget-Cache, Apple Watch-Nutzlast, private CloudKit-Datensätze und Testanker. UsageNow behält nur eine nicht identifizierende CloudKit-Löschgenerierung bei, sodass ein Offline-Gerät gelöschte Inhalte nicht wiederbeleben kann. Es enthält keine Anbieter-, Nutzungs-, Konto-, Anmeldeinformationen, Gerätefingerabdruck- oder Testdaten. Von Ihnen exportierte Dateien und von Apple verwaltete Gerätesicherungen bleiben unter Ihrer Kontrolle und müssen separat entfernt werden."
-      },
-      {
-        "id": "support_site",
-        "title": "Support-E-Mail und diese Website",
-        "body": "Wenn Sie dem Support eine E-Mail senden, erhält der Entwickler die E-Mail-Adresse und die Nachricht, die Sie senden möchten, und verwendet sie nur, um Ihnen zu antworten. Diese statische Website setzt keine Cookies und lädt keine Werbung, Analysen, Tracking-Skripte oder Assets Dritter. Der eventuelle Hosting-Dienst kann Standardverbindungsinformationen im Rahmen seiner eigenen Datenschutzbestimmungen verarbeiten."
-      },
-      {
-        "id": "provider_independence",
-        "title": "Anbieterunabhängigkeit",
-        "body": "Diese Namen dienen ausschließlich zur Kennzeichnung kompatibler Dienste: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow ist unabhängig. Diese Anbieter empfehlen oder sponsern die App nicht, und es besteht keine Verbindung zu ihnen."
-      }
-    ]
-  }
+ "language_name": "Deutsch",
+ "language_label": "Sprache",
+ "navigation_label": "Hauptnavigation",
+ "skip_link": "Zum Hauptinhalt springen",
+ "nav": {"index": "Übersicht", "support": "Support", "privacy": "Datenschutz"},
+ "contact": {
+  "title": "UsageNow-Support kontaktieren",
+  "body": "Nennen Sie uns Ihr Gerätemodell, Ihre iOS-Version, die App-Version, zu welchem Dienst das Konto gehört, worauf Sie getippt haben und ungefähr wann es passiert ist. Senden Sie niemals ein Passwort, einen Anmeldecode, ein Zugriffstoken oder einen Screenshot, auf dem etwas davon zu sehen ist.",
+  "button": "Support per E-Mail kontaktieren"
+ },
+ "footer": "Offizielle Support- und Datenschutzinformationen für UsageNow: AI Usage Tracker.",
+ "home": {
+  "title": "Auf einen Blick sehen, was von jedem KI-Tarif noch übrig ist",
+  "summary": "UsageNow zeigt, wie viel Sie von jedem KI-Abo bereits genutzt haben und wann es genau zurückgesetzt wird – in der App, in Widgets auf dem Home-Bildschirm und auf der Apple Watch. Die App kommuniziert direkt von Ihrem Gerät aus mit jedem Dienst; einen UsageNow-Server gibt es nicht.",
+  "section_title": "So funktioniert UsageNow",
+  "sections": [
+   {"id": "direct_connections", "title": "Direkt von Ihrem Gerät", "body": "Sie fügen ein Konto über die Anmeldeseite des jeweiligen Dienstes hinzu. Wenn die App oder ihr Widget aktualisiert wird, fragt Ihr iPhone oder iPad Ihre Nutzung direkt über HTTPS bei der API des Dienstes ab. Nichts läuft über einen UsageNow-Server, denn es gibt keinen."},
+   {"id": "credential_storage", "title": "Anmeldungen bleiben im Keychain", "body": "Anmeldetokens werden ausschließlich im Keychain dieses Geräts mit dem Schutz AfterFirstUnlockThisDeviceOnly gespeichert. Sie werden nur mit dem UsageNow-Widget auf dem Home-Bildschirm geteilt, damit es sich selbst aktualisieren kann, und weder mit iCloud synchronisiert noch an die Apple Watch gesendet."},
+   {"id": "widget_watch", "title": "Widgets und Apple Watch", "body": "Widget und Apple Watch zeigen die aktuellen Nutzungsprozente und Zurücksetzungszeiten. Die gekoppelte Apple Watch erhält nur diese Momentaufnahme, niemals ein Anmeldetoken."},
+   {"id": "purchase", "title": "24 Stunden gratis testen, dann ein einziger Kauf", "body": "Alle Funktionen sind 24 Stunden lang kostenlos, nachdem Sie auf 24 Stunden gratis testen getippt haben. UsageNow Pro ist ein Einmalkauf über StoreKit; der Preis wird in Ihrer Landeswährung angezeigt. Es gibt kein Abo und keine Werbung."}
+  ]
+ },
+ "support": {
+  "title": "UsageNow-Support",
+  "summary": "Hilfe zum Hinzufügen von Konten, zum Aktualisieren der Nutzung, zu Widgets, zur Apple Watch, zum kostenlosen Test und zu UsageNow Pro.",
+  "section_title": "Fragen und Fehlerbehebung",
+  "sections": [
+   {"id": "getting_started", "title": "Konto hinzufügen oder Beispieldaten ausprobieren", "body": "Tippen Sie auf eine Dienstkarte oder die Plustaste und melden Sie sich im sicheren Web-Fenster von Apple auf der Seite des jeweiligen Dienstes an; GitHub zeigt einen kurzen Gerätecode zur Eingabe an. Sie können pro Dienst mehrere Konten hinzufügen. Wenn Sie sich zuerst umsehen möchten, tippen Sie auf dem ersten Bildschirm auf Mit Beispieldaten ansehen."},
+   {"id": "sign_in_again", "title": "Ein Konto zeigt Erneut anmelden", "body": "Der Dienst hat die Sitzung beendet, zum Beispiel nach einer Passwortänderung, einer Abmeldung auf seiner Website oder längerer Nichtnutzung. Tippen Sie auf der betreffenden Karte auf Erneut anmelden. UsageNow sieht und speichert Ihr Passwort niemals."},
+   {"id": "widget_refresh", "title": "Die Zahlen im Widget wirken veraltet", "body": "Das Widget auf dem Home-Bildschirm aktualisiert sich etwa alle 20 Minuten selbst, sofern iOS es zulässt, und die Aktualisierungstaste im Widget fordert sofort neue Zahlen an. Der Stromsparmodus oder eine schwache Verbindung können Aktualisierungen verzögern. Beim Öffnen der App werden immer alle Konten aktualisiert."},
+   {"id": "offline_rate_limit", "title": "Offline oder Dienst ausgelastet", "body": "Wenn keine Verbindung besteht oder ein Dienst mit 429 Too Many Requests antwortet, behält UsageNow die letzten Zahlen samt Zeitpunkt bei und versucht es später erneut. Wiederholtes Tippen umgeht die Limits eines Dienstes nicht."},
+   {"id": "sort_language", "title": "Konten sortieren und Sprache ändern", "body": "Ab zwei Konten können Sie sie mit der Sortiertaste nach Dienst, nächster Zurücksetzung, höchster Nutzung, geringster Nutzung, Name oder Ihrer eigenen Reihenfolge ordnen. In den Einstellungen wählen Sie eine von 50 Sprachen oder folgen der Systemsprache; Widget und Apple Watch übernehmen sie."},
+   {"id": "sign_out_delete", "title": "Abmelden und Daten entfernen", "body": "Öffnen Sie das Kontomenü und wählen Sie Abmelden, um die Tokens dieses Kontos aus dem Keychain und seine Zahlen aus App, Widget und Apple Watch zu löschen. Um alles zu entfernen, melden Sie sich von jedem Konto ab und löschen anschließend die App. Sie können den Zugriff außerdem in den Kontoeinstellungen des jeweiligen Dienstes widerrufen."},
+   {"id": "purchase_restore", "title": "Kostenloser Test, UsageNow Pro und Wiederherstellen", "body": "Der 24-stündige kostenlose Test beginnt erst, wenn Sie darauf tippen, und ist einmal pro Apple Account möglich. Danach bleiben App und Widgets gesperrt, bis Sie UsageNow Pro kaufen – einen Einmalkauf über StoreKit, der kein Abo ist. Verwenden Sie Einstellungen > Käufe wiederherstellen auf jedem Gerät, das mit demselben Apple Account angemeldet ist."},
+   {"id": "safe_contact", "title": "Was Sie in Ihrer Nachricht angeben sollten", "body": "Senden Sie Gerätemodell, iOS-Version, App-Version, den Namen des Dienstes, worauf Sie getippt haben, und die ungefähre Uhrzeit. Senden Sie kein Passwort, keinen Anmeldecode, kein Token und keine vollständige Anmelde-URL. Der Entwickler kann Ihre Konten nicht einsehen und nicht wiederherstellen."},
+   {"id": "provider_independence", "title": "Unabhängige App", "body": "UsageNow ist eine unabhängige App. Claude und Anthropic, ChatGPT, Codex und OpenAI, GitHub Copilot, GitHub und Microsoft sowie Gemini und Google werden nur genannt, um zu zeigen, welche Konten die App auslesen kann; UsageNow ist mit ihnen nicht verbunden und wird von ihnen weder gesponsert noch empfohlen."}
+  ]
+ },
+ "privacy": {
+  "title": "Datenschutzerklärung",
+  "summary": "UsageNow hat keinen Server, kein eigenes Konto, keine Werbung und keine Analyse. Diese Erklärung beschreibt genau, wohin Ihre Anmeldungen und Nutzungszahlen gelangen.",
+  "updated_label": "Zuletzt aktualisiert",
+  "section_title": "Ihre Daten, Weg für Weg",
+  "sections": [
+   {"id": "credential_storage", "title": "Anmeldetokens", "body": "Tokens der einzelnen Dienste werden ausschließlich im Keychain dieses Geräts mit dem Schutz AfterFirstUnlockThisDeviceOnly gespeichert und sind nicht synchronisierbar. Nur die UsageNow-App und ihr eigenes Widget auf dem Home-Bildschirm können sie lesen. Sie werden niemals in iCloud geschrieben, an die Apple Watch gesendet oder an den Entwickler übermittelt."},
+   {"id": "provider_requests", "title": "Anfragen an die einzelnen Dienste", "body": "Für die Anmeldung und das Aktualisieren der Nutzung kontaktiert Ihr Gerät die Anmeldeseite und die API des jeweiligen Dienstes direkt über HTTPS. Der Dienst erhält die Anfrage gemäß seiner eigenen Datenschutzerklärung. UsageNow verwendet keinen Proxy, kein VPN, keinen Tunnel und keinen Entwicklerserver; während der Anmeldung lauscht die App kurz auf einer lokalen Adresse auf diesem Gerät, nur um die Anmeldeantwort zu empfangen."},
+   {"id": "developer_boundary", "title": "Was der Entwickler erhält", "body": "Nichts automatisch. Der Entwickler erhält weder Ihre Tokens noch die E-Mail-Adresse Ihres Kontos, Ihren Tarif, Ihre Nutzungszahlen oder Zurücksetzungszeiten, und es gibt kein UsageNow-Konto und keine Datenbank."},
+   {"id": "local_records", "title": "Auf Ihrem Gerät gespeichert", "body": "Die App speichert die letzte Nutzungs-Momentaufnahme (Kontobezeichnung, Tarifname, Nutzungsprozente, Zurücksetzungszeiten und Zeitpunkt der letzten Aktualisierung), Ihre Sortierung, Ihre Sprachwahl, das Ende des Testzeitraums und ein kurzes lokales Protokoll der Tipps auf Widget-Tasten zur Fehlerbehebung. Diese Daten bleiben auf dem Gerät."},
+   {"id": "app_group_watch", "title": "Widget und Apple Watch", "body": "App und Widget teilen die Momentaufnahme über eine App Group auf diesem Gerät. WatchConnectivity sendet dieselbe Momentaufnahme an Ihre gekoppelte Apple Watch, damit deren App und Komplikationen sie anzeigen können; Tokens sind nicht enthalten."},
+   {"id": "storekit", "title": "Käufe", "body": "StoreKit kontaktiert Apple, um den lokalen Preis anzuzeigen, den kostenlosen Test zu starten, UsageNow Pro zu kaufen und Käufe wiederherstellen auszuführen. Apple wickelt die Zahlung ab; der Entwickler erhält Ihre Zahlungsdaten nicht."},
+   {"id": "excluded_practices", "title": "Keine Werbung, Analyse oder Tracking", "body": "UsageNow enthält keine Werbung, keine Analyse durch Dritte, keinen Dienst für Absturzberichte und kein Tracking über Apps oder Websites hinweg. Die App verkauft keine Daten, erstellt keine Profile und fragt nicht nach Ihrem Passwort."},
+   {"id": "deletion", "title": "Ihre Daten löschen", "body": "Wenn Sie sich von einem Konto abmelden, werden dessen Tokens aus dem Keychain gelöscht und seine Zahlen aus App, Widget und Apple Watch entfernt. Wenn Sie sich von allen Konten abmelden und die App löschen, wird der Rest entfernt. Sie können den Zugriff von UsageNow außerdem in den Kontoeinstellungen des jeweiligen Dienstes widerrufen."},
+   {"id": "support_site", "title": "Support-E-Mail und diese Website", "body": "Wenn Sie dem Support schreiben, erhält der Entwickler nur die Adresse und Nachricht, die Sie selbst senden, und verwendet sie ausschließlich für die Antwort. Diese Website setzt keine Cookies und lädt keine Werbe-, Analyse- oder Tracking-Skripte; sie wird von GitHub Pages gehostet, das übliche Verbindungsdaten gemäß seinen eigenen Bedingungen verarbeiten kann."},
+   {"id": "provider_independence", "title": "Unabhängige App", "body": "UsageNow ist eine unabhängige App. Claude und Anthropic, ChatGPT, Codex und OpenAI, GitHub Copilot, GitHub und Microsoft sowie Gemini und Google werden nur genannt, um zu zeigen, welche Konten die App auslesen kann; UsageNow ist mit ihnen nicht verbunden und wird von ihnen weder gesponsert noch empfohlen."},
+   {"id": "policy_changes", "title": "Änderungen und Fragen", "body": "Wenn sich diese Erklärung ändert, wird die neue Fassung hier mit einem neuen Datum veröffentlicht. UsageNow richtet sich nicht an Kinder. Fragen zum Datenschutz können Sie an die unten angegebene Support-E-Mail-Adresse senden."}
+  ]
+ }
 }

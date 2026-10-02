@@ -1,4 +1,4 @@
-# UsageNow: AI Usage — Support & Privacy
+# UsageNow: AI Usage Tracker — Support & Privacy
 
 Independent, deployment-ready static support and privacy site for UsageNow.
 
@@ -35,38 +35,26 @@ exact-50 language selector.
 
 - GitHub repository `alice51849/usagenow-support` (public), served by GitHub
   Pages from the root of `main`.
-- Origin: `https://alice51849.github.io/usagenow-support/`. This is the host
-  registered in App Store Connect as the support and privacy policy URL.
-- Canonical host: `https://open.cait518.cc/usagenow-support/`, a Cloudflare
-  tunnel mirror of the origin that serves the same bytes. Every `canonical`,
-  `og:url`, `hreflang`, sitemap, and robots URL uses this host through
-  `canonical_base_url` in `source/site.json`.
-- The canonical host applies Cloudflare Email Obfuscation, so the generator
-  wraps the public support email in `<!--email_off-->` markers to keep the
-  visible address and the `mailto:` link intact; the validator fails if any
-  address falls outside those markers.
+- Canonical and App Store Connect host:
+  `https://alice51849.github.io/usagenow-support/` — support URL
+  `<locale>/support.html`, privacy policy URL `<locale>/privacy.html`,
+  marketing URL `<locale>/` for each of the 50 App Store locales
+  (ASC app 6818607603).
+- The public support email is wrapped in `<!--email_off-->` markers so a
+  mirror behind Cloudflare Email Obfuscation would keep it intact.
 
 To move hosts, replace only `canonical_base_url`, regenerate, and rerun both
 checks. Relative navigation and assets do not depend on the host path.
 
-## Privacy boundary represented by this site
+## Privacy boundary represented by this site (app 1.0, 2026-10-03)
 
-- Provider credentials stay in the main app's local, non-synchronizable
-  Keychain with `AfterFirstUnlockThisDeviceOnly` protection.
-- On a user-requested refresh, the app contacts the selected provider's
-  documented official API directly. There is no UsageNow developer relay.
-- The developer does not automatically receive credentials, usage values, or
-  provider responses.
-- Optional sync stores only minimized normalized records in the user's private
-  CloudKit database. Widget and Watch surfaces receive secret-free snapshots.
-- Apple handles product loading, purchase, and Restore through StoreKit.
-- There is no developer account system, advertising, third-party analytics,
-  tracking, cookie extraction, dashboard HTML scraping, or private endpoint use.
-- Security diagnostics exclude credentials, slugs, full URLs, request and
-  response bodies, and headers.
-- Full deletion covers local storage, Keychain, App Group, Widget, Watch,
-  private CloudKit records, and the trial anchor. Only a non-identifying
-  CloudKit deletion generation remains to prevent offline resurrection.
-
-Provider names appear only as compatibility identifiers. UsageNow is independent
-and is not endorsed, sponsored, or affiliated with those providers.
+- Sign-in tokens stay in the device Keychain (`AfterFirstUnlockThisDeviceOnly`,
+  not synchronizable), shared only with UsageNow's own Home Screen widget so it
+  can refresh by itself; never iCloud, never Apple Watch, never the developer.
+- The device talks directly to each service's own sign-in page and API over
+  HTTPS (Claude, ChatGPT/Codex, GitHub Copilot, Gemini). No developer server,
+  proxy, VPN or tunnel; a local loopback address receives the sign-in reply.
+- Usage snapshots stay on the device (App Group) and go to the paired Apple
+  Watch through WatchConnectivity, without tokens.
+- No advertising, analytics, crash reporting or tracking. StoreKit (Apple)
+  handles the 24-hour free trial and the one-time UsageNow Pro purchase.

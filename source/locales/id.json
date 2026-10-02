@@ -1,164 +1,59 @@
 {
-  "language_name": "Bahasa Indonesia",
-  "language_label": "Bahasa",
-  "navigation_label": "Navigasi utama",
-  "skip_link": "Lompat ke konten utama",
-  "nav": {
-    "index": "Ikhtisar",
-    "support": "Dukungan",
-    "privacy": "Kebijakan Privasi"
-  },
-  "contact": {
-    "title": "Hubungi dukungan UsageNow",
-    "body": "Sertakan model perangkat Anda, sistem operasi dan versi aplikasi, nama kompatibilitas penyedia, metode koneksi, kode status, dan perkiraan waktu. Jangan pernah mengirim token akses, kata sandi, cookie, slug organisasi atau ruang kerja, URL lengkap, badan permintaan atau respons, atau header.",
-    "button": "Ada pertanyaan atau masukan? Kirim email kepada kami."
-  },
-  "footer": "Dukungan resmi dan informasi privasi untuk UsageNow: AI Usage.",
-  "home": {
-    "title": "Rencanakan kapasitas AI tanpa memberi kami kredensial Anda",
-    "summary": "UsageNow terhubung dari perangkat Anda ke penyedia terdokumentasi API yang Anda pilih, menjelaskan sisa kapasitas dan mengatur ulang waktu, dan secara pribadi dapat menyinkronkan snapshot bebas rahasia melalui akun Apple Anda.",
-    "section_title": "Bagaimana UsageNow menangani data Anda",
-    "sections": [
-      {
-        "id": "direct_connections",
-        "title": "Koneksi resmi langsung",
-        "body": "Saat Anda meminta penyegaran, aplikasi memanggil API resmi yang didokumentasikan dari penyedia yang dipilih langsung dari perangkat Anda menggunakan koneksi yang Anda berikan. Tidak ada relai pengembang UsageNow atau akun UsageNow."
-      },
-      {
-        "id": "credential_storage",
-        "title": "Kredensial tetap ada di perangkat ini",
-        "body": "Kredensial penyedia disimpan di Keychain aplikasi utama dengan perlindungan AfterFirstUnlockThisDeviceOnly. Mereka tidak dapat disinkronkan dan tidak pernah dikirim ke CloudKit, App Group, Widget, atau Apple Watch."
-      },
-      {
-        "id": "cloudkit_optional",
-        "title": "Sinkronisasi Apple pribadi opsional",
-        "body": "Hanya jika Anda mengaktifkan sinkronisasi iCloud, snapshot penggunaan normalisasi yang diminimalkan, preferensi, dan jangkar uji coba dapat disimpan di database CloudKit pribadi Anda. Kredensial dan tanggapan penyedia mentah tidak termasuk."
-      },
-      {
-        "id": "purchase",
-        "title": "Tiga hari, lalu satu pembelian seumur hidup",
-        "body": "Periode akses penuh tiga hari dimulai hanya setelah snapshot penggunaan langsung pertama yang berhasil disimpan. Berikut adalah pembukaan kunci seumur hidup yang tidak dapat dikonsumsi; StoreKit memuat harga lokal sebenarnya dan Apple menangani pembelian dan Pemulihan. Tidak ada langganan atau iklan."
-      }
-    ]
-  },
-  "support": {
-    "title": "Dukungan UsageNow",
-    "summary": "Bantuan dengan koneksi penyedia langsung, kode status, data Anda, dan pembelian satu kali seumur hidup.",
-    "section_title": "Pemecahan masalah dan perawatan akun",
-    "sections": [
-      {
-        "id": "connection_types",
-        "title": "Jenis koneksi",
-        "body": "Penyedia dapat menggunakan API atau kunci admin yang Anda berikan, atau OAuth atau alur otorisasi perangkat ketika penyedia secara resmi mendukungnya. Setiap penyegaran langsung masuk ke titik akhir penyedia resmi yang terdokumentasi. UsageNow tidak meminta kata sandi, tidak mengimpor cookie browser, tidak mengambil HTML dasbor, tidak memanggil endpoint privat, dan tidak melewati batas laju penyedia. Bidang yang tersedia berbeda-beda menurut penyedia dan paket akun."
-      },
-      {
-        "id": "http_401",
-        "title": "401 — Tidak sah",
-        "body": "Kredensialnya hilang, kedaluwarsa, dicabut, atau milik layanan yang salah. Buat atau perbarui di konsol resmi penyedia, berikan hanya izin minimum yang diminta, lalu ganti kredensial atau pilih Masuk Lagi. Jangan pernah mengirimkan kunci melalui email."
-      },
-      {
-        "id": "http_403",
-        "title": "403 — Terlarang",
-        "body": "Penyedia mengenali kredensialnya, namun akun tersebut mungkin tidak memiliki cakupan yang diperlukan, peran penagihan, akses tim atau organisasi, atau persetujuan SSO. Konfirmasikan target akun dan izin baca minimum penyedia. Beberapa paket tidak memaparkan data penggunaan."
-      },
-      {
-        "id": "http_404",
-        "title": "404 — Tidak ditemukan",
-        "body": "Periksa organisasi, tim, ruang kerja, nama pengguna, atau pengidentifikasi sumber daya yang tepat. 404 juga dapat berarti penyedia tidak mengekspos titik akhir penggunaan tersebut untuk paket atau wilayah Anda. Ikuti panduan koneksi resmi dalam aplikasi saat ini; jangan pernah mengganti titik akhir privat."
-      },
-      {
-        "id": "offline_rate_limit",
-        "title": "Offline, basi, atau tarif terbatas",
-        "body": "UsageNow menyimpan snapshot terakhir yang disimpan dengan stempel waktunya. Sambungkan kembali dan coba penyegaran terbatas nanti. Untuk pemeliharaan 429 atau penyedia, tunggu jendela coba lagi resmi; permintaan berulang tidak melewati batas penyedia."
-      },
-      {
-        "id": "export_delete",
-        "title": "Data",
-        "body": "Ekspor membuat file di perangkat ini hanya ketika Anda meminta dan membuka pemilih tujuan Apple; kredensial dan tanggapan penyedia mentah dikecualikan. Hapus semua data akan menghapus repositori lokal, kredensial Keychain, cache App Group dan Widget, payload Apple Watch, catatan CloudKit pribadi, dan jangkar uji coba. Pembuatan penghapusan CloudKit yang tidak dapat diidentifikasi hanya berfungsi untuk menghentikan perangkat offline memulihkan konten yang dihapus. Hapus file yang diekspor dan cadangan yang dikelola Apple secara terpisah."
-      },
-      {
-        "id": "purchase_restore",
-        "title": "Pulihkan Pembelian",
-        "body": "Akses penuh berlangsung selama tiga hari sejak snapshot langsung pertama yang disimpan. Setelah itu, informasi tersimpan yang ada akan tetap berupa pratinjau hanya-baca bertanggal hingga satu pembelian seumur hidup yang tidak dapat dikonsumsi diverifikasi. StoreKit menampilkan harga lokal saat ini. Gunakan Pulihkan saat masuk ke Akun Apple yang melakukan pembelian. Tidak ada langganan atau perpanjangan otomatis."
-      },
-      {
-        "id": "safe_contact",
-        "title": "Kirim laporan dukungan yang aman",
-        "body": "Kirimkan model perangkat, sistem operasi dan versi aplikasi, nama penyedia yang hanya digunakan sebagai label kompatibilitas, metode koneksi, kode status, perkiraan waktu, dan kode peristiwa diagnostik non-rahasia jika ditampilkan. Jangan pernah mengirim token, kata sandi, cookie, slug, URL lengkap, isi permintaan, isi respons, atau header. Pengembang tidak dapat memulihkan kredensial atau data penyedia."
-      },
-      {
-        "id": "provider_independence",
-        "title": "Kompatibilitas independen",
-        "body": "Nama-nama ini hanya digunakan untuk mengidentifikasi layanan yang kompatibel: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow adalah aplikasi independen; penyedia tersebut tidak mendukung atau mensponsorinya, dan aplikasi ini tidak berafiliasi dengan mereka."
-      }
-    ]
-  },
-  "privacy": {
-    "title": "Kebijakan Privasi",
-    "summary": "UsageNow mengutamakan lokal, tetapi menggunakan koneksi penyedia langsung dan sinkronisasi pribadi Apple opsional. Kebijakan ini mencantumkan setiap rute alih-alih mengandalkan label privasi menyeluruh.",
-    "updated_label": "Terakhir diperbarui",
-    "section_title": "Aliran data dan kontrol",
-    "sections": [
-      {
-        "id": "credential_storage",
-        "title": "Kredensial penyedia",
-        "body": "Kredensial hanya disimpan di Keychain lokal aplikasi utama menggunakan AfterFirstUnlockThisDeviceOnly. Mereka tidak dapat disinkronkan, tidak terkena ekstensi, dan tidak pernah memasukkan UserDefaults, CloudKit, App Group, Widget, Apple Watch, ekspor, tangkapan layar, analitik, atau kontrol sumber. Menghapus koneksi atau menghapus semua data akan menghapus item Keychain yang sesuai."
-      },
-      {
-        "id": "provider_requests",
-        "title": "Permintaan API penyedia langsung",
-        "body": "Saat Anda meminta untuk menghubungkan atau menyegarkan, perangkat Anda mengirimkan kredensial dan bidang permintaan minimum yang diperlukan langsung ke API resmi penyedia yang dipilih melalui HTTPS. Penyedia tersebut menerima dan memproses permintaan berdasarkan ketentuannya sendiri. UsageNow tidak merutekan lalu lintas penyedia melalui server pengembang, proksi, terowongan, atau VPN."
-      },
-      {
-        "id": "developer_boundary",
-        "title": "Apa yang diterima pengembang",
-        "body": "Pengembang UsageNow tidak secara otomatis menerima token Anda, data akun penyedia, nilai penggunaan, permintaan, respons penyedia, snapshot yang dinormalisasi, atau catatan CloudKit. UsageNow tidak memiliki sistem akun atau basis data penggunaan yang dioperasikan pengembang."
-      },
-      {
-        "id": "local_records_exports",
-        "title": "Catatan lokal dan ekspor",
-        "body": "Snapshot penggunaan yang dinormalisasi, waktu reset, perkiraan, kesegaran, label akun, preferensi, dan status uji coba disimpan secara lokal. Ekspor dibuat hanya ketika Anda memintanya dan menuju ke tujuan yang Anda pilih melalui antarmuka sistem Apple. Ekspor tidak termasuk kredensial dan tanggapan penyedia mentah; ketentuan privasi tujuan kemudian berlaku."
-      },
-      {
-        "id": "cloudkit_optional",
-        "title": "Sinkronisasi",
-        "body": "Hanya ketika Anda mengaktifkan sinkronisasi iCloud, pengidentifikasi penyedia yang diperkecil, label akun anonim, nilai penggunaan yang dinormalisasi, data pengaturan ulang dan perkiraan, kesegaran, preferensi, dan jangkar uji coba minimum dapat disimpan di basis data CloudKit pribadi Apple Anda. Kredensial dan muatan penyedia mentah tidak pernah disertakan. Apple mengoperasikan CloudKit; UsageNow tidak membuat database pengembang terpisah."
-      },
-      {
-        "id": "app_group_watch",
-        "title": "App Group, Widget, dan Apple Watch",
-        "body": "Penyimpanan App Group memberikan Widget hanya snapshot kapasitas bebas rahasia. WatchConnectivity mengirimkan snapshot bebas rahasia ke Apple Watch yang dipasangkan untuk tampilan dan komplikasi UsageNow. Payload ini mungkin berisi kapasitas yang dinormalisasi, reset, kesegaran, dan preferensi tampilan, namun tidak pernah berisi kredensial, cookie, header permintaan, atau respons penyedia mentah."
-      },
-      {
-        "id": "storekit",
-        "title": "StoreKit dan pembelian",
-        "body": "StoreKit menghubungi Apple untuk memuat produk dan harga yang dilokalkan serta untuk memverifikasi, membeli, atau Memulihkan buka kunci seumur hidup yang tidak dapat dikonsumsi. Apple memproses transaksi. UsageNow membaca informasi hak terverifikasi dan tidak menerima detail kartu pembayaran."
-      },
-      {
-        "id": "diagnostics",
-        "title": "Diagnostik yang aman untuk keamanan",
-        "body": "Diagnostik lokal dapat mencatat jenis kejadian luas, kode status, waktu, dan pengidentifikasi korelasi non-rahasia. Mereka tidak diunggah secara otomatis dan tidak pernah menyertakan token, kata sandi, cookie, slug organisasi atau ruang kerja, URL lengkap, isi permintaan, isi respons, atau header. Jangan mengirimkan rahasia tersebut dalam pesan dukungan."
-      },
-      {
-        "id": "excluded_practices",
-        "title": "Tidak ada iklan, analitik, pelacakan, atau pengikisan",
-        "body": "UsageNow tidak memiliki SDK iklan, analitik pihak ketiga, pelacakan lintas aplikasi, sidik jari perangkat, atau profil pemasaran pengembang. Aplikasi tidak mengumpulkan kata sandi, tidak mengimpor cookie browser, tidak mengambil HTML dasbor, tidak memanggil endpoint privat, tidak menyamar sebagai klien resmi, tidak menggunakan ulang token klien resmi, dan tidak melewati batas laju penyedia."
-      },
-      {
-        "id": "deletion_retention",
-        "title": "Penghapusan dan generasi yang dipertahankan",
-        "body": "Hapus semua data akan menghapus repositori lokal, Keychain, App Group, cache Widget, payload Apple Watch, catatan CloudKit pribadi, dan jangkar uji coba. UsageNow hanya mempertahankan pembuatan penghapusan CloudKit yang tidak dapat diidentifikasi sehingga perangkat offline tidak dapat menghidupkan kembali konten yang dihapus. Ini tidak berisi penyedia, penggunaan, akun, kredensial, sidik jari perangkat, atau data uji coba. File yang Anda ekspor dan cadangan perangkat yang dikelola Apple tetap berada di bawah kendali Anda dan harus dihapus secara terpisah."
-      },
-      {
-        "id": "support_site",
-        "title": "Dukungan email dan situs web ini",
-        "body": "Jika Anda mengirim email ke dukungan, pengembang akan menerima alamat email dan pesan yang Anda pilih untuk dikirim dan menggunakannya hanya untuk menjawab Anda. Situs web statis ini tidak menetapkan cookie dan tidak memuat iklan, analitik, skrip pelacakan, atau aset pihak ketiga. Layanan hosting akhirnya dapat memproses informasi koneksi standar berdasarkan ketentuan privasinya sendiri."
-      },
-      {
-        "id": "provider_independence",
-        "title": "Independensi penyedia",
-        "body": "Nama-nama ini hanya digunakan untuk mengidentifikasi layanan yang kompatibel: Anthropic, OpenAI, Google/Gemini, GitHub Copilot, Cursor, xAI/Grok, OpenRouter. UsageNow adalah aplikasi independen; penyedia tersebut tidak mendukung atau mensponsorinya, dan aplikasi ini tidak berafiliasi dengan mereka."
-      }
-    ]
-  }
+ "language_name": "Bahasa Indonesia",
+ "language_label": "Bahasa",
+ "navigation_label": "Navigasi utama",
+ "skip_link": "Lompat ke konten utama",
+ "nav": {"index": "Ikhtisar", "support": "Dukungan", "privacy": "Privasi"},
+ "contact": {
+  "title": "Hubungi dukungan UsageNow",
+  "body": "Sebutkan model perangkat, versi iOS, versi aplikasi, layanan pemilik akun tersebut, apa yang Anda ketuk, dan kira-kira kapan kejadiannya. Jangan pernah mengirim kata sandi, kode masuk, token akses, atau tangkapan layar yang memperlihatkannya.",
+  "button": "Kirim email ke dukungan"
+ },
+ "footer": "Informasi dukungan dan privasi resmi untuk UsageNow: AI Usage Tracker.",
+ "home": {
+  "title": "Lihat sisa setiap paket AI dalam sekejap",
+  "summary": "UsageNow menunjukkan berapa banyak setiap langganan AI yang sudah Anda pakai dan kapan tepatnya direset, di aplikasi, di widget Layar Utama, dan di Apple Watch. Aplikasi ini terhubung langsung ke setiap layanan dari perangkat Anda; tidak ada server UsageNow.",
+  "section_title": "Cara kerja UsageNow",
+  "sections": [
+   {"id": "direct_connections", "title": "Langsung dari perangkat Anda", "body": "Anda menambahkan akun melalui halaman masuk milik layanan itu sendiri. Saat aplikasi atau widget-nya memperbarui data, iPhone atau iPad Anda meminta data penggunaan langsung ke API layanan tersebut melalui HTTPS. Tidak ada yang melewati server UsageNow, karena server itu memang tidak ada."},
+   {"id": "credential_storage", "title": "Data masuk tetap di Keychain", "body": "Token masuk hanya disimpan di Keychain perangkat ini dengan perlindungan AfterFirstUnlockThisDeviceOnly. Token hanya dibagikan dengan Widget Layar Utama UsageNow agar dapat memperbarui sendiri, dan tidak disinkronkan ke iCloud maupun dikirim ke Apple Watch."},
+   {"id": "widget_watch", "title": "Widget dan Apple Watch", "body": "Widget dan Apple Watch menampilkan persentase penggunaan dan waktu reset terbaru. Apple Watch yang dipasangkan hanya menerima cuplikan tersebut, tidak pernah menerima token masuk."},
+   {"id": "purchase", "title": "Uji coba gratis 24 jam, lalu sekali beli", "body": "Semua fitur gratis selama 24 jam setelah Anda mengetuk Mulai Uji Coba Gratis 24 Jam. UsageNow Pro adalah pembelian satu kali melalui StoreKit dengan harga yang ditampilkan dalam mata uang lokal Anda. Tidak ada langganan dan tidak ada iklan."}
+  ]
+ },
+ "support": {
+  "title": "Dukungan UsageNow",
+  "summary": "Bantuan untuk menambahkan akun, memperbarui penggunaan, widget, Apple Watch, uji coba gratis, dan UsageNow Pro.",
+  "section_title": "Pertanyaan dan pemecahan masalah",
+  "sections": [
+   {"id": "getting_started", "title": "Menambahkan akun atau mencoba data contoh", "body": "Ketuk kartu layanan atau tombol plus, lalu masuk di halaman milik layanan itu sendiri dalam lembar web aman Apple; GitHub menampilkan kode perangkat singkat untuk dimasukkan. Anda dapat menambahkan beberapa akun untuk setiap layanan. Untuk melihat-lihat terlebih dahulu, ketuk Pratinjau dengan data contoh di layar pertama."},
+   {"id": "sign_in_again", "title": "Akun menampilkan Masuk lagi", "body": "Layanan tersebut telah mengakhiri sesi, misalnya setelah kata sandi diganti, Anda keluar dari situs webnya, atau akun lama tidak dipakai. Ketuk Masuk lagi pada kartu tersebut. UsageNow tidak pernah melihat atau menyimpan kata sandi Anda."},
+   {"id": "widget_refresh", "title": "Angka di Widget terlihat lama", "body": "Widget Layar Utama memperbarui dirinya kira-kira setiap 20 menit jika iOS mengizinkan, dan tombol perbarui pada Widget langsung meminta angka terbaru. Mode Daya Rendah atau koneksi yang buruk dapat menunda pembaruan. Membuka aplikasi selalu memperbarui semua akun."},
+   {"id": "offline_rate_limit", "title": "Offline atau layanan sedang sibuk", "body": "Jika tidak ada koneksi atau layanan menjawab 429 Too Many Requests, UsageNow menyimpan angka terakhir beserta waktunya dan mencoba lagi nanti. Mengetuk berulang kali tidak akan menembus batas yang diterapkan layanan."},
+   {"id": "sort_language", "title": "Mengurutkan akun dan mengganti bahasa", "body": "Jika ada dua akun atau lebih, gunakan tombol urutkan untuk menyusunnya menurut layanan, reset terdekat, paling banyak dipakai, paling sedikit dipakai, nama, atau urutan Anda sendiri. Di Pengaturan, Anda dapat memilih salah satu dari 50 bahasa atau mengikuti bahasa sistem; Widget dan Apple Watch akan menyesuaikan."},
+   {"id": "sign_out_delete", "title": "Keluar dan menghapus data", "body": "Buka menu akun dan pilih Keluar untuk menghapus token akun tersebut dari Keychain serta angkanya dari aplikasi, Widget, dan Apple Watch. Untuk menghapus semuanya, keluar dari setiap akun lalu hapus aplikasi. Anda juga dapat mencabut akses di pengaturan akun masing-masing layanan."},
+   {"id": "purchase_restore", "title": "Uji coba gratis, UsageNow Pro, dan Pemulihan", "body": "Uji coba gratis 24 jam baru dimulai saat Anda mengetuknya dan hanya berlaku sekali per Apple Account. Setelah berakhir, aplikasi dan widget tetap terkunci sampai Anda membeli UsageNow Pro, yaitu pembelian satu kali melalui StoreKit dan bukan langganan. Buka Pengaturan, lalu Pulihkan Pembelian di perangkat mana pun yang masuk dengan Apple Account yang sama."},
+   {"id": "safe_contact", "title": "Yang perlu disertakan saat menulis", "body": "Kirim model perangkat, versi iOS, versi aplikasi, nama layanan, apa yang Anda ketuk, dan perkiraan waktunya. Jangan kirim kata sandi, kode masuk, token, atau URL masuk lengkap. Pengembang tidak dapat melihat akun Anda dan tidak dapat memulihkannya."},
+   {"id": "provider_independence", "title": "Aplikasi independen", "body": "UsageNow adalah aplikasi independen. Claude dan Anthropic, ChatGPT, Codex dan OpenAI, GitHub Copilot, GitHub dan Microsoft, serta Gemini dan Google disebutkan hanya untuk menunjukkan akun mana yang dapat dibaca aplikasi ini; UsageNow tidak berafiliasi dengan, tidak disponsori, dan tidak didukung oleh pihak-pihak tersebut."}
+  ]
+ },
+ "privacy": {
+  "title": "Kebijakan Privasi",
+  "summary": "UsageNow tidak memiliki server, tidak memiliki akun sendiri, tidak ada iklan, dan tidak ada analitik. Kebijakan ini menjelaskan secara tepat ke mana data masuk dan angka penggunaan Anda dikirim.",
+  "updated_label": "Terakhir diperbarui",
+  "section_title": "Data Anda, jalur demi jalur",
+  "sections": [
+   {"id": "credential_storage", "title": "Token masuk", "body": "Token dari setiap layanan hanya disimpan di Keychain perangkat ini dengan perlindungan AfterFirstUnlockThisDeviceOnly dan tidak dapat disinkronkan. Hanya aplikasi UsageNow dan Widget Layar Utama miliknya sendiri yang dapat membacanya. Token tidak pernah ditulis ke iCloud, dikirim ke Apple Watch, atau dikirim ke pengembang."},
+   {"id": "provider_requests", "title": "Permintaan ke setiap layanan", "body": "Untuk masuk dan memperbarui penggunaan, perangkat Anda menghubungi halaman masuk dan API milik layanan itu sendiri secara langsung melalui HTTPS. Layanan tersebut menerima permintaan berdasarkan kebijakan privasinya sendiri. UsageNow tidak menggunakan proxy, VPN, tunnel, atau server pengembang; selama proses masuk, aplikasi sebentar mendengarkan pada alamat lokal di perangkat ini hanya untuk menerima balasan masuk."},
+   {"id": "developer_boundary", "title": "Yang diterima pengembang", "body": "Tidak ada yang diterima secara otomatis. Pengembang tidak menerima token, email akun, paket, angka penggunaan, atau waktu reset Anda, dan tidak ada akun maupun database UsageNow."},
+   {"id": "local_records", "title": "Disimpan di perangkat Anda", "body": "Aplikasi menyimpan cuplikan penggunaan terbaru (label akun, nama paket, persentase penggunaan, waktu reset, dan waktu pembaruan terakhir), urutan sortir Anda, pilihan bahasa, waktu berakhirnya uji coba, serta log lokal singkat berisi ketukan tombol Widget untuk pemecahan masalah. Semua ini tetap berada di perangkat."},
+   {"id": "app_group_watch", "title": "Widget dan Apple Watch", "body": "Aplikasi dan Widget berbagi cuplikan melalui App Group di perangkat ini. WatchConnectivity mengirim cuplikan yang sama ke Apple Watch yang dipasangkan agar aplikasi dan komplikasinya dapat menampilkannya; token tidak disertakan."},
+   {"id": "storekit", "title": "Pembelian", "body": "StoreKit menghubungi Apple untuk menampilkan harga lokal, memulai uji coba gratis, membeli UsageNow Pro, dan Pulihkan Pembelian. Apple memproses pembayaran; pengembang tidak menerima detail pembayaran Anda."},
+   {"id": "excluded_practices", "title": "Tanpa iklan, analitik, atau pelacakan", "body": "UsageNow tidak berisi iklan, tidak ada analitik pihak ketiga, tidak ada layanan pelaporan kerusakan, dan tidak ada pelacakan lintas aplikasi atau situs web. Aplikasi ini tidak menjual data, tidak membuat profil, dan tidak meminta kata sandi Anda."},
+   {"id": "deletion", "title": "Menghapus data Anda", "body": "Keluar dari sebuah akun akan menghapus tokennya dari Keychain serta angkanya dari aplikasi, Widget, dan Apple Watch. Keluar dari semua akun lalu menghapus aplikasi akan menghapus sisanya. Anda juga dapat mencabut akses UsageNow di pengaturan akun masing-masing layanan."},
+   {"id": "support_site", "title": "Email dukungan dan situs web ini", "body": "Jika Anda mengirim email ke dukungan, pengembang hanya menerima alamat dan pesan yang Anda pilih untuk dikirim dan menggunakannya hanya untuk membalas. Situs web ini tidak memasang cookie dan tidak memuat skrip iklan, analitik, atau pelacakan; situs ini di-hosting oleh GitHub Pages, yang mungkin memproses data koneksi standar berdasarkan ketentuannya sendiri."},
+   {"id": "provider_independence", "title": "Aplikasi independen", "body": "UsageNow adalah aplikasi independen. Claude dan Anthropic, ChatGPT, Codex dan OpenAI, GitHub Copilot, GitHub dan Microsoft, serta Gemini dan Google disebutkan hanya untuk menunjukkan akun mana yang dapat dibaca aplikasi ini; UsageNow tidak berafiliasi dengan, tidak disponsori, dan tidak didukung oleh pihak-pihak tersebut."},
+   {"id": "policy_changes", "title": "Perubahan dan pertanyaan", "body": "Jika kebijakan ini berubah, versi barunya akan dipublikasikan di sini dengan tanggal baru. UsageNow tidak ditujukan untuk anak-anak. Pertanyaan tentang privasi dapat dikirim ke email dukungan di bawah."}
+  ]
+ }
 }
