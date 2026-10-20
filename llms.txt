@@ -1,0 +1,17 @@
+# UsageNow: AI Usage Tracker support
+
+> Official support, help and privacy pages for UsageNow: AI Usage Tracker, an iOS app by Lumi Studio.
+
+- App Store: https://apps.apple.com/app/id6818607603
+- Platform: iOS
+- App Store category: Developer Tools
+- Developer: Lumi Studio
+
+## Pages
+
+- [Home](https://open.cait518.cc/usagenow-support/)
+- [Help, FAQ and troubleshooting](https://open.cait518.cc/usagenow-support/help.html)
+- [Support and contact](https://open.cait518.cc/usagenow-support/support.html)
+- [Privacy policy](https://open.cait518.cc/usagenow-support/privacy.html)
+
+<!-- ls-llms: managed by support_network/gen_support_crosspromo.py -->
