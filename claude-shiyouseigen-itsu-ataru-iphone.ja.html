@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude の使用制限にいつ当たる？5時間・週間上限を iPhone で先読みする</title>
+<meta name="description" content="Claude の使用制限（5時間のセッション上限と週間上限）にいつ当たるのかを、残りのパーセンテージとリセット時刻から先読みする考え方と、iPhone のウィジェットとアラートで確認する方法。">
+<link rel="canonical" href="https://open.cait518.cc/usagenow-support/claude-shiyouseigen-itsu-ataru-iphone.ja.html">
+<meta property="og:title" content="Claude の使用制限にいつ当たる？5時間・週間上限を iPhone で先読みする">
+<meta property="og:description" content="Claude の使用制限（5時間のセッション上限と週間上限）にいつ当たるのかを、残りのパーセンテージとリセット時刻から先読みする考え方と、iPhone のウィジェットとアラートで確認する方法。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://open.cait518.cc/usagenow-support/claude-shiyouseigen-itsu-ataru-iphone.ja.html">
+<meta name="apple-itunes-app" content="app-id=6818607603">
+<style>
+:root{color-scheme:light dark;--bg:#fbfaf7;--fg:#1d1d1f;--muted:#5f6368;--line:rgba(128,128,128,.22);--accent:#2f6fde;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--fg:#ececf0;--muted:#a3a3ab;--card:#1d1d21;--accent:#7aa7ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","PingFang TC","Noto Sans CJK TC","Apple SD Gothic Neo",Roboto,sans-serif}
+a{color:var(--accent)}
+.helpdoc{max-width:820px;margin:0 auto;padding:28px 16px 64px}
+.helpdoc h1{font-size:clamp(26px,4.4vw,36px);line-height:1.3;margin:.2em 0 .4em}
+.helpdoc h2{font-size:clamp(19px,2.8vw,24px);margin:2.1em 0 .6em;scroll-margin-top:16px}
+.helpdoc h3{font-size:17px;margin:1.5em 0 .35em}
+.helpdoc .lede{font-size:17.5px;color:var(--muted);margin:0 0 1.4em}
+.helpdoc .hd-nav{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;margin:0 0 20px}
+.helpdoc .hd-toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;padding:0;list-style:none}
+.helpdoc .hd-toc a{display:inline-block;padding:5px 12px;border:1px solid var(--line);border-radius:999px;font-size:13.5px;text-decoration:none}
+.helpdoc .tbl{overflow-x:auto;margin:.8em 0}
+.helpdoc table{width:100%;border-collapse:collapse;font-size:15px}
+.helpdoc th,.helpdoc td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.helpdoc th{font-weight:650;white-space:nowrap}
+.helpdoc .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:1em 0}
+.helpdoc .cta{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:2.4em 0 1em}
+.helpdoc .cta a.btn{display:inline-block;margin:6px 0;padding:11px 20px;border-radius:999px;background:var(--accent);color:#fff;font-weight:650;text-decoration:none}
+.helpdoc .hd-q{margin:1.4em 0 .3em;font-weight:650;font-size:16.5px}
+.helpdoc .hd-a{margin:0 0 .2em}
+.helpdoc .hd-note{font-size:13px;color:var(--muted);margin-top:2.6em;border-top:1px solid var(--line);padding-top:14px}
+.helpdoc ul,.helpdoc ol{padding-left:1.25em}
+.helpdoc li{margin:.3em 0}
+@media print{.hd-nav,.cta,.hd-toc{display:none}body{background:#fff;color:#000}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Claude の使用制限にいつ当たる？5時間・週間上限を iPhone で先読みする", "description": "Claude の使用制限（5時間のセッション上限と週間上限）にいつ当たるのかを、残りのパーセンテージとリセット時刻から先読みする考え方と、iPhone のウィジェットとアラートで確認する方法。", "inLanguage": "ja", "mainEntityOfPage": "https://open.cait518.cc/usagenow-support/claude-shiyouseigen-itsu-ataru-iphone.ja.html", "dateModified": "2026-10-20", "author": {"@type": "Organization", "@id": "https://open.cait518.cc/ios-app-guide/#organization", "name": "Lumi Studio", "url": "https://open.cait518.cc/ios-app-guide/about.html"}, "publisher": {"@type": "Organization", "@id": "https://open.cait518.cc/ios-app-guide/#organization", "name": "Lumi Studio", "url": "https://open.cait518.cc/ios-app-guide/about.html"}, "about": {"@type": "SoftwareApplication", "name": "UsageNow：AI使用量トラッカー", "operatingSystem": "iOS", "applicationCategory": "DeveloperApplication", "url": "https://apps.apple.com/app/id6818607603"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ja", "mainEntity": [{"@type": "Question", "name": "Claude の使用制限にはどんな種類がありますか？", "acceptedAnswer": {"@type": "Answer", "text": "UsageNow が表示する Claude の上限は、5時間のセッション上限と週間上限（モデル別の週間上限を含む）です。上限の量やリセットのタイミングを決めるのは Anthropic です。"}}, {"@type": "Question", "name": "使用制限にいつ当たるかを iPhone で確認できますか？", "acceptedAnswer": {"@type": "Answer", "text": "UsageNow のウィジェットで、各上限の残りとリセットまでのカウントダウン、正確なリセット時刻を確認できます。自分で決めたパーセンテージに達したときにアラートを受け取ることもできます。"}}, {"@type": "Question", "name": "5時間の枠がリセットされたのに、また止まりました。なぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "週間上限は5時間の枠とは別に進んでいます。週間上限の残りが少ないと、5時間の枠に余裕があってもそちらに先に当たります。UsageNow では両方の残りを並べて確認できます。"}}, {"@type": "Question", "name": "上限が戻ったことを知る方法はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "リセットアラートをオンにすると、上限が戻った瞬間に通知が届きます。"}}, {"@type": "Question", "name": "Codex や Copilot の使用制限も一緒に見られますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。ChatGPT Codex の5時間枠と週間枠、GitHub Copilot のプレミアムリクエスト・チャット・コード補完、Gemini のモデルごとの1日あたりのリクエスト上限も表示できます。"}}]}</script>
+</head>
+<body>
+<p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">当サイトは掲載アプリの開発者であるLumi Studioが運営し、自社アプリを紹介しています。</p>
+<main class="helpdoc">
+<nav class="hd-nav"><a href="./">サポートトップ</a><a href="ja/support.html">ヘルプ・よくある質問</a><a href="https://apps.apple.com/jp/app/id6818607603?pt=118326163&amp;ct=bm_usagenow_jp_seo&amp;mt=8">UsageNow：AI使用量トラッカー</a></nav>
+<h1>Claude の使用制限にいつ当たるかを iPhone で確認する：5時間上限と週間上限の先読み</h1>
+<p class="lede">「<strong>Claude の使用制限</strong>に当たりました」と表示されてから慌てるより、あとどれくらいで当たりそうかを先に知っておきたい。そう思って検索した人向けのページです。Claude の使用制限には周期の違う上限があり、どちらに先に当たるかで取るべき行動が変わります。ここでは上限の種類、当たるタイミングの読み方、当たったときの動き方を整理し、iPhone のホーム画面で先回りして確認する方法を紹介します。</p>
+<p><strong>このページの内容</strong></p>
+<ul class="hd-toc"><li><a href="#shurui">Claude の使用制限は「2つの時計」で動いている</a></li><li><a href="#yomi">いつ当たるかは「残り％」と「リセットまでの時間」で読む</a></li><li><a href="#alert">当たる前に知らせてもらう：パーセンテージで決めるアラート</a></li><li><a href="#atatta">使用制限に当たってしまったときの動き方</a></li><li><a href="#iphone">iPhone・iPad・Apple Watch で先回りして見る</a></li><li><a href="#faq">よくある質問</a></li></ul>
+<h2 id="shurui">Claude の使用制限は「2つの時計」で動いている</h2>
+<p>Claude の使用制限は、ひとつの残量メーターではありません。UsageNow が表示している Claude の上限は次の2種類です。</p><div class="tbl"><table><thead><tr><th>上限</th><th>周期</th><th>当たったときの感覚</th></tr></thead><tbody><tr><td>5時間のセッション上限</td><td>短い（5時間の枠）</td><td>作業の途中で突然止まるが、待てば比較的早く戻る</td></tr><tr><td>週間上限（モデル別の週間上限を含む）</td><td>長い（1週間の枠）</td><td>週の後半に効いてくる。戻るまで日単位で待つことがある</td></tr></tbody></table></div><p>ポイントは、2つの時計が別々に進んでいることです。5時間の枠がリセットされた直後でも、週間上限の残りが少なければ、そちらに先に当たります。逆に週間上限に余裕があっても、短時間に集中して使えば5時間の枠に当たります。上限の量やリセットのタイミングを決めるのは Anthropic で、UsageNow はその数値を表示するだけです。</p>
+<h2 id="yomi">いつ当たるかは「残り％」と「リセットまでの時間」で読む</h2>
+<p>使用制限にいつ当たるかを予想するときに見るのは、残りのパーセンテージと、リセットまでのカウントダウンの2つです。この組み合わせで、次の行動をだいたい決められます。</p><div class="tbl"><table><thead><tr><th>状況</th><th>読み方</th><th>次の行動の目安</th></tr></thead><tbody><tr><td>残りが多い・リセットまで長い</td><td>しばらく当たらない</td><td>そのまま重い作業を始めてよい</td></tr><tr><td>残りが少ない・リセットがすぐ</td><td>当たっても短い待ちで済む</td><td>長いエージェント実行は数分待ってから始める</td></tr><tr><td>残りが少ない・リセットまで長い</td><td>近いうちに当たり、しばらく戻らない</td><td>作業を区切る、別のアカウントに切り替える</td></tr><tr><td>週間上限の残りが少ない</td><td>週の後半に止まりやすい</td><td>重い作業の配分を週の初めから考える</td></tr></tbody></table></div><p>UsageNow は、それぞれの上限についてリセットまでのカウントダウンに加えて、正確なリセット時刻をお住まいの地域の表記で表示します。「あと何分」と「何時何分に戻るか」の両方が見えるので、会議や移動の予定と照らし合わせやすくなります。</p>
+<h2 id="alert">当たる前に知らせてもらう：パーセンテージで決めるアラート</h2>
+<p>使用量を見られるようにしても、集中しているときはまず見ません。そこで、当たりそうなときだけ知らせてもらうのが現実的です。UsageNow では、5時間の上限、週間上限、またはすべての上限を選び、気になるパーセンテージ（90や98など）を入力してアラートを作れます。アラートはいくつでも追加できます。</p><ul><li>5時間の上限：作業を区切る合図にする値と、ぎりぎりの値の2つを用意する</li><li>週間上限：週の途中で慌てないように、5時間の上限とは別に用意する</li><li>リセットアラート：オンにすると上限が戻った瞬間にわかり、止まっていた作業をすぐ再開できる</li></ul><p>アラートは上限ごと・サイクルごとに1回だけ届くので、ロック画面が通知だらけになることはありません。ウィジェットの置き方など、最初の設定手順は<a href="claude-code-shiyouryou-iphone-kakunin.ja.html">Claude Code の使用量を iPhone で確認する方法</a>にまとめています。</p>
+<h2 id="atatta">使用制限に当たってしまったときの動き方</h2>
+<ol><li>まずリセット時刻を確認する。5時間の枠なのか週間上限なのかで、待つ時間の桁が変わります。</li><li>5時間の枠ならリセットまでのカウントダウンを見て、待つか、ほかの作業を先に片づけるかを決めます。</li><li>仕事用と個人用など複数のアカウントがあるなら、5時間リセットが近い順・週間リセットが近い順に並べ替えて、余裕のあるアカウントを探します。</li><li>リセットアラートをオンにしておけば、戻った瞬間に通知が届くので、画面を見張っている必要はありません。</li></ol><p>複数アカウントの並べ替えや、Codex・Copilot・Gemini との使い分けは<a href="claude-codex-shiyouryou-kanri-app.ja.html">Claude・Codex・Copilot の使用量をまとめて管理するアプリ</a>で詳しく紹介しています。</p>
+<h2 id="iphone">iPhone・iPad・Apple Watch で先回りして見る</h2>
+<p>ホーム画面とロック画面のウィジェットは全サイズが用意されていて、ウィジェット上ですべてのアカウントをめくって確認できます。最新の数値が見たいときはウィジェットをタップすれば更新されます。Apple Watch のコンプリケーションにも対応しているので、会議中でも手首で残りを確認できます。</p><p>サインインは各サービス公式のログインページで行い、サインイン情報はデバイスのキーチェーンに保存されます。UsageNow が通信するのは各サービスだけで、UsageNow のサーバやアカウント登録、トラッキングはありません。</p><div class="box"><p><strong>料金について：</strong>アプリ内で24時間の無料トライアルを開始すると、ウィジェットを含むすべての機能を使えます。その後も使い続けるには1回限りの購入でロックを解除します。サブスクリプションはありません。価格はアプリ内とお住まいの国の App Store で確認できます。</p></div>
+<div class="cta">
+<p><strong>iPhone でそのまま試すなら</strong> UsageNow なら、Claude の5時間のセッション上限と週間上限の残り、リセットまでのカウントダウンをホーム画面で確認し、使用制限に当たる前にアラートで知らせてもらえます。</p>
+<p><a class="btn" href="https://apps.apple.com/jp/app/id6818607603?pt=118326163&amp;ct=bm_usagenow_jp_seo&amp;mt=8">App Store で UsageNow：AI使用量トラッカー を見る</a></p>
+<p>UsageNow：AI使用量トラッカー をお使いの方は、App Store で評価やレビューを書くことができます。 <a href="https://apps.apple.com/app/id6818607603?action=write-review">レビューを書く</a></p>
+</div>
+<h2 id="faq">よくある質問</h2>
+<p class="hd-q">Claude の使用制限にはどんな種類がありますか？</p>
+<p class="hd-a">UsageNow が表示する Claude の上限は、5時間のセッション上限と週間上限（モデル別の週間上限を含む）です。上限の量やリセットのタイミングを決めるのは Anthropic です。</p>
+<p class="hd-q">使用制限にいつ当たるかを iPhone で確認できますか？</p>
+<p class="hd-a">UsageNow のウィジェットで、各上限の残りとリセットまでのカウントダウン、正確なリセット時刻を確認できます。自分で決めたパーセンテージに達したときにアラートを受け取ることもできます。</p>
+<p class="hd-q">5時間の枠がリセットされたのに、また止まりました。なぜですか？</p>
+<p class="hd-a">週間上限は5時間の枠とは別に進んでいます。週間上限の残りが少ないと、5時間の枠に余裕があってもそちらに先に当たります。UsageNow では両方の残りを並べて確認できます。</p>
+<p class="hd-q">上限が戻ったことを知る方法はありますか？</p>
+<p class="hd-a">リセットアラートをオンにすると、上限が戻った瞬間に通知が届きます。</p>
+<p class="hd-q">Codex や Copilot の使用制限も一緒に見られますか？</p>
+<p class="hd-a">はい。ChatGPT Codex の5時間枠と週間枠、GitHub Copilot のプレミアムリクエスト・チャット・コード補完、Gemini のモデルごとの1日あたりのリクエスト上限も表示できます。</p>
+
+<div class="box"><p>UsageNowは独立したアプリであり、Anthropic、OpenAI、GitHub、Microsoft、Googleとは提携していません。Claude、ChatGPT、Codex、GitHub Copilot、Geminiは各所有者の商標です。各サービスにどのような上限があり、いつリセットされるかを決めるのはそれぞれの提供元であり、UsageNowはその数値を表示するだけです。</p></div>
+<h2 id="related">関連ガイド</h2>
+<ul><li><a href="claude-code-shiyouryou-iphone-kakunin.ja.html">Claude Code の使用量を iPhone で確認する方法：5時間のセッション上限と週間上限</a></li><li><a href="claude-codex-shiyouryou-kanri-app.ja.html">Claude・Codex・Copilot・Gemini の使用量を、複数アカウントまとめて管理する</a></li></ul>
+<p class="hd-note">このページは UsageNow：AI使用量トラッカー の開発者が AI の補助を受けて作成し、App Store の掲載内容と照合しました。最終更新：2026-10-20。</p>
+</main>
+</body>
+</html>
