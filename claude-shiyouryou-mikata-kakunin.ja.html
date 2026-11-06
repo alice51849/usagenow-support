@@ -41,22 +41,11 @@ a{color:var(--accent)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Claude の使用量の見方と確認方法：残り％・リセット時刻・減るペース", "description": "Claude の使用量は5時間のセッション上限と週間上限の2つの枠で見ます。残りのパーセンテージとリセット時刻の読み方、使用量が減るペースのつかみ方、複数アカウントの比べ方、iPhone のウィジェットで確認する方法をまとめました。", "inLanguage": "ja", "mainEntityOfPage": "https://open.cait518.cc/usagenow-support/claude-shiyouryou-mikata-kakunin.ja.html", "dateModified": "2026-10-20", "author": {"@type": "Organization", "@id": "https://open.cait518.cc/ios-app-guide/#organization", "name": "Lumi Studio", "url": "https://open.cait518.cc/ios-app-guide/about.html"}, "publisher": {"@type": "Organization", "@id": "https://open.cait518.cc/ios-app-guide/#organization", "name": "Lumi Studio", "url": "https://open.cait518.cc/ios-app-guide/about.html"}, "about": {"@type": "SoftwareApplication", "name": "UsageNow：AI使用量トラッカー", "operatingSystem": "iOS", "applicationCategory": "DeveloperApplication", "url": "https://apps.apple.com/app/id6818607603"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ja", "mainEntity": [{"@type": "Question", "name": "Claude の使用量はどこで確認できますか？", "acceptedAnswer": {"@type": "Answer", "text": "UsageNow を使えば、Claude の5時間のセッション上限と週間上限（モデル別の週間上限も含む）の残りとリセット時刻を、iPhone のホーム画面やロック画面のウィジェットで確認できます。"}}, {"@type": "Question", "name": "使用量の％は「使った量」と「残り」のどちらを見ればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "判断に使うのは各枠の残りと、リセットまでの時間の組み合わせです。残りが少なくてもリセットが近ければ短い待ちで済みます。"}}, {"@type": "Question", "name": "5時間の枠は残っているのに止まるのはなぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "週間上限は5時間の枠とは別に進んでいます。週間上限の残りが少ないと、そちらに先に当たります。"}}, {"@type": "Question", "name": "複数アカウントの使用量を比べられますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。UsageNow では使用量の多い順・少ない順や、5時間・週間リセットが近い順にアカウントを並べ替えられます。"}}, {"@type": "Question", "name": "使用量が少なくなったら通知できますか？", "acceptedAnswer": {"@type": "Answer", "text": "5時間の上限、週間上限、またはすべての上限について、自分で入力したパーセンテージに達したときにアラートが届きます。上限ごと・サイクルごとに1回だけです。"}}, {"@type": "Question", "name": "UsageNow は Anthropic の公式アプリですか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。UsageNow は独立したアプリで、Anthropic、OpenAI、GitHub、Microsoft、Google とは提携していません。"}}]}</script>
-<!-- ls-sharecard:start -->
-<meta property="og:site_name" content="UsageNow: AI Usage Tracker">
-<meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://open.cait518.cc/usagenow-support/assets/og.png?v=465dfee9a4">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="UsageNow: AI Usage Tracker — Claude, Codex &amp; Copilot Limits">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="max-image-preview:large">
-<!-- ls-sharecard:end -->
 </head>
 <body>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">当サイトは掲載アプリの開発者であるLumi Studioが運営し、自社アプリを紹介しています。</p>
 <main class="helpdoc">
-<nav class="hd-nav"><a href="./">サポートトップ</a><a href="ja/support.html">ヘルプ・よくある質問</a><a href="https://apps.apple.com/jp/app/id6818607603?pt=118326163&amp;ct=bm_usagenow_jp_seo&amp;mt=8">UsageNow：AI使用量トラッカー</a></nav>
+<nav class="hd-nav"><a href="./">サポートトップ</a><a href="ja/support.html">ヘルプ・よくある質問</a><a href="https://apps.apple.com/jp/app/id6818607603?pt=118326163&amp;ct=bm_usagenow_jp_seo&amp;mt=8">UsageNow：AI使用量トラッカー</a><a href="https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&amp;referrer=utm_source%3Dbm_usagenow_jp_seo%26utm_campaign%3Dclaudeusagemini" rel="noopener" data-ls-play="nav">Google Play</a></nav>
 <h1>Claude の使用量の見方と確認方法：残り％、リセット時刻、減るペースをつかむ</h1>
 <p class="lede"><strong>Claude の使用量は「5時間のセッション上限」と「週間上限（モデル別の週間上限を含む）」の2つの枠で確認します。</strong>見るべき数字は、それぞれの枠の残りのパーセンテージと、リセットされる時刻の2つです。このページでは、使用量の数字の読み方、自分の使用量がどれくらいのペースで減るのかのつかみ方、複数アカウントの比べ方を整理し、iPhone のホーム画面でいつでも確認できるようにする方法を紹介します。</p>
 <p><strong>このページの内容</strong></p>
@@ -70,10 +59,12 @@ a{color:var(--accent)}
 <h2 id="accounts">複数アカウントの使用量を比べる</h2>
 <p>仕事用と個人用、Pro と Max のようにアカウントを使い分けているなら、使用量はアカウントごとに比べる必要があります。UsageNow では、すべてのアカウントを並べて表示し、次の順で並べ替えられます。</p><ul><li>5時間リセットが近い順・週間リセットが近い順</li><li>使用量の多い順・少ない順</li><li>名前順・サービス順、またはドラッグで自由な順番</li></ul><p>「使用量の少ない順」に並べれば、いま余裕のあるアカウントがすぐわかります。ウィジェット上でもすべてのアカウントをめくって確認できます。Codex・Copilot・Gemini も含めた管理は<a href="claude-codex-shiyouryou-kanri-app.ja.html">Claude・Codex・Copilot の使用量をまとめて管理するアプリ</a>で紹介しています。</p>
 <h2 id="iphone">iPhone のホーム画面で Claude の使用量を確認する</h2>
-<ol><li>App Store から UsageNow をダウンロードして開きます。UsageNow 用のアカウント登録はありません。</li><li>Claude を追加し、Claude 公式のログインページでサインインします。サインイン情報はデバイスのキーチェーンに保存されます。</li><li>ホーム画面またはロック画面に UsageNow のウィジェットを置きます。ウィジェットは全サイズが用意されています。</li><li>最新の数値が見たいときはウィジェットをタップして更新します。Apple Watch のコンプリケーションでも確認できます。</li></ol><p>UsageNow が通信するのは各サービスだけで、UsageNow のサーバ、アカウント登録、トラッキングはありません。細かい設定の流れは<a href="claude-code-shiyouryou-iphone-kakunin.ja.html">Claude Code の使用量を iPhone で確認する方法</a>、上限に当たるタイミングの読み方は<a href="claude-shiyouseigen-itsu-ataru-iphone.ja.html">Claude の使用制限にいつ当たる？</a>にまとめています。</p><p>アプリ内で24時間の無料トライアルを開始すると、ウィジェットを含むすべての機能を使えます。その後も使い続けるには、1回限りの購入で UsageNow Pro のロックを解除します。サブスクリプションはありません。価格はアプリ内とお住まいの国の App Store で確認できます。</p>
+<ol><li>App Store から UsageNow をダウンロードして開きます。UsageNow 用のアカウント登録はありません。</li><li>Claude を追加し、Claude 公式のログインページでサインインします。サインイン情報はデバイスのキーチェーンに保存されます。</li><li>ホーム画面またはロック画面に UsageNow のウィジェットを置きます。ウィジェットは全サイズが用意されています。</li><li>最新の数値が見たいときはウィジェットをタップして更新します。Apple Watch のコンプリケーションでも確認できます。</li></ol><p>UsageNow が通信するのは各サービスだけで、UsageNow のサーバ、アカウント登録、トラッキングはありません。細かい設定の流れは<a href="claude-code-shiyouryou-iphone-kakunin.ja.html">Claude Code の使用量を iPhone で確認する方法</a>、上限に当たるタイミングの読み方は<a href="claude-shiyouseigen-itsu-ataru-iphone.ja.html">Claude の使用制限にいつ当たる？</a>にまとめています。</p><p>1アカウントの現在の使用量は、アプリで無料で見られます。複数アカウント、使用量アラート、ウィジェット、Apple Watch はUsageNow Pro の機能で、1回限りの購入でロックを解除します。サブスクリプションはありません。価格はアプリ内とお住まいの国の App Store で確認できます。</p>
 <div class="cta">
 <p><strong>iPhone でそのまま試すなら</strong> UsageNow なら、Claude の5時間のセッション上限と週間上限の残り、リセット時刻、複数アカウントの使用量をiPhone のホーム画面でひと目で確認できます。</p>
 <p><a class="btn" href="https://apps.apple.com/jp/app/id6818607603?pt=118326163&amp;ct=bm_usagenow_jp_seo&amp;mt=8">App Store で UsageNow：AI使用量トラッカー を見る</a></p>
+<p><strong>Android をお使いですか？</strong></p>
+<p><a class="btn" href="https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&amp;referrer=utm_source%3Dbm_usagenow_jp_seo%26utm_campaign%3Dclaudeusagemini" rel="noopener" data-ls-play="cta">Google Play で UsageNow：AI使用量トラッカー を見る</a></p>
 <p>UsageNow：AI使用量トラッカー をお使いの方は、App Store で評価やレビューを書くことができます。 <a href="https://apps.apple.com/app/id6818607603?action=write-review">レビューを書く</a></p>
 </div>
 <h2 id="faq">よくある質問</h2>

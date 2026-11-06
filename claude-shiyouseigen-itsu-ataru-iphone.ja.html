@@ -41,22 +41,11 @@ a{color:var(--accent)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Claude の使用制限にいつ当たる？5時間・週間上限を iPhone で先読みする", "description": "Claude の使用制限（5時間のセッション上限と週間上限）にいつ当たるのかを、残りのパーセンテージとリセット時刻から先読みする考え方と、iPhone のウィジェットとアラートで確認する方法。", "inLanguage": "ja", "mainEntityOfPage": "https://open.cait518.cc/usagenow-support/claude-shiyouseigen-itsu-ataru-iphone.ja.html", "dateModified": "2026-10-20", "author": {"@type": "Organization", "@id": "https://open.cait518.cc/ios-app-guide/#organization", "name": "Lumi Studio", "url": "https://open.cait518.cc/ios-app-guide/about.html"}, "publisher": {"@type": "Organization", "@id": "https://open.cait518.cc/ios-app-guide/#organization", "name": "Lumi Studio", "url": "https://open.cait518.cc/ios-app-guide/about.html"}, "about": {"@type": "SoftwareApplication", "name": "UsageNow：AI使用量トラッカー", "operatingSystem": "iOS", "applicationCategory": "DeveloperApplication", "url": "https://apps.apple.com/app/id6818607603"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ja", "mainEntity": [{"@type": "Question", "name": "Claude の使用制限にはどんな種類がありますか？", "acceptedAnswer": {"@type": "Answer", "text": "UsageNow が表示する Claude の上限は、5時間のセッション上限と週間上限（モデル別の週間上限を含む）です。上限の量やリセットのタイミングを決めるのは Anthropic です。"}}, {"@type": "Question", "name": "使用制限にいつ当たるかを iPhone で確認できますか？", "acceptedAnswer": {"@type": "Answer", "text": "UsageNow のウィジェットで、各上限の残りとリセットまでのカウントダウン、正確なリセット時刻を確認できます。自分で決めたパーセンテージに達したときにアラートを受け取ることもできます。"}}, {"@type": "Question", "name": "5時間の枠がリセットされたのに、また止まりました。なぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "週間上限は5時間の枠とは別に進んでいます。週間上限の残りが少ないと、5時間の枠に余裕があってもそちらに先に当たります。UsageNow では両方の残りを並べて確認できます。"}}, {"@type": "Question", "name": "上限が戻ったことを知る方法はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "リセットアラートをオンにすると、上限が戻った瞬間に通知が届きます。"}}, {"@type": "Question", "name": "Codex や Copilot の使用制限も一緒に見られますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。ChatGPT Codex の5時間枠と週間枠、GitHub Copilot のプレミアムリクエスト・チャット・コード補完、Gemini のモデルごとの1日あたりのリクエスト上限も表示できます。"}}]}</script>
-<!-- ls-sharecard:start -->
-<meta property="og:site_name" content="UsageNow: AI Usage Tracker">
-<meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://open.cait518.cc/usagenow-support/assets/og.png?v=465dfee9a4">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="UsageNow: AI Usage Tracker — Claude, Codex &amp; Copilot Limits">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="max-image-preview:large">
-<!-- ls-sharecard:end -->
 </head>
 <body>
 <p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">当サイトは掲載アプリの開発者であるLumi Studioが運営し、自社アプリを紹介しています。</p>
 <main class="helpdoc">
-<nav class="hd-nav"><a href="./">サポートトップ</a><a href="ja/support.html">ヘルプ・よくある質問</a><a href="https://apps.apple.com/jp/app/id6818607603?pt=118326163&amp;ct=bm_usagenow_jp_seo&amp;mt=8">UsageNow：AI使用量トラッカー</a></nav>
+<nav class="hd-nav"><a href="./">サポートトップ</a><a href="ja/support.html">ヘルプ・よくある質問</a><a href="https://apps.apple.com/jp/app/id6818607603?pt=118326163&amp;ct=bm_usagenow_jp_seo&amp;mt=8">UsageNow：AI使用量トラッカー</a><a href="https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&amp;referrer=utm_source%3Dbm_usagenow_jp_seo%26utm_campaign%3Dclaudeusagemini" rel="noopener" data-ls-play="nav">Google Play</a></nav>
 <h1>Claude の使用制限にいつ当たるかを iPhone で確認する：5時間上限と週間上限の先読み</h1>
 <p class="lede">「<strong>Claude の使用制限</strong>に当たりました」と表示されてから慌てるより、あとどれくらいで当たりそうかを先に知っておきたい。そう思って検索した人向けのページです。Claude の使用制限には周期の違う上限があり、どちらに先に当たるかで取るべき行動が変わります。ここでは上限の種類、当たるタイミングの読み方、当たったときの動き方を整理し、iPhone のホーム画面で先回りして確認する方法を紹介します。</p>
 <p><strong>このページの内容</strong></p>
@@ -70,10 +59,12 @@ a{color:var(--accent)}
 <h2 id="atatta">使用制限に当たってしまったときの動き方</h2>
 <ol><li>まずリセット時刻を確認する。5時間の枠なのか週間上限なのかで、待つ時間の桁が変わります。</li><li>5時間の枠ならリセットまでのカウントダウンを見て、待つか、ほかの作業を先に片づけるかを決めます。</li><li>仕事用と個人用など複数のアカウントがあるなら、5時間リセットが近い順・週間リセットが近い順に並べ替えて、余裕のあるアカウントを探します。</li><li>リセットアラートをオンにしておけば、戻った瞬間に通知が届くので、画面を見張っている必要はありません。</li></ol><p>複数アカウントの並べ替えや、Codex・Copilot・Gemini との使い分けは<a href="claude-codex-shiyouryou-kanri-app.ja.html">Claude・Codex・Copilot の使用量をまとめて管理するアプリ</a>で詳しく紹介しています。</p>
 <h2 id="iphone">iPhone・iPad・Apple Watch で先回りして見る</h2>
-<p>ホーム画面とロック画面のウィジェットは全サイズが用意されていて、ウィジェット上ですべてのアカウントをめくって確認できます。最新の数値が見たいときはウィジェットをタップすれば更新されます。Apple Watch のコンプリケーションにも対応しているので、会議中でも手首で残りを確認できます。</p><p>サインインは各サービス公式のログインページで行い、サインイン情報はデバイスのキーチェーンに保存されます。UsageNow が通信するのは各サービスだけで、UsageNow のサーバやアカウント登録、トラッキングはありません。</p><div class="box"><p><strong>料金について：</strong>アプリ内で24時間の無料トライアルを開始すると、ウィジェットを含むすべての機能を使えます。その後も使い続けるには1回限りの購入でロックを解除します。サブスクリプションはありません。価格はアプリ内とお住まいの国の App Store で確認できます。</p></div>
+<p>ホーム画面とロック画面のウィジェットは全サイズが用意されていて、ウィジェット上ですべてのアカウントをめくって確認できます。最新の数値が見たいときはウィジェットをタップすれば更新されます。Apple Watch のコンプリケーションにも対応しているので、会議中でも手首で残りを確認できます。</p><p>サインインは各サービス公式のログインページで行い、サインイン情報はデバイスのキーチェーンに保存されます。UsageNow が通信するのは各サービスだけで、UsageNow のサーバやアカウント登録、トラッキングはありません。</p><div class="box"><p><strong>料金について：</strong>1アカウントの現在の使用量はアプリで無料で見られます。複数アカウント、使用量アラート、ウィジェット、Apple Watch は1回限りの購入で UsageNow Pro のロックを解除すると使えます。サブスクリプションはありません。価格はアプリ内とお住まいの国の App Store で確認できます。</p></div>
 <div class="cta">
 <p><strong>iPhone でそのまま試すなら</strong> UsageNow なら、Claude の5時間のセッション上限と週間上限の残り、リセットまでのカウントダウンをホーム画面で確認し、使用制限に当たる前にアラートで知らせてもらえます。</p>
 <p><a class="btn" href="https://apps.apple.com/jp/app/id6818607603?pt=118326163&amp;ct=bm_usagenow_jp_seo&amp;mt=8">App Store で UsageNow：AI使用量トラッカー を見る</a></p>
+<p><strong>Android をお使いですか？</strong></p>
+<p><a class="btn" href="https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&amp;referrer=utm_source%3Dbm_usagenow_jp_seo%26utm_campaign%3Dclaudeusagemini" rel="noopener" data-ls-play="cta">Google Play で UsageNow：AI使用量トラッカー を見る</a></p>
 <p>UsageNow：AI使用量トラッカー をお使いの方は、App Store で評価やレビューを書くことができます。 <a href="https://apps.apple.com/app/id6818607603?action=write-review">レビューを書く</a></p>
 </div>
 <h2 id="faq">よくある質問</h2>
