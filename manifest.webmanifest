@@ -1,0 +1,26 @@
+{
+  "name": "UsageNow: AI Usage Tracker",
+  "short_name": "UsageNow: AI Usage Tracker",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d0/91/38/d09138a3-0e71-bc9c-a68f-0ce2239e310a/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.alice51849.ClaudeUsageMini",
+      "url": "https://play.google.com/store/apps/details?id=com.alice51849.ClaudeUsageMini&referrer=utm_source%3Dsupport_site%26utm_medium%3Dpwa_banner%26utm_campaign%3Dclaudeusagemini"
+    }
+  ],
+  "prefer_related_applications": true,
+  "x_generator": "ls-pwa/1"
+}
