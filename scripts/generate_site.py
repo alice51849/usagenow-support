@@ -8,6 +8,7 @@ import datetime
 import html
 import json
 import pathlib
+import re
 import urllib.parse
 from typing import Any
 
@@ -134,6 +135,45 @@ PAGE_KEYS = {
     "privacy": {"title", "summary", "updated_label", "section_title", "sections"},
 }
 SECTION_KEYS = {"id", "title", "body"}
+# Optional per-locale blocks: an extra Android (Google Play) section and a
+# locale-specific policy date. Only locales whose source carries them render them.
+OPTIONAL_PAGE_KEYS = {
+    "home": set(),
+    "support": {"android"},
+    "privacy": {"android", "updated"},
+}
+ANDROID_KEYS = {
+    "support": {"title", "sections"},
+    "privacy": {"title", "summary", "sections"},
+}
+# Since 2026-10-18 the shared support network in 00_GrowthEngine
+# (support_network/gen_support_i18n.py) owns the localized index and support
+# pages of every non-English locale and refreshes them from the App Store
+# listing. This generator owns the English pages and every privacy page; it
+# never writes the network-owned pages, so the two generators do not overwrite
+# each other.
+ENGLISH_LOCALES = {"en-AU", "en-CA", "en-GB", "en-US"}
+NETWORK_OWNED_PAGES = ("index", "support")
+
+
+def network_owned(locale: str | None, page: str) -> bool:
+    return locale is not None and locale not in ENGLISH_LOCALES and page in NETWORK_OWNED_PAGES
+
+
+# The same network injects marked blocks into every page it serves (cross-promo
+# footer, share card, app banner, app JSON-LD, PWA manifest link, anonymous click
+# counter: <!-- ls-*:start --> ... <!-- ls-*:end -->) plus the first-party
+# disclosure (data-first-party-disclosure). It also owns sitemap.xml and
+# robots.txt, which it rewrites for the custom domain. Comparisons strip these
+# managed blocks so this generator checks only the markup it owns.
+NETWORK_BLOCK_RE = re.compile(r"<!-- (ls-[a-z0-9-]+):start -->.*?<!-- \1:end -->\n?", re.S)
+NETWORK_DISCLOSURE_RE = re.compile(
+    r'<(script|p)\b[^>]*\bdata-first-party-disclosure="[a-z-]+"[^>]*>.*?</\1>\n?', re.S
+)
+
+
+def strip_network_blocks(text: str) -> str:
+    return NETWORK_DISCLOSURE_RE.sub("", NETWORK_BLOCK_RE.sub("", text))
 
 
 def esc(value: str) -> str:
@@ -195,10 +235,13 @@ BRAND = SITE["brand"]
 SHORT_BRAND = SITE["short_brand"]
 
 
-def validate_sections(locale: str, page: str, value: object) -> list[dict[str, str]]:
+def validate_sections(
+    locale: str, page: str, value: object, expected_ids: tuple[str, ...] | None = None
+) -> list[dict[str, str]]:
     if not isinstance(value, list):
         raise SystemExit(f"{locale}.{page}.sections: expected a list")
-    expected_ids = SECTION_IDS[page]
+    if expected_ids is None:
+        expected_ids = SECTION_IDS[page]
     if len(value) != len(expected_ids):
         raise SystemExit(f"{locale}.{page}.sections: wrong section count")
     sections: list[dict[str, str]] = []
@@ -239,11 +282,33 @@ def load_translations() -> dict[str, dict[str, Any]]:
             require_text(item["contact"][key], f"{locale}.contact.{key}")
         for page in ("home", "support", "privacy"):
             block = item[page]
-            if not isinstance(block, dict) or set(block) != PAGE_KEYS[page]:
+            if (
+                not isinstance(block, dict)
+                or not PAGE_KEYS[page] <= set(block)
+                or not set(block) <= PAGE_KEYS[page] | OPTIONAL_PAGE_KEYS[page]
+            ):
                 raise SystemExit(f"{locale}.{page}: keys are not exact")
             for key in PAGE_KEYS[page] - {"sections"}:
                 require_text(block[key], f"{locale}.{page}.{key}")
             block["sections"] = validate_sections(locale, page, block["sections"])
+            if "updated" in block:
+                try:
+                    datetime.date.fromisoformat(require_text(block["updated"], f"{locale}.{page}.updated"))
+                except ValueError as error:
+                    raise SystemExit(f"{locale}.{page}.updated must be an ISO calendar date") from error
+            if "android" in block:
+                android = block["android"]
+                if not isinstance(android, dict) or set(android) != ANDROID_KEYS[page]:
+                    raise SystemExit(f"{locale}.{page}.android: keys are not exact")
+                for key in ANDROID_KEYS[page] - {"sections"}:
+                    require_text(android[key], f"{locale}.{page}.android.{key}")
+                raw = android["sections"]
+                ids = tuple(s.get("id", "") for s in raw) if isinstance(raw, list) else ()
+                if not ids or len(set(ids)) != len(ids) or not all(
+                    isinstance(i, str) and i.startswith("android_") for i in ids
+                ):
+                    raise SystemExit(f"{locale}.{page}.android: section ids must be unique android_* ids")
+                android["sections"] = validate_sections(locale, f"{page}.android", raw, ids)
         translations[locale] = item
     return translations
 
@@ -332,6 +397,32 @@ def section_markup(page: str, item: dict[str, Any]) -> str:
     )
 
 
+def android_markup(page: str, item: dict[str, Any]) -> str:
+    android = item[page].get("android")
+    if not android:
+        return ""
+    cards = "".join(
+        (
+            f'\n    <li><article class="card" data-fact="{esc(section["id"])}">'
+            f'<h3>{esc(section["title"])}</h3><p>{esc(section["body"])}</p>'
+            "</article></li>"
+        )
+        for section in android["sections"]
+    )
+    lead = (
+        f'\n  <p class="lead">{esc(android["summary"])}</p>' if "summary" in android else ""
+    )
+    return (
+        f'\n    <section aria-labelledby="android-{page}-heading">\n'
+        f'  <h2 class="section-heading" id="android-{page}-heading">{esc(android["title"])}</h2>'
+        f"{lead}\n"
+        '  <ul class="section-grid policy-grid" role="list">'
+        f"{cards}\n"
+        "  </ul>\n"
+        "</section>"
+    )
+
+
 def contact_markup(item: dict[str, Any]) -> str:
     contact = item["contact"]
     return (
@@ -366,9 +457,10 @@ def render_page(
         if is_router
         else ""
     )
+    page_updated = block.get("updated", UPDATED)
     updated = (
         f'\n        <p class="updated">{esc(block["updated_label"])}: '
-        f'<time datetime="{UPDATED}" dir="ltr">{UPDATED}</time></p>'
+        f'<time datetime="{page_updated}" dir="ltr">{page_updated}</time></p>'
         if page == "privacy"
         else ""
     )
@@ -427,7 +519,7 @@ def render_page(
         <img class="hero-mark" src="{asset_href(locale, "site-mark.svg")}" width="256" height="256" alt="">
       </div>
     </header>
-    {section_markup(source_page, item)}
+    {section_markup(source_page, item)}{android_markup(source_page, item)}
     {contact_markup(item)}
   </main>
   <footer class="site-footer">
@@ -455,23 +547,38 @@ def render_sitemap() -> str:
 
 
 def expected_outputs(translations: dict[str, dict[str, Any]]) -> dict[pathlib.Path, str]:
-    outputs = {
+    return {
         output_path(locale, page): render_page(translations, locale, page)
         for locale in (None, *LOCALES)
         for page in PAGES
+        if not network_owned(locale, page)
     }
-    outputs[ROOT / "sitemap.xml"] = render_sitemap()
-    outputs[ROOT / "robots.txt"] = (
-        f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}sitemap.xml\n"
-    )
-    return outputs
+
+
+def network_owned_paths() -> set[pathlib.Path]:
+    return {
+        output_path(locale, page)
+        for locale in LOCALES
+        for page in PAGES
+        if network_owned(locale, page)
+    }
+
+
+def is_current(path: pathlib.Path, expected: str) -> bool:
+    return path.is_file() and strip_network_blocks(path.read_text(encoding="utf-8")) == expected
 
 
 def write_outputs(outputs: dict[pathlib.Path, str]) -> None:
+    written = 0
     for path, text in outputs.items():
+        # Up-to-date pages are left alone so the network's managed blocks stay;
+        # a rewritten page gets them back on the network's next daily run.
+        if is_current(path, text):
+            continue
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(text, encoding="utf-8", newline="\n")
-    print(f"Generated {3 * (len(LOCALES) + 1)} HTML pages for {len(LOCALES)} locales.")
+        written += 1
+    print(f"Generated {len(outputs)} owned HTML pages for {len(LOCALES)} locales ({written} rewritten).")
 
 
 def check_outputs(outputs: dict[pathlib.Path, str]) -> None:
@@ -479,10 +586,14 @@ def check_outputs(outputs: dict[pathlib.Path, str]) -> None:
     for path, expected in outputs.items():
         if not path.is_file():
             failures.append(f"missing {path.relative_to(ROOT)}")
-        elif path.read_text(encoding="utf-8") != expected:
+        elif not is_current(path, expected):
             failures.append(f"stale {path.relative_to(ROOT)}")
     expected_html = {path.resolve() for path in outputs if path.suffix == ".html"}
-    actual_html = {path.resolve() for path in ROOT.rglob("*.html")}
+    expected_html |= {path.resolve() for path in network_owned_paths()}
+    # Network intent / help pages live only at the site root.
+    actual_html = {
+        path.resolve() for path in ROOT.rglob("*.html") if path.parent.resolve() != ROOT.resolve()
+    } | {path.resolve() for path in outputs if path.parent == ROOT}
     failures.extend(
         f"unexpected {path.relative_to(ROOT.resolve())}"
         for path in sorted(actual_html - expected_html)

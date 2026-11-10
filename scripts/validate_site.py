@@ -28,12 +28,21 @@ from generate_site import (  # noqa: E402
     SITE,
     expected_outputs,
     load_translations,
+    network_owned,
+    network_owned_paths,
     page_url,
-    render_sitemap,
     relative_page_href,
+    strip_network_blocks,
 )
 
 EXPECTED_PAGES = 3 * (len(LOCALES) + 1)
+# Files the shared support network (00_GrowthEngine support_network) adds next to
+# the generated site: root-level intent / help pages, llms.txt, bm-sitemap.xml,
+# the PWA manifest, the IndexNow key file, the share-card image, and the
+# sitemap.xml / robots.txt it rewrites for the custom domain.
+NETWORK_ROOT_SUFFIXES = {".html", ".txt", ".xml", ".webmanifest"}
+NETWORK_ASSETS = {ROOT / "assets" / "og.png"}
+CUSTOM_DOMAIN_BASE = "https://open.cait518.cc/usagenow-support/"
 FORBIDDEN_PUBLIC_EMAIL = "alice51849" + "@" + "hotmail.com"
 PLACEHOLDER_RE = re.compile(
     r"\b(?:TODO|TBD|FIXME)\b|(?i:lorem ipsum)|\?\?\?|\{\{|ZXQ(?:TERM|SEG)"
@@ -435,7 +444,7 @@ def parse_pages(
     for path in paths:
         if not path.is_file():
             continue
-        text = path.read_text(encoding="utf-8")
+        text = strip_network_blocks(path.read_text(encoding="utf-8"))
         parser = PageParser()
         parser.feed(text)
         parser.close()
@@ -475,9 +484,10 @@ def check_page(
     parser: PageParser,
     parsed_pages: dict[pathlib.Path, PageParser],
     errors: list[str],
+    item: dict[str, Any],
 ) -> None:
     relative = path.relative_to(ROOT)
-    text = path.read_text(encoding="utf-8")
+    text = strip_network_blocks(path.read_text(encoding="utf-8"))
     content_locale = locale or "en-US"
     expected_canonical = page_url(locale, page)
     if not parser.doctype:
@@ -517,7 +527,11 @@ def check_page(
         errors.append(f"{relative}: wrong robots metadata")
     if len(parser.metas.get("description", [])) != 1:
         errors.append(f"{relative}: missing unique description")
-    expected_facts = SECTION_IDS["home" if page == "index" else page]
+    source_page = "home" if page == "index" else page
+    android = item[source_page].get("android")
+    expected_facts = SECTION_IDS[source_page] + (
+        tuple(section["id"] for section in android["sections"]) if android else ()
+    )
     if tuple(parser.facts) != expected_facts:
         errors.append(f"{relative}: rendered data-flow facts are not exact")
     expected_script = locale is None and page == "index"
@@ -624,20 +638,73 @@ def check_assets(errors: list[str]) -> None:
             errors.append("site-mark.svg contains a provider identity")
 
 
+def check_network_page(
+    path: pathlib.Path, locale: str, page: str, parser: PageParser, errors: list[str]
+) -> None:
+    """Localized index/support pages owned by the support network's i18n generator."""
+    relative = path.relative_to(ROOT)
+    text = path.read_text(encoding="utf-8")
+    if not parser.doctype:
+        errors.append(f"{relative}: missing HTML5 doctype")
+    if parser.html.get("lang") != locale:
+        errors.append(f"{relative}: wrong html lang")
+    suffix = f"{locale}/" if page == "index" else f"{locale}/{PAGE_FILES[page]}"
+    if parser.canonical not in ([page_url(locale, page)], [CUSTOM_DOMAIN_BASE + suffix]):
+        errors.append(f"{relative}: canonical is not self-exact")
+    if len(parser.metas.get("description", [])) != 1:
+        errors.append(f"{relative}: missing unique description")
+    if set(EMAIL_RE.findall(text)) - {EMAIL}:
+        errors.append(f"{relative}: unauthorized email")
+    if FORBIDDEN_PUBLIC_EMAIL in text:
+        errors.append(f"{relative}: forbidden public email")
+    if PLACEHOLDER_RE.search(text):
+        errors.append(f"{relative}: placeholder or bootstrap token remains")
+    if FORBIDDEN_CLAIM_RE.search(text):
+        errors.append(f"{relative}: forbidden blanket privacy or offline claim")
+
+
 def check_sitemap(errors: list[str]) -> None:
+    # Both files are rewritten by the support network for the custom domain, and
+    # sitemap lastmod follows real page changes; require coverage, not bytes.
     sitemap = ROOT / "sitemap.xml"
     robots = ROOT / "robots.txt"
-    if not sitemap.is_file() or sitemap.read_text(encoding="utf-8") != render_sitemap():
-        errors.append("sitemap.xml is missing or stale")
-    expected_robots = f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}sitemap.xml\n"
-    if not robots.is_file() or robots.read_text(encoding="utf-8") != expected_robots:
+    text = sitemap.read_text(encoding="utf-8") if sitemap.is_file() else ""
+    locs = set(re.findall(r"<loc>([^<]+)</loc>", text))
+    lastmods = re.findall(r"<lastmod>([0-9-]+)</lastmod>", text)
+    if not text.startswith('<?xml version="1.0" encoding="UTF-8"?>') or "<urlset" not in text:
+        errors.append("sitemap.xml is missing or not a urlset")
+    for locale in (None, *LOCALES):
+        for page in PAGES:
+            relative_url = page_url(locale, page)[len(BASE_URL):]
+            if not {BASE_URL + relative_url, CUSTOM_DOMAIN_BASE + relative_url} & locs:
+                errors.append(f"sitemap.xml omits {relative_url or 'index'}")
+    if not lastmods or len(lastmods) != text.count("<url>") or min(lastmods) < SITE["updated"]:
+        errors.append("sitemap.xml lastmod is missing or older than the site policy date")
+    robots_text = robots.read_text(encoding="utf-8") if robots.is_file() else ""
+    sitemap_lines = re.findall(r"^Sitemap: (\S+)$", robots_text, re.M)
+    if (
+        not robots_text.startswith("User-agent: *\nAllow: /\n")
+        or not {f"{BASE_URL}sitemap.xml", f"{CUSTOM_DOMAIN_BASE}sitemap.xml"} & set(sitemap_lines)
+        or re.search(r"^Disallow:", robots_text, re.M)
+    ):
         errors.append("robots.txt is missing or stale")
+
+
+def network_extra_files() -> set[pathlib.Path]:
+    extras = {
+        path
+        for path in ROOT.iterdir()
+        if path.is_file() and path.suffix in NETWORK_ROOT_SUFFIXES
+    }
+    return extras | {path for path in NETWORK_ASSETS if path.is_file()}
 
 
 def check_manifest(
     outputs: dict[pathlib.Path, str], errors: list[str]
 ) -> None:
-    expected = set(outputs) | {
+    expected = set(outputs) | network_owned_paths() | network_extra_files() | {
+        ROOT / "sitemap.xml",
+        ROOT / "robots.txt",
         ROOT / ".gitignore",
         ROOT / ".nojekyll",
         ROOT / "README.md",
@@ -666,9 +733,11 @@ def check_manifest(
 
 
 def check_text_format(errors: list[str]) -> None:
-    extensions = {".css", ".html", ".js", ".json", ".md", ".py", ".svg", ".txt", ".xml"}
+    extensions = {".css", ".html", ".js", ".json", ".md", ".py", ".svg", ".txt", ".xml", ".webmanifest"}
     for path in ROOT.rglob("*"):
         if not path.is_file() or ".git" in path.parts:
+            continue
+        if path in NETWORK_ASSETS:
             continue
         if path.suffix not in extensions and path.name not in {".gitignore", ".nojekyll"}:
             errors.append(f"unexpected binary or unreviewed file: {path.relative_to(ROOT)}")
@@ -700,8 +769,11 @@ def main() -> None:
         raise SystemExit(f"FAIL: {error}") from error
     check_sources(errors, translations)
     outputs = expected_outputs(translations)
-    expected_html = {path for path in outputs if path.suffix == ".html"}
-    actual_html = set(ROOT.rglob("*.html"))
+    expected_html = {path for path in outputs if path.suffix == ".html"} | network_owned_paths()
+    # Root-level extra pages belong to the support network (intent / help pages).
+    actual_html = {path for path in ROOT.rglob("*.html") if path.parent != ROOT} | {
+        path for path in expected_html if path.parent == ROOT
+    }
     if len(expected_html) != EXPECTED_PAGES or actual_html != expected_html:
         errors.append(f"HTML page set must be exactly {EXPECTED_PAGES}")
     parsed_pages = parse_pages(expected_html, errors)
@@ -711,14 +783,19 @@ def main() -> None:
             parser = parsed_pages.get(path.resolve())
             if parser is None:
                 errors.append(f"missing page {path.relative_to(ROOT)}")
+            elif network_owned(locale, page):
+                check_network_page(path, locale, page, parser, errors)
             else:
-                check_page(path, locale, page, parser, parsed_pages, errors)
+                check_page(
+                    path, locale, page, parser, parsed_pages, errors,
+                    translations[locale or "en-US"],
+                )
     check_assets(errors)
     check_sitemap(errors)
     check_manifest(outputs, errors)
     check_text_format(errors)
     for path, expected in outputs.items():
-        if not path.is_file() or path.read_text(encoding="utf-8") != expected:
+        if not path.is_file() or strip_network_blocks(path.read_text(encoding="utf-8")) != expected:
             errors.append(f"generated output is stale: {path.relative_to(ROOT)}")
     if errors:
         for error in dict.fromkeys(errors):

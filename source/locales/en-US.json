@@ -18,12 +18,12 @@
    {"id": "direct_connections", "title": "Direct from your device", "body": "You add an account through that service's own sign-in page. When the app or its widget refreshes, your iPhone or iPad asks the service's API for your usage directly over HTTPS. Nothing passes through a UsageNow server, because there is none."},
    {"id": "credential_storage", "title": "Sign-ins stay in the Keychain", "body": "Sign-in tokens are stored only in this device's Keychain with AfterFirstUnlockThisDeviceOnly protection. They are shared only with the UsageNow Home Screen Widget so it can refresh by itself, and they are not synced to iCloud or sent to Apple Watch."},
    {"id": "widget_watch", "title": "Widgets and Apple Watch", "body": "The Widget and Apple Watch show the latest usage percentages and reset times. The paired Apple Watch receives only that snapshot, never a sign-in token."},
-   {"id": "purchase", "title": "24-hour free trial, then one purchase", "body": "Every feature is free for 24 hours after you tap Start 24-Hour Free Trial. UsageNow Pro is a one-time purchase through StoreKit with the price shown in your local currency. There is no subscription and no advertising."}
+   {"id": "purchase", "title": "Free for one account, then one purchase", "body": "You can view one account free in the app. More accounts, usage alerts, widgets and Apple Watch come with UsageNow Pro, a one-time purchase through StoreKit with the price shown in your local currency. There is no subscription and no advertising."}
   ]
  },
  "support": {
   "title": "UsageNow Support",
-  "summary": "Help with adding accounts, refreshing usage, widgets, Apple Watch, the free trial and UsageNow Pro.",
+  "summary": "Help with adding accounts, refreshing usage, widgets, Apple Watch, the free version and UsageNow Pro.",
   "section_title": "Questions and troubleshooting",
   "sections": [
    {"id": "getting_started", "title": "Add an account or try sample data", "body": "Tap a service card or the plus button and sign in on that service's own page in Apple's secure web sheet; GitHub shows a short device code to enter. You can add several accounts per service. To look around first, tap Preview with sample data on the first screen."},
@@ -32,10 +32,21 @@
    {"id": "offline_rate_limit", "title": "Offline or busy service", "body": "If there is no connection or a service answers 429 Too Many Requests, UsageNow keeps the last numbers with their time and tries again later. Repeated taps do not get around a service's limits."},
    {"id": "sort_language", "title": "Sort accounts and change language", "body": "With two or more accounts, use the sort button to order them by service, soonest reset, most used, least used, name or your own order. Settings lets you pick any of 50 languages or follow the system language; the Widget and Apple Watch follow."},
    {"id": "sign_out_delete", "title": "Sign out and remove data", "body": "Use the account menu and choose Sign out to delete that account's tokens from the Keychain and its numbers from the app, Widget and Apple Watch. To remove everything, sign out of each account and then delete the app. You can also revoke access in each service's own account settings."},
-   {"id": "purchase_restore", "title": "Free trial, UsageNow Pro and Restore", "body": "The 24-hour free trial starts only when you tap it and runs once per Apple Account. After it ends, the app and widgets stay locked until you buy UsageNow Pro, a one-time StoreKit purchase that is not a subscription. Use Settings, Restore Purchases on any device signed in to the same Apple Account."},
+   {"id": "purchase_restore", "title": "Free version, UsageNow Pro and Restore", "body": "You can view one account free in the app, with no time limit. More accounts, usage alerts, widgets and Apple Watch come with UsageNow Pro, a one-time StoreKit purchase that is not a subscription; the app tells you when a feature is part of Pro. Use Settings, Restore Purchases on any device signed in to the same Apple Account."},
    {"id": "safe_contact", "title": "What to include when you write", "body": "Send your device model, iOS version, app version, the service name, what you tapped and the approximate time. Do not send a password, sign-in code, token or full sign-in URL. The developer cannot see your accounts and cannot recover them."},
    {"id": "provider_independence", "title": "Independent app", "body": "UsageNow is an independent app. Claude and Anthropic, ChatGPT, Codex and OpenAI, GitHub Copilot, GitHub and Microsoft, and Gemini and Google are named only to show which accounts the app can read; UsageNow is not affiliated with, sponsored or endorsed by them."}
-  ]
+  ],
+  "android": {
+   "title": "UsageNow on Android (Google Play)",
+   "sections": [
+    {"id": "android_try_sample", "title": "Look around without signing in", "body": "Open Settings and choose the sample-data preview to see the whole app with example accounts. Nothing is signed in and nothing is purchased."},
+    {"id": "android_widget", "title": "Add the widget and keep it fresh", "body": "Long-press the home screen, choose Widgets, then UsageNow, and pick the account to show. Tap the widget to refresh it or to flip through your accounts. The widget needs the free trial or UsageNow Pro. Numbers update in the background about every 15 minutes, subject to your device's battery-saving rules; if they look old, open the app once and allow it to run in the background."},
+    {"id": "android_alerts", "title": "Alerts do not show up", "body": "On Android 13 and later, allow notifications for UsageNow when asked, or turn them on in the system app settings. Alerts need the free trial or UsageNow Pro."},
+    {"id": "android_not_available", "title": "What is different from the iPhone app", "body": "The Android app does not include Apple Watch or Mac features. Accounts after the first sign in through your browser's regular sign-in page, so switch accounts on the service's login page when asked."},
+    {"id": "android_purchase_restore", "title": "Purchase and restore on Android", "body": "Unlock UsageNow Pro once with a single in-app purchase through Google Play, no subscription. If you reinstall or switch devices, open the purchase screen and tap Restore Purchases while signed in to the same Google Play account."},
+    {"id": "android_contact", "title": "What to include when you write", "body": "Send your device model, Android version, app version, which service the account belongs to, what you tapped and roughly when it happened. Never send a password, sign-in code, access token or a screenshot that shows one."}
+   ]
+  }
  },
  "privacy": {
   "title": "Privacy Policy",
@@ -48,12 +59,25 @@
    {"id": "developer_boundary", "title": "What the developer receives", "body": "Nothing automatically. The developer does not receive your tokens, account email, plan, usage numbers or reset times, and there is no UsageNow account or database."},
    {"id": "local_records", "title": "Stored on your device", "body": "The app keeps the latest usage snapshot (account label, plan name, usage percentages, reset times and the time of the last refresh), your sort order, language choice, trial end time and a short local log of Widget button taps for troubleshooting. This stays on the device."},
    {"id": "app_group_watch", "title": "Widget and Apple Watch", "body": "The app and Widget share the snapshot through an App Group on this device. WatchConnectivity sends the same snapshot to your paired Apple Watch so its app and complications can show it; tokens are not included."},
-   {"id": "storekit", "title": "Purchases", "body": "StoreKit contacts Apple to show the local price, start the free trial, buy UsageNow Pro and Restore Purchases. Apple processes payment; the developer does not receive your payment details."},
+   {"id": "storekit", "title": "Purchases", "body": "StoreKit contacts Apple to show the local price, buy UsageNow Pro and Restore Purchases. Apple processes payment; the developer does not receive your payment details."},
    {"id": "excluded_practices", "title": "No ads, analytics or tracking", "body": "UsageNow contains no advertising, no third-party analytics, no crash-reporting service and no tracking across apps or websites. It does not sell data, does not build profiles and does not ask for your password."},
    {"id": "deletion", "title": "Deleting your data", "body": "Signing out of an account deletes its tokens from the Keychain and removes its numbers from the app, Widget and Apple Watch. Signing out of every account and deleting the app removes the rest. You can also revoke UsageNow's access in each service's account settings."},
    {"id": "support_site", "title": "Support email and this website", "body": "If you email support, the developer receives only the address and message you choose to send and uses them only to reply. This website sets no cookies and loads no advertising, analytics or tracking scripts; GitHub Pages hosts it and may process standard connection data under its own terms."},
    {"id": "provider_independence", "title": "Independent app", "body": "UsageNow is an independent app. Claude and Anthropic, ChatGPT, Codex and OpenAI, GitHub Copilot, GitHub and Microsoft, and Gemini and Google are named only to show which accounts the app can read; UsageNow is not affiliated with, sponsored or endorsed by them."},
    {"id": "policy_changes", "title": "Changes and questions", "body": "If this policy changes, the new version is posted here with a new date. UsageNow is not directed to children. Questions about privacy can be sent to the support email below."}
-  ]
+  ],
+  "android": {
+   "title": "UsageNow on Android (Google Play)",
+   "summary": "Everything above about no server, no account, no advertising and no analytics applies to the Android app too. These are the Android-specific details; the iPhone and Apple Watch sections above stay as they are.",
+   "sections": [
+    {"id": "android_credential_storage", "title": "Sign-in tokens on Android", "body": "Tokens from each service are encrypted with a key held in the system's secure key storage (Android Keystore) and saved in the app's private storage on this device only. Automatic cloud backup is turned off for the app, so tokens are not copied to any backup. The Home Screen widget never holds a token; it only reads the usage snapshot. Tokens are never sent to the developer."},
+    {"id": "android_requests", "title": "Network requests", "body": "To sign in and to refresh usage, the app contacts each service's own sign-in page and API directly over HTTPS (Anthropic, OpenAI, GitHub and Google). During sign-in it briefly listens on a local address on this device only to receive the sign-in reply. There is no UsageNow server, proxy or developer database."},
+    {"id": "android_local_records", "title": "Stored on your device", "body": "The usage snapshot (account label, plan name, usage percentages, reset times), your sort order, language choice, alert settings and the trial start time stay in the app's private storage. Background refresh runs on the device with Android's scheduler; the widget shows the same snapshot."},
+    {"id": "android_permissions", "title": "Permissions", "body": "Internet access (to reach the services you sign in to), notifications (only for the usage and reset alerts you turn on; Android asks you first), receiving the boot-completed signal (to resume background refresh after a restart), network state and wake lock (used by the background scheduler), and Google Play billing. UsageNow does not request location, contacts, camera, microphone, photos or storage permissions."},
+    {"id": "android_purchases", "title": "Purchases and the trial on Android", "body": "The one-time UsageNow Pro purchase is handled by Google Play Billing; Google processes payment and the developer does not receive your payment details. The 24-hour free trial on Android is kept on the device itself: it starts only when you tap it, nothing is sent anywhere and nothing is charged."},
+    {"id": "android_deletion", "title": "Deleting your data on Android", "body": "Signing out of an account deletes its tokens and numbers from the app and the widget. Uninstalling the app removes everything else the app stored. You can also revoke UsageNow's access in each service's account settings."}
+   ]
+  },
+  "updated": "2026-10-30"
  }
 }

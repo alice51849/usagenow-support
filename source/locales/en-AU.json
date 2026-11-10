@@ -36,14 +36,14 @@
    },
    {
     "id": "purchase",
-    "title": "24-hour free trial, then one purchase",
-    "body": "Every feature is free for 24 hours after you tap Start 24-Hour Free Trial. UsageNow Pro is a one-time purchase through StoreKit with the price shown in your local currency. There is no subscription and no advertising."
+    "title": "Free for one account, then one purchase",
+    "body": "You can view one account free in the app. More accounts, usage alerts, widgets and Apple Watch come with UsageNow Pro, a one-time purchase through StoreKit with the price shown in your local currency. There is no subscription and no advertising."
    }
   ]
  },
  "support": {
   "title": "UsageNow Support",
-  "summary": "Help with adding accounts, refreshing usage, widgets, Apple Watch, the free trial and UsageNow Pro.",
+  "summary": "Help with adding accounts, refreshing usage, widgets, Apple Watch, the free version and UsageNow Pro.",
   "section_title": "Questions and troubleshooting",
   "sections": [
    {
@@ -78,8 +78,8 @@
    },
    {
     "id": "purchase_restore",
-    "title": "Free trial, UsageNow Pro and Restore",
-    "body": "The 24-hour free trial starts only when you tap it and runs once per Apple Account. After it ends, the app and widgets stay locked until you buy UsageNow Pro, a one-time StoreKit purchase that is not a subscription. Use Settings, Restore Purchases on any device signed in to the same Apple Account."
+    "title": "Free version, UsageNow Pro and Restore",
+    "body": "You can view one account free in the app, with no time limit. More accounts, usage alerts, widgets and Apple Watch come with UsageNow Pro, a one-time StoreKit purchase that is not a subscription; the app tells you when a feature is part of Pro. Use Settings, Restore Purchases on any device signed in to the same Apple Account."
    },
    {
     "id": "safe_contact",
@@ -127,7 +127,7 @@
    {
     "id": "storekit",
     "title": "Purchases",
-    "body": "StoreKit contacts Apple to show the local price, start the free trial, buy UsageNow Pro and Restore Purchases. Apple processes payment; the developer does not receive your payment details."
+    "body": "StoreKit contacts Apple to show the local price, buy UsageNow Pro and Restore Purchases. Apple processes payment; the developer does not receive your payment details."
    },
    {
     "id": "excluded_practices",

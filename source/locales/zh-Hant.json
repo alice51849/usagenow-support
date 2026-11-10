@@ -48,7 +48,7 @@
    {"id": "developer_boundary", "title": "開發者會收到什麼", "body": "不會自動收到任何資料。開發者不會收到您的權杖、帳號電子郵件、方案、用量數字或重設時間，也沒有 UsageNow 帳號或資料庫。"},
    {"id": "local_records", "title": "儲存在您裝置上的資料", "body": "App 會保留最新的用量快照（帳號標籤、方案名稱、用量百分比、重設時間及上次重新整理的時間）、您的排序方式、語言選擇、試用結束時間，以及一份簡短的 Widget 按鈕點按本機紀錄，供疑難排解使用。這些資料都留在裝置上。"},
    {"id": "app_group_watch", "title": "Widget 與 Apple Watch", "body": "App 與 Widget 透過這台裝置上的 App Group 共用快照。WatchConnectivity 會把同一份快照傳送到您配對的 Apple Watch，讓手錶上的 App 與複雜功能可以顯示；其中不包含權杖。"},
-   {"id": "storekit", "title": "購買", "body": "StoreKit 會連線至 Apple，以顯示當地價格、開始免費試用、購買 UsageNow Pro 及回復購買。付款由 Apple 處理；開發者不會收到您的付款資訊。"},
+   {"id": "storekit", "title": "購買", "body": "StoreKit 會連線至 Apple，以顯示當地價格、購買 UsageNow Pro 及回復購買。付款由 Apple 處理；開發者不會收到您的付款資訊。"},
    {"id": "excluded_practices", "title": "無廣告、無分析、無追蹤", "body": "UsageNow 不含任何廣告、第三方分析工具或當機回報服務，也不會跨 App 或網站追蹤您。它不會出售資料、不會建立個人檔案，也不會要求您提供密碼。"},
    {"id": "deletion", "title": "刪除您的資料", "body": "登出某個帳號時，會從 Keychain 刪除其權杖，並從 App、Widget 與 Apple Watch 移除其數字。登出所有帳號並刪除 App，即可移除其餘資料。您也可以在各服務的帳號設定中撤銷 UsageNow 的存取權。"},
    {"id": "support_site", "title": "支援信箱與本網站", "body": "若您寫信給支援團隊，開發者只會收到您選擇寄出的電子郵件地址與訊息內容，且僅用於回覆您。本網站不設定 Cookie，也不載入任何廣告、分析或追蹤指令碼；網站由 GitHub Pages 代管，GitHub Pages 可能依其自身條款處理一般連線資料。"},

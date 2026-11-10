@@ -48,7 +48,7 @@
    {"id": "developer_boundary", "title": "开发者会收到什么", "body": "不会自动收到任何内容。开发者不会收到您的令牌、账户邮箱、套餐、用量数字或重置时间，也不存在 UsageNow 账户或数据库。"},
    {"id": "local_records", "title": "存储在您设备上的内容", "body": "App 会保存最新的用量快照（账户标签、套餐名称、用量百分比、重置时间以及上次刷新的时间）、您的排序方式、语言选择、试用结束时间，以及一份简短的 Widget 按钮点按本地日志，用于故障排除。这些内容都保留在设备上。"},
    {"id": "app_group_watch", "title": "Widget 与 Apple Watch", "body": "App 与 Widget 通过本设备上的 App Group 共享快照。WatchConnectivity 会把同一份快照发送到您配对的 Apple Watch，以便其 App 和复杂功能显示；其中不包含令牌。"},
-   {"id": "storekit", "title": "购买", "body": "StoreKit 会联系 Apple，以显示当地价格、开始免费试用、购买 UsageNow Pro 以及恢复购买。付款由 Apple 处理；开发者不会收到您的付款信息。"},
+   {"id": "storekit", "title": "购买", "body": "StoreKit 会联系 Apple，以显示当地价格、购买 UsageNow Pro 以及恢复购买。付款由 Apple 处理；开发者不会收到您的付款信息。"},
    {"id": "excluded_practices", "title": "没有广告、分析或跟踪", "body": "UsageNow 不含广告、第三方分析、崩溃报告服务，也不会跨 App 或网站进行跟踪。它不出售数据、不建立用户画像，也不会索要您的密码。"},
    {"id": "deletion", "title": "删除您的数据", "body": "退出某个账户的登录，会从 Keychain 中删除其令牌，并从 App、Widget 和 Apple Watch 中移除其数字。退出所有账户并删除 App，即可移除其余内容。您也可以在各项服务的账户设置中撤销 UsageNow 的访问权限。"},
    {"id": "support_site", "title": "支持邮件与本网站", "body": "如果您发邮件给支持团队，开发者只会收到您选择发送的邮箱地址和邮件内容，并且仅用于回复您。本网站不设置 Cookie，也不加载任何广告、分析或跟踪脚本；网站由 GitHub Pages 托管，GitHub Pages 可能会依照其自身条款处理标准连接数据。"},

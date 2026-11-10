@@ -17,6 +17,16 @@ Independent, deployment-ready static support and privacy site for UsageNow.
 
 Generated HTML must not be edited by hand.
 
+Ownership with the shared support network (00_GrowthEngine `support_network/`):
+the network's i18n generator owns the localized `index.html` and `support.html`
+of every non-English locale, plus `sitemap.xml`, `robots.txt` and the root-level
+intent/help pages; it also injects marked `<!-- ls-*:start/end -->` blocks and
+the `data-first-party-disclosure` notice into every page. This generator owns the
+English pages and every privacy page, never writes network-owned files, and its
+checks strip the managed blocks before comparing. Copy changes go into
+`source/locales/*.json` (en-US may carry optional `android` blocks and a
+privacy `updated` date), then regenerate.
+
 ## Generate and validate
 
 ```sh
