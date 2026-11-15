@@ -13,5 +13,12 @@
 - [Help, FAQ and troubleshooting](https://open.cait518.cc/usagenow-support/help.html)
 - [Support and contact](https://open.cait518.cc/usagenow-support/support.html)
 - [Privacy policy](https://open.cait518.cc/usagenow-support/privacy.html)
+- [Theo dõi hạn mức Claude, Codex, Copilot (tiếng Việt)](https://open.cait518.cc/usagenow-support/theo-doi-han-muc-claude-codex.vi.html)
+- [Semak had Claude, Codex dan Copilot (Bahasa Melayu)](https://open.cait518.cc/usagenow-support/semak-had-penggunaan-claude-ai.ms.html)
+- [เช็กลิมิต Claude, Codex, Copilot (ไทย)](https://open.cait518.cc/usagenow-support/check-limit-claude-codex-iphone.th.html)
+- [What is UsageNow? (English)](https://open.cait518.cc/usagenow-support/what-is-usagenow.html)
+- [UsageNowとは？（日本語）](https://open.cait518.cc/usagenow-support/what-is-usagenow.ja.html)
+- [UsageNow란? (한국어)](https://open.cait518.cc/usagenow-support/what-is-usagenow.ko.html)
+- [Was ist UsageNow? (Deutsch)](https://open.cait518.cc/usagenow-support/what-is-usagenow.de-DE.html)
 
 <!-- ls-llms: managed by support_network/gen_support_crosspromo.py -->
